@@ -14,10 +14,15 @@ Handlebars.registerHelper({
     },
     or() {
         return Array.prototype.slice.call(arguments, 0, -1).some(Boolean);
-    }
+    },
+    in: (obj,key) => key in obj,
 });
 const style = `
 <style>
+.dialog.aru-summary {
+  max-height: 800px;
+  overflow: scroll;
+}
 .actor-refresh-utility img {
   width: 3rem;
   height: 3rem;
@@ -34,10 +39,6 @@ const style = `
 }
 .actor-refresh-utility .hidden-div {
   display: none;
-}
-.actor-refresh-utility #force-div,
-.actor-refresh-utility #backup-div {
-  margin: 1em;
 }
 </style>
 `;
@@ -99,40 +100,45 @@ const templateData = {
   ],
 };
 const template = `
-<h2>Select Refresh Options {{actorType}}</h2>
-<h3>Selected Actor:</h3>
+<h2>Selected Actor:</h2>
 <div class="actor-container">
   <img src="{{token.document.texture.src}}" />
   <span>{{actor.name}}</span>
 </div>
 <form>
-  <div class="form-group">
-    <button type="button" id="select-all">Select All</button>
-    <button type="button" id="invert">Invert Selection</button>
-  </div>
   <div class="form-group">    
-    <fieldset id="refresh-options">    
+    <fieldset id="refresh-options">
+      <legend>Types</legend>
+      <div class="flexrow">
+        <button type="button" id="select-all">Select All</button>
+        <button type="button" id="invert">Invert Selection</button>    
+      </div>
     {{#each options as |option|}}      
-        <div class="flexrow{{#unless (includes option.allowedTypes ../actor.type)}} hidden-div{{/unless}}">
-          <label for="{{option.value}}">{{#with (lookup ../labels [value])}}{{localize .}}{{/with}}</label>
-          <div class="form-fields">
-            <input type="checkbox" name="{{option.value}}" id="{{option.value}}" {{checked option.checked}}/>
-          </div>
+      <div class="flexrow{{#unless (includes option.allowedTypes ../actor.type)}} hidden-div{{/unless}}">
+        <label for="{{option.value}}">{{#with (lookup ../labels [value])}}{{localize .}}{{/with}}</label>
+        <div class="form-fields">
+          <input type="checkbox" name="{{option.value}}" id="{{option.value}}" {{checked option.checked}}/>
         </div>
+      </div>
     {{/each}}
     </fieldset>
-  </div>
-  <div class="form-group" id="force-div">    
-    <div class="flexrow">
-      <label for="force">Attempt to auto-update Granters and things with ChoiceSets?</label>
-      <input type="checkbox" name="force" id="force" />
-    </div>
-  </div>
-  <div class="form-group" id="backup-div">    
-    <div class="flexrow">
-      <label for="force">Create a backup of the selected actor before continuing?</label>
-      <input type="checkbox" name="backup" id="backup" checked />
-    </div>
+  </div>  
+  <div class="form-group"> 
+    <fieldset>
+      <legend>Options</legend>   
+      <div class="flexrow">
+        <label for="force">Attempt to auto-update Granters and things with ChoiceSets?</label>
+        <input type="checkbox" name="force" id="force" />
+      </div>
+      <div class="flexrow">
+        <label for="backup">Create a backup of the selected actor before continuing?</label>
+        <input type="checkbox" name="backup" id="backup" />
+      </div>  
+      <div class="flexrow">
+        <label for="refreshed">Display a digest of refreshed items at completion?</label>
+        <input type="checkbox" name="refreshed" id="refreshed" checked />
+      </div>
+    </fieldset>
   </div>
 </form>
 `;
@@ -148,10 +154,10 @@ function aruRenderCallback(html) {
     for (const box of checkboxes) box.checked = !box.checked;
   });
 }
-const body = Handlebars.compile(template)(templateData);
+const mainDialogBody = Handlebars.compile(template)(templateData);
 const dialogData = {
   title: `Actor Refresh Utility`,
-  content: style + body,
+  content: style + mainDialogBody,
   close: () => false,
   buttons: {
     refresh: {
@@ -175,10 +181,11 @@ const dialogOptions = {
 };
 const response = await Dialog.wait(dialogData, dialogOptions);
 if (!response) return;
-
+const optionCheckboxes = ['force','backup','refreshed'];
 const unrefreshed = {};
 const refreshed = {};
-const actionables = Object.entries(response).filter(([type,selected]) => selected && !['force','backup'].includes(type)).map(([t,s]) => t);
+const actionables = Object.entries(response)
+                    .filter(([type,selected]) => selected && !optionCheckboxes.includes(type)).map(([t,s]) => t);
 if (response.backup) {
   const actorData = actor.toObject();
   actorData.name = `BACKUP ${actorData.name}`;
@@ -204,7 +211,7 @@ for (const type of actionables) {
       const granter = actor.items.get(grantedBy.id);
       if (granter?.category === 'classFeature') continue; 
       unrefreshed[type].push({        
-        item,
+        uuid: item.uuid,
         reason: `Granted by "${granter?.name ?? '<em>Granter Not Found</em>'}".`
       });
       continue;
@@ -212,7 +219,7 @@ for (const type of actionables) {
     const sourceID = item?.flags?.core?.sourceId;
     if (!sourceID) {
       unrefreshed[type].push({
-        item,
+        uuid: item.uuid,
         reason: `Item does not have a listed compendium Source.`
       });
       continue;
@@ -220,9 +227,16 @@ for (const type of actionables) {
     const newSource = await fromUuid(sourceID);
     if (!newSource) {
       unrefreshed[type].push({
-        item,
+        uuid: item.uuid,
         reason: `Item's compendium source not found (probably not reprinted).`
       })
+      continue;
+    }
+    if (item.type !== newSource.type) {
+      unrefreshed[type].push({
+        uuid: item.uuid,
+        reason: `Item's compendium source is of a`
+      });
       continue;
     }
     const newSourceData = newSource.toObject();
@@ -234,7 +248,10 @@ for (const type of actionables) {
                       `Item` :
                       `Item's compendium source`;
         reason += ` contains rules preventing it from being refreshed simply.`;          
-        unrefreshed[type].push({item, reason});
+        unrefreshed[type].push({
+          uuid: item.uuid, 
+          reason
+        });
         continue;
       }
       
@@ -251,59 +268,104 @@ for (const type of actionables) {
       } else {
         // choicesMatch 
       }     
-    } else {
+    } else { //no blocking rules
       try {
-        await item.refreshFromCompendium();
+        await item.refreshFromCompendium({notify: false});
       } catch(error) {
+        console.warn('we caught one', error);
         unrefreshed[type].push({
-          item,
+          uuid: item.uuid,
           reason: error.toString()
         });
         continue;
       }       
     }
-    refreshed[type].push(item);
+    refreshed[type].push({
+      uuid: item.uuid,
+    });
   }
 }
-
-const unrefreshedTemplateData = {
+  
+const summaryTemplateData = {
   labels,
-  itemgroups: Object.entries(unrefreshed).map(([group,items]) => ({label:group, items})),
+  unrefreshedGroups: Object.entries(unrefreshed)
+    .map(([group,items]) => ({
+      label:group, 
+      items
+    })),
+  refreshedGroups: Object.entries(refreshed)
+    .map(([group,items]) => ({
+      label: group, 
+      rows: items.reduce( // 3 to a row for the template
+        (acc,curr) => {
+          if (acc.at(-1).length < 3) acc.at(-1).push(curr);
+          else acc.push([curr]);
+          return acc;
+        }, [[]])
+      })
+    )
 };
-const unrefreshedCount = unrefreshedTemplateData.itemgroups.reduce((acc,curr) => acc += curr.items.length, 0);
-let unrefreshedTemplate;
-if (!unrefreshedCount) {
-  unrefreshedTemplate = `
-<h2>All Selected Items Refreshed!</h2>  
-${actor.name}'s items of the selected types are now up to date to the best of this tool's ability.
-`;
-} else {
-  unrefreshedTemplate = `
+const unrefreshedCount = summaryTemplateData.unrefreshedGroups.reduce((acc,curr) => acc += curr.items.length, 0);
+let summaryTemplate = unrefreshedCount ? `
 <h2>Unrefreshed Items</h2>
 <table>
-  {{#each itemgroups as |group|}}
+  {{#each unrefreshedGroups as |group|}}
   {{#if (gt items.length 0)}}
     <tr>
-      <th colspan="2">{{#with (lookup ../labels [label])}}{{localize .}}{{/with}}</th>
+      <th colspan="3"><h2>{{#with (lookup ../labels [label])}}{{localize .}}{{/with}}</h2></th>
+    </tr>
+    <tr>
+      <th>Link</th>
+      <th>Reason Skipped</th>
+      <th>Additional Notes</th>
     </tr>
     {{#each items as |item|}}
     <tr>
       <td>@UUID[{{item.uuid}}]</td>
       <td>{{item.reason}}</td>
+      <td>{{item.notes}}</td>
     </tr>
     {{/each}}
   {{/if}}  
   {{/each}}
-</table>
-`;
+</table>` :
+`<h2>All Selected Items Refreshed!</h2>  
+  ${actor.name}'s items of the selected types are now up to date to the best of this tool's ability.`;
+
+if (response.refreshed) {
+  summaryTemplate += `
+  <details>
+    <summary>Refreshed Items</summary>
+    <table>
+    {{#each refreshedGroups as |group|}}
+    {{#if (gt rows.0.length 0)}}
+      <tr>
+        <th colspan="3">{{#with (lookup ../labels [label])}}{{localize .}}{{/with}}</th>
+      </tr>
+      {{#each rows as |row|}}
+      <tr>
+        <td>@UUID[{{row.0.uuid}}]</td>
+        <td>{{#if (in row 1)}}@UUID[{{row.1.uuid}}]{{/if}}</td>
+        <td>{{#if (in row 2)}}@UUID[{{row.2.uuid}}]{{/if}}</td>
+      </tr>
+      {{/each}}
+    {{/if}}  
+    {{/each}}
+    </table>
+  </details>
+  `;
 }
+const summaryBody = await TextEditor.enrichHTML(
+  (Handlebars.compile(summaryTemplate))(summaryTemplateData)
+);
 // return console.warn((Handlebars.compile(unrefreshedTemplate))(unrefreshedTemplateData))
 Dialog.prompt({
   title: `ARU Summary`,
-  content: await TextEditor.enrichHTML((Handlebars.compile(unrefreshedTemplate))(unrefreshedTemplateData)),
+  content: style + summaryBody,
   options: {
     jQuery: false,
     width: unrefreshedCount ? 600 : 400,
+    classes: ["aru-summary"]
   }
 });
-console.warn(refreshed)
+// console.warn(refreshed)
