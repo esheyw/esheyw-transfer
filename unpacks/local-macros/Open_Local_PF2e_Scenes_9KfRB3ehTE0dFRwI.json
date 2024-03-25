@@ -1,0 +1,35 @@
+{
+  "name": "Open Local PF2e Scenes",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/game-icons-net/blackbackground/stone-path.svg",
+  "command": "_esheywOpenPack(\"esheyw-transfer.local-pf2e-scenes\")",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForEveryone": false,
+      "runForSpecificUser": ""
+    },
+    "core": {},
+    "cf": null
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1675989208607,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "9KfRB3ehTE0dFRwI",
+  "folder": "LXfU0ElDPq9L8dLU",
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3,
+    "717Xeq3czH96acPF": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_key": "!macros!9KfRB3ehTE0dFRwI"
+}

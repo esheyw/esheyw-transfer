@@ -1,0 +1,3509 @@
+{
+  "_id": "tz5EaQypoa6S4PkK",
+  "name": "Shroon Farm",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "",
+  "foreground": "modules/troubles-in-otari-remade-maps/maps/shroon-foreground.webp",
+  "thumb": "modules/esheyw-transfer/assets/scenes/local-pf2e-scenes-tz5EaQypoa6S4PkK-thumb.png",
+  "width": 3000,
+  "height": 2000,
+  "padding": 0.25,
+  "initial": {},
+  "backgroundColor": "#999999",
+  "grid": {
+    "size": 100,
+    "type": 1,
+    "color": "#000000",
+    "alpha": 0.2,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fogExploration": true,
+  "fogReset": 1647131450534,
+  "globalLight": false,
+  "globalLightThreshold": null,
+  "darkness": 0,
+  "drawings": [],
+  "tokens": [
+    {
+      "_id": "W777xYY5FfMyQfJW",
+      "name": "Hell Hound",
+      "displayName": 20,
+      "actorId": "q7zwBobHtyR8oaHP",
+      "actorLink": false,
+      "width": 1,
+      "height": 1,
+      "x": 2200,
+      "y": 1300,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "attenuation": 0.5
+      },
+      "disposition": -1,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": true,
+          "autoscale": true
+        },
+        "LightsHUD": {
+          "lightspellstate": false,
+          "lanternconsumablestate": false,
+          "torchconsumablestate": false
+        }
+      },
+      "delta": {
+        "items": [
+          {
+            "_id": "IvEp0FjtG1bxA4Xw",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Jaws",
+            "sort": 100000,
+            "type": "melee",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "magical"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "weaponType": {
+                "value": "melee"
+              },
+              "attack": {
+                "value": ""
+              },
+              "damageRolls": {
+                "0v2ncc7nfh9n5myhoyt4": {
+                  "damage": "1d8+4",
+                  "damageType": "piercing"
+                },
+                "lo40csa3zl4zythhvae1": {
+                  "damage": "1d6",
+                  "damageType": "evil"
+                },
+                "9hz2gveqa2icaip33z0e": {
+                  "damage": "1d6",
+                  "damageType": "fire"
+                }
+              },
+              "bonus": {
+                "value": 13
+              },
+              "attackEffects": {
+                "value": [],
+                "custom": ""
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.100-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.W777xYY5FfMyQfJW.W777xYY5FfMyQfJW.IvEp0FjtG1bxA4Xw"
+          },
+          {
+            "_id": "rGgLU8CkJNTv7kLC",
+            "effects": [],
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6"
+              }
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Darkvision",
+            "sort": 200000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+              },
+              "rules": [],
+              "slug": "darkvision",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.100-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "interaction"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.W777xYY5FfMyQfJW.W777xYY5FfMyQfJW.rGgLU8CkJNTv7kLC"
+          },
+          {
+            "_id": "eG1Bf18XYFvkALTq",
+            "effects": [],
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.rqfnQ5VHT5hxm25r"
+              }
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Scent (Imprecise) 60 feet",
+            "sort": 300000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+              },
+              "rules": [],
+              "slug": "scent",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.100-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "interaction"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.W777xYY5FfMyQfJW.W777xYY5FfMyQfJW.eG1Bf18XYFvkALTq"
+          },
+          {
+            "_id": "GsQeeSV97T6FPvoY",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Breath Weapon",
+            "sort": 400000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>The hell hound breathes flames that deal [[/r {4d6}[fire]]]{4d6 fire damage} to all creatures in a @Template[type:cone|distance:15] (@Check[type:reflex|dc:19|basic:true] save).</p>\n<p data-visibility=\"gm\">The hell hound can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}. If the hell hound would take fire damage or be targeted by a fire effect, its Breath Weapon recharges.</p>"
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "divine",
+                  "evocation",
+                  "fire"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "action"
+              },
+              "category": null,
+              "actions": {
+                "value": 1
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.100-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "offensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.W777xYY5FfMyQfJW.W777xYY5FfMyQfJW.GsQeeSV97T6FPvoY"
+          },
+          {
+            "_id": "rsf65nRppJQQ5As2",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Acrobatics",
+            "sort": 500000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 8
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.100-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.W777xYY5FfMyQfJW.W777xYY5FfMyQfJW.rsf65nRppJQQ5As2"
+          },
+          {
+            "_id": "vl8E7kqn8lcTLqOq",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Athletics",
+            "sort": 600000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 9
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.100-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.W777xYY5FfMyQfJW.W777xYY5FfMyQfJW.vl8E7kqn8lcTLqOq"
+          },
+          {
+            "_id": "uKKzpwykp5llS8TG",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Stealth",
+            "sort": 700000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 8
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.100-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.W777xYY5FfMyQfJW.W777xYY5FfMyQfJW.uKKzpwykp5llS8TG"
+          },
+          {
+            "_id": "kXXO2coSLlDjiCDu",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Survival",
+            "sort": 800000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [
+                {
+                  "key": "FlatModifier",
+                  "label": "PF2E.SkillVariant.Track",
+                  "predicate": {
+                    "all": [
+                      "action:track"
+                    ]
+                  },
+                  "selector": "survival",
+                  "value": 2
+                }
+              ],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 9
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.100-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "variants": {
+                "0": {
+                  "label": "+11 to Track",
+                  "options": "action:track"
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.W777xYY5FfMyQfJW.W777xYY5FfMyQfJW.kXXO2coSLlDjiCDu"
+          }
+        ],
+        "system": {
+          "traits": {
+            "dv": [
+              {
+                "type": "cold",
+                "value": 5
+              }
+            ]
+          },
+          "schema": {
+            "version": 0.769,
+            "lastMigration": {
+              "datetime": "2022-09-05T18:25:34.100-07:00",
+              "version": {
+                "schema": 0.751,
+                "foundry": "9.280",
+                "system": "3.13.6"
+              }
+            }
+          }
+        },
+        "_id": "W777xYY5FfMyQfJW",
+        "name": null,
+        "type": null,
+        "img": null,
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!tz5EaQypoa6S4PkK.W777xYY5FfMyQfJW.W777xYY5FfMyQfJW"
+      },
+      "texture": {
+        "src": "pdftofoundry/menace-under-otari/hell-hound.token.webp",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!tz5EaQypoa6S4PkK.W777xYY5FfMyQfJW"
+    },
+    {
+      "_id": "EModjVZqkzApRQID",
+      "name": "Wolf",
+      "displayName": 20,
+      "actorId": "viXVryrz5Xqrjk6p",
+      "actorLink": false,
+      "width": 1,
+      "height": 1,
+      "x": 2100,
+      "y": 1300,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "attenuation": 0.5
+      },
+      "disposition": -1,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": true,
+          "autoscale": true
+        }
+      },
+      "delta": {
+        "items": [
+          {
+            "_id": "NX0owCPUZbsVJ4az",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Jaws",
+            "sort": 100000,
+            "type": "melee",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "weaponType": {
+                "value": "melee"
+              },
+              "attack": {
+                "value": ""
+              },
+              "damageRolls": {
+                "d9dz0n8l5x20aqoksiqt": {
+                  "damage": "1d6+2",
+                  "damageType": "piercing"
+                }
+              },
+              "bonus": {
+                "value": 9
+              },
+              "attackEffects": {
+                "value": [
+                  "knockdown"
+                ],
+                "custom": ""
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.124-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.EModjVZqkzApRQID.EModjVZqkzApRQID.NX0owCPUZbsVJ4az"
+          },
+          {
+            "_id": "TCZQdv29obsz4Rie",
+            "effects": [],
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.fFu2sZz4KB01fVRc"
+              }
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Low-Light Vision",
+            "sort": 200000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
+              },
+              "rules": [],
+              "slug": "low-light-vision",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.124-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "interaction"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.EModjVZqkzApRQID.EModjVZqkzApRQID.TCZQdv29obsz4Rie"
+          },
+          {
+            "_id": "oikg7iKnE0OwX6CV",
+            "effects": [],
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.rqfnQ5VHT5hxm25r"
+              }
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Scent (Imprecise) 30 feet",
+            "sort": 300000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+              },
+              "rules": [],
+              "slug": "scent",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.124-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "interaction"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.EModjVZqkzApRQID.EModjVZqkzApRQID.oikg7iKnE0OwX6CV"
+          },
+          {
+            "_id": "GhRRqxvK6T21zheo",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Pack Attack",
+            "sort": 400000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>The wolf's Strikes deal [[/r {1d4}]]{1d4 extra damage} to creatures within reach of at least two of the wolf's allies.</p>"
+              },
+              "rules": [
+                {
+                  "key": "RollOption",
+                  "domain": "damage-roll",
+                  "option": "packAttack",
+                  "toggleable": true
+                },
+                {
+                  "damageType": "piercing",
+                  "diceNumber": 1,
+                  "dieSize": "d4",
+                  "key": "DamageDice",
+                  "predicate": {
+                    "all": [
+                      "packAttack"
+                    ]
+                  },
+                  "selector": "strike-damage"
+                }
+              ],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.124-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "offensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.EModjVZqkzApRQID.EModjVZqkzApRQID.GhRRqxvK6T21zheo"
+          },
+          {
+            "_id": "dB4Pr3yiNKH32fE8",
+            "effects": [],
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.BCLvAx4Pz4MLa2pu"
+              }
+            },
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Knockdown",
+            "sort": 500000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]</p>"
+              },
+              "rules": [],
+              "slug": "knockdown",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "action"
+              },
+              "category": null,
+              "actions": {
+                "value": 1
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.124-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "offensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.EModjVZqkzApRQID.EModjVZqkzApRQID.dB4Pr3yiNKH32fE8"
+          },
+          {
+            "_id": "4chElHxgWYfSZPG9",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Acrobatics",
+            "sort": 600000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 7
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.124-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.EModjVZqkzApRQID.EModjVZqkzApRQID.4chElHxgWYfSZPG9"
+          },
+          {
+            "_id": "LoiARuDnD1OXi7Gq",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Athletics",
+            "sort": 700000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 5
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.124-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.EModjVZqkzApRQID.EModjVZqkzApRQID.LoiARuDnD1OXi7Gq"
+          },
+          {
+            "_id": "gbBnQhXZKvXNuk9i",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Stealth",
+            "sort": 800000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 7
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.124-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.EModjVZqkzApRQID.EModjVZqkzApRQID.gbBnQhXZKvXNuk9i"
+          },
+          {
+            "_id": "7Tb8i5xvJI49ytgM",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Survival",
+            "sort": 900000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 7
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.124-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.EModjVZqkzApRQID.EModjVZqkzApRQID.7Tb8i5xvJI49ytgM"
+          }
+        ],
+        "system": {
+          "schema": {
+            "version": 0.769,
+            "lastMigration": {
+              "datetime": "2022-09-05T18:25:34.124-07:00",
+              "version": {
+                "schema": 0.751,
+                "foundry": "9.280",
+                "system": "3.13.6"
+              }
+            }
+          }
+        },
+        "_id": "EModjVZqkzApRQID",
+        "name": null,
+        "type": null,
+        "img": null,
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!tz5EaQypoa6S4PkK.EModjVZqkzApRQID.EModjVZqkzApRQID"
+      },
+      "texture": {
+        "src": "pdftofoundry/menace-under-otari/wolf.token.webp",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!tz5EaQypoa6S4PkK.EModjVZqkzApRQID"
+    },
+    {
+      "_id": "er9V18o21xbenmPf",
+      "name": "Wolf",
+      "displayName": 20,
+      "actorId": "viXVryrz5Xqrjk6p",
+      "actorLink": false,
+      "width": 1,
+      "height": 1,
+      "x": 2300,
+      "y": 1300,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "attenuation": 0.5
+      },
+      "disposition": -1,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": true,
+          "autoscale": true
+        }
+      },
+      "delta": {
+        "items": [
+          {
+            "_id": "NX0owCPUZbsVJ4az",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Jaws",
+            "sort": 100000,
+            "type": "melee",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "weaponType": {
+                "value": "melee"
+              },
+              "attack": {
+                "value": ""
+              },
+              "damageRolls": {
+                "d9dz0n8l5x20aqoksiqt": {
+                  "damage": "1d6+2",
+                  "damageType": "piercing"
+                }
+              },
+              "bonus": {
+                "value": 9
+              },
+              "attackEffects": {
+                "value": [
+                  "knockdown"
+                ],
+                "custom": ""
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.140-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.er9V18o21xbenmPf.er9V18o21xbenmPf.NX0owCPUZbsVJ4az"
+          },
+          {
+            "_id": "TCZQdv29obsz4Rie",
+            "effects": [],
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.fFu2sZz4KB01fVRc"
+              }
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Low-Light Vision",
+            "sort": 200000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
+              },
+              "rules": [],
+              "slug": "low-light-vision",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.140-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "interaction"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.er9V18o21xbenmPf.er9V18o21xbenmPf.TCZQdv29obsz4Rie"
+          },
+          {
+            "_id": "oikg7iKnE0OwX6CV",
+            "effects": [],
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.rqfnQ5VHT5hxm25r"
+              }
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Scent (Imprecise) 30 feet",
+            "sort": 300000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+              },
+              "rules": [],
+              "slug": "scent",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.140-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "interaction"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.er9V18o21xbenmPf.er9V18o21xbenmPf.oikg7iKnE0OwX6CV"
+          },
+          {
+            "_id": "GhRRqxvK6T21zheo",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Pack Attack",
+            "sort": 400000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>The wolf's Strikes deal [[/r {1d4}]]{1d4 extra damage} to creatures within reach of at least two of the wolf's allies.</p>"
+              },
+              "rules": [
+                {
+                  "key": "RollOption",
+                  "domain": "damage-roll",
+                  "option": "packAttack",
+                  "toggleable": true
+                },
+                {
+                  "damageType": "piercing",
+                  "diceNumber": 1,
+                  "dieSize": "d4",
+                  "key": "DamageDice",
+                  "predicate": {
+                    "all": [
+                      "packAttack"
+                    ]
+                  },
+                  "selector": "strike-damage"
+                }
+              ],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.140-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "offensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.er9V18o21xbenmPf.er9V18o21xbenmPf.GhRRqxvK6T21zheo"
+          },
+          {
+            "_id": "dB4Pr3yiNKH32fE8",
+            "effects": [],
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.BCLvAx4Pz4MLa2pu"
+              }
+            },
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Knockdown",
+            "sort": 500000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]</p>"
+              },
+              "rules": [],
+              "slug": "knockdown",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "action"
+              },
+              "category": null,
+              "actions": {
+                "value": 1
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.140-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "offensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.er9V18o21xbenmPf.er9V18o21xbenmPf.dB4Pr3yiNKH32fE8"
+          },
+          {
+            "_id": "4chElHxgWYfSZPG9",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Acrobatics",
+            "sort": 600000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 7
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.140-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.er9V18o21xbenmPf.er9V18o21xbenmPf.4chElHxgWYfSZPG9"
+          },
+          {
+            "_id": "LoiARuDnD1OXi7Gq",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Athletics",
+            "sort": 700000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 5
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.140-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.er9V18o21xbenmPf.er9V18o21xbenmPf.LoiARuDnD1OXi7Gq"
+          },
+          {
+            "_id": "gbBnQhXZKvXNuk9i",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Stealth",
+            "sort": 800000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 7
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.140-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.er9V18o21xbenmPf.er9V18o21xbenmPf.gbBnQhXZKvXNuk9i"
+          },
+          {
+            "_id": "7Tb8i5xvJI49ytgM",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Survival",
+            "sort": 900000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 7
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.140-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!tz5EaQypoa6S4PkK.er9V18o21xbenmPf.er9V18o21xbenmPf.7Tb8i5xvJI49ytgM"
+          }
+        ],
+        "system": {
+          "schema": {
+            "version": 0.769,
+            "lastMigration": {
+              "datetime": "2022-09-05T18:25:34.140-07:00",
+              "version": {
+                "schema": 0.751,
+                "foundry": "9.280",
+                "system": "3.13.6"
+              }
+            }
+          }
+        },
+        "_id": "er9V18o21xbenmPf",
+        "name": null,
+        "type": null,
+        "img": null,
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!tz5EaQypoa6S4PkK.er9V18o21xbenmPf.er9V18o21xbenmPf"
+      },
+      "texture": {
+        "src": "pdftofoundry/menace-under-otari/wolf.token.webp",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!tz5EaQypoa6S4PkK.er9V18o21xbenmPf"
+    }
+  ],
+  "lights": [],
+  "notes": [
+    {
+      "_id": "6DBT8bMZ9xnDPJbd",
+      "entryId": "slEJLka6IAy06BrQ",
+      "x": 2150,
+      "y": 1750,
+      "iconSize": 40,
+      "fontFamily": "Signika",
+      "fontSize": 48,
+      "textAnchor": 1,
+      "textColor": "#FFFFFF",
+      "flags": {
+        "backgroundless-pins": {
+          "hasBackground": false
+        },
+        "levels": {
+          "rangeTop": null,
+          "rangeBottom": null
+        }
+      },
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "pageId": null,
+      "global": false,
+      "_key": "!scenes.notes!tz5EaQypoa6S4PkK.6DBT8bMZ9xnDPJbd"
+    }
+  ],
+  "sounds": [],
+  "templates": [],
+  "tiles": [
+    {
+      "_id": "EeVsHmQolwamT6DA",
+      "width": 400,
+      "height": 400,
+      "x": 800,
+      "y": 2000,
+      "z": 100,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "overhead": true,
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0.3,
+        "radius": null
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {},
+      "texture": {
+        "src": "modules/troubles-in-otari-remade-maps/maps/shroon-tile-tree1.webp",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "roof": false,
+      "_key": "!scenes.tiles!tz5EaQypoa6S4PkK.EeVsHmQolwamT6DA"
+    },
+    {
+      "_id": "r5PLHD2pSnwDmXSe",
+      "width": 400,
+      "height": 400,
+      "x": 1200,
+      "y": 2000,
+      "z": 100,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "overhead": true,
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0.3,
+        "radius": null
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {},
+      "texture": {
+        "src": "modules/troubles-in-otari-remade-maps/maps/shroon-tile-tree2.webp",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "roof": false,
+      "_key": "!scenes.tiles!tz5EaQypoa6S4PkK.r5PLHD2pSnwDmXSe"
+    },
+    {
+      "_id": "qm23ci2BA0J6xDCK",
+      "width": 400,
+      "height": 400,
+      "x": 1700,
+      "y": 2000,
+      "z": 100,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "overhead": true,
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0.3,
+        "radius": null
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {},
+      "texture": {
+        "src": "modules/troubles-in-otari-remade-maps/maps/shroon-tile-tree3.webp",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "roof": false,
+      "_key": "!scenes.tiles!tz5EaQypoa6S4PkK.qm23ci2BA0J6xDCK"
+    },
+    {
+      "_id": "JCFhY9ZXLVRv8FDW",
+      "width": 600,
+      "height": 400,
+      "x": 2000,
+      "y": 1000,
+      "z": 100,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "overhead": true,
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0,
+        "radius": null
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {},
+      "texture": {
+        "src": "modules/troubles-in-otari-remade-maps/maps/shroon-tile-cottageroof.webp",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "roof": true,
+      "_key": "!scenes.tiles!tz5EaQypoa6S4PkK.JCFhY9ZXLVRv8FDW"
+    },
+    {
+      "_id": "ndlprQJFsaeQ6Fvf",
+      "width": 900,
+      "height": 800,
+      "x": 2900,
+      "y": 1500,
+      "z": 100,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "overhead": true,
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0,
+        "radius": null
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {},
+      "texture": {
+        "src": "modules/troubles-in-otari-remade-maps/maps/shroon-tile-barnroof.webp",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "roof": true,
+      "_key": "!scenes.tiles!tz5EaQypoa6S4PkK.ndlprQJFsaeQ6Fvf"
+    }
+  ],
+  "walls": [
+    {
+      "_id": "riF9s8bvVrqoXXn5",
+      "c": [
+        2200,
+        1300,
+        2100,
+        1300
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.riF9s8bvVrqoXXn5"
+    },
+    {
+      "_id": "kFkbcC4aVRWFPJRD",
+      "c": [
+        2100,
+        1300,
+        2100,
+        1100
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.kFkbcC4aVRWFPJRD"
+    },
+    {
+      "_id": "NZVympMjPDPzyTBk",
+      "c": [
+        2100,
+        1100,
+        2500,
+        1100
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.NZVympMjPDPzyTBk"
+    },
+    {
+      "_id": "1Reqxr9Qedmjh7Ol",
+      "c": [
+        2500,
+        1100,
+        2500,
+        1300
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.1Reqxr9Qedmjh7Ol"
+    },
+    {
+      "_id": "iwbSHScWh1JiGqBh",
+      "c": [
+        2500,
+        1300,
+        2300,
+        1300
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.iwbSHScWh1JiGqBh"
+    },
+    {
+      "_id": "rogI2NaRaob041XQ",
+      "c": [
+        2300,
+        1300,
+        2200,
+        1300
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 1,
+      "ds": 1,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.rogI2NaRaob041XQ"
+    },
+    {
+      "_id": "xjBW3w7Qb4CPSCKi",
+      "c": [
+        3000,
+        1800,
+        3000,
+        1900
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 1,
+      "ds": 1,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.xjBW3w7Qb4CPSCKi"
+    },
+    {
+      "_id": "ptuvzZQW8CqxELyd",
+      "c": [
+        3000,
+        1900,
+        3000,
+        2000
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 1,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.ptuvzZQW8CqxELyd"
+    },
+    {
+      "_id": "dlvCW0W6Heo3x2qH",
+      "c": [
+        3000,
+        1800,
+        3000,
+        1600
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.dlvCW0W6Heo3x2qH"
+    },
+    {
+      "_id": "AWG0sAFG2ciMENTy",
+      "c": [
+        3000,
+        1600,
+        3700,
+        1600
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.AWG0sAFG2ciMENTy"
+    },
+    {
+      "_id": "ybKVpKllY9noDiWs",
+      "c": [
+        3700,
+        1600,
+        3700,
+        2200
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.ybKVpKllY9noDiWs"
+    },
+    {
+      "_id": "Y71rIHjXG7InEX9F",
+      "c": [
+        3700,
+        2200,
+        3000,
+        2200
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.Y71rIHjXG7InEX9F"
+    },
+    {
+      "_id": "P5mYMk113Kq2Qm2p",
+      "c": [
+        3000,
+        2200,
+        3000,
+        2000
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.P5mYMk113Kq2Qm2p"
+    },
+    {
+      "_id": "xUS03kXYyMU4JeQs",
+      "c": [
+        2525,
+        2212,
+        2512,
+        2350
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.xUS03kXYyMU4JeQs"
+    },
+    {
+      "_id": "jh8JIdsFsRRh3zS3",
+      "c": [
+        2512,
+        2350,
+        2862,
+        2387
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.jh8JIdsFsRRh3zS3"
+    },
+    {
+      "_id": "0vC5iJFpmlkmhN6G",
+      "c": [
+        2862,
+        2387,
+        2875,
+        2250
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.0vC5iJFpmlkmhN6G"
+    },
+    {
+      "_id": "X3T3YtMweKgwyvR1",
+      "c": [
+        2875,
+        2250,
+        2525,
+        2212
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.X3T3YtMweKgwyvR1"
+    },
+    {
+      "_id": "DG4AxXbcNObsRdZx",
+      "c": [
+        2330,
+        1997,
+        2464,
+        2021
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.DG4AxXbcNObsRdZx"
+    },
+    {
+      "_id": "em1Td7WoQ5SvCGRD",
+      "c": [
+        2464,
+        2021,
+        2438,
+        2153
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.em1Td7WoQ5SvCGRD"
+    },
+    {
+      "_id": "sqviT2pIQDyAysnC",
+      "c": [
+        2438,
+        2153,
+        2306,
+        2125
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.sqviT2pIQDyAysnC"
+    },
+    {
+      "_id": "6gN8QusaYq5BVjil",
+      "c": [
+        2306,
+        2125,
+        2329,
+        1996
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.6gN8QusaYq5BVjil"
+    },
+    {
+      "_id": "UxOuTkZWymjCwdNX",
+      "c": [
+        800,
+        500,
+        3800,
+        500
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.UxOuTkZWymjCwdNX"
+    },
+    {
+      "_id": "L3jGV6oFenXkXjsb",
+      "c": [
+        3800,
+        500,
+        3800,
+        2500
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.L3jGV6oFenXkXjsb"
+    },
+    {
+      "_id": "1q5WueynSiQESMbT",
+      "c": [
+        3800,
+        2500,
+        800,
+        2500
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.1q5WueynSiQESMbT"
+    },
+    {
+      "_id": "6D6xlsi0s6Kf83vb",
+      "c": [
+        800,
+        2500,
+        800,
+        500
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.6D6xlsi0s6Kf83vb"
+    },
+    {
+      "_id": "3x7OyfaUetJNyz2s",
+      "c": [
+        975,
+        2200,
+        1000,
+        2174
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.3x7OyfaUetJNyz2s"
+    },
+    {
+      "_id": "v2d1xEAcvr1ONRYo",
+      "c": [
+        1000,
+        2174,
+        1022,
+        2200
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.v2d1xEAcvr1ONRYo"
+    },
+    {
+      "_id": "BG9W2UMJIG7uWgUj",
+      "c": [
+        1022,
+        2200,
+        999,
+        2227
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.BG9W2UMJIG7uWgUj"
+    },
+    {
+      "_id": "sf1u0sRL8vRJxGnb",
+      "c": [
+        999,
+        2227,
+        974,
+        2200
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.sf1u0sRL8vRJxGnb"
+    },
+    {
+      "_id": "jMjjY0FTNAN4wgqs",
+      "c": [
+        1403,
+        2177,
+        1425,
+        2203
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.jMjjY0FTNAN4wgqs"
+    },
+    {
+      "_id": "aksFyke9NxMuBBKV",
+      "c": [
+        1425,
+        2203,
+        1402,
+        2230
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.aksFyke9NxMuBBKV"
+    },
+    {
+      "_id": "b8rg5TlaZV6A6aH9",
+      "c": [
+        1378,
+        2203,
+        1403,
+        2177
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.b8rg5TlaZV6A6aH9"
+    },
+    {
+      "_id": "lUYHJf2Yq7RjzV68",
+      "c": [
+        1402,
+        2230,
+        1377,
+        2203
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.lUYHJf2Yq7RjzV68"
+    },
+    {
+      "_id": "ZtEvRK0m817jRvxi",
+      "c": [
+        1901,
+        2169,
+        1923,
+        2195
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.ZtEvRK0m817jRvxi"
+    },
+    {
+      "_id": "mdG9W8IUIPHHMHrC",
+      "c": [
+        1923,
+        2195,
+        1900,
+        2222
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.mdG9W8IUIPHHMHrC"
+    },
+    {
+      "_id": "MY9xD7us25vFvkGP",
+      "c": [
+        1876,
+        2195,
+        1901,
+        2169
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.MY9xD7us25vFvkGP"
+    },
+    {
+      "_id": "6ornELeK3nQdUCwV",
+      "c": [
+        1900,
+        2222,
+        1875,
+        2195
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!tz5EaQypoa6S4PkK.6ornELeK3nQdUCwV"
+    }
+  ],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "weather": "",
+  "folder": "JmcGCHKY2xJWPkXP",
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.troubles-in-otari-remade-maps.troubles-in-otari-maps-remake-by-narchy.GGRoJbdIpFgTgo1t"
+    },
+    "scene-packer": {
+      "hash": "30bacb7f01f110ac9c9e73a4a3e51f0d8ec3c899"
+    },
+    "cf": null
+  },
+  "ownership": {
+    "M22dRxbECY9l1C6E": 3,
+    "default": 0,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "background": {
+    "src": "modules/troubles-in-otari-remade-maps/maps/shroon-background.webp",
+    "offsetX": 0,
+    "offsetY": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+  },
+  "foregroundElevation": null,
+  "journalEntryPage": null,
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1697493028488,
+    "modifiedTime": 1697493028488,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "_key": "!scenes!tz5EaQypoa6S4PkK"
+}

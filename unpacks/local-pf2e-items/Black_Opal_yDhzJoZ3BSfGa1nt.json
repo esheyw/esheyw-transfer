@@ -1,0 +1,101 @@
+{
+  "name": "Black Opal",
+  "type": "treasure",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A shiny, mostly-black stone, with diverse colours just under the surface.</p>\n<p> </p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.878,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.837,
+        "foundry": "11.313",
+        "system": "5.7.3"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "weight": {
+      "value": "-"
+    },
+    "equippedBulk": {
+      "value": ""
+    },
+    "price": {
+      "value": {
+        "gp": 15
+      }
+    },
+    "equipped": {
+      "carryType": "worn"
+    },
+    "stackGroup": null,
+    "negateBulk": {
+      "value": "0"
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "Unusual Treasure",
+        "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": ""
+    }
+  },
+  "img": "Assets/items/black-opal-gem-679976b.jpg",
+  "folder": "patF1AmNkB12sAu7",
+  "sort": 250000,
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1682882554525,
+    "modifiedTime": 1698035485335,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "yDhzJoZ3BSfGa1nt",
+  "_key": "!items!yDhzJoZ3BSfGa1nt"
+}

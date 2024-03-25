@@ -1,0 +1,27 @@
+{
+  "name": "Select Item Dialog initial attempt",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "//Check for exactly one selected token\nif (canvas.tokens.controlled.length > 1) return ui.notifications.error(\"Please select only a single token.\");\nconst token = canvas.tokens.controlled[0] ?? game.user.character?.getActiveTokens()[0];\nif (!token) return ui.notifications.error(\"Please select exactly one token or assign yourself a character.\");\n\nconst itemType = 'weapon'\nconst filteredItems = actor.items.filter(i => i.type === itemType) ?? [];\nif (!filteredItems.length) return ui.notifications.error(`Selected actor lacks any items of type \"${itemType}\"`);\n\nconst style = `<style>\n.esheyw-sel-item-dialog {\n  display: flex;\n  flex-direction: column;\n  gap: 5px;\n}\n.esheyw-sel-item-dialog img {\n  width: 40px;\n  height: 40px;\n  margin: 2px;\n}\n.esheyw-sel-item-dialog button {\n  display: flex;\n  flex-direction: row;\n  justify-content: left;\n  padding: 0px;\n  margin: 0px;\n}\n.esheyw-sel-item-dialog button span.item-name {\n  margin: auto;\n  margin-left: 2%;\n}\n.esheyw-sel-item-dialog button span.dupe-id {\n  text-align: right;\n  margin: auto;\n  margin-right: 2%;\n  color: var(--color-cool-3);\n}\n</style>`;\nconst names = {};\nconst preDupeItems = [];\nfor (const item of filteredItems) {\n  names[item.name] ??= 0;\n  names[item.name]++;\n  preDupeItems.push({\n    id: item._id,\n    name: item.name,\n    dupe: false,\n    img: item.img,\n  });\n}\nconst items = preDupeItems.map(i => {\n  if (names[i.name] > 1) i.dupe = true;\n  return i;\n});\nconst templateData = {\n  items,\n  style,  \n};\nlet x = ''\nconst template = `\n{{{style}}}\n<form class=\"esheyw-sel-item-dialog\">\n    {{#each items as |item|}}\n      <button type=\"button\" value=\"{{item.id}}\">\n        <img src=\"{{item.img}}\" alt=\"{{item.name}}\" data-tooltip=\"{{item.id}}\" />\n        <span class=\"item-name\">{{item.name}}</span>{{#if item.dupe}}<span class=\"dupe-id\">({{item.id}})</span>{{/if}}\n      </button>\n    {{/each}}\n<form>\n`;\nconst dialogContent = (Handlebars.compile(template))(templateData);\n\nfunction renderCallback(html) {\n  const buttons = html.querySelectorAll(\"button\");\n  for (const button of buttons) {\n    button.addEventListener('click', async (event) => {\n      const appID = event.target.closest('.dialog').dataset.appid;\n      const app = ui.windows[appID];\n      console.warn(app)\n    });\n  }\n}\n\nconst dialogData = {\n  title: `Select an Item`,\n  content: dialogContent,\n  render: renderCallback,\n  close: () => {},\n  buttons: {\n    \n  },\n};\nconst dialogOptions = {\n  left: 100,\n  top: 100,\n  width: 300,\n  jQuery: false,\n};\nconsole.warn(\n  dialogContent,\n  // filteredItems,\n);\nconst dialog = await Dialog.wait(dialogData, dialogOptions);\ndialog.render(true)",
+  "folder": "S2KSaNQJxdlRFkyr",
+  "ownership": {
+    "default": 0,
+    "v0RvORcwGexWLCjc": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1699658021595,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "i7U4R4CBbjmVEXzb",
+  "sort": 700000,
+  "_key": "!macros!i7U4R4CBbjmVEXzb"
+}

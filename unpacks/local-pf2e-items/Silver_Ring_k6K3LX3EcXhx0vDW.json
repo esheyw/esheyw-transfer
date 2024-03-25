@@ -1,0 +1,106 @@
+{
+  "name": "Silver Ring",
+  "type": "treasure",
+  "img": "icons/equipment/finger/ring-band-engraved-scrolls-grey.webp",
+  "effects": [],
+  "folder": "patF1AmNkB12sAu7",
+  "sort": 100000,
+  "flags": {
+    "core": {
+      "sourceId": "Actor.VJ8t4Uo2LSiRSuFz.Item.rEiHZko0wszvqCNZ"
+    }
+  },
+  "system": {
+    "description": {
+      "gm": "",
+      "value": ""
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.878,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.837,
+        "foundry": "11.313",
+        "system": "5.7.3"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "weight": {
+      "value": "-"
+    },
+    "equippedBulk": {
+      "value": ""
+    },
+    "price": {
+      "value": {
+        "gp": 5
+      }
+    },
+    "equipped": {
+      "carryType": "worn"
+    },
+    "stackGroup": "",
+    "negateBulk": {
+      "value": "0"
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "Unusual Treasure",
+        "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": ""
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "xOsB85wXI0jTccyw": 3,
+    "ANMn0vc4t8tYEOWE": 3
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1674100185576,
+    "modifiedTime": 1698035485335,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "k6K3LX3EcXhx0vDW",
+  "_key": "!items!k6K3LX3EcXhx0vDW"
+}

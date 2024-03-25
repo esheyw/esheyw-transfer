@@ -1,0 +1,24 @@
+{
+  "name": "Food",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "description": "",
+  "sort": 100000,
+  "color": "#b8df4e",
+  "flags": {
+    "df-qol": {
+      "colour": "#0F6909"
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1698035475897,
+    "modifiedTime": 1698035475921,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "BPscaJY0B3kdSMBY",
+  "_key": "!folders!BPscaJY0B3kdSMBY"
+}

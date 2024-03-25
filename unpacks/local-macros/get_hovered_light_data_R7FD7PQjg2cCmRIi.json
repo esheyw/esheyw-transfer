@@ -1,0 +1,27 @@
+{
+  "name": "get hovered light data",
+  "type": "script",
+  "scope": "global",
+  "_id": "R7FD7PQjg2cCmRIi",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "const lightData = canvas.lighting.hover?.document?.config ?? 'No Light Hovered!';\nconsole.warn(lightData)",
+  "folder": "S2KSaNQJxdlRFkyr",
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1702152012271,
+    "modifiedTime": 1702343866245,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "v0RvORcwGexWLCjc": 3
+  },
+  "_key": "!macros!R7FD7PQjg2cCmRIi"
+}

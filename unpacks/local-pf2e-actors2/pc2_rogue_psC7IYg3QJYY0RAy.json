@@ -1,0 +1,1452 @@
+{
+  "prototypeToken": {
+    "displayName": 20,
+    "displayBars": 20,
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": true,
+        "autoscale": true
+      }
+    },
+    "height": 1,
+    "width": 1,
+    "actorLink": true,
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "name": "pc2 rogue",
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/pf2e/icons/default-icons/character.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "detectionModes": [],
+    "randomImg": false
+  },
+  "name": "pc2 rogue",
+  "type": "character",
+  "ownership": {
+    "default": 1,
+    "v0RvORcwGexWLCjc": 3
+  },
+  "effects": [],
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 20,
+        "temp": 0
+      },
+      "initiative": {
+        "statistic": "perception"
+      },
+      "speed": {
+        "value": 25,
+        "otherSpeeds": []
+      }
+    },
+    "details": {
+      "level": {
+        "value": 1
+      },
+      "biography": {
+        "appearance": "",
+        "backstory": "",
+        "birthPlace": "",
+        "attitude": "",
+        "beliefs": "",
+        "anathema": "",
+        "edicts": "",
+        "likes": "",
+        "dislikes": "",
+        "catchphrases": "",
+        "campaignNotes": "",
+        "allies": "",
+        "enemies": "",
+        "organizations": "",
+        "visibility": {
+          "appearance": true,
+          "backstory": false,
+          "personality": false,
+          "campaign": false
+        }
+      },
+      "keyability": {
+        "value": "str"
+      },
+      "xp": {
+        "value": 0,
+        "min": 0,
+        "max": 1000,
+        "pct": 0
+      },
+      "age": {
+        "value": ""
+      },
+      "height": {
+        "value": ""
+      },
+      "weight": {
+        "value": ""
+      },
+      "gender": {
+        "value": ""
+      },
+      "ethnicity": {
+        "value": ""
+      },
+      "nationality": {
+        "value": ""
+      },
+      "alliance": "party"
+    },
+    "traits": {
+      "value": [],
+      "senses": [],
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "resources": {
+      "heroPoints": {
+        "value": 1,
+        "max": 3
+      }
+    },
+    "_migration": {
+      "version": 0.904,
+      "previous": {
+        "schema": 0.903,
+        "foundry": "11.315",
+        "system": "5.10.5"
+      }
+    },
+    "abilities": null,
+    "skills": {
+      "acr": {
+        "rank": 0
+      },
+      "arc": {
+        "rank": 0
+      },
+      "ath": {
+        "rank": 0
+      },
+      "cra": {
+        "rank": 0
+      },
+      "dec": {
+        "rank": 0
+      },
+      "dip": {
+        "rank": 0
+      },
+      "itm": {
+        "rank": 0
+      },
+      "med": {
+        "rank": 0
+      },
+      "nat": {
+        "rank": 0
+      },
+      "occ": {
+        "rank": 0
+      },
+      "prf": {
+        "rank": 0
+      },
+      "rel": {
+        "rank": 0
+      },
+      "soc": {
+        "rank": 0
+      },
+      "ste": {
+        "rank": 0
+      },
+      "sur": {
+        "rank": 0
+      },
+      "thi": {
+        "rank": 0
+      }
+    },
+    "pfs": {
+      "playerNumber": null,
+      "characterNumber": null,
+      "levelBump": false,
+      "currentFaction": "EA",
+      "school": null,
+      "reputation": {
+        "EA": null,
+        "GA": null,
+        "HH": null,
+        "VS": null,
+        "RO": null,
+        "VW": null
+      }
+    },
+    "exploration": [],
+    "build": {
+      "attributes": {
+        "boosts": {
+          "1": [
+            "cha",
+            "con",
+            "dex",
+            "int"
+          ]
+        }
+      }
+    }
+  },
+  "_id": "psC7IYg3QJYY0RAy",
+  "img": "systems/pf2e/icons/default-icons/character.svg",
+  "items": [
+    {
+      "img": "systems/pf2e/icons/default-icons/alternatives/ancestries/orc.svg",
+      "name": "Orc",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><em>Orcs are forged in the fires of violence and conflict, often from the moment they are born. As they live lives that are frequently cut brutally short, orcs revel in testing their strength against worthy foes, whether by challenging a higher-ranking member of their community for dominance or raiding a neighboring settlement. Many orcs seek glory as soon as they can walk and carry a blade or club, taming wild beasts or hunting deadly monsters.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.45SK8rdbbxvEHfMn.JournalEntryPage.GCxhDyf1ZNlLiDKZ]{Orc}</em></p>"
+        },
+        "rules": [],
+        "slug": "orc",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "humanoid",
+            "orc"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Advanced Player's Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "hp": 10,
+        "size": "med",
+        "reach": 5,
+        "speed": 25,
+        "boosts": {
+          "0": {
+            "value": [
+              "str"
+            ]
+          },
+          "1": {
+            "value": []
+          },
+          "2": {
+            "value": [
+              "str",
+              "dex",
+              "con",
+              "int",
+              "wis",
+              "cha"
+            ],
+            "selected": "dex"
+          }
+        },
+        "flaws": {
+          "0": {
+            "value": []
+          }
+        },
+        "languages": {
+          "value": [
+            "common",
+            "orcish"
+          ],
+          "custom": ""
+        },
+        "additionalLanguages": {
+          "count": 0,
+          "value": [
+            "goblin",
+            "jotun",
+            "petran",
+            "sakvroth"
+          ],
+          "custom": ""
+        },
+        "items": {},
+        "vision": "darkvision"
+      },
+      "type": "ancestry",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.ancestries.Item.lSGWXjcbOa6O5fTx"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.3",
+        "coreVersion": "11.313",
+        "createdTime": 1698003123040,
+        "modifiedTime": 1698003270683,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "wXGEZm8syqphkKYO",
+      "_key": "!actors.items!psC7IYg3QJYY0RAy.wXGEZm8syqphkKYO"
+    },
+    {
+      "img": "systems/pf2e/icons/features/ancestry/rainfall-orc.webp",
+      "name": "Rainfall Orc",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You were born in a rain forest with only tangles of trees providing protection from torrential rainstorms and flash floods. You've learned to move adeptly through jungle terrain and resist the various ailments common in humid environs.</p>\n<p>You gain a +2 circumstance bonus to Athletics checks to @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climb} or @UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{Swim} and a +1 circumstance bonus to saving throws against diseases.</p>"
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "label": "Rainfall Orc (Climb or Swim)",
+            "predicate": [
+              {
+                "or": [
+                  "action:climb",
+                  "action:swim"
+                ]
+              }
+            ],
+            "selector": "athletics",
+            "type": "circumstance",
+            "value": 2
+          },
+          {
+            "key": "FlatModifier",
+            "label": "Rainfall Orc (vs. disease)",
+            "predicate": [
+              "disease"
+            ],
+            "selector": "saving-throw",
+            "type": "circumstance",
+            "value": 1
+          }
+        ],
+        "slug": "rainfall-orc",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Advanced Player's Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "ancestry": {
+          "name": "Orc",
+          "slug": "orc",
+          "uuid": "Compendium.pf2e.ancestries.Item.lSGWXjcbOa6O5fTx"
+        }
+      },
+      "type": "heritage",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.heritages.Item.dwKCwwtWetvPmJks"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.3",
+        "coreVersion": "11.313",
+        "createdTime": 1698003143648,
+        "modifiedTime": 1698003143648,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "1CEpLa7AXH7sZStJ",
+      "_key": "!actors.items!psC7IYg3QJYY0RAy.1CEpLa7AXH7sZStJ"
+    },
+    {
+      "img": "systems/pf2e/icons/classes/rogue.webp",
+      "name": "Rogue",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><em>You are skilled and opportunistic. Using your sharp wits and quick reactions, you take advantage of your opponents' missteps and strike where it hurts most. You play a dangerous game, seeking thrills and testing your skills, and likely don't care much for any laws that happen to get in your way. While the path of every rogue is unique and riddled with danger, the one thing you all share in common is the breadth and depth of your skills.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.u4qPrDRBagxG9wj8]{Rogue}</em></p>"
+        },
+        "rules": [
+          {
+            "key": "ActiveEffectLike",
+            "mode": "upgrade",
+            "path": "system.proficiencies.attacks.weapon-base-rapier.rank",
+            "value": 1
+          },
+          {
+            "key": "ActiveEffectLike",
+            "mode": "upgrade",
+            "path": "system.proficiencies.attacks.weapon-base-sap.rank",
+            "value": 1
+          },
+          {
+            "key": "ActiveEffectLike",
+            "mode": "upgrade",
+            "path": "system.proficiencies.attacks.weapon-base-shortbow.rank",
+            "value": 1
+          },
+          {
+            "key": "ActiveEffectLike",
+            "mode": "upgrade",
+            "path": "system.proficiencies.attacks.weapon-base-shortsword.rank",
+            "value": 1
+          }
+        ],
+        "slug": "rogue",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "keyAbility": {
+          "value": [
+            "dex"
+          ],
+          "selected": "dex"
+        },
+        "items": {
+          "0kdn2": {
+            "img": "systems/pf2e/icons/features/classes/weapon-specialization.webp",
+            "level": 7,
+            "name": "Weapon Specialization",
+            "uuid": "Compendium.pf2e.classfeatures.Item.9EqIasqfI8YIM3Pt"
+          },
+          "1nwhg": {
+            "img": "systems/pf2e/icons/features/classes/weapon-tricks.webp",
+            "level": 5,
+            "name": "Weapon Tricks",
+            "uuid": "Compendium.pf2e.classfeatures.Item.v8UNEJR5IDKi8yqa"
+          },
+          "1zn3l": {
+            "img": "icons/equipment/chest/breastplate-rivited-red.webp",
+            "level": 19,
+            "name": "Light Armor Mastery",
+            "uuid": "Compendium.pf2e.classfeatures.Item.SHpjmM4A3Sw4GgDz"
+          },
+          "2xl4q": {
+            "img": "systems/pf2e/icons/features/classes/master-tricks.webp",
+            "level": 13,
+            "name": "Master Tricks",
+            "uuid": "Compendium.pf2e.classfeatures.Item.myvcir1LEkaVxOlE"
+          },
+          "4al2i": {
+            "img": "systems/pf2e/icons/features/classes/greater-weapon-specialization.webp",
+            "level": 15,
+            "name": "Greater Weapon Specialization",
+            "uuid": "Compendium.pf2e.classfeatures.Item.Z7HX6TeFsaup7Dx9"
+          },
+          "517c6": {
+            "img": "icons/magic/life/cross-explosion-burst-green.webp",
+            "level": 9,
+            "name": "Great Fortitude",
+            "uuid": "Compendium.pf2e.classfeatures.Item.F57Na5VxfBp56kke"
+          },
+          "6ddtr": {
+            "img": "systems/pf2e/icons/features/classes/light-armor-expertise.webp",
+            "level": 13,
+            "name": "Light Armor Expertise",
+            "uuid": "Compendium.pf2e.classfeatures.Item.pZYkb12t5DSwtts7"
+          },
+          "8tar0": {
+            "img": "systems/pf2e/icons/features/classes/incredible-sense.webp",
+            "level": 13,
+            "name": "Incredible Senses",
+            "uuid": "Compendium.pf2e.classfeatures.Item.nLwPMPLRne1HnL00"
+          },
+          "cifjd": {
+            "img": "systems/pf2e/icons/features/classes/rogue-expertise.webp",
+            "level": 11,
+            "name": "Rogue Expertise",
+            "uuid": "Compendium.pf2e.classfeatures.Item.f3Dh32EU4VsHu01b"
+          },
+          "e9ikq": {
+            "img": "systems/pf2e/icons/features/classes/sneak-attack.webp",
+            "level": 1,
+            "name": "Sneak Attack",
+            "uuid": "Compendium.pf2e.classfeatures.Item.j1JE61quDxdge4mg"
+          },
+          "g1dmk": {
+            "img": "systems/pf2e/icons/features/classes/improved-evasion.webp",
+            "level": 13,
+            "name": "Improved Evasion",
+            "uuid": "Compendium.pf2e.classfeatures.Item.L5D0NwFXdLiVSnk5"
+          },
+          "hg9s4": {
+            "img": "systems/pf2e/icons/features/classes/slippery-mind.webp",
+            "level": 17,
+            "name": "Slippery Mind",
+            "uuid": "Compendium.pf2e.classfeatures.Item.xmZ7oeTDcQVXegUP"
+          },
+          "i70zj": {
+            "img": "systems/pf2e/icons/features/classes/vigilant-senses.webp",
+            "level": 7,
+            "name": "Vigilant Senses",
+            "uuid": "Compendium.pf2e.classfeatures.Item.0npO4rPscGm0dX13"
+          },
+          "nilrb": {
+            "img": "icons/skills/melee/strike-sword-blood-red.webp",
+            "level": 9,
+            "name": "Debilitating Strikes",
+            "uuid": "Compendium.pf2e.classfeatures.Item.9SruVg2lZpNaYLOB"
+          },
+          "odz8x": {
+            "img": "icons/magic/symbols/question-stone-yellow.webp",
+            "level": 1,
+            "name": "Rogue's Racket",
+            "uuid": "Compendium.pf2e.classfeatures.Item.uGuCGQvUmioFV2Bd"
+          },
+          "pfjze": {
+            "img": "icons/skills/wounds/injury-triple-slash-bleed.webp",
+            "level": 15,
+            "name": "Double Debilitation",
+            "uuid": "Compendium.pf2e.classfeatures.Item.W1FkMHYVDg3yTU5r"
+          },
+          "qx6de": {
+            "img": "systems/pf2e/icons/features/classes/surprice-attack.webp",
+            "level": 1,
+            "name": "Surprise Attack",
+            "uuid": "Compendium.pf2e.classfeatures.Item.w6rMqmGzhUahdnA7"
+          },
+          "sjjee": {
+            "img": "icons/environment/settlement/watchtower-silhouette-yellow.webp",
+            "level": 3,
+            "name": "Deny Advantage",
+            "uuid": "Compendium.pf2e.classfeatures.Item.PNpmVmD21zViDtGC"
+          },
+          "thypm": {
+            "img": "icons/skills/melee/weapons-crossed-swords-yellow-teal.webp",
+            "level": 19,
+            "name": "Master Strike",
+            "uuid": "Compendium.pf2e.classfeatures.Item.SUUdWG0t33VKa5q4"
+          },
+          "xn3fx": {
+            "img": "icons/magic/fire/explosion-embers-evade-silhouette.webp",
+            "level": 7,
+            "name": "Evasion",
+            "uuid": "Compendium.pf2e.classfeatures.Item.MV6XIuAgN9uSA0Da"
+          }
+        },
+        "hp": 8,
+        "trainedSkills": {
+          "value": [
+            "ste"
+          ],
+          "additional": 7
+        },
+        "perception": 2,
+        "savingThrows": {
+          "fortitude": 1,
+          "reflex": 2,
+          "will": 2
+        },
+        "attacks": {
+          "simple": 1,
+          "martial": 0,
+          "advanced": 0,
+          "unarmed": 1,
+          "other": {
+            "name": "Rapier, Sap, Shortbow, and Shortsword",
+            "rank": 1
+          }
+        },
+        "defenses": {
+          "unarmored": 1,
+          "light": 1,
+          "medium": 0,
+          "heavy": 0
+        },
+        "spellcasting": 0,
+        "ancestryFeatLevels": {
+          "value": [
+            1,
+            5,
+            9,
+            13,
+            17
+          ]
+        },
+        "classFeatLevels": {
+          "value": [
+            1,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18,
+            20
+          ]
+        },
+        "generalFeatLevels": {
+          "value": [
+            3,
+            7,
+            11,
+            15,
+            19
+          ]
+        },
+        "skillFeatLevels": {
+          "value": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ]
+        },
+        "skillIncreaseLevels": {
+          "value": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ]
+        }
+      },
+      "type": "class",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classes.Item.LO9STvskJemPkiAI"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.3",
+        "coreVersion": "11.313",
+        "createdTime": 1698003153001,
+        "modifiedTime": 1698003267484,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "pUytI5a1ocApmCTm",
+      "_key": "!actors.items!psC7IYg3QJYY0RAy.pUytI5a1ocApmCTm"
+    },
+    {
+      "img": "systems/pf2e/icons/default-icons/background.svg",
+      "name": "Criminal",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>As an unscrupulous independent or as a member of an underworld organization, you lived a life of crime. You might have become an adventurer to seek redemption, to escape the law, or simply to get access to bigger and better loot.</p>\n<p>Choose two ability boosts. One must be to <strong>Dexterity</strong> or <strong>Intelligence</strong>, and one is a free ability boost.</p>\n<p>You're trained in the Stealth skill and the Underworld Lore skill. You gain the @UUID[Compendium.pf2e.feats-srd.Item.t3btih0O5RUwWynt]{Experienced Smuggler} skill feat.</p>"
+        },
+        "rules": [],
+        "slug": "criminal",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "boosts": {
+          "0": {
+            "value": [
+              "dex",
+              "int"
+            ],
+            "selected": "dex"
+          },
+          "1": {
+            "value": [
+              "cha",
+              "con",
+              "dex",
+              "int",
+              "str",
+              "wis"
+            ],
+            "selected": "con"
+          }
+        },
+        "items": {
+          "19grf": {
+            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "level": 1,
+            "name": "Experienced Smuggler",
+            "uuid": "Compendium.pf2e.feats-srd.Item.t3btih0O5RUwWynt"
+          }
+        },
+        "trainedLore": "Underworld Lore",
+        "trainedSkills": {
+          "value": [
+            "ste"
+          ]
+        }
+      },
+      "type": "background",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.backgrounds.Item.9lVw1JGl5ser6626"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.3",
+        "coreVersion": "11.313",
+        "createdTime": 1698003248453,
+        "modifiedTime": 1698003274631,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "uSlIqorR5zrZwcoJ",
+      "_key": "!actors.items!psC7IYg3QJYY0RAy.uSlIqorR5zrZwcoJ"
+    },
+    {
+      "img": "icons/sundries/documents/document-sealed-signatures-red.webp",
+      "name": "Rogue's Racket",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>As you started on the path of the rogue, you began to develop your own style to pursue your illicit activities. Your racket shapes your rogue techniques and the way you approach a job, while building your reputation in the criminal underworld for a certain type of work. A client with deep pockets might even hire a team of rogues for a particular heist, each specializing in a different racket, in order to cover all the bases. Choose a rogue's racket.</p>"
+        },
+        "rules": [
+          {
+            "adjustName": false,
+            "choices": {
+              "filter": [
+                "item:tag:rogue-racket"
+              ]
+            },
+            "flag": "roguesRacket",
+            "key": "ChoiceSet",
+            "prompt": "PF2E.SpecificRule.Rogue.Racket.Prompt",
+            "selection": "Compendium.pf2e.classfeatures.Item.wAh2riuFRzz0edPl"
+          },
+          {
+            "key": "GrantItem",
+            "uuid": "{item|flags.pf2e.rulesSelections.roguesRacket}",
+            "flag": "thief"
+          }
+        ],
+        "slug": "rogues-racket",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "rogue"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": "pUytI5a1ocApmCTm"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.uGuCGQvUmioFV2Bd"
+        },
+        "pf2e": {
+          "itemGrants": {
+            "thief": {
+              "id": "5lE1wzfoHaBgWjAL",
+              "onDelete": "detach"
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.3",
+        "coreVersion": "11.313",
+        "createdTime": 1698003263792,
+        "modifiedTime": 1698003263792,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "G6UMday9grPWpCRo",
+      "_key": "!actors.items!psC7IYg3QJYY0RAy.G6UMday9grPWpCRo"
+    },
+    {
+      "img": "systems/pf2e/icons/features/classes/sneak-attack.webp",
+      "name": "Sneak Attack",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>When your enemy can't properly defend itself, you take advantage to deal extra damage. If you Strike a creature that has the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition with an agile or finesse melee weapon, an agile or finesse unarmed attack, a ranged weapon attack, or a ranged unarmed attack, you deal an extra 1d6 precision damage. For a ranged attack with a thrown melee weapon, that weapon must also be agile or finesse.</p>\n<p>As your rogue level increases, so does the number of damage dice for your sneak attack. Increase the number of dice by one at 5th, 11th, and 17th levels.</p>"
+        },
+        "rules": [
+          {
+            "key": "ActiveEffectLike",
+            "mode": "override",
+            "path": "flags.pf2e.sneakAttackDamage.number",
+            "predicate": [
+              "class:rogue"
+            ],
+            "value": "ternary(lt(@actor.level, 5), 1, ternary(lt(@actor.level, 11), 2, ternary(lt(@actor.level, 17), 3, 4)))"
+          },
+          {
+            "key": "ActiveEffectLike",
+            "mode": "override",
+            "path": "flags.pf2e.sneakAttackDamage.faces",
+            "predicate": [
+              "class:rogue"
+            ],
+            "value": 6
+          },
+          {
+            "category": "precision",
+            "diceNumber": "@actor.flags.pf2e.sneakAttackDamage.number",
+            "dieSize": "d{actor|flags.pf2e.sneakAttackDamage.faces}",
+            "key": "DamageDice",
+            "predicate": [
+              "target:condition:off-guard",
+              {
+                "or": [
+                  "item:trait:agile",
+                  "item:trait:finesse",
+                  {
+                    "and": [
+                      "item:ranged",
+                      {
+                        "not": "item:thrown-melee"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selector": "strike-damage"
+          },
+          {
+            "domain": "all",
+            "key": "RollOption",
+            "label": "PF2E.SpecificRule.TOTMToggle.OffGuard",
+            "option": "target:condition:off-guard",
+            "toggleable": "totm"
+          }
+        ],
+        "slug": "sneak-attack",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "rogue"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": "pUytI5a1ocApmCTm"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.j1JE61quDxdge4mg"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.3",
+        "coreVersion": "11.313",
+        "createdTime": 1698003263792,
+        "modifiedTime": 1698003263792,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "QFIGEhnJs9C9nTpj",
+      "_key": "!actors.items!psC7IYg3QJYY0RAy.QFIGEhnJs9C9nTpj"
+    },
+    {
+      "img": "systems/pf2e/icons/features/classes/surprice-attack.webp",
+      "name": "Surprise Attack",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You spring into combat faster than foes can react. On the first round of combat, if you roll Deception or Stealth for initiative, creatures that haven't acted are off-guard to you.</p>"
+        },
+        "rules": [
+          {
+            "key": "EphemeralEffect",
+            "predicate": [
+              "encounter:round:1",
+              {
+                "lt": [
+                  "self:participant:initiative:rank",
+                  "target:participant:initiative:rank"
+                ]
+              },
+              {
+                "or": [
+                  "self:participant:initiative:stat:deception",
+                  "self:participant:initiative:stat:stealth"
+                ]
+              }
+            ],
+            "selectors": [
+              "strike-attack-roll",
+              "spell-attack-roll",
+              "strike-damage",
+              "attack-spell-damage"
+            ],
+            "uuid": "Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg"
+          }
+        ],
+        "slug": "surprise-attack",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "rogue"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": "pUytI5a1ocApmCTm"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.w6rMqmGzhUahdnA7"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.3",
+        "coreVersion": "11.313",
+        "createdTime": 1698003263792,
+        "modifiedTime": 1698003263792,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "vomJffBSYP6nZTsi",
+      "_key": "!actors.items!psC7IYg3QJYY0RAy.vomJffBSYP6nZTsi"
+    },
+    {
+      "img": "systems/pf2e/icons/features/classes/thief.webp",
+      "name": "Thief",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Nothing beats the thrill of taking something that belongs to someone else, especially if you can do so completely unnoticed. You might be a pickpocket working the streets, a cat burglar sneaking through windows and escaping via rooftops, or a safecracker breaking into carefully guarded vaults. You might even work as a consultant, testing clients' defenses by trying to steal something precious.</p>\n<p>When a fight breaks out, you prefer swift, lightweight weapons, and you strike where it hurts. When you attack with a finesse melee weapon, you can add your Dexterity modifier to damage rolls instead of your Strength modifier.</p>\n<p>You are trained in Thievery.</p>"
+        },
+        "rules": [
+          {
+            "ability": "dex",
+            "key": "FlatModifier",
+            "predicate": [
+              "item:melee",
+              "item:trait:finesse",
+              {
+                "not": "item:category:unarmed"
+              }
+            ],
+            "selector": "strike-damage",
+            "type": "ability"
+          },
+          {
+            "key": "ActiveEffectLike",
+            "mode": "upgrade",
+            "path": "system.skills.thi.rank",
+            "value": 1
+          }
+        ],
+        "slug": "thief",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [
+            "rogue-racket"
+          ],
+          "value": [
+            "rogue"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": null
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.wAh2riuFRzz0edPl"
+        },
+        "pf2e": {
+          "grantedBy": {
+            "id": "G6UMday9grPWpCRo",
+            "onDelete": "cascade"
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.3",
+        "coreVersion": "11.313",
+        "createdTime": 1698003263792,
+        "modifiedTime": 1698003263792,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "5lE1wzfoHaBgWjAL",
+      "_key": "!actors.items!psC7IYg3QJYY0RAy.5lE1wzfoHaBgWjAL"
+    },
+    {
+      "img": "icons/weapons/daggers/dagger-straight-blue.webp",
+      "name": "Dagger",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+        },
+        "rules": [],
+        "slug": "dagger",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "agile",
+            "finesse",
+            "thrown-10",
+            "versatile-s"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": "dagger",
+        "bulk": {
+          "value": 0.1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "sp": 2
+          }
+        },
+        "equipped": {
+          "carryType": "held",
+          "invested": null,
+          "handsHeld": 1
+        },
+        "stackGroup": null,
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand",
+          "canBeAmmo": false
+        },
+        "category": "simple",
+        "group": "knife",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d4",
+          "damageType": "piercing",
+          "persistent": null
+        },
+        "bonusDamage": {
+          "value": 0
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": null,
+        "reload": {
+          "value": "-"
+        },
+        "potencyRune": {
+          "value": null
+        },
+        "strikingRune": {
+          "value": null
+        },
+        "specific": {
+          "value": false
+        },
+        "propertyRune1": {
+          "value": null
+        },
+        "propertyRune2": {
+          "value": null
+        },
+        "propertyRune3": {
+          "value": null
+        },
+        "propertyRune4": {
+          "value": null
+        },
+        "property1": {
+          "value": "",
+          "dice": 0,
+          "die": "",
+          "damageType": "",
+          "critDice": 0,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": ""
+        }
+      },
+      "type": "weapon",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.rQWaJhI5Bko5x14Z"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.3",
+        "coreVersion": "11.313",
+        "createdTime": 1698025992291,
+        "modifiedTime": 1698026015205,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "IOGmPIiyCDP4w9Ne",
+      "_key": "!actors.items!psC7IYg3QJYY0RAy.IOGmPIiyCDP4w9Ne"
+    }
+  ],
+  "folder": "MROyES4sNYRYgPWd",
+  "sort": 2500000,
+  "flags": {
+    "pf2e": {
+      "freeCrafting": false
+    },
+    "world": {
+      "backupPartyOriginalID": "s0mpTCEoXU3ms9Lu"
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1698003114692,
+    "modifiedTime": 1701979653758,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_key": "!actors!psC7IYg3QJYY0RAy"
+}

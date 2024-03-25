@@ -1,0 +1,67 @@
+{
+  "name": "Tricky Magic",
+  "type": "action",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You weave magic in unique and confounding ways. If your next action is to Cast a Spell which requires a spell attack roll, attempt a check using the skill matching the spell’s  tradition, comparing the result to the Perception DC of the spell’s target.</p>\n<p>@UUID[Macro.nFMVsGy8rjOqxFDq]{Tricky Magic}</p>\n<hr />\n<p><strong>Critical Success</strong>: The magic is especially confounding, opening up many avenues to sneak magic past the target’s defenses. The target is off-guard against your spell attacks for 1 minute.</p>\n<p>@UUID[Item.YZmEmzLsgLVe7rmn]{Tricky Magic (Critical Success)}</p>\n<p><strong>Success</strong>: Your strange casting catches the target off guard. The target is off-guard against the spell attack.</p>\n<p><strong>Critical Failure</strong>: You get lost in the intricacies of your own magic. You become off-guard until the start of your next turn.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.878,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.837,
+        "foundry": "11.313",
+        "system": "5.7.3"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "metamagic"
+      ]
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": null,
+    "actions": {
+      "value": 1
+    },
+    "requirements": {
+      "value": ""
+    },
+    "trigger": {
+      "value": ""
+    },
+    "deathNote": false
+  },
+  "img": "systems/pf2e/icons/actions/OneAction.webp",
+  "effects": [],
+  "folder": "FWDReABYAPJHTjJJ",
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1677724987449,
+    "modifiedTime": 1698035469406,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "UjUmMSzTYZs9SzUb",
+  "_key": "!items!UjUmMSzTYZs9SzUb"
+}

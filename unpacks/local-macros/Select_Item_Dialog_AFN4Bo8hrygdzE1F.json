@@ -1,0 +1,27 @@
+{
+  "name": "Select Item Dialog",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/material-symbols-0.4.5/sharp/text_select_move_forward_word-fill.svg",
+  "command": "//Check for exactly one selected token\nif (canvas.tokens.controlled.length > 1) return ui.notifications.error(\"Please select only a single token.\");\nconst token = canvas.tokens.controlled[0] ?? game.user.character?.getActiveTokens()[0];\nif (!token) return ui.notifications.error(\"Please select exactly one token or assign yourself a character.\");\nconst actor = token.actor;\nasync function pickItemFromActor(actor, {itemType=null, otherFilter=null, held=false, title=null, dialogOptions={}}={})  {  \n  const prependArticle = (word) => {\n    const vowels = 'aeiou';\n    const article = (vowels.indexOf(word[0].toLowerCase()) > -1) ? 'an ' : 'a ';\n    return article + word; \n  }\n  const PHYSICAL_TYPES = [\n    \"armor\",\n    \"consumable\",\n    \"equipment\",\n    \"treasure\",\n    \"weapon\"\n  ]\n  let filteredItems;\n  if (!itemType || itemType === 'physical') {\n    itemType ??= \"physical (default)\";\n    filteredItems = actor.items.filter(i => PHYSICAL_TYPES.includes(i.type)) ?? [];    \n  } else {\n    filteredItems = actor.items.filter(i => i.type === itemType) ?? [];\n  }\n  if (!filteredItems.length) {\n    ui.notifications.error(`Selected actor lacks any items of type \"${itemType}\"`);\n    return null;\n  }\n  \n  if (otherFilter && typeof otherFilter === 'function') {\n    filteredItems = filteredItems.filter(otherFilter);\n    if (!filteredItems.length) {\n      ui.notifications.error(`Provided filter \n      ${otherFilter.toString()}\n      produced no items.`);\n      return null;\n    } \n  }\n  \n  if (held) {\n    filteredItems = filteredItems.filter(i => i.system.equipped.carryType === 'held') ?? [];\n    if (!filteredItems.length) {\n      ui.notifications.error(`Selected actor is not holding any matching items.`);\n      return null;\n    }\n  }\n   \n  \n  const style = `<style>\n  .esheyw-sel-item-dialog .dialog-buttons {\n    display: flex;\n    flex-direction: column;\n    gap: 5px;\n  }\n  .esheyw-sel-item-dialog img {\n    width: 40px;\n    height: 40px;\n    margin: auto 2px auto 2px;\n  }\n  .esheyw-sel-item-dialog button {\n    display: flex;\n    flex-direction: row;\n    justify-content: left;\n    padding: 0px;\n    margin: 0px;\n  }\n  .esheyw-sel-item-dialog button span.item-name {\n    text-align: left;\n    margin: auto;\n    margin-left: 2%;\n  }\n  .esheyw-sel-item-dialog button span.dupe-id {\n    font-size: 0.7em\n    text-align: right;\n    margin: auto;\n    margin-right: 2%;\n    color: var(--color-cool-3);\n  }\n  </style>`;\n  const names = {};\n  for (const item of filteredItems) {\n    names[item.name] ??= 0;\n    names[item.name]++;\n  }\n  const buttons = Object.fromEntries(filteredItems.map(i => {\n    let label = `<img src=\"${i.img}\" alt=\"${i.name}\" data-tooltip=\"${i.id}\" /><span class=\"item-name\">${i.name}</span>`;\n    if (names[i.name] > 1) {\n      label += `<span class=\"dupe-id\">(${i.id})</span>`;\n    }\n    return [i.id, { label }];\n  }));\n  title ??= `Select ${prependArticle(itemType)}`.titleCase();\n  const dialogData = {\n    title,\n    content: style,\n    close: () => {return null;},\n    buttons,\n  };\n  dialogOptions = mergeObject({\n      classes: [\"esheyw-sel-item-dialog\"]\n    },\n    dialogOptions\n  );\n  const response = await Dialog.wait(dialogData, dialogOptions);\n  return actor.items.get(response);\n}\nconst r = await pickItemFromActor(actor, {\n  itemType:'weapon',\n  // otherFilter: (i) => i.slug === 'longsword',\n  // held: true,\n  dialogOptions: {\n    top: 100,\n    left: 100,\n    // width: 300,\n  },\n});\nconsole.warn(r)",
+  "folder": "MUrlWbVP9uj79bSv",
+  "ownership": {
+    "default": 0,
+    "v0RvORcwGexWLCjc": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1699818424810,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "AFN4Bo8hrygdzE1F",
+  "sort": 400000,
+  "_key": "!macros!AFN4Bo8hrygdzE1F"
+}

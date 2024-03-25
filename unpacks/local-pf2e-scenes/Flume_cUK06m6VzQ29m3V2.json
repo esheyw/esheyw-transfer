@@ -1,0 +1,3074 @@
+{
+  "_id": "cUK06m6VzQ29m3V2",
+  "name": "Flume",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "",
+  "foreground": "modules/troubles-in-otari-remade-maps/maps/flume-foreground.webp",
+  "thumb": "modules/esheyw-transfer/assets/scenes/local-pf2e-scenes-cUK06m6VzQ29m3V2-thumb.png",
+  "width": 2000,
+  "height": 3000,
+  "padding": 0.25,
+  "initial": {},
+  "backgroundColor": "#999999",
+  "grid": {
+    "size": 100,
+    "type": 1,
+    "color": "#000000",
+    "alpha": 0.2,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fogExploration": true,
+  "fogReset": 1647131450534,
+  "globalLight": false,
+  "globalLightThreshold": null,
+  "darkness": 0,
+  "drawings": [],
+  "tokens": [
+    {
+      "_id": "ZHfJcPJBwAvu81Z5",
+      "name": "Hell Hound",
+      "displayName": 20,
+      "actorId": "q7zwBobHtyR8oaHP",
+      "actorLink": false,
+      "width": 1,
+      "height": 1,
+      "x": 900,
+      "y": 2300,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "attenuation": 0.5
+      },
+      "disposition": -1,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": true,
+          "autoscale": true
+        }
+      },
+      "delta": {
+        "items": [
+          {
+            "_id": "IvEp0FjtG1bxA4Xw",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Jaws",
+            "sort": 100000,
+            "type": "melee",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "magical"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "weaponType": {
+                "value": "melee"
+              },
+              "attack": {
+                "value": ""
+              },
+              "damageRolls": {
+                "0v2ncc7nfh9n5myhoyt4": {
+                  "damage": "1d8+4",
+                  "damageType": "piercing"
+                },
+                "lo40csa3zl4zythhvae1": {
+                  "damage": "1d6",
+                  "damageType": "evil"
+                },
+                "9hz2gveqa2icaip33z0e": {
+                  "damage": "1d6",
+                  "damageType": "fire"
+                }
+              },
+              "bonus": {
+                "value": 13
+              },
+              "attackEffects": {
+                "value": [],
+                "custom": ""
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.427-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.ZHfJcPJBwAvu81Z5.ZHfJcPJBwAvu81Z5.IvEp0FjtG1bxA4Xw"
+          },
+          {
+            "_id": "rGgLU8CkJNTv7kLC",
+            "effects": [],
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6"
+              }
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Darkvision",
+            "sort": 200000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+              },
+              "rules": [],
+              "slug": "darkvision",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.427-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "interaction"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.ZHfJcPJBwAvu81Z5.ZHfJcPJBwAvu81Z5.rGgLU8CkJNTv7kLC"
+          },
+          {
+            "_id": "eG1Bf18XYFvkALTq",
+            "effects": [],
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.rqfnQ5VHT5hxm25r"
+              }
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Scent (Imprecise) 60 feet",
+            "sort": 300000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+              },
+              "rules": [],
+              "slug": "scent",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.427-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "interaction"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.ZHfJcPJBwAvu81Z5.ZHfJcPJBwAvu81Z5.eG1Bf18XYFvkALTq"
+          },
+          {
+            "_id": "GsQeeSV97T6FPvoY",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Breath Weapon",
+            "sort": 400000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>The hell hound breathes flames that deal [[/r {4d6}[fire]]]{4d6 fire damage} to all creatures in a @Template[type:cone|distance:15] (@Check[type:reflex|dc:19|basic:true] save).</p>\n<p data-visibility=\"gm\">The hell hound can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}. If the hell hound would take fire damage or be targeted by a fire effect, its Breath Weapon recharges.</p>"
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "divine",
+                  "evocation",
+                  "fire"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "action"
+              },
+              "category": null,
+              "actions": {
+                "value": 1
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.427-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "offensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.ZHfJcPJBwAvu81Z5.ZHfJcPJBwAvu81Z5.GsQeeSV97T6FPvoY"
+          },
+          {
+            "_id": "rsf65nRppJQQ5As2",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Acrobatics",
+            "sort": 500000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 8
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.427-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.ZHfJcPJBwAvu81Z5.ZHfJcPJBwAvu81Z5.rsf65nRppJQQ5As2"
+          },
+          {
+            "_id": "vl8E7kqn8lcTLqOq",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Athletics",
+            "sort": 600000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 9
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.427-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.ZHfJcPJBwAvu81Z5.ZHfJcPJBwAvu81Z5.vl8E7kqn8lcTLqOq"
+          },
+          {
+            "_id": "uKKzpwykp5llS8TG",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Stealth",
+            "sort": 700000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 8
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.427-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.ZHfJcPJBwAvu81Z5.ZHfJcPJBwAvu81Z5.uKKzpwykp5llS8TG"
+          },
+          {
+            "_id": "kXXO2coSLlDjiCDu",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Survival",
+            "sort": 800000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [
+                {
+                  "key": "FlatModifier",
+                  "label": "PF2E.SkillVariant.Track",
+                  "predicate": {
+                    "all": [
+                      "action:track"
+                    ]
+                  },
+                  "selector": "survival",
+                  "value": 2
+                }
+              ],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 9
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.427-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "variants": {
+                "0": {
+                  "label": "+11 to Track",
+                  "options": "action:track"
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.ZHfJcPJBwAvu81Z5.ZHfJcPJBwAvu81Z5.kXXO2coSLlDjiCDu"
+          }
+        ],
+        "system": {
+          "traits": {
+            "dv": [
+              {
+                "type": "cold",
+                "value": 5
+              }
+            ]
+          },
+          "schema": {
+            "version": 0.769,
+            "lastMigration": {
+              "datetime": "2022-09-05T18:25:32.427-07:00",
+              "version": {
+                "schema": 0.751,
+                "foundry": "9.280",
+                "system": "3.13.6"
+              }
+            }
+          }
+        },
+        "_id": "ZHfJcPJBwAvu81Z5",
+        "name": null,
+        "type": null,
+        "img": null,
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!cUK06m6VzQ29m3V2.ZHfJcPJBwAvu81Z5.ZHfJcPJBwAvu81Z5"
+      },
+      "texture": {
+        "src": "pdftofoundry/menace-under-otari/hell-hound.token.webp",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!cUK06m6VzQ29m3V2.ZHfJcPJBwAvu81Z5"
+    },
+    {
+      "_id": "mv4rt7XrOQiT8Ggf",
+      "name": "Hell Hound",
+      "displayName": 20,
+      "actorId": "q7zwBobHtyR8oaHP",
+      "actorLink": false,
+      "width": 1,
+      "height": 1,
+      "x": 1100,
+      "y": 2300,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "attenuation": 0.5
+      },
+      "disposition": -1,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": true,
+          "autoscale": true
+        }
+      },
+      "delta": {
+        "items": [
+          {
+            "_id": "IvEp0FjtG1bxA4Xw",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Jaws",
+            "sort": 100000,
+            "type": "melee",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "magical"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "weaponType": {
+                "value": "melee"
+              },
+              "attack": {
+                "value": ""
+              },
+              "damageRolls": {
+                "0v2ncc7nfh9n5myhoyt4": {
+                  "damage": "1d8+4",
+                  "damageType": "piercing"
+                },
+                "lo40csa3zl4zythhvae1": {
+                  "damage": "1d6",
+                  "damageType": "evil"
+                },
+                "9hz2gveqa2icaip33z0e": {
+                  "damage": "1d6",
+                  "damageType": "fire"
+                }
+              },
+              "bonus": {
+                "value": 13
+              },
+              "attackEffects": {
+                "value": [],
+                "custom": ""
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.440-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.mv4rt7XrOQiT8Ggf.mv4rt7XrOQiT8Ggf.IvEp0FjtG1bxA4Xw"
+          },
+          {
+            "_id": "rGgLU8CkJNTv7kLC",
+            "effects": [],
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6"
+              }
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Darkvision",
+            "sort": 200000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+              },
+              "rules": [],
+              "slug": "darkvision",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.440-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "interaction"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.mv4rt7XrOQiT8Ggf.mv4rt7XrOQiT8Ggf.rGgLU8CkJNTv7kLC"
+          },
+          {
+            "_id": "eG1Bf18XYFvkALTq",
+            "effects": [],
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.rqfnQ5VHT5hxm25r"
+              }
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Scent (Imprecise) 60 feet",
+            "sort": 300000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+              },
+              "rules": [],
+              "slug": "scent",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.440-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "interaction"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.mv4rt7XrOQiT8Ggf.mv4rt7XrOQiT8Ggf.eG1Bf18XYFvkALTq"
+          },
+          {
+            "_id": "GsQeeSV97T6FPvoY",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Breath Weapon",
+            "sort": 400000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>The hell hound breathes flames that deal [[/r {4d6}[fire]]]{4d6 fire damage} to all creatures in a @Template[type:cone|distance:15] (@Check[type:reflex|dc:19|basic:true] save).</p>\n<p data-visibility=\"gm\">The hell hound can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}. If the hell hound would take fire damage or be targeted by a fire effect, its Breath Weapon recharges.</p>"
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "divine",
+                  "evocation",
+                  "fire"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "action"
+              },
+              "category": null,
+              "actions": {
+                "value": 1
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.440-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "offensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.mv4rt7XrOQiT8Ggf.mv4rt7XrOQiT8Ggf.GsQeeSV97T6FPvoY"
+          },
+          {
+            "_id": "rsf65nRppJQQ5As2",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Acrobatics",
+            "sort": 500000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 8
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.440-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.mv4rt7XrOQiT8Ggf.mv4rt7XrOQiT8Ggf.rsf65nRppJQQ5As2"
+          },
+          {
+            "_id": "vl8E7kqn8lcTLqOq",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Athletics",
+            "sort": 600000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 9
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.440-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.mv4rt7XrOQiT8Ggf.mv4rt7XrOQiT8Ggf.vl8E7kqn8lcTLqOq"
+          },
+          {
+            "_id": "uKKzpwykp5llS8TG",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Stealth",
+            "sort": 700000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 8
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.440-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.mv4rt7XrOQiT8Ggf.mv4rt7XrOQiT8Ggf.uKKzpwykp5llS8TG"
+          },
+          {
+            "_id": "kXXO2coSLlDjiCDu",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Survival",
+            "sort": 800000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [
+                {
+                  "key": "FlatModifier",
+                  "label": "PF2E.SkillVariant.Track",
+                  "predicate": {
+                    "all": [
+                      "action:track"
+                    ]
+                  },
+                  "selector": "survival",
+                  "value": 2
+                }
+              ],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 9
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.440-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "variants": {
+                "0": {
+                  "label": "+11 to Track",
+                  "options": "action:track"
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.mv4rt7XrOQiT8Ggf.mv4rt7XrOQiT8Ggf.kXXO2coSLlDjiCDu"
+          }
+        ],
+        "system": {
+          "traits": {
+            "dv": [
+              {
+                "type": "cold",
+                "value": 5
+              }
+            ]
+          },
+          "schema": {
+            "version": 0.769,
+            "lastMigration": {
+              "datetime": "2022-09-05T18:25:32.440-07:00",
+              "version": {
+                "schema": 0.751,
+                "foundry": "9.280",
+                "system": "3.13.6"
+              }
+            }
+          }
+        },
+        "_id": "mv4rt7XrOQiT8Ggf",
+        "name": null,
+        "type": null,
+        "img": null,
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!cUK06m6VzQ29m3V2.mv4rt7XrOQiT8Ggf.mv4rt7XrOQiT8Ggf"
+      },
+      "texture": {
+        "src": "pdftofoundry/menace-under-otari/hell-hound.token.webp",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!cUK06m6VzQ29m3V2.mv4rt7XrOQiT8Ggf"
+    },
+    {
+      "_id": "s74uMuulsJ6SpSrZ",
+      "name": "Bugbear Marauder",
+      "displayName": 20,
+      "actorId": "2h5BuIcz6fkSxz2F",
+      "actorLink": false,
+      "width": 1,
+      "height": 1,
+      "x": 1000,
+      "y": 2200,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "attenuation": 0.5
+      },
+      "disposition": -1,
+      "displayBars": 40,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": true,
+          "autoscale": true
+        }
+      },
+      "delta": {
+        "flags": {
+          "item-piles": {}
+        },
+        "items": [
+          {
+            "_id": "gJy2fu4NDgZ8ZWkH",
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.equipment-srd.LJdbVTOZog39EEbi"
+              }
+            },
+            "img": "systems/pf2e/icons/equipment/weapons/longsword.webp",
+            "name": "Longsword",
+            "sort": 100000,
+            "type": "weapon",
+            "effects": [],
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>Longswords can be one‑edged or two‑edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+              },
+              "rules": [],
+              "slug": "longsword",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "versatile-p"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "level": {
+                "value": 0
+              },
+              "quantity": 1,
+              "baseItem": "longsword",
+              "hp": {
+                "value": 0,
+                "max": 0,
+                "brokenThreshold": 0
+              },
+              "hardness": 0,
+              "weight": {
+                "value": "1"
+              },
+              "equippedBulk": {
+                "value": ""
+              },
+              "price": {
+                "value": {
+                  "gp": 1
+                }
+              },
+              "equipped": {
+                "carryType": "worn",
+                "invested": null,
+                "handsHeld": 0
+              },
+              "stackGroup": null,
+              "negateBulk": {
+                "value": "0"
+              },
+              "containerId": null,
+              "size": "med",
+              "material": {
+                "type": null,
+                "grade": null
+              },
+              "identification": {
+                "status": "identified",
+                "unidentified": {
+                  "name": "",
+                  "img": "",
+                  "data": {
+                    "description": {
+                      "value": ""
+                    }
+                  }
+                },
+                "misidentified": {}
+              },
+              "usage": {
+                "value": "held-in-one-hand"
+              },
+              "category": "martial",
+              "group": "sword",
+              "bonus": {
+                "value": 0
+              },
+              "damage": {
+                "dice": 1,
+                "die": "d8",
+                "damageType": "slashing",
+                "persistent": null,
+                "value": ""
+              },
+              "bonusDamage": {
+                "value": 0
+              },
+              "splashDamage": {
+                "value": 0
+              },
+              "range": null,
+              "reload": {
+                "value": ""
+              },
+              "potencyRune": {
+                "value": null
+              },
+              "strikingRune": {
+                "value": ""
+              },
+              "specific": {
+                "value": false
+              },
+              "propertyRune1": {
+                "value": ""
+              },
+              "propertyRune2": {
+                "value": ""
+              },
+              "propertyRune3": {
+                "value": ""
+              },
+              "propertyRune4": {
+                "value": ""
+              },
+              "property1": {
+                "value": "",
+                "dice": null,
+                "die": "",
+                "damageType": "",
+                "critDice": null,
+                "critDie": "",
+                "critDamage": "",
+                "critDamageType": "",
+                "criticalConditionType": "",
+                "criticalConditionValue": null,
+                "strikeConditionType": "",
+                "strikeConditionValue": null
+              },
+              "source": {
+                "value": "Pathfinder Core Rulebook"
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.460-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "preciousMaterial": {
+                "value": ""
+              },
+              "preciousMaterialGrade": {
+                "value": ""
+              },
+              "MAP": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ.s74uMuulsJ6SpSrZ.gJy2fu4NDgZ8ZWkH"
+          },
+          {
+            "_id": "jq0eLu6Dy70tC4cR",
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.equipment-srd.JNt7GmLCCVz5BiEI"
+              }
+            },
+            "img": "systems/pf2e/icons/equipment/weapons/javelin.webp",
+            "name": "Javelin",
+            "sort": 200000,
+            "type": "weapon",
+            "effects": [],
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>This thin spear is well balanced for throwing but is not designed for melee use.</p>"
+              },
+              "rules": [],
+              "slug": "javelin",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "thrown"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "level": {
+                "value": 0
+              },
+              "quantity": 3,
+              "baseItem": "javelin",
+              "hp": {
+                "value": 0,
+                "max": 0,
+                "brokenThreshold": 0
+              },
+              "hardness": 0,
+              "weight": {
+                "value": "L"
+              },
+              "equippedBulk": {
+                "value": ""
+              },
+              "price": {
+                "value": {
+                  "sp": 1
+                }
+              },
+              "equipped": {
+                "carryType": "worn",
+                "invested": null,
+                "handsHeld": 0
+              },
+              "stackGroup": null,
+              "negateBulk": {
+                "value": "0"
+              },
+              "containerId": null,
+              "size": "med",
+              "material": {
+                "type": null,
+                "grade": null
+              },
+              "identification": {
+                "status": "identified",
+                "unidentified": {
+                  "name": "",
+                  "img": "",
+                  "data": {
+                    "description": {
+                      "value": ""
+                    }
+                  }
+                },
+                "misidentified": {}
+              },
+              "usage": {
+                "value": "held-in-one-hand"
+              },
+              "category": "simple",
+              "group": "dart",
+              "bonus": {
+                "value": 0
+              },
+              "damage": {
+                "dice": 1,
+                "die": "d6",
+                "damageType": "piercing",
+                "persistent": null,
+                "value": ""
+              },
+              "bonusDamage": {
+                "value": 0
+              },
+              "splashDamage": {
+                "value": 0
+              },
+              "range": 30,
+              "reload": {
+                "value": "-"
+              },
+              "potencyRune": {
+                "value": 0
+              },
+              "strikingRune": {
+                "value": ""
+              },
+              "specific": {
+                "value": false
+              },
+              "propertyRune1": {
+                "value": null
+              },
+              "propertyRune2": {
+                "value": null
+              },
+              "propertyRune3": {
+                "value": null
+              },
+              "propertyRune4": {
+                "value": null
+              },
+              "property1": {
+                "value": "",
+                "dice": null,
+                "die": "",
+                "damageType": "",
+                "critDice": null,
+                "critDie": "",
+                "critDamage": "",
+                "critDamageType": "",
+                "criticalConditionType": "",
+                "criticalConditionValue": null,
+                "strikeConditionType": "",
+                "strikeConditionValue": null
+              },
+              "source": {
+                "value": "Pathfinder Core Rulebook"
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.460-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "preciousMaterial": {
+                "value": null
+              },
+              "preciousMaterialGrade": {
+                "value": null
+              },
+              "MAP": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ.s74uMuulsJ6SpSrZ.jq0eLu6Dy70tC4cR"
+          },
+          {
+            "_id": "HpLQLRLKLeDW6V4C",
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.equipment-srd.4tIVTg9wj56RrveA"
+              }
+            },
+            "img": "systems/pf2e/icons/equipment/armor/leather-armor.webp",
+            "name": "Leather Armor",
+            "sort": 300000,
+            "type": "armor",
+            "effects": [],
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>A mix of flexible and molded boiled leather, a suit of this type of armor provides some protection with maximum flexibility.</p>"
+              },
+              "rules": [],
+              "slug": "leather-armor",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "level": {
+                "value": 0
+              },
+              "quantity": 1,
+              "baseItem": "leather-armor",
+              "hp": {
+                "value": 0,
+                "max": 0,
+                "brokenThreshold": 0
+              },
+              "hardness": 0,
+              "weight": {
+                "value": "2"
+              },
+              "equippedBulk": {
+                "value": "1"
+              },
+              "price": {
+                "value": {
+                  "gp": 2
+                }
+              },
+              "equipped": {
+                "carryType": "worn",
+                "invested": null,
+                "handsHeld": 0,
+                "inSlot": false
+              },
+              "stackGroup": null,
+              "negateBulk": {
+                "value": "0"
+              },
+              "containerId": null,
+              "size": "med",
+              "material": {
+                "type": null,
+                "grade": null
+              },
+              "identification": {
+                "status": "identified",
+                "unidentified": {
+                  "name": "",
+                  "img": "",
+                  "data": {
+                    "description": {
+                      "value": ""
+                    }
+                  }
+                },
+                "misidentified": {}
+              },
+              "usage": {
+                "value": "wornarmor"
+              },
+              "category": "light",
+              "group": "leather",
+              "acBonus": 0,
+              "strength": {
+                "value": 10
+              },
+              "dexCap": 0,
+              "checkPenalty": null,
+              "speedPenalty": null,
+              "potencyRune": {
+                "value": 0
+              },
+              "resiliencyRune": {
+                "value": ""
+              },
+              "propertyRune1": {
+                "value": ""
+              },
+              "propertyRune2": {
+                "value": ""
+              },
+              "propertyRune3": {
+                "value": ""
+              },
+              "propertyRune4": {
+                "value": ""
+              },
+              "source": {
+                "value": "Pathfinder Core Rulebook"
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.460-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "preciousMaterial": {
+                "value": null
+              },
+              "preciousMaterialGrade": {
+                "value": null
+              },
+              "armor": {
+                "value": 1
+              },
+              "dex": {
+                "value": 4
+              },
+              "check": {
+                "value": -1
+              },
+              "speed": {
+                "value": 0
+              },
+              "potency": {}
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ.s74uMuulsJ6SpSrZ.HpLQLRLKLeDW6V4C"
+          },
+          {
+            "_id": "wBuoAb6EXYtmwPmo",
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Longsword",
+            "sort": 400000,
+            "type": "melee",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "versatile-p"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "weaponType": {
+                "value": "melee"
+              },
+              "attack": {
+                "value": ""
+              },
+              "damageRolls": {
+                "pidocwei3jucfwumv6jz": {
+                  "damage": "1d8+4",
+                  "damageType": "slashing"
+                }
+              },
+              "bonus": {
+                "value": 10
+              },
+              "attackEffects": {
+                "value": []
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.460-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ.s74uMuulsJ6SpSrZ.wBuoAb6EXYtmwPmo"
+          },
+          {
+            "_id": "z7UOnDRw58SSvHLY",
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Fist",
+            "sort": 500000,
+            "type": "melee",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "agile",
+                  "nonlethal"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "weaponType": {
+                "value": "melee"
+              },
+              "attack": {
+                "value": ""
+              },
+              "damageRolls": {
+                "pwe7jceuzboyccm3lh2v": {
+                  "damage": "1d4+4",
+                  "damageType": "bludgeoning"
+                }
+              },
+              "bonus": {
+                "value": 10
+              },
+              "attackEffects": {
+                "value": []
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.460-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ.s74uMuulsJ6SpSrZ.z7UOnDRw58SSvHLY"
+          },
+          {
+            "_id": "UMd6rwUlzKFS3lvJ",
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Javelin",
+            "sort": 600000,
+            "type": "melee",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "thrown-30"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "weaponType": {
+                "value": "ranged"
+              },
+              "attack": {
+                "value": ""
+              },
+              "damageRolls": {
+                "9evxfejyjmhlpo5ht4w5": {
+                  "damage": "1d6+4",
+                  "damageType": "piercing"
+                }
+              },
+              "bonus": {
+                "value": 8
+              },
+              "attackEffects": {
+                "value": []
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.460-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ.s74uMuulsJ6SpSrZ.UMd6rwUlzKFS3lvJ"
+          },
+          {
+            "_id": "zB9K73iLWTgjLCcD",
+            "flags": {
+              "core": {
+                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6"
+              }
+            },
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Darkvision",
+            "sort": 700000,
+            "type": "action",
+            "effects": [],
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
+              },
+              "rules": [],
+              "slug": "darkvision",
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.460-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "interaction"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ.s74uMuulsJ6SpSrZ.zB9K73iLWTgjLCcD"
+          },
+          {
+            "_id": "4X35RqwbbNonQGmu",
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Bushwhack",
+            "sort": 800000,
+            "type": "action",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>The bugbear marauder Strides up to 10 feet and attempts to @Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} a creature that can't see them and doesn't know where they are. If the bugbear succeeds, they also deal fist damage to that creature.</p>"
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "action"
+              },
+              "category": null,
+              "actions": {
+                "value": 1
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.460-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "offensive"
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ.s74uMuulsJ6SpSrZ.4X35RqwbbNonQGmu"
+          },
+          {
+            "_id": "gWaefOduUwNI4Dt8",
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Mauler",
+            "sort": 900000,
+            "type": "action",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>The bugbear marauder gains a +3 circumstance bonus to damage rolls against creatures they have @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}.</p>"
+              },
+              "rules": [
+                {
+                  "key": "FlatModifier",
+                  "predicate": {
+                    "all": [
+                      "mauler"
+                    ]
+                  },
+                  "selector": "strike-damage",
+                  "type": "circumstance",
+                  "value": 3
+                },
+                {
+                  "domain": "damage-roll",
+                  "key": "RollOption",
+                  "option": "mauler",
+                  "toggleable": true
+                }
+              ],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.460-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "offensive"
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ.s74uMuulsJ6SpSrZ.gWaefOduUwNI4Dt8"
+          },
+          {
+            "_id": "42UriXHdzsDYRQuL",
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Acrobatics",
+            "sort": 1000000,
+            "type": "lore",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 6
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.460-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ.s74uMuulsJ6SpSrZ.42UriXHdzsDYRQuL"
+          },
+          {
+            "_id": "NBFggwO0VpIHPLbM",
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Athletics",
+            "sort": 1100000,
+            "type": "lore",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 7
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.460-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ.s74uMuulsJ6SpSrZ.NBFggwO0VpIHPLbM"
+          },
+          {
+            "_id": "5VD1ibunpOdDQjYH",
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Intimidation",
+            "sort": 1200000,
+            "type": "lore",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 4
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.460-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ.s74uMuulsJ6SpSrZ.5VD1ibunpOdDQjYH"
+          },
+          {
+            "_id": "ervbtaR0Sre8gLHF",
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Stealth",
+            "sort": 1300000,
+            "type": "lore",
+            "effects": [],
+            "folder": null,
+            "flags": {},
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 6
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:32.460-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ.s74uMuulsJ6SpSrZ.ervbtaR0Sre8gLHF"
+          }
+        ],
+        "system": {
+          "schema": {
+            "version": 0.769,
+            "lastMigration": {
+              "datetime": "2022-09-05T18:25:32.460-07:00",
+              "version": {
+                "schema": 0.751,
+                "foundry": "9.280",
+                "system": "3.13.6"
+              }
+            }
+          }
+        },
+        "_id": "s74uMuulsJ6SpSrZ",
+        "name": null,
+        "type": null,
+        "img": null,
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "_key": "!scenes.tokens.delta!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ.s74uMuulsJ6SpSrZ"
+      },
+      "texture": {
+        "src": "pdftofoundry/troubles-in-otari/bugbear-marauder.token.webp",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!cUK06m6VzQ29m3V2.s74uMuulsJ6SpSrZ"
+    }
+  ],
+  "lights": [],
+  "notes": [
+    {
+      "_id": "Shzy97pUpLJFKs9y",
+      "entryId": "wL1bQOTyRs1n6pI1",
+      "x": 1150,
+      "y": 1550,
+      "iconSize": 40,
+      "fontFamily": "Signika",
+      "fontSize": 48,
+      "textAnchor": 1,
+      "textColor": "#FFFFFF",
+      "flags": {},
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "pageId": null,
+      "global": false,
+      "_key": "!scenes.notes!cUK06m6VzQ29m3V2.Shzy97pUpLJFKs9y"
+    }
+  ],
+  "sounds": [],
+  "templates": [],
+  "tiles": [
+    {
+      "_id": "tg6JCWT6ci1vQG1a",
+      "width": 400,
+      "height": 300,
+      "x": 1000,
+      "y": 2200,
+      "z": 100,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "overhead": true,
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0.2,
+        "radius": null
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {},
+      "texture": {
+        "src": "modules/troubles-in-otari-remade-maps/maps/flume-tile-flume.webp",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "roof": false,
+      "_key": "!scenes.tiles!cUK06m6VzQ29m3V2.tg6JCWT6ci1vQG1a"
+    },
+    {
+      "_id": "J9IhdD3tXvtvegof",
+      "width": 700,
+      "height": 800,
+      "x": 1800,
+      "y": 800,
+      "z": 100,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "overhead": true,
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0.2,
+        "radius": null
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {},
+      "texture": {
+        "src": "modules/troubles-in-otari-remade-maps/maps/flume-tile-tree1.webp",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "roof": false,
+      "_key": "!scenes.tiles!cUK06m6VzQ29m3V2.J9IhdD3tXvtvegof"
+    },
+    {
+      "_id": "s33pE3N661vhJiMo",
+      "width": 700,
+      "height": 800,
+      "x": 1800,
+      "y": 3000,
+      "z": 100,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "overhead": true,
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0.2,
+        "radius": null
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {},
+      "texture": {
+        "src": "modules/troubles-in-otari-remade-maps/maps/flume-tile-tree2.webp",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "roof": false,
+      "_key": "!scenes.tiles!cUK06m6VzQ29m3V2.s33pE3N661vhJiMo"
+    }
+  ],
+  "walls": [],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "weather": "",
+  "folder": "JmcGCHKY2xJWPkXP",
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.troubles-in-otari-remade-maps.troubles-in-otari-maps-remake-by-narchy.GCihgpeWoqRb24pO"
+    },
+    "scene-packer": {
+      "hash": "ffc507f216892139cfc8ae374f253c90f643fe50"
+    },
+    "token-attacher": {},
+    "cf": null
+  },
+  "ownership": {
+    "M22dRxbECY9l1C6E": 3,
+    "default": 0,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "background": {
+    "src": "modules/troubles-in-otari-remade-maps/maps/flume-background.webp",
+    "offsetX": 0,
+    "offsetY": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+  },
+  "foregroundElevation": null,
+  "journalEntryPage": null,
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1697493028488,
+    "modifiedTime": 1697493028488,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "_key": "!scenes!cUK06m6VzQ29m3V2"
+}

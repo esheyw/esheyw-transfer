@@ -1,0 +1,34 @@
+{
+  "name": "Copy Main PCs to Testing PCs Locally",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/game-icons-net/blackbackground/duality.svg",
+  "command": "const mainPCs = game.folders.getName(\"AV PCs\").contents;\nconst testingFolder = game.folders.getName(\"TESTING\");\n\nfor (const a of mainPCs) {\n    \n    const testingName = 'Testing ' + a.prototypeToken.name;\n    const testingActor = game.actors.getName(testingName);\n    const testingID = testingActor.id\n    \n    const clone = a.clone({\n        name: testingName,\n        folder: testingFolder.id \n    }).toObject()\n    clone.items = clone.items.filter(i=> !(['effect', 'condition'].includes(i.type)));\n    clone.system.attributes.hp.value = a.hitPoints.max;\n\n    const updateoptions = {\n        diff: false, \n        recursive: false \n    };\n    cwarn(await testingActor.update(clone,updateoptions));         \n}",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": true,
+      "runForSpecificUser": ""
+    },
+    "cf": null,
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1677973296323,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "GanYtdPFUz4nR7tU",
+  "folder": "MUrlWbVP9uj79bSv",
+  "sort": 1300000,
+  "ownership": {
+    "default": 0,
+    "holNdNHqtCzAbMAV": 3,
+    "717Xeq3czH96acPF": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_key": "!macros!GanYtdPFUz4nR7tU"
+}

@@ -1,0 +1,34 @@
+{
+  "type": "script",
+  "name": "Toggle All Torches",
+  "img": "Assets/icons/game-icons-net/whitebackground/primitive-torch.svg",
+  "command": "//Check for one or more selected tokens:\nconst tokens = canvas.tokens.controlled;\nif (!tokens.length) {\n    const charToken = game.user.character?.getActiveTokens()[0];\n    if (!charToken) {\n        ui.notifications.warn(\"Please select at least one token or assign yourself a character.\");\n        return;\n    } else {\n        tokens.push(charToken);\n    }\n}\ntokens.forEach(t => {\n     t.actor.toggleRollOption(\"all\", \"lit-torch\");    \n});",
+  "author": "v0RvORcwGexWLCjc",
+  "scope": "global",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForSpecificUser": ""
+    },
+    "cf": null,
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1680990759819,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "p3g4ibvVyVtrMItw",
+  "folder": "MUrlWbVP9uj79bSv",
+  "sort": 2600000,
+  "ownership": {
+    "default": 0,
+    "holNdNHqtCzAbMAV": 3,
+    "717Xeq3czH96acPF": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_key": "!macros!p3g4ibvVyVtrMItw"
+}

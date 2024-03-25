@@ -1,0 +1,27 @@
+{
+  "name": "old fascinating performance from reddit",
+  "type": "script",
+  "scope": "global",
+  "_id": "nVTGUAN7Nk80DOKX",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "// Save roll results\nconst roll = await actor.skills.performance.roll({async:true, createMessage: false});\n\n// Find targets\nconst targets = game.user.targets;\n\nif (!actor || targets.size < 1) {\n  ui.notifications.warn(\"You must have an actor selected, and at least one actor targeted\");\n} else {\n\n  // Check results against each target\n  targets.forEach((target) => {\n\n    // Get target will DC\n    let target_will_dc = target.actor.saves.will.dc.value ? target.actor.saves.will.dc.value : target.actor.system.saves.will.dc.value;\n\n    // Find level of success\n    // 3: Critical Success\n    // 2: Success\n    // 1: Failure\n    // 0: Critical Failure\n    let success_level = SuccessLevel(roll.dice[0].results[0].result, roll.total, target_will_dc);\n\n    // Set success messages in an array for quick access\n    const success_message = [\n      \"<span style='color: rgb(128, 0, 0);'>Critical Failure</span>\",\n      \"<span style='color: rgb(128, 0, 0);'>Failure</span>\",\n      \"<span style='color: rgb(0, 0, 256);'>Success</span>\",\n      \"<span style='color: rgb(0, 128, 0);'>Critical Success</span>\"\n    ];\n\n    // Set success message using success level in the array\n    const result_html = success_message[success_level];\n\n    // Add Panache message if successful\n    const penache_html = success_level >= 2 ? `<section class=\"roll-note\"><strong>Battledancer</strong> You gain <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.pf2e.feat-effects.uBJsxCzNhje8m8jj\" data-id=\"uBJsxCzNhje8m8jj\" data-type=\"Item\" data-pack=\"pf2e.feat-effects\" data-tooltip=\"Effect Item\" data-args=\"\"><i class=\"fas fa-suitcase\"></i>Panache</a>.</section>` : ``;\n\n    // Add Fascinated messagee if critically successful\n    // Doesn't take into account Focused Fascination but you can change the check from a 3 to a 2 below if you want a quick hack for that\n    const fascinated_html = success_level >= 3 ? `<section class=\"roll-note\"><strong>${target.name}</strong> You gain <a class=\"content-link\" draggable=\"true\" data-uuid=\"Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg\" data-id=\"AdPVz7rbaVSRxHFg\" data-type=\"Item\" data-pack=\"pf2e.conditionitems\" data-tooltip=\"Condition Item\" data-args=\"\" aria-describedby=\"tooltip\"><i class=\"fas fa-suitcase\"></i>Fascinated</a>.</section>` : ``;\n\n    // Creates html to display resulte\n    let results_html = `<div class=\"message-header\">\n      <span class=\"flavor-text\">\n        <span class=\"pf2-icon larger\">A</span>\n        <strong>Fascinating Performance</strong><span> (Total: <i class=\"fas fa-dice-d20\"></i> ${roll.total})\n      </span>\n      <div class=\"target-dc-result\">\n        <div class=\"target-dc\"><span data-visibility=\"all\" data-whose=\"target\">Target: ${target.name}</span></span></div>\n        <div class=\"result degree-of-success\">Result: ${result_html}</div>\n        ${penache_html}\n        ${fascinated_html }\n      </div>\n    </div>`;\n\n    // Create a chat message based on the results html\n    ChatMessage.create({\n      user: game.user._id,\n      speaker: ChatMessage.getSpeaker({token: actor}),\n      content: results_html\n    });\n  });\n}\n\n// Determine the level of success\nfunction SuccessLevel(roll_result, roll_total, target_will_dc){\n    let success_level = 0;\n\n    // Sets success_level based on if the roll beats the target's Will DC\n    // 3: Critical Success\n    // 2: Success\n    // 1: Failure\n    // 0: Critical Failure\n    if(roll_total >= target_will_dc + 10)\n      success_level = 3\n    else if(roll_total >= target_will_dc)\n      success_level = 2;\n    else if(roll_total + 10 <= target_will_dc)\n      success_level = 0;\n    else if(roll_total < target_will_dc)\n      success_level = 1;\n\n    // Modifies the level of success by +/- 1 depending on if a 1 or 20 was rolled\n    if(roll_result == 20 && success_level < 3)\n      success_level++;\n    else if (roll_result == 1 && success_level > 0)\n      success_level--;\n\n    // returns success level\n    return success_level;\n}",
+  "folder": "S2KSaNQJxdlRFkyr",
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1698624801927,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "v0RvORcwGexWLCjc": 3
+  },
+  "_key": "!macros!nVTGUAN7Nk80DOKX"
+}

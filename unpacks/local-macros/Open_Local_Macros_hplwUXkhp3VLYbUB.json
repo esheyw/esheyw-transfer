@@ -1,0 +1,35 @@
+{
+  "name": "Open Local Macros",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/game-icons-net/blackbackground/processor.svg",
+  "command": "_esheywOpenPack(\"esheyw-transfer.local-macros\")",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForEveryone": false,
+      "runForSpecificUser": ""
+    },
+    "core": {},
+    "cf": null
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1675989208607,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "hplwUXkhp3VLYbUB",
+  "folder": "LXfU0ElDPq9L8dLU",
+  "sort": 400000,
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3,
+    "717Xeq3czH96acPF": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_key": "!macros!hplwUXkhp3VLYbUB"
+}

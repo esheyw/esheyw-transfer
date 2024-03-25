@@ -1,0 +1,1431 @@
+{
+  "prototypeToken": {
+    "displayName": 20,
+    "displayBars": 20,
+    "sight": {
+      "enabled": false,
+      "color": null,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": false,
+        "autoscale": false
+      },
+      "perfect-vision": {
+        "visionRules": "default",
+        "monoVisionColor": "",
+        "sightLimit": null,
+        "light": {}
+      },
+      "core": {
+        "priority": null
+      }
+    },
+    "name": "Odd Stories",
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "actorLink": true,
+    "disposition": 0,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "color": null,
+      "attenuation": 0.5
+    },
+    "texture": {
+      "src": "systems/pf2e/icons/default-icons/loot.svg",
+      "tint": null,
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "_id": "GAz4lmeopkW2IzUM",
+  "name": "Odd Stories",
+  "type": "loot",
+  "img": "systems/pf2e/icons/default-icons/loot.svg",
+  "items": [
+    {
+      "_id": "mBbnQQfaTXGSancv",
+      "name": "Basic Crafter's Book",
+      "type": "equipment",
+      "sort": 100000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.w4Hd6nunVVqw3GWj"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/basic-crafters-book.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This book contains the formulas for Crafting the common items in Chapter 6 of the core rulebook.</p>"
+        },
+        "rules": [],
+        "slug": "basic-crafters-book",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "sp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": ""
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!GAz4lmeopkW2IzUM.mBbnQQfaTXGSancv"
+    },
+    {
+      "_id": "Q0FyEnvy3FlBGdCK",
+      "name": "Formula Book (Blank)",
+      "type": "equipment",
+      "sort": 200000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/formula-book.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A formula book holds the formulas necessary to make items other than the common equipment from this chapter; alchemists typically get one for free. Each formula book can hold the formulas for up to 100 different items. Formulas can also appear on parchment sheets, tablets, and almost any other medium; there's no need for you to copy them into a specific book as long as you can keep them on hand to reference them.</p>"
+        },
+        "rules": [],
+        "slug": "formula-book-blank",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": ""
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!GAz4lmeopkW2IzUM.Q0FyEnvy3FlBGdCK"
+    },
+    {
+      "_id": "sxTPTwuJVNWV2cNZ",
+      "name": "Illustrated book",
+      "type": "treasure",
+      "sort": 300000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.G5WuYX1ghrZcJ1J1"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/treasure/art-objects/minor-art-object/illustrated-book.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": "illustrated-book",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Gamemastery Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "-"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 4
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": ""
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!GAz4lmeopkW2IzUM.sxTPTwuJVNWV2cNZ"
+    },
+    {
+      "_id": "UEUURbKVVHH07lWc",
+      "name": "Spellbook (Blank)",
+      "type": "equipment",
+      "sort": 400000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/spellbook.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A spellbook holds the written knowledge necessary to learn and prepare various spells, a necessity for wizards (who typically get one for free) and a useful luxury for other spellcasters looking to learn additional spells. Each spellbook can hold up to 100 spells. The Price listed is for a blank spellbook.</p>"
+        },
+        "rules": [],
+        "slug": "spellbook-blank",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!GAz4lmeopkW2IzUM.UEUURbKVVHH07lWc"
+    },
+    {
+      "_id": "iAs48Iy6RERHmLBo",
+      "name": "Writing Set",
+      "type": "equipment",
+      "sort": 500000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.QJb8S927Yj81EgHH"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/writing-set.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Using a writing set, you can draft correspondence and scribe scrolls. A set includes stationery, including a variety of paper and parchment, as well as ink, a quill or inkpen, sealing wax, and a simple seal. If you've written a large amount, you can refill your kit with extra ink and paper.</p>"
+        },
+        "rules": [],
+        "slug": "writing-set",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!GAz4lmeopkW2IzUM.iAs48Iy6RERHmLBo"
+    },
+    {
+      "_id": "eTyW1o94vJvVY4FV",
+      "name": "Writing Set (Extra Ink and Paper)",
+      "type": "equipment",
+      "sort": 600000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.3yLu12TCwN8utY0u"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/ink-and-paper.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Extra ink and paper to refill your writing set.</p>"
+        },
+        "rules": [],
+        "slug": "writing-set-extra-ink-and-paper",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "sp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!GAz4lmeopkW2IzUM.eTyW1o94vJvVY4FV"
+    },
+    {
+      "_id": "4HUbHfhT2VHqVw1m",
+      "name": "Staff of Fire",
+      "type": "weapon",
+      "sort": 700000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.opfpl1JmKgrfds9P"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/staves/staff-of-fire.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This staff resembles a blackened and burned length of ashen wood. It smells faintly of soot and glows as if lit by embers. You can use an Interact action to touch the tip of this staff to a torch, tinder, or a flammable substance to ignite a flame.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>\n<ul>\n<li><strong>Cantrip</strong> <em>@Compendium[pf2e.spells-srd.O9w7r4BKgPogYDDe]{Produce Flame}</em></li>\n<li><strong>1st</strong> <em>@Compendium[pf2e.spells-srd.y6rAdMK6EFlV6U0t]{Burning Hands}</em></li>\n</ul>"
+        },
+        "rules": [],
+        "slug": "staff-of-fire",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "evocation",
+            "magical",
+            "staff",
+            "two-hand-d8"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 3
+        },
+        "quantity": 1,
+        "baseItem": "staff",
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "1"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 60
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "simple",
+        "group": "club",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d4",
+          "damageType": "bludgeoning",
+          "persistent": null,
+          "value": ""
+        },
+        "bonusDamage": {
+          "value": 0
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": null,
+        "reload": {
+          "value": ""
+        },
+        "potencyRune": {
+          "value": 0
+        },
+        "strikingRune": {
+          "value": ""
+        },
+        "specific": {
+          "value": false
+        },
+        "propertyRune1": {
+          "value": ""
+        },
+        "propertyRune2": {
+          "value": ""
+        },
+        "propertyRune3": {
+          "value": ""
+        },
+        "propertyRune4": {
+          "value": ""
+        },
+        "property1": {
+          "value": "",
+          "dice": null,
+          "die": "",
+          "damageType": "",
+          "critDice": null,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": "",
+          "criticalConditionType": "",
+          "criticalConditionValue": null,
+          "strikeConditionType": "",
+          "strikeConditionValue": null
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!GAz4lmeopkW2IzUM.4HUbHfhT2VHqVw1m"
+    },
+    {
+      "_id": "Jw9REnOcCQN2sdY3",
+      "name": "Animal Staff",
+      "type": "weapon",
+      "sort": 800000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.WcuknnE3xYfSdbhm"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/staves/animal-staff.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This staff is topped with carved animal and monster heads. While wielding the staff, you gain a +2 circumstance bonus to Nature checks to identify animals.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> <em>@Compendium[pf2e.spells-srd.tXa5vOu5giBNCjdR]{Know Direction}</em></li>\n<li><strong>1st</strong> <em>@Compendium[pf2e.spells-srd.EE7Q5BHIrfWNCPtT]{Magic Fang}</em> <em>@Compendium[pf2e.spells-srd.4YnON9JHYqtLzccu]{Summon Animal}</em></li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>"
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "label": "Animal Staff (identify animals)",
+            "predicate": [
+              "action:recall-knowledge",
+              "identify",
+              {
+                "or": [
+                  "target:animal"
+                ]
+              }
+            ],
+            "selector": "nature",
+            "type": "circumstance",
+            "value": 2
+          }
+        ],
+        "slug": "animal-staff",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "divination",
+            "magical",
+            "staff",
+            "two-hand-d8"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 4
+        },
+        "quantity": 1,
+        "baseItem": "staff",
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "1"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 90
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "simple",
+        "group": "club",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d4",
+          "damageType": "bludgeoning",
+          "persistent": null,
+          "value": ""
+        },
+        "bonusDamage": {
+          "value": 0
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": null,
+        "reload": {
+          "value": ""
+        },
+        "potencyRune": {
+          "value": 0
+        },
+        "strikingRune": {
+          "value": ""
+        },
+        "specific": {
+          "value": false
+        },
+        "propertyRune1": {
+          "value": ""
+        },
+        "propertyRune2": {
+          "value": ""
+        },
+        "propertyRune3": {
+          "value": ""
+        },
+        "propertyRune4": {
+          "value": ""
+        },
+        "property1": {
+          "value": "",
+          "dice": null,
+          "die": "",
+          "damageType": "",
+          "critDice": null,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": "",
+          "criticalConditionType": "",
+          "criticalConditionValue": null,
+          "strikeConditionType": "",
+          "strikeConditionValue": null
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!GAz4lmeopkW2IzUM.Jw9REnOcCQN2sdY3"
+    },
+    {
+      "_id": "1oxO1zqC6L7ysCNm",
+      "name": "Mentalist's Staff",
+      "type": "weapon",
+      "sort": 900000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.xwiZBOjispKVZzGA"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/staves/mentalist-staff.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This polished wooden staff bears a swirling motif reminiscent of the folds of a brain. While wielding the staff, you gain a +2 circumstance bonus to checks to identify mental magic.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> <em>@Compendium[pf2e.spells-srd.4gBIw4IDrSfFHik4]{Daze}</em></li>\n<li><strong>1st</strong> <em>@Compendium[pf2e.spells-srd.D442XMADp01qJ7Cs]{Mindlink}</em> <em>@Compendium[pf2e.spells-srd.R8bqnYiThB6MYTxD]{Phantom Pain}</em></li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>"
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "label": "Mentalist's Staff (identifying mental magic)",
+            "predicate": [
+              "action:identify-magic",
+              "mental"
+            ],
+            "selector": "skill-check",
+            "type": "circumstance",
+            "value": 2
+          }
+        ],
+        "slug": "mentalists-staff",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "divination",
+            "magical",
+            "staff",
+            "two-hand-d8"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 4
+        },
+        "quantity": 1,
+        "baseItem": "staff",
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "1"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 90
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "simple",
+        "group": "club",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d4",
+          "damageType": "bludgeoning",
+          "persistent": null,
+          "value": ""
+        },
+        "bonusDamage": {
+          "value": 0
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": null,
+        "reload": {
+          "value": ""
+        },
+        "potencyRune": {
+          "value": 0
+        },
+        "strikingRune": {
+          "value": ""
+        },
+        "specific": {
+          "value": false
+        },
+        "propertyRune1": {
+          "value": ""
+        },
+        "propertyRune2": {
+          "value": ""
+        },
+        "propertyRune3": {
+          "value": ""
+        },
+        "propertyRune4": {
+          "value": ""
+        },
+        "property1": {
+          "value": "",
+          "dice": null,
+          "die": "",
+          "damageType": "",
+          "critDice": null,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": "",
+          "criticalConditionType": "",
+          "criticalConditionValue": null,
+          "strikeConditionType": "",
+          "strikeConditionValue": null
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!GAz4lmeopkW2IzUM.1oxO1zqC6L7ysCNm"
+    },
+    {
+      "_id": "CUzakDSjITpzLfnz",
+      "name": "Poisoner's Staff",
+      "type": "equipment",
+      "sort": 1000000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.Rwx6I3CDdOeOl5xW"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/staves/poisoners-staff.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This gnarled staff is covered with thorns and coated with a glistening lacquer that acts as a minor irritant. While holding the staff, you aren't affected by its coating or thorns, and you reduce the DC of your flat checks to overcome persistent poison damage from 15 to 13.</p>\n<hr />\n<p><strong>Activate</strong> @Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell};</p>\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>\n<hr />\n<ul>\n<li><strong>Cantrips</strong> @Compendium[pf2e.spells-srd.izcxFQFwf3woCnFs]{Guidance}</li>\n<li><strong>1st</strong> @Compendium[pf2e.spells-srd.QqxwHeYEVylkYjsO]{Detect Poison}, @Compendium[pf2e.spells-srd.DYdvMZ8G2LiSLVWw]{Spider Sting}</li>\n</ul>",
+          "chat": "",
+          "unidentified": ""
+        },
+        "rules": [],
+        "slug": "poisoners-staff",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "conjuration",
+            "magical",
+            "necromancy",
+            "staff"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 4
+        },
+        "quantity": 1,
+        "baseItem": "staff",
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "1"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 90
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "identified": {
+          "value": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!GAz4lmeopkW2IzUM.CUzakDSjITpzLfnz"
+    }
+  ],
+  "effects": [],
+  "folder": "l5vwPUmET4uksNKe",
+  "sort": 0,
+  "flags": {
+    "pf2e": {
+      "editLoot": {
+        "value": false
+      }
+    },
+    "exportSource": {
+      "world": "abominationvaults",
+      "system": "pf2e",
+      "coreVersion": "0.8.7",
+      "systemVersion": "2.4.0.6221"
+    },
+    "core": {
+      "sourceId": "Compendium.shopping-experience.otari-shops.Actor.Tqyw7dS1BeOOezZu"
+    },
+    "cf": null
+  },
+  "system": {
+    "attributes": {},
+    "details": {
+      "description": "",
+      "level": {
+        "value": 0
+      }
+    },
+    "lootSheetType": "Merchant",
+    "hiddenWhenEmpty": false,
+    "_migration": {
+      "version": 0.878,
+      "previous": {
+        "schema": 0.769,
+        "foundry": "11.313",
+        "system": "5.7.2"
+      }
+    },
+    "traits": {
+      "rarity": "common",
+      "size": {
+        "value": "med"
+      },
+      "value": []
+    }
+  },
+  "ownership": {
+    "default": 1,
+    "WP8iX5Oga3kaT5wZ": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1697493226120,
+    "modifiedTime": 1697493226120,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "_key": "!actors!GAz4lmeopkW2IzUM"
+}

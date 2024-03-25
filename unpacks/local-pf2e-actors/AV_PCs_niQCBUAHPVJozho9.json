@@ -1,0 +1,19 @@
+{
+  "color": "#18591f",
+  "name": "AV PCs",
+  "sorting": "a",
+  "type": "Actor",
+  "folder": null,
+  "_id": "niQCBUAHPVJozho9",
+  "sort": 100000,
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1697490738991,
+    "modifiedTime": 1697493198297,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "_key": "!folders!niQCBUAHPVJozho9"
+}

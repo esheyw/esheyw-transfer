@@ -1,0 +1,20 @@
+{
+  "name": "Custom Feats and Features",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "description": "",
+  "sort": 100000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1698035469392,
+    "modifiedTime": 1698035469428,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "FWDReABYAPJHTjJJ",
+  "_key": "!folders!FWDReABYAPJHTjJJ"
+}

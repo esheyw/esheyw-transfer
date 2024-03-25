@@ -1,0 +1,27 @@
+{
+  "name": "Check Macros Against Compendium",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "const pack = game.packs.get('esheyw-transfer.local-macros');\nconst docs = await pack.getDocuments();\n// console.warn(docs)\nconst outerfolder = game.folders.getName('Local Macros')\n// console.warn(outerfolder)\n\nfunction extractMacros(folder) {\n    const macros = [];\n    if (folder.children) {\n        for (f of folder.children) {\n            // console.warn(f)\n            macros.push(...extractMacros(f.folder))\n        }\n    }\n    if (folder?.contents) {\n        macros.push(...folder.contents)\n    }\n    return macros;\n}\nimportedMacros = extractMacros(outerfolder);\nconsole.warn('superfluous macros: ', out.filter(e=>!docs.find(d=>d.name===e.name)))\nfor (cMacro of docs) {\n    const imported = importedMacros.find(m=>m.name===cMacro.name) \n    if (!imported) {\n        console.warn(`No imported macro \"${cMacro.name}\"`);\n        continue;\n    }\n    if (cMacro.command !== imported.command) {\n        console.warn(`${imported.name} is different from its compendium counterpart`)\n    }\n}",
+  "folder": "MUrlWbVP9uj79bSv",
+  "ownership": {
+    "default": 0,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1697426519828,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "h0UbGjttlL4dccfH",
+  "sort": 800000,
+  "_key": "!macros!h0UbGjttlL4dccfH"
+}

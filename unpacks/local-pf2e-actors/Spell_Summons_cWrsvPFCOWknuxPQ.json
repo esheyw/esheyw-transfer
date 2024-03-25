@@ -1,0 +1,19 @@
+{
+  "color": "#226830",
+  "name": "Spell Summons",
+  "sorting": "a",
+  "type": "Actor",
+  "folder": null,
+  "_id": "cWrsvPFCOWknuxPQ",
+  "sort": 100000,
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1697493236555,
+    "modifiedTime": 1697493236674,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "_key": "!folders!cWrsvPFCOWknuxPQ"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Treasure",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "description": "",
+  "sort": 100000,
+  "color": "#d4bd2b",
+  "flags": {
+    "df-qol": {
+      "colour": "#401A6F"
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1698035485320,
+    "modifiedTime": 1698035485353,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "patF1AmNkB12sAu7",
+  "_key": "!folders!patF1AmNkB12sAu7"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Tricky Magic",
+  "sorting": "a",
+  "folder": "6UckxqsIsOpTJSiD",
+  "type": "Item",
+  "description": "",
+  "sort": 0,
+  "color": "#cc28c6",
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1698035467412,
+    "modifiedTime": 1698035467412,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "0ARsu1VBqGfrkHAm",
+  "_key": "!folders!0ARsu1VBqGfrkHAm"
+}

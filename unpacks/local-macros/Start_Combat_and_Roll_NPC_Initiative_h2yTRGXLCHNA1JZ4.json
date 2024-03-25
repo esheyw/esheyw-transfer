@@ -1,0 +1,34 @@
+{
+  "name": "Start Combat and Roll NPC Initiative",
+  "type": "script",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/game-icons-net/blackbackground/polar-star.svg",
+  "scope": "global",
+  "command": "let scoutidx = 0;\nconst scoutids = [\n    '',\n    'Compendium.pf2e.other-effects.EMqGwUi3VMhCjTlF', //Effect: Scouting\n    'Compendium.pf2e.other-effects.la8rWwUtReElgTS6', //Effect: Scouting (Incredible Scout)\n];\nconst scoutingmods = [\n    '',\n    new game.pf2e.Modifier('Scouting', 1, 'circumstance'),\n    new game.pf2e.Modifier('Scouting (Incredible Scout)', 2, 'circumstance')\n];\n\nlet playertokens = [];\nlet friendlytokens = [];\nlet hostiletokens = [];\nconst DMPCUserID = 'h1RtX0va8IgVXvRd';\n\n//partition between player, friendly and selected hostile tokens; search the first two groups for scouts\nfor (token of canvas.tokens.placeables) {\n    if (token.actor.traits.has('minion')) continue;\n    if (token.actor.system.details.alliance === 'party') {\n        const rollopts = token.actor.getRollOptions(['initiative']);\n        if (rollopts.some(re => ['self:effect:scout', 'self:effect:scouting'].includes(re))) {\n            scoutidx = Math.max(scoutidx, rollopts.includes('feat:incredible-scout') ? 2 : 1);\n        }\n        if (token.actor.type === 'npc' || token.actor.ownership[DMPCUserID] === 3) {\n            friendlytokens.push(token);\n            continue;\n        }\n        playertokens.push(token);\n        continue;\n    }\n    //add selected hostiles, *and* hostiles in the tracker who haven't rolled or have had their init reset\n    if (canvas.tokens.controlled.includes(token) || game.combat?.getCombatantByToken(token.id)?.initiative === null) {\n        hostiletokens.push(token)\n    }\n}\n\nif (!canvas.tokens.controlled.length && !playertokens.length) {\n    return ui.notifications.warn('No tokens selected and no player tokens on scene.')\n}\n//create combat if none exists\nconst combat = game.combat ?? await Combat.create({scene: canvas.scene.id, active: true});\n//add and roll hostiles + npcs\nlet rollabletokens = hostiletokens.concat(friendlytokens);\nfor (const rt of rollabletokens) {\n    if (!rt.inCombat) await rt.toggleCombat();\n    const combatant = game.combat.getCombatantByToken(rt.id);\n    //if you want to reroll initiatve, blank it on the tracker first\n    if (combatant.initiative === null) {\n        const rollData = {\n            event,\n            rollMode: CONST.DICE_ROLL_MODES.PRIVATE\n        };\n        if (friendlytokens.includes(rt)) {\n            rollData.rollMode = CONST.DICE_ROLL_MODES.PUBLIC;\n            if (scoutidx) rollData.modifiers = [scoutingmods[scoutidx]];\n        }\n        await rt.actor.initiative.roll(rollData);\n    }\n}\n//add player tokens to combat\nfor (const pt of playertokens) if (!pt.inCombat) await pt.toggleCombat();",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForSpecificUser": ""
+    },
+    "core": {},
+    "cf": null
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1677998491177,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "h2yTRGXLCHNA1JZ4",
+  "folder": "MUrlWbVP9uj79bSv",
+  "sort": 2200000,
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3,
+    "717Xeq3czH96acPF": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_key": "!macros!h2yTRGXLCHNA1JZ4"
+}

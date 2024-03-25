@@ -1,0 +1,698 @@
+{
+  "prototypeToken": {
+    "displayName": 30,
+    "displayBars": 10,
+    "sight": {
+      "enabled": true,
+      "color": null,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {
+      "perfect-vision": {
+        "sight": {
+          "range": null
+        }
+      },
+      "monks-tokenbar": {
+        "include": "default"
+      },
+      "tagger": {
+        "tags": ""
+      },
+      "pf2e": {
+        "linkToActorSize": true,
+        "autoscale": true
+      }
+    },
+    "name": "Giant Rat",
+    "actorLink": false,
+    "texture": {
+      "src": "modules/pf2e-tokens-bestiaries/tokens/bestial/mammalian/rat-giant.webp",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": null
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "img": "modules/pf2e-tokens-bestiaries/portraits/bestial/mammalian/rat-giant.webp",
+  "items": [
+    {
+      "_id": "yLnwKltbJHYpn8qC",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "name": "Jaws",
+      "sort": 100000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.837,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "agile",
+            "finesse"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "weaponType": {
+          "value": "melee"
+        },
+        "attack": {
+          "value": ""
+        },
+        "damageRolls": {
+          "gl72itkmp34dsctr41av": {
+            "damage": "1d6+1",
+            "damageType": "piercing"
+          }
+        },
+        "bonus": {
+          "value": 7
+        },
+        "attackEffects": {
+          "value": [
+            "filth-fever"
+          ],
+          "custom": ""
+        }
+      },
+      "type": "melee",
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9twgwhvPceQ6kdha.yLnwKltbJHYpn8qC"
+    },
+    {
+      "_id": "g7nl0QahmH5JaunK",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.fFu2sZz4KB01fVRc"
+        }
+      },
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Low-Light Vision",
+      "sort": 200000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
+        },
+        "rules": [],
+        "slug": "low-light-vision",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.837,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "interaction",
+        "actions": {
+          "value": null
+        },
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        },
+        "deathNote": false,
+        "weapon": {
+          "value": ""
+        }
+      },
+      "type": "action",
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9twgwhvPceQ6kdha.g7nl0QahmH5JaunK"
+    },
+    {
+      "_id": "28P5kFSjVh3w1R9o",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r"
+        }
+      },
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Scent (Imprecise) 30 feet",
+      "sort": 300000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+        },
+        "rules": [],
+        "slug": "scent",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.837,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "interaction",
+        "actions": {
+          "value": null
+        },
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        },
+        "deathNote": false,
+        "weapon": {
+          "value": ""
+        }
+      },
+      "type": "action",
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9twgwhvPceQ6kdha.28P5kFSjVh3w1R9o"
+    },
+    {
+      "_id": "Mjlek9OZ25Tga7Cg",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Filth Fever",
+      "sort": 400000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened} and @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} conditions from filth fever don't improve on their own until the disease is cured.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:14]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect ([[/br 1d4 #hours]]{1d4 hours})</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} (1 day)</p>\n<p><strong>Stage 3</strong> Sickened 1 and @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (1 day)</p>\n<p><strong>Stage 4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} (1 day)</p>\n<p><strong>Stage 5</strong> dead</p>"
+        },
+        "rules": [],
+        "slug": "filth-fever",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.837,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "disease"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": null
+        },
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        },
+        "deathNote": false,
+        "weapon": {
+          "value": ""
+        }
+      },
+      "type": "action",
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9twgwhvPceQ6kdha.Mjlek9OZ25Tga7Cg"
+    },
+    {
+      "_id": "YRgD2IyCeEvQv1nF",
+      "img": "systems/pf2e/icons/default-icons/lore.svg",
+      "name": "Acrobatics",
+      "sort": 500000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.837,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "mod": {
+          "value": 5
+        },
+        "proficient": {
+          "value": 0
+        }
+      },
+      "type": "lore",
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9twgwhvPceQ6kdha.YRgD2IyCeEvQv1nF"
+    },
+    {
+      "_id": "vBFHfrDtlZ5vYw2q",
+      "img": "systems/pf2e/icons/default-icons/lore.svg",
+      "name": "Athletics",
+      "sort": 600000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "label": "PF2E.SkillVariant.ClimbOrSwim",
+            "predicate": [
+              {
+                "or": [
+                  "action:climb",
+                  "action:swim"
+                ]
+              }
+            ],
+            "selector": "athletics",
+            "value": 2
+          }
+        ],
+        "slug": null,
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.837,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "mod": {
+          "value": 2
+        },
+        "proficient": {
+          "value": 0
+        },
+        "variants": {
+          "0": {
+            "label": "+4 to Climb or Swim",
+            "options": "action:climb, action:swim"
+          }
+        }
+      },
+      "type": "lore",
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9twgwhvPceQ6kdha.vBFHfrDtlZ5vYw2q"
+    },
+    {
+      "_id": "LKWIJBn0YuRYyujM",
+      "img": "systems/pf2e/icons/default-icons/lore.svg",
+      "name": "Stealth",
+      "sort": 700000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.837,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "mod": {
+          "value": 5
+        },
+        "proficient": {
+          "value": 0
+        }
+      },
+      "type": "lore",
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!9twgwhvPceQ6kdha.LKWIJBn0YuRYyujM"
+    }
+  ],
+  "name": "Giant Rat",
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 8,
+        "temp": 0,
+        "max": 8,
+        "details": ""
+      },
+      "initiative": {
+        "statistic": "perception"
+      },
+      "speed": {
+        "value": 30,
+        "otherSpeeds": [
+          {
+            "type": "climb",
+            "value": 10
+          }
+        ],
+        "details": ""
+      },
+      "ac": {
+        "value": 15,
+        "details": ""
+      },
+      "perception": {
+        "value": 5
+      },
+      "allSaves": {
+        "value": ""
+      }
+    },
+    "details": {
+      "alignment": {
+        "value": "N"
+      },
+      "level": {
+        "value": -1
+      },
+      "creatureType": "Animal",
+      "blurb": "",
+      "publicNotes": "<p>Rats are a ubiquitous menace, scurrying through the sewers and on the streets of nearly every settlement the world over. Though a regular rat darting underfoot might startle or even frighten the average passerby, giant rats and rat swarms are far more dangerous.</p>\n<hr />\n<p>Giant rats are enormous versions of the common vermin. They are typically found in abundant numbers, but since they cannot fit in the nooks where mundane rats typically hide, they are much easier to locate and exterminate. They mostly live in sewers where they can scavenge from the streets above, but some families of giant rats live in more remote locations, such as dank caves or forests and hills. Rats are incredibly adept survivors and can be found nearly anywhere in the world, though they tend to favor temperate or warm climates as opposed to cold regions.</p>\n<p>Although its bite alone is not lethal except to the very young or very old, the giant rat carries the filth fever common to rodents around the world-a pestilence more than capable of ravaging rural communities.</p>",
+      "privateNotes": "",
+      "publication": {
+        "title": "Pathfinder Bestiary",
+        "authors": "",
+        "license": "OGL",
+        "remaster": false
+      }
+    },
+    "traits": {
+      "value": [
+        "animal"
+      ],
+      "senses": {
+        "value": "low-light vision, scent (imprecise) 30 feet"
+      },
+      "languages": {
+        "value": [],
+        "custom": "",
+        "selected": []
+      },
+      "rarity": "common",
+      "size": {
+        "value": "sm"
+      }
+    },
+    "resources": {},
+    "_migration": {
+      "version": 0.878,
+      "previous": {
+        "schema": 0.837,
+        "foundry": "11.313",
+        "system": "5.7.2"
+      }
+    },
+    "abilities": {
+      "str": {
+        "mod": 1
+      },
+      "dex": {
+        "mod": 3
+      },
+      "con": {
+        "mod": 2
+      },
+      "int": {
+        "mod": -4
+      },
+      "wis": {
+        "mod": 1
+      },
+      "cha": {
+        "mod": -3
+      }
+    },
+    "saves": {
+      "fortitude": {
+        "value": 6,
+        "saveDetail": ""
+      },
+      "reflex": {
+        "value": 7,
+        "saveDetail": ""
+      },
+      "will": {
+        "value": 3,
+        "saveDetail": ""
+      }
+    }
+  },
+  "type": "npc",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.pathfinder-bestiary.Actor.AYwdybUfm4meGUTJ"
+    },
+    "cf": null
+  },
+  "effects": [],
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1682881348861,
+    "modifiedTime": 1697493236637,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "_id": "9twgwhvPceQ6kdha",
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "folder": "cWrsvPFCOWknuxPQ",
+  "sort": 0,
+  "_key": "!actors!9twgwhvPceQ6kdha"
+}

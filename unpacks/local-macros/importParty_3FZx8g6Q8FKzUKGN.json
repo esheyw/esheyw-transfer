@@ -1,0 +1,27 @@
+{
+  "name": "importParty",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "async function importParty({\n  source = null,\n  pack = null,\n  keepId = true,  \n}={}) {\n  const FUNC = 'importParty';\n  let sourceParty,  \n      sourceFolder,\n      sourcePack, \n      providedSource, \n      party,\n      members,\n      worldParty,\n      worldMembers;\n   const extractFromParty = (party) => {\n      const sourcePack = game.packs.get(party.pack);\n      const sourceParty = source;\n      if (!sourceParty.folder || !sourceParty.folder?.flags?.world?.backupPartyID) {\n        ui.notifications.error(`${FUNC}: Provided source party was not produced by backupParty™.`);\n        return null;\n      }\n      const sourceFolder = sourceParty.folder;\n      return {sourcePack, sourceParty, sourceFolder};\n   };\n   const extractFromFolder = (folder) => {\n     \n   }\n   if (typeof source === 'string') {\n    providedSource = source;\n    source = await fromUuid(source);\n    if (!source && !pack) { // if it's not a UUID, we need a pack reference to do anything else\n      ui.notifications.error(`${FUNC}: provided source string \"${providedSource}\" is not a resolveable UUID, and no pack was provided.`)\n      return null;\n    }\n    if (source && !source.pack) {\n      ui.notifications.error(`${FUNC}: Provided source is not inside a compendium.`);\n      return null;\n    }    \n    if (source instanceof Actor && source.type === 'party') {\n      const maybe = extractFromParty(source);\n      if ()\n    } \n    \n  } else if (source instanceof Folder) {\n    if (!source.pack) {\n      ui.notifications.error(`${FUNC}: Provided source folder is not inside a compendium.`);\n      return null;\n    }\n    sourcePack = game.packs.get(source.pack);\n\n    if (source.type !== 'Actor' || sourcePack.documentName !== 'Actor') {\n      ui.notifications.error(`${FUNC}: Provided source folder is not inside an Actor compendium.`);\n      return null;\n    }\n    if (!source?.flags?.world?.backupPartyID) {\n      ui.notifications.error(`${FUNC}: Provided source folder was not produced by backupParty™.`);\n      return null;\n    }\n  } \n  const folderContents = await sourcePack.getDocuments({\n    folder__in: source.contents.map(a => a.folder)\n  });    \n}\n\nconst target = await fromUuid('Compendium.esheyw-transfer.local-pf2e-actors2.Folder.xIYGWw9XlSNngman');\nconst out = await importParty({\n  source: target,\n})",
+  "folder": "S2KSaNQJxdlRFkyr",
+  "ownership": {
+    "default": 0,
+    "xuYHxk9sJoYKM7d6": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1701630595728,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "3FZx8g6Q8FKzUKGN",
+  "sort": 200000,
+  "_key": "!macros!3FZx8g6Q8FKzUKGN"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Backup Party Dialog",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "Handlebars.registerHelper(\"log\", (item) => console.warn(item));\nHandlebars.registerHelper(\"activeParty\", (party) => party.active);\nconst packID = 'esheyw-transfer.local-pf2e-actors2';\nconst actorPacks = game.packs.filter(p=>p.metadata.type==='Actor' && !p.locked)\nconst worldParties = game.actors.filter(a=>a.type === 'party')\nworldParties.sort((a,b) => {\n  if (a.active) return -1;\n  return a.name.localeCompare(b.name);\n});\n\nconst templateData = {\n  parties: worldParties, //Object.fromEntries(worldParties.map(p => [p.id, p.name])),\n  packs: actorPacks //Object.fromEntries(actorPacks.map(p => [p.collection, p.title]))\n}\nconst templateOptions = {\n  // allowProtoMethodsByDefault: true\n}\nconst template = \n`\n<form>\n  <style>\n    .esheyw-party-backup { \n\n    }\n\n  </style>\n  <div class=\"form-group\">\n    <fieldset name=\"parties\" class=\"parties\">\n      <legend>Party to back up:</legend>\n      <div class=\"form-fields\">\n        {{#each parties as |party|}}          \n          <input type=\"radio\" name=\"selectedParty\" value=\"{{party._id}}\" {{checked (activeParty party)}} id=\"{{party._id}}\" />\n          <label for=\"{{party._id}}\">{{party.name}}</label>\n        {{/each}}\n      </div>\n  </div>\n  <hr />\n\n</form>\n`\nconst compiled = (Handlebars.compile(template))(templateData, templateOptions);\n\nasync function submitCallback(html, event) {\n  const data = new FormDataExtended(html[0].querySelector(\"form\")).object;\n  console.warn(data);\n}\n\nconst dialogData = {\n  title: \"Party Backup Utility\",\n  content: compiled,\n\n  buttons: {\n    backup: {\n      icon: `<i class=\"fa-solid fa-floppy-disk-pen\"></i>`,\n      label: `Back Up`,\n      callback: submitCallback\n    },\n    cancel: {\n      icon: `<i class=\"fas fa-times\"></i>`,\n      label: `Cancel`\n    }\n  },\n  default: `backup`\n}\nconst dialogOptions = {\n    // classes: [\"esheyw-party-backup\"],\n}\n\nconsole.warn(\n  // actorPacks,\n  // worldParties,\n  templateData,\n  compiled,\n);\nconst dialog = new Dialog(dialogData, dialogOptions);\ndialog.render(true);",
+  "folder": "S2KSaNQJxdlRFkyr",
+  "ownership": {
+    "default": 0,
+    "v0RvORcwGexWLCjc": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1698188250525,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "sHuC0PdmfxBOioEI",
+  "sort": 600000,
+  "_key": "!macros!sHuC0PdmfxBOioEI"
+}

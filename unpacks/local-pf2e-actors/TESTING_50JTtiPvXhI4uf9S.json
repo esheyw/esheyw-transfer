@@ -1,0 +1,19 @@
+{
+  "color": "#c57326",
+  "name": "TESTING",
+  "sorting": "m",
+  "type": "Actor",
+  "folder": null,
+  "_id": "50JTtiPvXhI4uf9S",
+  "sort": 100000,
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1697493240399,
+    "modifiedTime": 1697493242700,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "_key": "!folders!50JTtiPvXhI4uf9S"
+}

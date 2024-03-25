@@ -1,0 +1,19 @@
+{
+  "color": "#5d0000",
+  "name": "Local PF2e Macros",
+  "sorting": "a",
+  "type": "Macro",
+  "folder": null,
+  "_id": "MUrlWbVP9uj79bSv",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1697492768475,
+    "modifiedTime": 1702343866074,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_key": "!folders!MUrlWbVP9uj79bSv"
+}

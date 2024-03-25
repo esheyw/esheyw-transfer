@@ -1,0 +1,27 @@
+{
+  "name": "add item drawn from table",
+  "type": "script",
+  "scope": "global",
+  "_id": "33P5o1H14VjoUnl2",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "if (canvas.tokens.controlled.length > 1) return ui.notifications.error(\"Please select only a single token.\");\nif (!actor) return;\n\n\nconst tableID = 'SWaxTTQqm6astJQd' //replace with your table's\nconst table = game.tables.get(tableID);\nconst draw = (await table.draw({displayChat: false})).results[0];\nconsole.warn(draw)\n// return;\nlet item;\nif (draw.documentCollection === 'Item') {\n  item = game.items.get(draw.documentId);\n} else {\n  item = await fromUuid(`Compendium.${draw.documentCollection}.Item.${draw.documentId}`);\n}\nawait actor.createEmbeddedDocuments('Item', [item.toObject()]);",
+  "folder": "MUrlWbVP9uj79bSv",
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1700361991981,
+    "modifiedTime": 1702343866245,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "v0RvORcwGexWLCjc": 3
+  },
+  "_key": "!macros!33P5o1H14VjoUnl2"
+}

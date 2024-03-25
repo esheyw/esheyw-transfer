@@ -1,0 +1,19 @@
+{
+  "color": "#2f6ab6",
+  "name": "Named NPCs",
+  "sorting": "a",
+  "type": "Actor",
+  "folder": null,
+  "_id": "QsDsBujWeb0jNS3e",
+  "sort": 100000,
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1697493202450,
+    "modifiedTime": 1697493202585,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "_key": "!folders!QsDsBujWeb0jNS3e"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Backup: Testing Party (2023-12-07 20:24 UTC)",
+  "type": "Actor",
+  "flags": {
+    "world": {
+      "backupPartyName": "Testing Party",
+      "backupPartyID": "xxxPF2ExPARTYxxx",
+      "backupPartyTime": 1701980682118
+    }
+  },
+  "sort": -400000,
+  "_id": "xIYGWw9XlSNngman",
+  "folder": null,
+  "sorting": "a",
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1701980682120,
+    "modifiedTime": 1701980682120,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_key": "!folders!xIYGWw9XlSNngman"
+}

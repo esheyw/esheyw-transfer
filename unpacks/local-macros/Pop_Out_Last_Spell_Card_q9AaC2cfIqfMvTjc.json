@@ -1,0 +1,34 @@
+{
+  "name": "Pop Out Last Spell Card",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/game-icons-net/blackbackground/checklist.svg",
+  "command": "const message = game.messages.contents.filter(m => m.flags?.pf2e?.casting).pop()\nif (!message) {\n    ui.notifications.warn(\"No spell cards in scrollback!\");\n    return;\n}\nconst sidebarw = parseInt(document.querySelector('#sidebar').style.width);\nconst messagew = 300;\nconst messageh = 900;\nconst options = {\n    height: messageh,\n    width: messagew,\n    left: (window.innerWidth - sidebarw - messagew),\n    top: (window.innerHeight - messageh)\n}\nconst popout = new ChatPopout(message, options);\npopout.render(true)\ncwarn(sidebarw)",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForSpecificUser": ""
+    },
+    "cf": null,
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1677806520770,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "q9AaC2cfIqfMvTjc",
+  "folder": "MUrlWbVP9uj79bSv",
+  "sort": 2800000,
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3,
+    "717Xeq3czH96acPF": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_key": "!macros!q9AaC2cfIqfMvTjc"
+}

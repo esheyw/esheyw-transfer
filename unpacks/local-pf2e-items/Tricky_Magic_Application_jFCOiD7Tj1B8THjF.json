@@ -1,0 +1,79 @@
+{
+  "folder": "0ARsu1VBqGfrkHAm",
+  "name": "Tricky Magic Application",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": ""
+    },
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "selectors": [
+          "spell-attack",
+          "spell-damage"
+        ],
+        "uuid": "Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.878,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.837,
+        "foundry": "11.313",
+        "system": "5.7.3"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "target": null,
+    "unidentified": false
+  },
+  "img": "systems/pf2e/icons/default-icons/effect.svg",
+  "sort": 150000,
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1682274273078,
+    "modifiedTime": 1698035467430,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "jFCOiD7Tj1B8THjF",
+  "_key": "!items!jFCOiD7Tj1B8THjF"
+}

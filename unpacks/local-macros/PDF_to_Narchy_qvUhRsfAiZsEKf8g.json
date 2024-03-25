@@ -1,0 +1,35 @@
+{
+  "name": "PDF to Narchy",
+  "type": "script",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "scope": "global",
+  "command": "const PDFScenes = [\"Fish Camp\", \"The Scar\", \"Ambush Site\", \"Maunder Bridge And Castle\", \"Star-hand’s Barrow\", \"Flume Fires\", \"In The Stinkweed\", \"Inkleholtz Lumber Camp\"];\nconst NarchyScenes = [\"Fishery\", \"Scar\", \"Forest Road\", \"Bridge\", \"Barrow\", \"Flume\", \"Stinkweed\", \"Lumber Camp\"];\nconst offsets = [\n  [0, 0],\n  [-100, 200],\n  [1000, 200],\n  [900, 200],\n  [250, -50],\n  [0, 0],\n  [700, 600],\n  [100, 100]\n]\n\nif (game.scenes.current == undefined) {\n  ui.notifications.info('This macro requires an active scene, please set an active scene first')\n} else {\n  ui.notifications.info(\"Starting PDF to Narchy\")\n\n  for (let i = 0; i < PDFScenes.length; i++) {\n    for (const objCollectionName of ['notes', 'tokens', 'drawings']) {\n      const objCollection = game.scenes.getName(PDFScenes[i])[objCollectionName]\n      const datas = objCollection.map(o => o.toObject())\n      const afterOffset = datas.map(o => ({ ...o,\n        x: o.x * (offsets[i][2] || 1) + offsets[i][0],\n        y: o.y * (offsets[i][2] || 1) + offsets[i][1]\n      }))\n      const embeddedName = canvas.scene[objCollectionName].documentClass.documentName\n      await game.scenes.getName(NarchyScenes[i]).createEmbeddedDocuments(embeddedName, afterOffset);\n    }\n  }\n  ui.notifications.info(\"Done\")\n}",
+  "folder": "S2KSaNQJxdlRFkyr",
+  "sort": 1100000,
+  "flags": {
+    "scene-packer": {
+      "hash": "984aa8e8da5b69e670a06ee4dc5eb228a5b69f53"
+    },
+    "advanced-macros": {
+      "runAsGM": true,
+      "runForSpecificUser": ""
+    },
+    "core": {}
+  },
+  "_id": "qvUhRsfAiZsEKf8g",
+  "ownership": {
+    "default": 0,
+    "M22dRxbECY9l1C6E": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1697492767168,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_key": "!macros!qvUhRsfAiZsEKf8g"
+}

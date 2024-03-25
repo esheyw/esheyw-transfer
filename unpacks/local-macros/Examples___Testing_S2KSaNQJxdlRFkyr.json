@@ -1,0 +1,19 @@
+{
+  "color": "#aa610e",
+  "name": "Examples & Testing",
+  "sorting": "a",
+  "type": "Macro",
+  "folder": null,
+  "_id": "S2KSaNQJxdlRFkyr",
+  "sort": 100000,
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1697492767142,
+    "modifiedTime": 1702343866074,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_key": "!folders!S2KSaNQJxdlRFkyr"
+}

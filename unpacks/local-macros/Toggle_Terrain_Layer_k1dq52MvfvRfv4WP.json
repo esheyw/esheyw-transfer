@@ -1,0 +1,35 @@
+{
+  "name": "Toggle Terrain Layer",
+  "type": "script",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/environment/wilderness/terrain-rocky-ground.webp",
+  "scope": "global",
+  "command": "canvas.terrain.toggle(null,true)",
+  "folder": "S2KSaNQJxdlRFkyr",
+  "sort": 1000000,
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": true
+    },
+    "core": {},
+    "scene-packer": {
+      "sourceId": "Macro.Do8cNIAFjdCMzI6Y",
+      "hash": "f3be3fa0c494706c4f70561971a15b82de5b86a7"
+    }
+  },
+  "_id": "k1dq52MvfvRfv4WP",
+  "ownership": {
+    "default": 0,
+    "ns4btKHsloPmCY1e": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1697492767168,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_key": "!macros!k1dq52MvfvRfv4WP"
+}

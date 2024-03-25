@@ -1,0 +1,27 @@
+{
+  "name": "Ioun Stone",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "const tokenD = canvas.tokens.controlled[0];\n\nnew Sequence()\n    .effect(\"jb2a.ioun_stones.01.blue.awareness\")\n        .attachTo(tokenD)\n        .scale(0.25)\n        .spriteOffset({ x: 50, y: -50 })\n        .zeroSpriteRotation(true)\n        .loopProperty(\"spriteContainer\", \"rotation\", { from: 0, to: 360, duration: 3000})\n        .persist()\n        .name(`${tokenD.data.name} - Ioun Stone Awareness`)\n    .play()",
+  "folder": "MUrlWbVP9uj79bSv",
+  "ownership": {
+    "default": 0,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1697336857045,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "HKr7E5G3dYSOxIPg",
+  "sort": 600000,
+  "_key": "!macros!HKr7E5G3dYSOxIPg"
+}

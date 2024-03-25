@@ -1,0 +1,122 @@
+{
+  "folder": "FWDReABYAPJHTjJJ",
+  "name": "Weapon Versatility Stopgap",
+  "type": "feat",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Toggles for versatile weapons, needed until the system implements.</p>"
+    },
+    "rules": [
+      {
+        "key": "DamageDice",
+        "selector": "damage",
+        "override": {
+          "damageType": "piercing"
+        },
+        "predicate": [
+          "item:trait:versatile-p",
+          "use-versatile-p"
+        ]
+      },
+      {
+        "key": "DamageDice",
+        "selector": "damage",
+        "override": {
+          "damageType": "slashing"
+        },
+        "predicate": [
+          "item:trait:versatile-s",
+          "use-versatile-s"
+        ]
+      },
+      {
+        "key": "DamageDice",
+        "selector": "damage",
+        "override": {
+          "damageType": "bludgeoning"
+        },
+        "predicate": [
+          "item:trait:versatile-b",
+          "use-versatile-b"
+        ]
+      },
+      {
+        "key": "RollOption",
+        "option": "use-versatile-p",
+        "label": "Use versatile Piercing damage",
+        "domain": "damage",
+        "toggleable": true
+      },
+      {
+        "key": "RollOption",
+        "option": "use-versatile-s",
+        "label": "Use versatile Slashing damage",
+        "domain": "damage",
+        "toggleable": true
+      },
+      {
+        "key": "RollOption",
+        "option": "use-versatile-b",
+        "label": "Use versatile Bludgeoning damage",
+        "domain": "damage",
+        "toggleable": true
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.878,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.837,
+        "foundry": "11.313",
+        "system": "5.7.3"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "category": "bonus",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "img": "systems/pf2e/icons/default-icons/martial.svg",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1679164431746,
+    "modifiedTime": 1698035469406,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "C4TUueMfaIO9p6Q9",
+  "_key": "!items!C4TUueMfaIO9p6Q9"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "update initiative skill handlebars",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "const baseskills = Object.entries(CONFIG.PF2E.skillList).filter(s => s[0]!=='lore').map(s=>({slug: s[0], label: game.i18n.localize(s[1])}));\n\n// return cwarn(Object.entries(CONFIG.PF2E.skillList))\n\n//Check for one or more selected tokens:\nconst tokens = canvas.tokens.controlled;\nif (!tokens.length) {\n    const charToken = game.user.character?.getActiveTokens()[0];\n    if (!charToken) {\n        ui.notifications.warn(\"Please select at least one token or assign yourself a character.\");\n        return;\n    } else {\n        tokens.push(charToken);\n    }\n}\n\nlet data = {\n    actors: [{\n        name: 'Set All Selected',\n        id: 'all',\n        initChoices: [{slug:'perception', label:'Perception'}].concat(baseskills),\n        currInit: ''\n    }]\n};\nfor (const token of tokens) {\n    const askills = baseskills.concat(Object.entries(actor.skills).filter(s=>s[0].includes('lore')).map(s=>({slug: s[0], label: s[1].label}))).sort((a, b) => a.slug.localeCompare(b.slug));\n    askills.unshift({slug:'perception', label:'Perception'})\n    data.actors.push({\n        name: token.actor.name,\n        id: token.actor._id,\n        initChoices: askills,\n        currInit: token.actor.system.attributes.initiative.statistic\n    });\n}\n\nlet hbs = `\n<form>\n    {{#each actors as |actor|}}\n        <div class=\"form-group\">\n            <label for=\"{{actor.id}}-init\"><strong>{{actor.name}}:&nbsp;</strong></label>\n            <select id=\"{{actor.id}}-init\" name=\"{{actor.id}}-init\">\n                {{#if (eq actor.id \"all\")}}<option value=\"\" selected></option>{{/if}}\n                {{#each actor.initChoices as |skill|}}\n                    <option value=\"{{skill.slug}}\"{{#if (eq skill.slug actor.currInit)}}selected{{/if}}>{{skill.label}}</option>\n                {{/each}}\n            </select>\n        </div>\n    {{/each}}\n</form>`;\n\nlet form = (Handlebars.compile(hbs))(data);\n// cwarn(form);\nconst response = await Dialog.wait({\n    title:'hi',\n    content: form,\n    buttons: {\n        yes: {\n            label: 'yes',\n            callback: (html) => {\n                const formElement = html[0].querySelector('form');\n                const formData = new FormDataExtended(formElement);\n                cwarn(formData.toObject());\n                return true;\n            },\n        },\n        no: {\n            label: 'no'\n        }\n    },\n    close: (html) => {\n        cwarn(html)\n    },\n    default: 'yes'\n});\n\ncwarn(response)",
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForSpecificUser": ""
+    },
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1682660899075,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "folder": "S2KSaNQJxdlRFkyr",
+  "sort": 900000,
+  "_id": "AWN1bUhslMeweg8j",
+  "_key": "!macros!AWN1bUhslMeweg8j"
+}

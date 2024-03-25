@@ -1,0 +1,97 @@
+{
+  "name": "Effect: Making a Fake Out Strike",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>This character is about to make an Attack Roll to @UUID[Compendium.pf2e.actionspf2e.Item.HCl3pzVefiv9ZKQW]{Aid} their ally.</p>"
+    },
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "selectors": [
+          "attack-roll"
+        ],
+        "uuid": "Item.YKOfCALkNe3c1FAP"
+      },
+      {
+        "key": "FlatModifier",
+        "label": "Previously Injured",
+        "selector": "attack-roll",
+        "value": 1,
+        "type": "circumstance",
+        "predicate": [
+          "fake-out-previously-injured"
+        ]
+      },
+      {
+        "key": "RollOption",
+        "toggleable": true,
+        "option": "fake-out-previously-injured",
+        "value": false,
+        "domain": "attack-roll",
+        "label": "Previously injured target this turn"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.878,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.877,
+        "foundry": "11.313",
+        "system": "5.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "img": "systems/pf2e/icons/default-icons/effect.svg",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.8.3",
+    "coreVersion": "11.315",
+    "createdTime": 1692855721542,
+    "modifiedTime": 1700027745454,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "AqWRWYVPDRvhnICi",
+  "sort": 200000,
+  "_key": "!items!AqWRWYVPDRvhnICi"
+}

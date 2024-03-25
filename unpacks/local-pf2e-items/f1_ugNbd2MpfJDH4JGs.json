@@ -1,0 +1,19 @@
+{
+  "name": "f1",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "ugNbd2MpfJDH4JGs",
+  "sort": 100000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1690169383106,
+    "modifiedTime": 1697493534977,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "_key": "!folders!ugNbd2MpfJDH4JGs"
+}

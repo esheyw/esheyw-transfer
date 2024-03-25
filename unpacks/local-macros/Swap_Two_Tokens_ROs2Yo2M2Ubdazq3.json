@@ -1,0 +1,34 @@
+{
+  "name": "Swap Two Tokens",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/game-icons-net/blackbackground/body-swapping.svg",
+  "command": "const tokens = canvas.tokens.controlled;\nif (tokens.length !== 2) {\n    return ui.notifications.warn(\"Please select exactly two tokens.\");\n}\nconst [t1, t2] = tokens;\n\nconst t1update = {x: t2.x, y: t2.y};\nconst t2update = {x: t1.x, y: t1.y};\n//do it instantly if alt is held\nconst options = {\n    animate: !event.altKey,\n}\nt1.document.update(t1update, options);\nt2.document.update(t2update, options);",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForSpecificUser": ""
+    },
+    "cf": null,
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1682137134517,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "ROs2Yo2M2Ubdazq3",
+  "folder": "MUrlWbVP9uj79bSv",
+  "sort": 1600000,
+  "ownership": {
+    "default": 0,
+    "holNdNHqtCzAbMAV": 3,
+    "717Xeq3czH96acPF": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_key": "!macros!ROs2Yo2M2Ubdazq3"
+}

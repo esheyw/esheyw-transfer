@@ -1,0 +1,157 @@
+{
+  "name": "Crying Angel Pendant (Rechargable)",
+  "type": "consumable",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Usage</strong> affixed to armor</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">F</span> Envision</p>\n<p><strong>Trigger</strong> You critically fail to Administer First Aid</p>\n<p><strong>Requirements</strong> You are trained in Medicine</p>\n<p>When you activate this alabaster pendant, your critical failure becomes a normal failure instead.</p>"
+    },
+    "rules": [],
+    "slug": "crying-angel-pendant",
+    "_migration": {
+      "version": 0.878,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.837,
+        "foundry": "11.313",
+        "system": "5.7.3"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "consumable",
+        "divine",
+        "necromancy",
+        "talisman"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "weight": {
+      "value": "-"
+    },
+    "equippedBulk": {
+      "value": ""
+    },
+    "price": {
+      "value": {
+        "gp": 7
+      }
+    },
+    "equipped": {
+      "carryType": "worn"
+    },
+    "stackGroup": null,
+    "negateBulk": {
+      "value": "0"
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "Unusual Object",
+        "img": "systems/pf2e/icons/unidentified_item_icons/talisman.webp",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "affixed-to-armor"
+    },
+    "consumableType": {
+      "value": "wand"
+    },
+    "charges": {
+      "value": 1,
+      "max": 1
+    },
+    "consume": {
+      "value": ""
+    },
+    "autoDestroy": {
+      "value": false
+    },
+    "spell": null,
+    "activation": {
+      "type": "",
+      "cost": 0,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": 0,
+      "per": null
+    }
+  },
+  "img": "systems/pf2e/icons/equipment/consumables/talismans/crying-angel-pendant.webp",
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3
+  },
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.HHELOoN5GVonUiIa"
+    },
+    "scene-packer": {
+      "hash": "8277771f2e271ff042e2cd97e17bc76e2fb5ae50"
+    },
+    "exportSource": {
+      "world": "av2",
+      "system": "pf2e",
+      "coreVersion": "9.280",
+      "systemVersion": "3.13.6"
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1666482125140,
+    "modifiedTime": 1698035483399,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "folder": "yTWoC8AjyrX9ZC9R",
+  "sort": 100000,
+  "_id": "OUFtoOyk5zMpHhlr",
+  "_key": "!items!OUFtoOyk5zMpHhlr"
+}

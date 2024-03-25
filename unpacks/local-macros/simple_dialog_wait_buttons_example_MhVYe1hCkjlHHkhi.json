@@ -1,0 +1,27 @@
+{
+  "name": "simple dialog wait buttons example",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "const dData = {\n  title: `Choose your Roll`,\n  content: `Click the appropriate button.`,\n  buttons: {\n    sad: {\n      label: \"2d6kl\"\n    },\n    neutral: {\n      label: \"2d6\"\n    },\n    happy: {\n      label:\"2d6kh\"\n    }\n  }\n}\n\nconst out = await Dialog.wait(dData)\nlet formula;\nswitch (out) {\n  case 'sad':\n    formula = \"2d6kl\";\n    break;\n  case 'neutral':\n    formula = \"1d6\";\n    break;\n  case 'happy':\n    formula = \"2d6kh\"\n    break;\n}\nconst roll = new Roll(formula);\nawait roll.toMessage();",
+  "folder": "S2KSaNQJxdlRFkyr",
+  "ownership": {
+    "default": 0,
+    "xuYHxk9sJoYKM7d6": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1701741830000,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "MhVYe1hCkjlHHkhi",
+  "sort": 300000,
+  "_key": "!macros!MhVYe1hCkjlHHkhi"
+}

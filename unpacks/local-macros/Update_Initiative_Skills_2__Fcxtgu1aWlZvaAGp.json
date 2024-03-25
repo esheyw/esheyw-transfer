@@ -1,0 +1,27 @@
+{
+  "name": "Update Initiative Skills 2?",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "/* Update Initiative Skills 2.0 - esheyw */\n\n//Check for one or more selected tokens:\nconst tokens = canvas.tokens.controlled;\nif (!tokens.length) {\n    const charToken = game.user.character?.getActiveTokens()[0];\n    if (!charToken) {\n        ui.notifications.warn(\"Please select at least one token or assign yourself a character.\");\n        return;\n    } else {\n        tokens.push(charToken);\n    }\n}\n\nasync function submitCallback(html, event) {\n  const data = new FormDataExtended(html[0].querySelector(\"form\")).object;\n  if (data['all']) {\n      const allskill = data['all'];\n      delete data['all'];\n      for (const id of Object.keys(data)) {\n          let actor = fromUuidSync(id)?.actor;\n          await actor.update({\n            'system.attributes.initiative.statistic': allskill\n          });   \n      }\n  } else {\n      delete data['all'];\n      for (const [id,skill] of Object.entries(data)) {\n          let actor = fromUuidSync(id)?.actor;\n          await actor.update({\n            'system.attributes.initiative.statistic': skill\n          });   \n      }\n  }\n}\nlet templatedata = {};\ntemplatedata.uskills = Object.entries(CONFIG.PF2E.skillList)\ntemplatedata.uskills.unshift(['perception', 'PF2E.PerceptionLabel'])\ntemplatedata.uskills.pop(); // remove the generic lore entry\ntemplatedata.uskills = templatedata.uskills.map(e=>{return {slug: e[0], label: e[1]}})\ntemplatedata.tokens = tokens.map(t=>{\n    let tout = {};\n    tout.name = t.name;\n    tout.id = t.document.uuid;\n    tout.skills = t.actor.skills;\n    return tout;\n});\nlet template = `\n<form>\n    <div class=\"form-group\">\n        <label for=\"all\">All</label>\n        <select id=\"all\" name=\"all\">\n            {{selectOptions uskills nameAttr=\"slug\" labelAttr=\"label\" sort=true blank=\"-\" localize=\"true\"}}\n        </select>\n    </div>\n    <hr />\n    {{#each tokens as |token|}}\n        <div class=\"form-group\">\n            <label for=\"{{token.id}}\">{{token.name}}</label>\n            <select id=\"{{token.id}}\" name=\"{{token.id}}\">\n                <option value=\"perception\" selected>Perception</option>\n                {{selectOptions token.skills nameAttr=\"slug\" labelAttr=\"label\" sort=\"true\"}}\n            </select>\n        </div>\n    {{/each}}\n</form>`;\nlet compiled = Handlebars.compile(template)(templatedata);\nconst dData = {\n  title: `Set Initiative Skills`,\n  content: compiled,\n  buttons: {\n    yes: {\n      icon: \"<i class='fas fa-check'></i>\",\n      label: `Apply Changes`,\n      callback:  submitCallback,\n    },\n    no: {\n      icon: \"<i class='fas fa-times'></i>\",\n      label: `Cancel Changes`\n    },\n  },\n  default: \"yes\", \n}\nnew Dialog(dData).render(true);",
+  "folder": "MUrlWbVP9uj79bSv",
+  "ownership": {
+    "default": 0,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1689827491797,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "Fcxtgu1aWlZvaAGp",
+  "sort": 500000,
+  "_key": "!macros!Fcxtgu1aWlZvaAGp"
+}

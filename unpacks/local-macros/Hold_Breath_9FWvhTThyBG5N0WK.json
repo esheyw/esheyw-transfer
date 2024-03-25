@@ -1,0 +1,37 @@
+{
+  "name": "Hold Breath",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/game-icons-net/blackbackground/lungs.svg",
+  "command": "const edata = {\n    type: 'effect',\n    name: 'Holding Breath',\n    img: 'systems/pf2e/icons/spells/powerful-inhalation.webp',\n    system: {\n        badge: {\n            value: 1,\n            type: 'counter',\n            label: null,\n        },\n        tokenIcon: { show: true },\n            duration: {\n            value: 1,\n            unit: 'unlimited',\n            sustained: false,\n            expiry: 'turn-start',\n        },\n        description: {\n            value: `<p>You can hold your breath for a number of rounds equal to 5 + your Constitution modifier. Reduce your remaining air by 1 round at the end of each of your turns, or by 2 if you attacked or cast any spells that turn. You also lose 1 round worth of air each time you are critically hit or critically fail a save against a damaging effect. If you speak (including casting spells with verbal components or activating items with command components) you lose all remaining air.</p> <p>When you run out of air, you fall unconscious and start suffocating. You can’t recover from being unconscious and must attempt a @Check[type:fortitude|dc:20|showDC:all] at the end of each of your turns. On a failure, you take [[/r 1d10]] damage, and on a critical failure, you die. On each check after the first, the DC increases by 5 and the damage by 1d10; these increases are cumulative. Once your access to air is restored, you stop suffocating and are no longer unconscious (unless you’re at 0 Hit Points).</p>`,\n        },\n        unidentified: false,\n        traits: {\n            custom: '',\n            rarity: 'common',\n            value: [],\n        },\n        level: {\n            value: 0,\n        },\n        slug: `holding-breath`,\n    },\n    flags: {},\n}\nconst macrodoc = this;\nclass ValidatedDialog extends Dialog {\n    submit(button, event) {\n        if (button.label === 'Submit' && !this.element[0].querySelector('#effectID').value) return;\n        super.submit(button, event);\n    }\n}\nlet dData = {};\nlet dOpts = {};\nlet effectID = macrodoc.getFlag('world', 'effect');\nlet effect;\nif (effectID) {\n    effect = await fromUuid(effectID);\n}\n//only unset the effect if the saved ID is invalid, not if shift\nif (!effect) await macrodoc.unsetFlag('world', 'effect');\nif (!effect || event.shiftKey) {\n\n    const initialName = effect?.name ?? \"No Effect Saved\";\n    const initialID = effect?.uuid ?? \"\";\n    const form = `\n    <form>\n        <div class=\"form-group\">\n            <label for=\"effect\">Drop effect here:</label>\n            <input id=\"effectName\" name=\"effect\" type=\"text\" value=\"${initialName}\" />\n            <input id=\"effectID\" name=\"effectID\" type=\"hidden\" value=\"${initialID}\" />\n        </div>                \n    </form> \n    `;\n\n    function renderCallback(html) {\n        const textbox = html[0].querySelector('#effectName')\n        textbox.addEventListener('drop', dropCallback);\n        textbox.readOnly = true;\n        const submit = html[2].querySelector('button.submit')\n        if (!effect) submit.disabled = true;\n    }\n    async function dropCallback(event) {\n        const dropdata = JSON.parse(event.dataTransfer?.getData(\"text/plain\"));\n        if (!dropdata || dropdata.type !== 'Item' || dropdata.itemType !== 'effect') {\n            this.value = 'Invalid: Not an Effect';\n            return;      \n        } \n        const effect = await fromUuid(dropdata.uuid);\n        if (!effect) return this.value = `Couldn't retrieve effect ${dropdata.uuid}`;\n        if (!effect.system.badge || effect.system.badge.type !== 'counter' || 'labels' in effect.system.badge) {\n            return this.value = 'Invalid: Effect lacks a counter.';\n        }\n                \n        this.value = effect.name;\n\n        this.parentElement.querySelector('#effectID').value = dropdata.uuid;\n        this.closest('.app').querySelector(\"button.submit\").disabled = false;\n    }\n    function effectcallback(html) {    \n        const formElement = html[0].querySelector('form');\n        const formData = new FormDataExtended(formElement);\n        const formDataObject = formData.toObject();\n        return formDataObject.effectID;\n    }\n    async function buildcallback(html) {\n        const builteffect = await Item.create(edata);\n        await builteffect.update({'flags.core.sourceId': builteffect.uuid});\n        return builteffect.uuid;\n    }\n    dData = {\n        title: \"Drop Effect Here\",\n        content: form,\n        render: renderCallback,\n        buttons: {      \n            submit: { label: \"Submit\", callback: effectcallback, icon: '<i class=\"fas fa-check\"></i>' },            \n            cancel: { label: \"Cancel\", icon: '<i class=\"fas fa-times\"></i>' }\n        },\n        default: 'submit',\n    }\n    if (!game.items.getName('Holding Breath')) {\n        dData.buttons.build = { label: \"Build Default\", callback: buildcallback }\n    }\n    dOpts = {\n        height: \"auto\",\n        width: 400,\n    }\n    const response = await ValidatedDialog.wait(dData, dOpts);\n    if (response === 'cancel') return;    \n    await macrodoc.setFlag('world', 'effect', response)\n}\n\n\n\n//Check for one or more selected tokens:\nconst tokens = canvas.tokens.controlled;\nif (!tokens.length) {\n    const charToken = game.user.character?.getActiveTokens()[0];\n    if (!charToken) {\n        ui.notifications.warn(\"Please select at least one token or assign yourself a character.\");\n        return;\n    } else {\n        tokens.push(charToken);\n    }\n}\n\neffect ??= await fromUuid(this.getFlag('world', 'effect'));\n\nfor (token of tokens) {\n    if (!(['character', 'npc'].includes(token.actor.type))) continue;    \n    const effectExists = token.actor.items.filter(i => (i.flags?.core?.sourceId && i.flags.core.sourceId == effect.uuid))\n    if (effectExists.length) continue;\n    const effectdata = effect.toObject();\n    effectdata.flags.core ??= [];\n    effectdata.flags.core.sourceId = effect.uuid;\n    effectdata.system.badge.value = token.actor.abilities.con.mod + 5;\n    await token.actor.createEmbeddedDocuments(\"Item\",[effectdata]);\n}",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": true,
+      "runForSpecificUser": ""
+    },
+    "world": {
+      "breathEffect": "Item.k2sy9dfV3MKbxzQX"
+    },
+    "cf": null,
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1681618829904,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "9FWvhTThyBG5N0WK",
+  "folder": "MUrlWbVP9uj79bSv",
+  "sort": 1200000,
+  "ownership": {
+    "default": 0,
+    "holNdNHqtCzAbMAV": 3,
+    "717Xeq3czH96acPF": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_key": "!macros!9FWvhTThyBG5N0WK"
+}

@@ -1,0 +1,111 @@
+{
+  "name": "Scout (aura)",
+  "type": "effect",
+  "img": "icons/tools/navigation/map-marked-red.webp",
+  "effects": [],
+  "flags": {
+    "core": {
+      "sourceId": "Item.xQG4x17l47G11FsZ"
+    },
+    "exportSource": {
+      "world": "otari",
+      "system": "pf2e",
+      "coreVersion": "0.8.8",
+      "systemVersion": "2.9.1.6656"
+    }
+  },
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>@Compendium[pf2e.actionspf2e.kV3XM0YJeS2KCSOb]{Scout}</p>"
+    },
+    "rules": [
+      {
+        "key": "Aura",
+        "radius": 300,
+        "effects": [
+          {
+            "affects": "allies",
+            "events": [
+              "enter"
+            ],
+            "uuid": "Compendium.pf2e.other-effects.Item.EMqGwUi3VMhCjTlF",
+            "predicate": [
+              {
+                "not": "feat:incredible-scout"
+              }
+            ]
+          },
+          {
+            "affects": "allies",
+            "events": [
+              "enter"
+            ],
+            "uuid": "Compendium.pf2e.other-effects.Item.la8rWwUtReElgTS6",
+            "predicate": [
+              "feat:incredible-scout"
+            ]
+          }
+        ],
+        "slug": "scouting-aura"
+      }
+    ],
+    "slug": "scout-aura",
+    "_migration": {
+      "version": 0.878,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.837,
+        "foundry": "11.313",
+        "system": "5.7.3"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "target": null,
+    "unidentified": false
+  },
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1682842066824,
+    "modifiedTime": 1698035469406,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "folder": "FWDReABYAPJHTjJJ",
+  "sort": 25000,
+  "_id": "UsUeDtDJHoKL5Jp6",
+  "_key": "!items!UsUeDtDJHoKL5Jp6"
+}

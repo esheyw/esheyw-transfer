@@ -1,0 +1,27 @@
+{
+  "name": "getAllFromAllowedPacks",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/material-symbols-0.4.5/sharp/filter_alt-inverted.svg",
+  "command": "// types: [all, action, bestiary, campaignFeature, equipment, feat, hazard, spell] (compendium browser divisions + 'all')\n//        if you need to find effects like this, too bad I guess\n// fields: document fields required to index for provided filter\n// filter: a function that takes one argument, returns bool, for .filter()\n// strictSourcing: if true, will suppress documents with missing source information, if false they're let through\n// fetch: if true, return full documents instead of the filtered index\nasync function getAllFromAllowedPacks({\n  type = \"equipment\",\n  fields = [],\n  filter = null,\n  strictSourcing = true,\n  fetch = false\n} = {}) {\n  const FUNC = 'getAllFromAllowedPacks';\n  const browser = game.pf2e.compendiumBrowser;\n  const validTypes = Object.keys(browser.settings);\n  validTypes.push(\"all\");\n  const aliases = {\n    actor: \"bestiary\",\n    npc: \"bestiary\",\n    ability: \"action\",\n  };\n\n  const originalType = type;\n  if (!validTypes.includes(type) && !validTypes.includes(type = aliases[type] ?? \"\")) {\n    ui.notifications.error(`${FUNC}: invalid type ${originalType}`);\n    return null;\n  }\n  if (!Array.isArray(fields) || (fields.length && fields.some(f => typeof f !== \"string\"))) {\n    ui.notifications.error(`${FUNC}: fields must be an array of only strings`);\n    return null;\n  }\n  if (filter && typeof filter !== \"function\") {\n    ui.notifications.error(`${FUNC}: provided filter must be a function`);\n    return null;\n  }\n  \n  //initialize the sources list if it hasn't been set\n  if (!Object.keys(browser.packLoader.sourcesSettings.sources).length) {\n    await browser.packLoader.updateSources(browser.loadedPacksAll());\n  }\n  const packList = type === \"all\"\n     ? Object.values(browser.settings).flatMap(t => Object.entries(t))\n     : Object.entries(browser.settings[type]);\n\n  const loadablePacks = packList.filter(([_, p]) => p.load).map(([pack]) => pack);\n  const unloadablePacks = packList.filter(([_, p]) => !p.load).map(([pack]) => pack);\n  const sources = browser.packLoader.sourcesSettings.sources;\n  const loadableSources = Object.values(sources)\n    .filter(s => s.load)\n    .map(s => s.name.slugify({\n        strict: true\n      }));      \n  fields.push(\n    \"system.details.publication\",\n    \"system.publication\",\n    \"system.source\",\n    \"system.details.source\"\n  );\n\n  let out = [];\n  const sourceFilter = (d) => {\n    const slug = (d?.system?.details?.publication?.title\n       ?? d?.system?.publication?.title\n       ?? d?.system?.details?.source?.value\n       ?? d?.system?.source?.value\n       ?? \"\").slugify({\n      strict: true\n    });\n    if (!slug)\n      return strictSourcing ? false : true;\n    return loadableSources.includes(slug);\n  }\n\n  for (const packName of loadablePacks) {\n    const pack = game.packs.get(packName);\n    const initialDocs = await pack.getIndex({\n      fields\n    });\n    const sourcedDocs = initialDocs.filter(sourceFilter);\n    let filteredDocs = [];\n    try {\n      filteredDocs = filter ? sourcedDocs.filter(filter) : sourcedDocs;\n    } catch (error) {\n      ui.notifications.error(`Error in provided filter: ${error.toString()}`)\n      return null;\n    }\n\n    if (fetch) {\n      out.push(...(await pack.getDocuments({\n            _id__in: filteredDocs.map(d => d._id)\n          })))\n    } else {\n      out.push(...filteredDocs)\n    }\n  }\n  return out;\n}\n\nconst testFilter = (d) => d.system.traits.value.includes(\"exploration\")\n\nconst symonFilter = (t) => t.type === \"weapon\"\n && t.system.level.value <= actor.level\n && t.system.range === null\n && !t.system.traits.value.includes(\"magical\")\n && !t.system.traits.value.includes(\"bomb\")\n && !t.system.traits.value.includes(\"vehicular\")\n && t.system.potencyRune.value === null\n\n\nconst options = {\n  type: \"ability\",\n  fields: [\n    \"system.details.level\",\n    \"system.traits\",\n    \"system.level\",\n    \"system.traits\",\n    \"system.potencyRune\",\n    \"system.range\"\n  ],\n  filter: testFilter,\n  strictSourcing: false,\n  // fetch: true\n}\n\nlet finalout = (await getAllFromAllowedPacks(options))\nfinalout = finalout ? finalout.map(d => {return{name: d.name, source: d?.system?.details?.publication?.title\n       ?? d?.system?.publication?.title\n       ?? d?.system?.details?.source?.value\n       ?? d?.system?.source?.value\n       ?? \"\"}}) : 'there was an error'\n  console.warn('final out:', finalout);",
+  "folder": "MUrlWbVP9uj79bSv",
+  "ownership": {
+    "default": 0,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1697674532914,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "9t6ftqdkCIZkrkGw",
+  "sort": 300000,
+  "_key": "!macros!9t6ftqdkCIZkrkGw"
+}

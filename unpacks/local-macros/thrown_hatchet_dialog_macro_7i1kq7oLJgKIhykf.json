@@ -1,0 +1,33 @@
+{
+  "name": "thrown hatchet dialog macro",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "//Check for exactly one selected token\nif (canvas.tokens.controlled.length > 1) {\n    ui.notifications.warn(\"Please select only a single token.\");\n    return;\n}\nconst token = canvas.tokens.controlled[0] ?? game.user.character?.getActiveTokens()[0];\nif (!token) {    \n    ui.notifications.warn(\"Please select exactly one token or assign yourself a character.\");\n    return;\n}\n//find the relevant action\nconst slug = 'hatchet';\nconst action = token.actor.system.actions.find(a => a.ready && a.altUsages.length && a.slug === slug);\nif (!action) {\n    ui.notifications.warn('Selected character has no ready strikes with slug '+slug+'.');\n    return;\n}\n\nconst dopts = {\n  title: action.label,\n  buttons: {\n    0: {\n      label: action.altUsages[0].variants[0].label,\n      callback: () => action.altUsages[0].variants[0].roll({event})\n    },\n    1: {\n      label: action.altUsages[0].variants[1].label,\n      callback: () => action.altUsages[0].variants[1].roll({event})\n    },\n    2: {\n      label: action.altUsages[0].variants[2].label,\n      callback: () => action.altUsages[0].variants[2].roll({event})\n    }\n  }    \n};\nnew Dialog(dopts).render(true);",
+  "ownership": {
+    "default": 0,
+    "holNdNHqtCzAbMAV": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForSpecificUser": ""
+    },
+    "core": {},
+    "cf": null
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1681279520310,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "folder": "S2KSaNQJxdlRFkyr",
+  "sort": 1200000,
+  "_id": "7i1kq7oLJgKIhykf",
+  "_key": "!macros!7i1kq7oLJgKIhykf"
+}

@@ -1,0 +1,970 @@
+{
+  "_id": "soEXvBoUDJSJjQCs",
+  "name": "!Otari Overworld",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "Otari",
+  "foreground": null,
+  "thumb": "modules/esheyw-transfer/assets/scenes/local-pf2e-scenes-soEXvBoUDJSJjQCs-thumb.png",
+  "width": 2048,
+  "height": 1536,
+  "padding": 0.25,
+  "initial": {
+    "x": 1845,
+    "y": 1164,
+    "scale": 0.8124360643249422
+  },
+  "backgroundColor": "#000000",
+  "grid": {
+    "size": 50,
+    "type": 0,
+    "color": "#000000",
+    "alpha": 0.2,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": false,
+  "fogExploration": false,
+  "fogReset": 1647544022216,
+  "globalLight": false,
+  "globalLightThreshold": null,
+  "darkness": 0,
+  "drawings": [],
+  "tokens": [
+    {
+      "_id": "V77zYxWfrdCrXt5i",
+      "name": "Glades",
+      "displayName": 20,
+      "actorId": "VKdY8Qn388kZcbYS",
+      "actorLink": true,
+      "width": 1,
+      "height": 1,
+      "x": 1287,
+      "y": 880,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "color": null,
+        "attenuation": 0.5
+      },
+      "disposition": 0,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": false,
+          "autoscale": false
+        },
+        "LightsHUD": {
+          "lightspellstate": false,
+          "lanternconsumablestate": false,
+          "torchconsumablestate": false
+        },
+        "df-qol": {
+          "locked": true
+        },
+        "reset-movement": {}
+      },
+      "delta": {
+        "_id": "V77zYxWfrdCrXt5i",
+        "name": null,
+        "type": null,
+        "img": null,
+        "system": {},
+        "items": [],
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!soEXvBoUDJSJjQCs.V77zYxWfrdCrXt5i.V77zYxWfrdCrXt5i"
+      },
+      "texture": {
+        "src": "systems/pf2e/icons/default-icons/loot.svg",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!soEXvBoUDJSJjQCs.V77zYxWfrdCrXt5i"
+    },
+    {
+      "_id": "WrRxe5Nwtc7Abr5q",
+      "name": "Crooks Nook",
+      "displayName": 20,
+      "actorId": "55Z9dlfotZQo4qcN",
+      "actorLink": true,
+      "width": 1,
+      "height": 1,
+      "x": 1295,
+      "y": 1314,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": false,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "color": null,
+        "attenuation": 0.5
+      },
+      "disposition": 0,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": false,
+          "autoscale": false
+        },
+        "LightsHUD": {
+          "lightspellstate": false,
+          "lanternconsumablestate": false,
+          "torchconsumablestate": false
+        },
+        "df-qol": {
+          "locked": true
+        },
+        "reset-movement": {}
+      },
+      "delta": {
+        "_id": "WrRxe5Nwtc7Abr5q",
+        "name": null,
+        "type": null,
+        "img": null,
+        "system": {},
+        "items": [],
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!soEXvBoUDJSJjQCs.WrRxe5Nwtc7Abr5q.WrRxe5Nwtc7Abr5q"
+      },
+      "texture": {
+        "src": "systems/pf2e/icons/default-icons/loot.svg",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!soEXvBoUDJSJjQCs.WrRxe5Nwtc7Abr5q"
+    },
+    {
+      "_id": "pvdi1H8EFeR5wyNO",
+      "name": "Dawnflower Library",
+      "displayName": 20,
+      "actorId": "P7Vhlt7w5ru9oH2W",
+      "actorLink": true,
+      "width": 1,
+      "height": 1,
+      "x": 873,
+      "y": 1767,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": false,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "color": null,
+        "attenuation": 0.5
+      },
+      "disposition": 0,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": false,
+          "autoscale": false
+        },
+        "df-qol": {
+          "locked": true
+        },
+        "LightsHUD": {
+          "lightspellstate": false,
+          "lanternconsumablestate": false,
+          "torchconsumablestate": false
+        },
+        "reset-movement": {}
+      },
+      "delta": {
+        "_id": "pvdi1H8EFeR5wyNO",
+        "name": null,
+        "type": null,
+        "img": null,
+        "system": {},
+        "items": [],
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!soEXvBoUDJSJjQCs.pvdi1H8EFeR5wyNO.pvdi1H8EFeR5wyNO"
+      },
+      "texture": {
+        "src": "systems/pf2e/icons/default-icons/loot.svg",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!soEXvBoUDJSJjQCs.pvdi1H8EFeR5wyNO"
+    },
+    {
+      "_id": "eb5drv4UxkVcBTVL",
+      "name": "Odd Stories",
+      "displayName": 20,
+      "actorId": "X2lqpbOkb5ietmzn",
+      "actorLink": true,
+      "width": 1,
+      "height": 1,
+      "x": 1427,
+      "y": 922,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "color": null,
+        "attenuation": 0.5
+      },
+      "disposition": 0,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": false,
+          "autoscale": false
+        },
+        "df-qol": {
+          "locked": true
+        },
+        "LightsHUD": {
+          "lightspellstate": false,
+          "lanternconsumablestate": false,
+          "torchconsumablestate": false
+        },
+        "reset-movement": {}
+      },
+      "delta": {
+        "_id": "eb5drv4UxkVcBTVL",
+        "name": null,
+        "type": null,
+        "img": null,
+        "system": {},
+        "items": [],
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!soEXvBoUDJSJjQCs.eb5drv4UxkVcBTVL.eb5drv4UxkVcBTVL"
+      },
+      "texture": {
+        "src": "systems/pf2e/icons/default-icons/loot.svg",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!soEXvBoUDJSJjQCs.eb5drv4UxkVcBTVL"
+    },
+    {
+      "_id": "5VGq5cS9Ii9naoze",
+      "name": "Otari Garrison",
+      "displayName": 20,
+      "actorId": "mgApzXXpkrqCjsZ0",
+      "actorLink": true,
+      "width": 1,
+      "height": 1,
+      "x": 1627,
+      "y": 906,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "color": null,
+        "attenuation": 0.5
+      },
+      "disposition": 0,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "token-auras": {
+          "aura1": {
+            "colour": "#ffffff",
+            "opacity": 0.5,
+            "distance": null,
+            "square": false
+          },
+          "aura2": {
+            "colour": "#ffffff",
+            "opacity": 0.5,
+            "distance": null,
+            "square": false
+          }
+        },
+        "perfect-vision": {
+          "visionRules": "default",
+          "monoVisionColor": "",
+          "sightLimit": null,
+          "_version": 1
+        },
+        "pf2e": {
+          "linkToActorSize": false,
+          "autoscale": false
+        },
+        "LightsHUD": {
+          "lightspellstate": false,
+          "lanternconsumablestate": false,
+          "torchconsumablestate": false
+        },
+        "df-qol": {
+          "locked": true
+        },
+        "reset-movement": {}
+      },
+      "delta": {
+        "_id": "5VGq5cS9Ii9naoze",
+        "name": null,
+        "type": null,
+        "img": null,
+        "system": {},
+        "items": [],
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!soEXvBoUDJSJjQCs.5VGq5cS9Ii9naoze.5VGq5cS9Ii9naoze"
+      },
+      "texture": {
+        "src": "systems/pf2e/icons/default-icons/loot.svg",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!soEXvBoUDJSJjQCs.5VGq5cS9Ii9naoze"
+    },
+    {
+      "_id": "8y0dPkQjeZwJS9Nl",
+      "name": "Otari Market",
+      "displayName": 20,
+      "actorId": "SSzXabYoJRn5YUJx",
+      "actorLink": true,
+      "width": 1,
+      "height": 1,
+      "x": 1454,
+      "y": 1272,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "color": null,
+        "attenuation": 0.5
+      },
+      "disposition": 0,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": false,
+          "autoscale": false
+        },
+        "df-qol": {
+          "locked": true
+        },
+        "LightsHUD": {
+          "lightspellstate": false,
+          "lanternconsumablestate": false,
+          "torchconsumablestate": false
+        },
+        "reset-movement": {}
+      },
+      "delta": {
+        "_id": "8y0dPkQjeZwJS9Nl",
+        "name": null,
+        "type": null,
+        "img": null,
+        "system": {},
+        "items": [],
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!soEXvBoUDJSJjQCs.8y0dPkQjeZwJS9Nl.8y0dPkQjeZwJS9Nl"
+      },
+      "texture": {
+        "src": "systems/pf2e/icons/default-icons/loot.svg",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!soEXvBoUDJSJjQCs.8y0dPkQjeZwJS9Nl"
+    },
+    {
+      "_id": "Qfc7FWqCIzKiYXVO",
+      "name": "Stone Ring Pond",
+      "displayName": 20,
+      "actorId": "24bKS8YIAnTmGmNL",
+      "actorLink": true,
+      "width": 1,
+      "height": 1,
+      "x": 929,
+      "y": 742,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "color": null,
+        "attenuation": 0.5
+      },
+      "disposition": 0,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": false,
+          "autoscale": false
+        },
+        "df-qol": {
+          "locked": true
+        },
+        "reset-movement": {}
+      },
+      "delta": {
+        "_id": "Qfc7FWqCIzKiYXVO",
+        "name": null,
+        "type": null,
+        "img": null,
+        "system": {},
+        "items": [],
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!soEXvBoUDJSJjQCs.Qfc7FWqCIzKiYXVO.Qfc7FWqCIzKiYXVO"
+      },
+      "texture": {
+        "src": "systems/pf2e/icons/default-icons/loot.svg",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!soEXvBoUDJSJjQCs.Qfc7FWqCIzKiYXVO"
+    },
+    {
+      "_id": "nr9oy78yAsSQgYZ4",
+      "name": "Wrin's Wonders",
+      "displayName": 20,
+      "actorId": "mQi14rfz4PerHVS3",
+      "actorLink": true,
+      "width": 1,
+      "height": 1,
+      "x": 1312,
+      "y": 767,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "color": null,
+        "attenuation": 0.5
+      },
+      "disposition": 0,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": false,
+          "autoscale": false
+        },
+        "df-qol": {
+          "locked": true
+        },
+        "LightsHUD": {
+          "lightspellstate": false,
+          "lanternconsumablestate": false,
+          "torchconsumablestate": false
+        },
+        "reset-movement": {}
+      },
+      "delta": {
+        "_id": "nr9oy78yAsSQgYZ4",
+        "name": null,
+        "type": null,
+        "img": null,
+        "system": {},
+        "items": [],
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!soEXvBoUDJSJjQCs.nr9oy78yAsSQgYZ4.nr9oy78yAsSQgYZ4"
+      },
+      "texture": {
+        "src": "systems/pf2e/icons/default-icons/loot.svg",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!soEXvBoUDJSJjQCs.nr9oy78yAsSQgYZ4"
+    }
+  ],
+  "lights": [],
+  "notes": [
+    {
+      "_id": "cdz6moP3eB5KDI1d",
+      "entryId": "OymTOgXR3ZkbDhko",
+      "x": 1448,
+      "y": 949,
+      "iconSize": 40,
+      "fontFamily": "Signika",
+      "fontSize": 16,
+      "textAnchor": 1,
+      "textColor": "#FFFFFF",
+      "flags": {
+        "backgroundless-pins": {
+          "hasBackground": false
+        }
+      },
+      "texture": {
+        "src": "icons/svg/sword.svg",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "pageId": null,
+      "global": false,
+      "_key": "!scenes.notes!soEXvBoUDJSJjQCs.cdz6moP3eB5KDI1d"
+    },
+    {
+      "_id": "LNwxAEtxHhlz9g2u",
+      "entryId": "yL7mnrZrOjsfXEZq",
+      "x": 1653,
+      "y": 924,
+      "iconSize": 40,
+      "fontFamily": "Signika",
+      "fontSize": 16,
+      "textAnchor": 1,
+      "textColor": "#FFFFFF",
+      "flags": {
+        "backgroundless-pins": {
+          "hasBackground": false
+        }
+      },
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "pageId": null,
+      "global": false,
+      "_key": "!scenes.notes!soEXvBoUDJSJjQCs.LNwxAEtxHhlz9g2u"
+    }
+  ],
+  "sounds": [],
+  "templates": [],
+  "tiles": [],
+  "walls": [],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "weather": "",
+  "folder": "JmcGCHKY2xJWPkXP",
+  "sort": 0,
+  "flags": {
+    "scene-packer": {
+      "hash": "3aa1542d4069d8c94592331ae043bd36cec510d5"
+    },
+    "perfect-vision": {
+      "sightLimit": null,
+      "daylightColor": "",
+      "darknessColor": "",
+      "saturation": null
+    },
+    "wallHeight": {
+      "wallHeightAdvancedVision": true
+    },
+    "enhanced-terrain-layer": {
+      "opacity": 0.5,
+      "multiple": null,
+      "elevation": null,
+      "depth": null,
+      "environment": ""
+    },
+    "token-attacher": {},
+    "core": {
+      "sourceId": "Scene.q571eintLNhJmGFd"
+    },
+    "cf": null
+  },
+  "ownership": {
+    "default": 2,
+    "M22dRxbECY9l1C6E": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "background": {
+    "src": "PmAmpJFQBf47ySXuUwwus.jpg",
+    "offsetX": 0,
+    "offsetY": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+  },
+  "foregroundElevation": null,
+  "journalEntryPage": null,
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1697493028488,
+    "modifiedTime": 1697493028488,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "_key": "!scenes!soEXvBoUDJSJjQCs"
+}

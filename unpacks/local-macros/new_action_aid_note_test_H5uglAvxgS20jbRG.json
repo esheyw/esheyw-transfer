@@ -1,0 +1,27 @@
+{
+  "name": "new action aid note test",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "const note = { text: '@UUID[Compendium.pf2e.other-effects.Item.AHMUpMbaVkZ5A1KX]' }\nawait game.pf2e.actions.get('aid').use({\n  event, \n  statistic: 'occultism',\n  actors: [actor],\n  tokens: [token],\n  notes: [note]\n});",
+  "folder": "S2KSaNQJxdlRFkyr",
+  "ownership": {
+    "default": 0,
+    "v0RvORcwGexWLCjc": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1700457286322,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "H5uglAvxgS20jbRG",
+  "sort": 0,
+  "_key": "!macros!H5uglAvxgS20jbRG"
+}

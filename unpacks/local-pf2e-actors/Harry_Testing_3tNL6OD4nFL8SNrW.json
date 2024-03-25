@@ -1,0 +1,5129 @@
+{
+  "prototypeToken": {
+    "displayName": 30,
+    "displayBars": 10,
+    "sight": {
+      "enabled": true,
+      "color": null,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {
+      "perfect-vision": {
+        "sight": {
+          "range": null
+        },
+        "light": {
+          "resolution": 1
+        }
+      },
+      "monks-tokenbar": {
+        "include": "default"
+      },
+      "tagger": {
+        "tags": ""
+      },
+      "pf2e": {
+        "linkToActorSize": true,
+        "autoscale": true
+      },
+      "sequencer": {
+        "effects": []
+      },
+      "monks-little-details": {
+        "token-highlight-scale": 1.5,
+        "token-combat-animation": "",
+        "token-highlight": "",
+        "bloodsplat-colour": ""
+      },
+      "core": {
+        "priority": null
+      },
+      "monks-combat-marker": {
+        "token-highlight-scale": 1.5
+      }
+    },
+    "height": 1,
+    "width": 1,
+    "actorLink": true,
+    "name": "Harry",
+    "texture": {
+      "src": "tokenizer/pc-images/harry.TokenoBHLzgH64epjhhGd.webp?1675999640016",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": null
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "name": "Harry Testing",
+  "type": "character",
+  "img": "tokenizer/pc-images/harry.AvataroBHLzgH64epjhhGd.webp?1675999640016",
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 33,
+        "temp": 0
+      },
+      "initiative": {
+        "statistic": "deception"
+      },
+      "speed": {
+        "value": 25,
+        "otherSpeeds": []
+      }
+    },
+    "details": {
+      "alignment": {
+        "value": "N"
+      },
+      "level": {
+        "value": 3
+      },
+      "biography": {
+        "appearance": "",
+        "backstory": "",
+        "birthPlace": "",
+        "attitude": "",
+        "beliefs": "",
+        "likes": "",
+        "dislikes": "",
+        "catchphrases": "",
+        "campaignNotes": "",
+        "allies": "",
+        "enemies": "",
+        "organizations": "",
+        "visibility": {
+          "appearance": true,
+          "backstory": false,
+          "personality": false,
+          "campaign": false
+        }
+      },
+      "keyability": {
+        "value": "str"
+      },
+      "xp": {
+        "value": 0,
+        "min": 0,
+        "max": 1000,
+        "pct": 0
+      },
+      "age": {
+        "value": "35"
+      },
+      "height": {
+        "value": "6'10"
+      },
+      "weight": {
+        "value": "200lbs"
+      },
+      "gender": {
+        "value": "He/Him"
+      },
+      "ethnicity": {
+        "value": "Ozarkish"
+      },
+      "nationality": {
+        "value": "Chicagoan"
+      }
+    },
+    "traits": {
+      "value": [],
+      "senses": [],
+      "languages": {
+        "value": [],
+        "custom": "",
+        "selected": []
+      }
+    },
+    "resources": {
+      "heroPoints": {
+        "value": 1,
+        "max": 3
+      }
+    },
+    "_migration": {
+      "version": 0.878,
+      "previous": {
+        "schema": 0.84,
+        "foundry": "11.313",
+        "system": "5.7.2"
+      }
+    },
+    "exploration": [],
+    "skills": {
+      "acr": {
+        "rank": 0
+      },
+      "arc": {
+        "rank": 0
+      },
+      "ath": {
+        "rank": 0
+      },
+      "cra": {
+        "rank": 0
+      },
+      "dec": {
+        "rank": 0
+      },
+      "dip": {
+        "rank": 0
+      },
+      "itm": {
+        "rank": 0
+      },
+      "med": {
+        "rank": 0
+      },
+      "nat": {
+        "rank": 0
+      },
+      "occ": {
+        "rank": 0
+      },
+      "prf": {
+        "rank": 0
+      },
+      "rel": {
+        "rank": 0
+      },
+      "soc": {
+        "rank": 0
+      },
+      "ste": {
+        "rank": 0
+      },
+      "sur": {
+        "rank": 0
+      },
+      "thi": {
+        "rank": 0
+      }
+    },
+    "pfs": {
+      "playerNumber": null,
+      "characterNumber": null,
+      "levelBump": false,
+      "currentFaction": "EA",
+      "school": null,
+      "reputation": {
+        "EA": null,
+        "GA": null,
+        "HH": null,
+        "VS": null,
+        "RO": null,
+        "VW": null
+      }
+    },
+    "saves": {},
+    "crafting": {
+      "formulas": []
+    },
+    "build": {
+      "attributes": {
+        "boosts": {
+          "1": [
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "5": [
+            "con",
+            "cha"
+          ]
+        }
+      }
+    }
+  },
+  "items": [
+    {
+      "img": "systems/pf2e/icons/default-icons/alternatives/ancestries/human.svg",
+      "name": "Human",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><em>As unpredictable and varied as any of Golarion's peoples, humans have exceptional drive and the capacity to endure and expand. Though many civilizations thrived before humanity rose to prominence, humans have built some of the greatest and the most terrible societies throughout the course of history, and today they are the most populous people in the realms around the Inner Sea.</em></p>\n<hr />\n<p>Humans' ambition, versatility, and exceptional potential have led to their status as the world's predominant ancestry. Their empires and nations are vast, sprawling things, and their citizens carve names for themselves with the strength of their sword arms and the power of their spells. Humanity is diverse and tumultuous, running the gamut from nomadic to imperial, sinister to saintly. Many of them venture forth to explore, to map the expanse of the multiverse, to search for long-lost treasure, or to lead mighty armies to conquer their neighbors—for no better reason than because they can.</p>\n<p>If you want a character who can be just about anything, you should play a human.</p>\n<h2>You Might...</h2>\n<ul>\n<li>Strive to achieve greatness, either in your own right or on behalf of a cause.</li>\n<li>Seek to understand your purpose in the world.</li>\n<li>Cherish your relationships with family and friends.</li>\n</ul>\n<h2>Others Probably...</h2>\n<ul>\n<li>Respect your flexibility, your adaptability, and—in most cases— your open‑mindedness.</li>\n<li>Distrust your intentions, fearing you seek only power or wealth.</li>\n<li>Aren't sure what to expect from you and are hesitant to assume your intentions.</li>\n</ul>\n<h2>Physical Description</h2>\n<p>Humans' physical characteristics are as varied as the world's climes. Humans have a wide variety of skin and hair colors, body types, and facial features. Generally speaking, their skin has a darker hue the closer to the equator they or their ancestors lived.</p>\n<p>Humans reach physical adulthood around the age of 15, though mental maturity occurs a few years later. A typical human can live to be around 90 years old. Humans often intermarry with people of other ancestries, giving rise to children who bear the traits of both parents. The most notable half-humans are half-elves and half-orcs.</p>\n<h2>Society</h2>\n<p>Human variety also manifests in terms of their governments, attitudes, and social norms. Though the oldest of human cultures can trace their shared histories thousands of years into the past, when compared to the societies of the elves or dwarves, human civilizations seem in a state of constant flux as empires fragment and new kingdoms subsume the old.</p>\n<h2>Alignment and Religion</h2>\n<p>Humanity is perhaps the most heterogeneous of all the ancestries, with a capacity for great evil and boundless good. Some humans assemble into vast raging hordes, while others build sprawling cities. Considered as a whole, most humans are neutral, yet they tend to congregate into nations or communities of a shared alignment, or at least a shared tendency toward an alignment. Humans also worship a wide range of gods and practice many different religions, tending to seek favor from any divine being they encounter.</p>\n<h2>Names</h2>\n<p>Unlike many ancestral cultures, which generally cleave to specific traditions and shared histories, humanity's diversity has resulted in a near-infinite set of names. The humans of northern tribes have different names than those dwelling in southern nation-states. Humans throughout much of the world speak Common (though some continents on Golarion have their own regional common languages), yet their names are as varied as their beliefs and appearances.</p>\n<h3><span style=\"text-decoration:underline\">Sample Names</span></h3>\n<p>A variety of human ethnic groups—many of which have origins on distant lands— populates the continents bordering Golarion's Inner Sea. Human characters can be any of these ethnicities, regardless of what lands they call home.</p>\n<hr />\n<p>Characters of human ethnicities in the Inner Sea region speak Common (also known as Taldane), and some ethnicities grant access to an uncommon language.</p>\n<h2 style=\"border-bottom:1px solid var(--color-underline-header)\">Human Mechanics</h2>\n<p><strong>Hit Points</strong> 8</p>\n<p><strong>Size</strong> Medium</p>\n<p><strong>Speed</strong> 25 feet</p>\n<p><strong>Ability Boosts</strong> Two free ability boosts</p>\n<p><strong>Languages</strong> Common</p>\n<p><strong>Additional Languages</strong> equal to 1 + your Intelligence modifier (if it's positive). Choose from the list of common languages and any other languages to which you have access (such as the languages prevalent in your region).</p>"
+        },
+        "rules": [],
+        "slug": "human",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "human",
+            "humanoid"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "hp": 8,
+        "size": "med",
+        "reach": 5,
+        "speed": 25,
+        "boosts": {
+          "0": {
+            "value": [
+              "cha",
+              "con",
+              "dex",
+              "int",
+              "str",
+              "wis"
+            ],
+            "selected": "int"
+          },
+          "1": {
+            "value": [
+              "str",
+              "dex",
+              "con",
+              "int",
+              "wis",
+              "cha"
+            ],
+            "selected": "cha"
+          },
+          "2": {
+            "value": []
+          }
+        },
+        "flaws": {
+          "0": {
+            "value": []
+          }
+        },
+        "languages": {
+          "value": [
+            "common"
+          ],
+          "custom": ""
+        },
+        "additionalLanguages": {
+          "count": 1,
+          "value": [],
+          "custom": ""
+        },
+        "items": {},
+        "vision": "normal"
+      },
+      "type": "ancestry",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.ancestries.Item.IiG7DgeLWYrSNXuX"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.7.4",
+        "coreVersion": "10.291",
+        "createdTime": 1675999662437,
+        "modifiedTime": 1675999905171,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "xVGyvs3tXj9KJFzg",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.xVGyvs3tXj9KJFzg"
+    },
+    {
+      "img": "systems/pf2e/icons/classes/wizard.webp",
+      "name": "Wizard",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><em>You are an eternal student of the arcane secrets of the universe, using your mastery of magic to cast powerful and devastating spells. You treat magic like a science, cross-referencing the latest texts on practical spellcraft with ancient esoteric tomes to discover and understand how magic works. Yet magical theory is vast, and there's no way you can study it all. You either specialize in one of the eight schools of magic, gaining deeper understanding of the nuances of those spells above all others, or favor a broader approach that emphasizes the way all magic comes together at the expense of depth.</em></p>\n<p><strong>Key Ability: INTELLIGENCE</strong></p>\n<p>At 1st level, your class gives you an ability boost to Intelligence.</p>\n<p><strong>Hit Points: 6 plus your Constitution modifier</strong></p>\n<p>You increase your maximum number of HP by this number at 1st level and every level thereafter.</p>\n<h1>Roleplaying the Wizard</h1>\n<h2>During Combat Encounters...</h2>\n<p>You likely try to stay out of the fray, carefully judging when to use your spells. You save your most powerful magic to incapacitate threatening foes and use your cantrips when only weaker foes remain. When enemies pull out tricks like <em>@UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{Invisibility}</em> or <em>@UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{Fly}</em>, you answer with spells like <em>@UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{Glitterdust}</em> or <em>@UUID[Compendium.pf2e.spells-srd.Item.gPvtmKMRpg9I9D7H]{Earthbind}</em>, leveling the field for your allies.</p>\n<h2>During Social Encounters...</h2>\n<p>You provide a well of knowledge about arcane matters and solve arguments with logic.</p>\n<h2>While Exploring...</h2>\n<p>You locate magical auras and determine the arcane significance of magical writing or phenomena you uncover. When you run across an unusual obstacle to further exploration, you probably have a scroll that will make it easier to overcome.</p>\n<h2>In Downtime...</h2>\n<p>You learn new spells, craft magic items, or scribe scrolls for your party, and seek out new and exciting formulas in addition to spells. You might even forge scholarly connections and establish a school or guild of your own.</p>\n<h2>You Might...</h2>\n<ul>\n<li>Have an unquenchable intellectual curiosity about how everything in the world around you works-magic in particular.</li>\n<li>Believe fervently that your school of magic is superior (if you're a specialist) or that true mastery of magic requires knowledge of all schools (if you're a universalist).</li>\n<li>Use esoteric jargon and technical terms to precisely describe the minutiae of magical effects, even though the difference is probably lost on other people.</li>\n</ul>\n<h2>Others Probably...</h2>\n<ul>\n<li>Consider you to be incredibly powerful and potentially dangerous.</li>\n<li>Fear what your magic can do to their minds, bodies, and souls, and ask that you avoid casting spells in polite company, as few can identify whether one of your spells is harmless or malevolent until it's too late.</li>\n<li>Assume you can easily solve all their problems, from dangerous weather to poor crop yields, and ask you for spells that can help them get whatever they desire.</li>\n</ul>\n<h1>Initial Proficiencies</h1>\n<p>At 1st level, you gain the listed proficiency ranks in the following statistics. You are untrained in anything not listed unless you gain a better proficiency rank in some other way.</p>\n<h2>Perception</h2>\n<p>Trained in Perception</p>\n<h2>Saving Throws</h2>\n<p>Trained in Fortitude</p>\n<p>Trained in Reflex</p>\n<p>Expert in Will</p>\n<h2>Skills</h2>\n<p>Trained in Arcana</p>\n<p>Trained in a number of additional skills equal to 2 plus your Intelligence modifier</p>\n<h2>Attacks</h2>\n<p>Trained in the club, crossbow, dagger, heavy crossbow, and staff</p>\n<p>Trained in unarmed attacks</p>\n<h2>Defenses</h2>\n<p>Untrained in all armor</p>\n<p>Trained in unarmored defense</p>\n<h2>Spells</h2>\n<p>Trained in arcane spell attacks</p>\n<p>Trained in arcane spell DCs</p>\n<h1>Class Features</h1>\n<p>You gain these features as a Wizard. Abilities gained at higher levels list the levels at which you gain them next to the features' names.</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Your Level</th>\n<th>Class Features</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Ancestry and background, initial proficiencies, arcane spellcasting, arcane school, arcane bond, arcane thesis</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Skill feat, wizard feat</td>\n</tr>\n<tr>\n<td>3</td>\n<td>2nd-level spells, general feat, skill increase</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Skill feat, wizard feat</td>\n</tr>\n<tr>\n<td>5</td>\n<td>3rd-level spells, ability boosts, ancestry feat, lightning reflexes, skill increase</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Skill feat, wizard feat</td>\n</tr>\n<tr>\n<td>7</td>\n<td>4th-level spells, expert spellcaster, general feat, skill increase</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Skill feat, wizard feat</td>\n</tr>\n<tr>\n<td>9</td>\n<td>5th-level spells, ancestry feat, magical fortitude, skill increase</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Ability boosts, skill feat, wizard feat</td>\n</tr>\n<tr>\n<td>11</td>\n<td>6th-level spells, alertness, general feat, skill increase, wizard weapon expertise</td>\n</tr>\n<tr>\n<td>12</td>\n<td>Skill feat, wizard feat</td>\n</tr>\n<tr>\n<td>13</td>\n<td>7th-level spells, ancestry feat, defensive robes, skill increase, weapon specialization</td>\n</tr>\n<tr>\n<td>14</td>\n<td>Skill feat, wizard feat</td>\n</tr>\n<tr>\n<td>15</td>\n<td>8th-level spells, ability boosts, general feat, master spellcaster, skill increase</td>\n</tr>\n<tr>\n<td>16</td>\n<td>Skill feat, wizard feat</td>\n</tr>\n<tr>\n<td>17</td>\n<td>9th-level spells, ancestry feat, resolve, skill increase</td>\n</tr>\n<tr>\n<td>18</td>\n<td>Skill feat, wizard feat</td>\n</tr>\n<tr>\n<td>19</td>\n<td>Archwizard's spellcraft, general feat, legendary archwizard, skill increase</td>\n</tr>\n<tr>\n<td>20</td>\n<td>Ability boosts, skill feat, wizard feat</td>\n</tr>\n</tbody>\n</table>\n<h2>Ancestry and Background</h2>\n<p>In addition to the abilities provided by your class at 1st level, you have the benefits of your selected ancestry and background.</p>\n<h2>Arcane Bond</h2>\n<p>You place some of your magical power in a bonded item. Each day when you prepare your spells, you can designate a single item you own as your bonded item. This is typically an item associated with spellcasting, such as a wand, ring, or staff, but you are free to designate a weapon or other item. You gain the Drain Bonded Item free action.</p>\n<h3>@UUID[Compendium.pf2e.actionspf2e.Item.v82XtjAVN4ffgVVR]{Drain Bonded Item} <span class=\"pf2-icon\">F</span></h3>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> You haven't acted yet on your turn</p>\n<hr />\n<p>You expend the power stored in your bonded item. During your turn, you gain the ability to cast one spell you prepared today and already cast, without spending a spell slot. You must still Cast the Spell and meet the spell's other requirements.</p>\n<h2>Arcane School</h2>\n<p>Many arcane spellcasters delve deeply into a single school of magic in an attempt to master its secrets. If you want to be a specialist wizard, choose a school in which to specialize. You gain additional spells and spell slots for spells of your school.</p>\n<p>If you don't choose a school, you're a universalist, a wizard who believes that the path to true knowledge of magic requires a multidisciplinary understanding of all eight schools working together. Though a universalist lacks the focus of a specialist wizard, they have greater fiexibility.</p>\n<p>Arcane schools can be found here (@UUID[Compendium.pf2e.classfeatures.Item.gCwcys8CnS102tji]{Arcane School: Abjuration}, @UUID[Compendium.pf2e.classfeatures.Item.SNeVaUBTHwvoO6kr]{Arcane School: Conjuration}, @UUID[Compendium.pf2e.classfeatures.Item.yobGgrHdgjs5QW5o]{Arcane School: Divination}, @UUID[Compendium.pf2e.classfeatures.Item.ZHwGACWQEy6kTzcP]{Arcane School: Enchantment}, @UUID[Compendium.pf2e.classfeatures.Item.ibhml5y20g5M3Vgd]{Arcane School: Evocation}, @UUID[Compendium.pf2e.classfeatures.Item.K6hG7nH8yjmbA0Q9]{Arcane School: Illusion}, @UUID[Compendium.pf2e.classfeatures.Item.uNM7qZQokRKAEd7k]{Arcane School: Necromancy}, @UUID[Compendium.pf2e.classfeatures.Item.rHxkPijLnQ9O9AGV]{Arcane School: Transmutation} and @UUID[Compendium.pf2e.classfeatures.Item.qczCKdg47eAmCOUD]{Arcane School: Universalist})</p>\n<h2>Arcane Spellcasting</h2>\n<p>Through dedicated study and practice, you can harness arcane power to cast spells. You can cast arcane spells using the Cast a Spell activity, and you can supply material, somatic, and verbal components when casting spells.</p>\n<p>At 1st level, you can prepare up to two 1st-level spells and five cantrips each morning from the spells in your spellbook (see below), plus one extra cantrip and spell of your chosen school of each level you can cast if you are a specialist wizard. Prepared spells remain available to you until you cast them or until you prepare your spells again. The number of spells you can prepare is called your spell slots.</p>\n<p>As you increase in level as a wizard, your number of spell slots and the highest level of spells you can cast from spell slots increase, shown in Table 3-19: Wizard Spells per Day.</p>\n<p>Some of your spells require you to attempt a spell attack roll to see how effective they are, or have your enemies roll against your spell DC (typically by attempting a saving throw). Since your key ability is Intelligence, your spell attack rolls and spell DCs use your Intelligence modifier.</p>\n<h3><strong>Heightening Spells</strong></h3>\n<p>When you get spell slots of 2nd level and higher, you can fill those slots with stronger versions of lower-level spells. This increases the spell's level, heightening it to match the spell slot. Many spells have specific improvements when they are heightened to certain levels.</p>\n<h3><strong>Cantrips</strong></h3>\n<p>A cantrip is a special type of spell that doesn't use spell slots. You can cast a cantrip at will, any number of times per day. A cantrip is always automatically heightened to half your level rounded up-this is usually equal to the highest level of spell you can cast as a wizard. For example, as a 1st-level wizard, your cantrips are 1st-level spells, and as a 5th-level wizard, your cantrips are 3rd-level spells.</p>\n<h3><strong>Spellbook</strong></h3>\n<p>Every arcane spell has a written version, usually recorded in a spellbook. You start with a spellbook worth 10 sp or less, which you receive for free and must study to prepare your spells each day. The spellbook contains your choice of 10 arcane cantrips and five 1st-level arcane spells. You choose these from the common spells on the arcane spell list or from other arcane spells you gain access to. Your spellbook's form and name are up to you. It might be a musty, leather-bound tome or an assortment of thin metal disks connected to a brass ring; its name might be esoteric, like <em>The Crimson Libram</em>, or something more academic, like <em>A Field Study in Practical Transmutation</em>.</p>\n<p>Each time you gain a level, you add two arcane spells to your spellbook, of any level for which you have spell slots. You can also use the Arcana skill to add other spells that you find in your adventures.</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Your Level</th>\n<th>Cantrips</th>\n<th>1st</th>\n<th>2nd</th>\n<th>3rd</th>\n<th>4th</th>\n<th>5th</th>\n<th>6th</th>\n<th>7th</th>\n<th>8th</th>\n<th>9th</th>\n<th>10th</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>5</td>\n<td>2</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>2</td>\n<td>5</td>\n<td>3</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>3</td>\n<td>5</td>\n<td>3</td>\n<td>2</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>4</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>5</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>2</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>6</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>7</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>2</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>8</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>9</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>2</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>10</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>11</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>2</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>12</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>13</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>2</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>15</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>2</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>16</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>17</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>2</td>\n<td>-</td>\n</tr>\n<tr>\n<td>18</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>1*</td>\n</tr>\n<tr>\n<td>20</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>1*</td>\n</tr>\n<tr>\n<td style=\"color:white;width:120px;background-color:#522e2c;text-align:center;height:25px\" colspan=\"12\">* The Archwizard's Spellcraft class feature gives you a 10th-level spell slot that works a bit differently from other spell slots.</td>\n</tr>\n</tbody>\n</table>\n<h2>Arcane Thesis</h2>\n<p>During your studies to become a full-fledged wizard, you produced a thesis of unique magical research on one of a variety of topics. You gain a special benefit depending on the topic of your thesis research. The arcane thesis topics presented in this book are below; your specific thesis probably has a much longer and more technical title like \"On the Methods of Spell Interpolation and the Genesis of a New Understanding of the Building Blocks of Magic.\"</p>\n<p>Arcane thesis can be found here @UUID[Compendium.pf2e.classfeatures.Item.M89l9FOnjHe63wD7]{Arcane Thesis}.</p>\n<h2>Initial Proficiencies</h2>\n<p>At 1st level, you gain a number of proficiencies that represent your basic training. These proficiencies are noted at the start of this class.</p>\n<h2>Skill Feats<span style=\"float:right\">Level 2</span></h2>\n<p>At 2nd level and every 2 levels thereafter, you gain a skill feat. You must be trained or better in the corresponding skill to select a skill feat.</p>\n<h2>Wizard Feats<span style=\"float:right\">Level 2</span></h2>\n<p>At 2nd level and every even-numbered level thereafter, you gain a wizard class feat.</p>\n<h2>General Feats<span style=\"float:right\">Level 3</span></h2>\n<p>At 3rd level and every 4 levels thereafter, you gain a general feat.</p>\n<h2>Skill Increases<span style=\"float:right\">Level 3</span></h2>\n<p>At 3rd level and every 2 levels thereafter, you gain a skill increase. You can use this increase either to increase your proficiency rank to trained in one skill you're untrained in, or to increase your proficiency rank in one skill in which you're already trained to expert.</p>\n<p>At 7th level, you can use skill increases to increase your proficiency rank to master in a skill in which you're already an expert, and at 15th level, you can use them to increase your proficiency rank to legendary in a skill in which you're already a master.</p>\n<h2>Ability Boosts<span style=\"float:right\">Level 5</span></h2>\n<p>At 5th level and every 5 levels thereafter, you boost four different ability scores. You can use these ability boosts to increase your ability scores above 18. Boosting an ability score increases it by 1 if it's already 18 or above, or by 2 if it starts out below 18.</p>\n<h2>Ancestry Feats<span style=\"float:right\">Level 5</span></h2>\n<p>In addition to the ancestry feat you started with, you gain an ancestry feat at 5th level and every 4 levels thereafter.</p>\n<h2>Lightning Reflexes<span style=\"float:right\">Level 5</span></h2>\n<p>Your reflexes are lightning fast. Your proficiency rank for Reflex saves increases to expert.</p>\n<h2>Expert Spellcaster<span style=\"float:right\">Level 7</span></h2>\n<p>Extended practice of the arcane has improved your capabilities. Your proficiency ranks for arcane spell attack rolls and spell DCs increase to expert.</p>\n<h2>Magical Fortitude<span style=\"float:right\">Level 9</span></h2>\n<p>Magical power has improved your body's resiliency. Your proficiency rank for Fortitude saves increases to expert.</p>\n<h2>Alertness<span style=\"float:right\">Level 11</span></h2>\n<p>You remain alert to threats around you. Your proficiency rank for Perception increases to expert.</p>\n<h2>Wizard Weapon Expertise<span style=\"float:right\">Level 11</span></h2>\n<p>Through a combination of magic and training, you've learned how to wield wizard weapons more effectively. You gain expert proficiency in the club, crossbow, dagger, heavy crossbow, staff, and unarmed attacks.</p>\n<h2>Defensive Robes<span style=\"float:right\">Level 13</span></h2>\n<p>The flow of magic and your training combine to help you avoid attacks. Your proficiency rank in unarmored defense increases to expert.</p>\n<h2>Weapon Specialization<span style=\"float:right\">Level 13</span></h2>\n<p>You've learned how to inflict greater injuries with the weapons you know best. You deal an additional 2 damage with weapons and unarmed attacks in which you are an expert. This damage increases to 3 if you're a master, and 4 if you're legendary.</p>\n<h2>Master Spellcaster<span style=\"float:right\">Level 15</span></h2>\n<p>You command superlative spellcasting ability. Your proficiency ranks for arcane spell attack rolls and spell DCs increase to master.</p>\n<h2>Resolve<span style=\"float:right\">Level 17</span></h2>\n<p>You've steeled your mind with resolve. Your proficiency rank for Will saves increases to master. When you roll a success at a Will save, you get a critical success instead.</p>\n<h2>Archwizard's Spellcraft<span style=\"float:right\">Level 19</span></h2>\n<p>You command the most potent arcane magic and can cast a spell of truly incredible power. You gain a single 10th-level spell slot and can prepare a spell in that slot using arcane spellcasting. You can't use this spell slot for abilities that let you cast spells without expending spell slots or that give you more spell slots. Unlike with other spell slots, you don't gain more 10th-level spells as you level up, though you can take the @UUID[Compendium.pf2e.feats-srd.Item.tP26mgaFPpr6df1i]{Archwizard's Might} feat to gain a second slot.</p>\n<h2>Legendary Spellcaster<span style=\"float:right\">Level 19</span></h2>\n<p>You are a consummate spellcaster, with a comprehensive understanding of both arcane theory and practical spellcraft. Your proficiency ranks for arcane spell attack rolls and spell DCs increase to legendary.</p>"
+        },
+        "rules": [
+          {
+            "key": "ActiveEffectLike",
+            "mode": "upgrade",
+            "path": "system.proficiencies.attacks.weapon-base-club.rank",
+            "value": 1
+          },
+          {
+            "key": "ActiveEffectLike",
+            "mode": "upgrade",
+            "path": "system.proficiencies.attacks.weapon-base-crossbow.rank",
+            "value": 1
+          },
+          {
+            "key": "ActiveEffectLike",
+            "mode": "upgrade",
+            "path": "system.proficiencies.attacks.weapon-base-dagger.rank",
+            "value": 1
+          },
+          {
+            "key": "ActiveEffectLike",
+            "mode": "upgrade",
+            "path": "system.proficiencies.attacks.weapon-base-heavy-crossbow.rank",
+            "value": 1
+          },
+          {
+            "key": "ActiveEffectLike",
+            "mode": "upgrade",
+            "path": "system.proficiencies.attacks.weapon-base-staff.rank",
+            "value": 1
+          },
+          {
+            "key": "ActiveEffectLike",
+            "mode": "upgrade",
+            "path": "system.proficiencies.traditions.arcane.rank",
+            "value": {
+              "brackets": [
+                {
+                  "end": 6,
+                  "start": 1,
+                  "value": 1
+                },
+                {
+                  "end": 14,
+                  "start": 7,
+                  "value": 2
+                },
+                {
+                  "end": 18,
+                  "start": 15,
+                  "value": 3
+                },
+                {
+                  "start": 19,
+                  "value": 4
+                }
+              ],
+              "field": "actor|system.details.level.value"
+            }
+          }
+        ],
+        "slug": "wizard",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "keyAbility": {
+          "value": [
+            "int"
+          ]
+        },
+        "items": {
+          "4x1uf": {
+            "img": "systems/pf2e/icons/features/classes/weapon-specialization.webp",
+            "level": 13,
+            "name": "Weapon Specialization",
+            "uuid": "Compendium.pf2e.classfeatures.Item.9EqIasqfI8YIM3Pt"
+          },
+          "55liz": {
+            "img": "systems/pf2e/icons/features/classes/resolve.webp",
+            "level": 17,
+            "name": "Resolve",
+            "uuid": "Compendium.pf2e.classfeatures.Item.JQAujUXjczVnYDEI"
+          },
+          "7bbgv": {
+            "img": "systems/pf2e/icons/features/classes/expert-spellcaster.webp",
+            "level": 7,
+            "name": "Expert Spellcaster",
+            "uuid": "Compendium.pf2e.classfeatures.Item.cD3nSupdCvONuHiE"
+          },
+          "7hdxh": {
+            "img": "systems/pf2e/icons/features/classes/archwizards-spellcraft.webp",
+            "level": 1,
+            "name": "Arcane Spellcasting (Wizard)",
+            "uuid": "Compendium.pf2e.classfeatures.Item.S6WW4Yyg4XonXGHD"
+          },
+          "93v1o": {
+            "img": "systems/pf2e/icons/features/classes/choice-feature.webp",
+            "level": 1,
+            "name": "Arcane School",
+            "uuid": "Compendium.pf2e.classfeatures.Item.7nbKDBGvwSx9T27G"
+          },
+          "c3blc": {
+            "img": "systems/pf2e/icons/features/classes/legendary-spellcaster.webp",
+            "level": 19,
+            "name": "Legendary Spellcaster",
+            "uuid": "Compendium.pf2e.classfeatures.Item.Hfaa7TuLn3nE8lr3"
+          },
+          "djzu5": {
+            "img": "systems/pf2e/icons/features/classes/archwizards-spellcraft.webp",
+            "level": 19,
+            "name": "Archwizard's Spellcraft",
+            "uuid": "Compendium.pf2e.classfeatures.Item.ZjwJHmjPrSs6VDez"
+          },
+          "fqsfu": {
+            "img": "systems/pf2e/icons/features/classes/master-spellcaster.webp",
+            "level": 15,
+            "name": "Master Spellcaster",
+            "uuid": "Compendium.pf2e.classfeatures.Item.l1InYvhnQSz6Ucxc"
+          },
+          "hbsn6": {
+            "img": "systems/pf2e/icons/features/classes/arcane-thesis.webp",
+            "level": 1,
+            "name": "Arcane Thesis",
+            "uuid": "Compendium.pf2e.classfeatures.Item.M89l9FOnjHe63wD7"
+          },
+          "mqstv": {
+            "img": "systems/pf2e/icons/features/classes/lightning-reflexes.webp",
+            "level": 5,
+            "name": "Lightning Reflexes",
+            "uuid": "Compendium.pf2e.classfeatures.Item.TUOeATt52P43r5W0"
+          },
+          "p9c01": {
+            "img": "systems/pf2e/icons/features/classes/magical-fortitude.webp",
+            "level": 9,
+            "name": "Magical Fortitude",
+            "uuid": "Compendium.pf2e.classfeatures.Item.70jqXP2eS4tRZ0Ok"
+          },
+          "phtt9": {
+            "img": "systems/pf2e/icons/features/classes/alertness.webp",
+            "level": 11,
+            "name": "Alertness",
+            "uuid": "Compendium.pf2e.classfeatures.Item.D8CSi8c9XiRpVc5M"
+          },
+          "v5yt7": {
+            "img": "systems/pf2e/icons/features/classes/arcane-bond.webp",
+            "level": 1,
+            "name": "Arcane Bond",
+            "uuid": "Compendium.pf2e.classfeatures.Item.au0lwQ1nAcNQwcGh"
+          },
+          "yp2vs": {
+            "img": "systems/pf2e/icons/features/classes/wizard-weapon-expertise.webp",
+            "level": 11,
+            "name": "Wizard Weapon Expertise",
+            "uuid": "Compendium.pf2e.classfeatures.Item.GBsC2cARoFiqMi9V"
+          },
+          "ytft4": {
+            "img": "systems/pf2e/icons/features/classes/defensive-robes.webp",
+            "level": 13,
+            "name": "Defensive Robes",
+            "uuid": "Compendium.pf2e.classfeatures.Item.gU7epgcPSm0TD1UK"
+          }
+        },
+        "hp": 6,
+        "trainedSkills": {
+          "value": [
+            "arc"
+          ],
+          "additional": 2
+        },
+        "perception": 1,
+        "savingThrows": {
+          "fortitude": 1,
+          "reflex": 1,
+          "will": 2
+        },
+        "attacks": {
+          "simple": 0,
+          "martial": 0,
+          "advanced": 0,
+          "unarmed": 1,
+          "other": {
+            "name": "club, crossbow, dagger, heavy crossbow and staff",
+            "rank": 1
+          }
+        },
+        "defenses": {
+          "unarmored": 1,
+          "light": 0,
+          "medium": 0,
+          "heavy": 0
+        },
+        "classDC": 0,
+        "ancestryFeatLevels": {
+          "value": [
+            1,
+            5,
+            9,
+            13,
+            17
+          ]
+        },
+        "classFeatLevels": {
+          "value": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18,
+            20
+          ]
+        },
+        "generalFeatLevels": {
+          "value": [
+            3,
+            7,
+            11,
+            15,
+            19
+          ]
+        },
+        "skillFeatLevels": {
+          "value": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18,
+            20
+          ]
+        },
+        "skillIncreaseLevels": {
+          "value": [
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17,
+            19
+          ]
+        }
+      },
+      "type": "class",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classes.Item.RwjIZzIxzPpUglnK"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.7.4",
+        "coreVersion": "10.291",
+        "createdTime": 1675999808494,
+        "modifiedTime": 1675999808494,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "PC3ib7VZZN5zyBvr",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.PC3ib7VZZN5zyBvr"
+    },
+    {
+      "img": "systems/pf2e/icons/features/classes/choice-feature.webp",
+      "name": "Arcane School",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Many arcane spellcasters delve deeply into a single school of magic in an attempt to master its secrets. If you want to be a specialist wizard, choose a school in which to specialize. You gain additional spells and spell slots for spells of your school.</p>\n<p>If you don't choose a school, you're a universalist, a wizard who believes the path to true knowledge of magic requires a multidisciplinary understanding of all eight schools working together. Though a universalist lacks the focus of a specialist wizard, they have greater flexibility.</p>"
+        },
+        "rules": [
+          {
+            "key": "ActiveEffectLike",
+            "mode": "upgrade",
+            "path": "system.resources.focus.max",
+            "predicate": [
+              {
+                "not": "feature:universalist"
+              }
+            ],
+            "priority": 9,
+            "value": 1
+          },
+          {
+            "adjustName": false,
+            "allowedDrops": {
+              "label": "level 1 Wizard class feature",
+              "predicate": [
+                "item:level:1",
+                "item:trait:wizard",
+                "item:type:feature"
+              ]
+            },
+            "choices": [
+              {
+                "value": "Compendium.pf2e.classfeatures.Item.gCwcys8CnS102tji"
+              },
+              {
+                "value": "Compendium.pf2e.classfeatures.Item.SNeVaUBTHwvoO6kr"
+              },
+              {
+                "value": "Compendium.pf2e.classfeatures.Item.yobGgrHdgjs5QW5o"
+              },
+              {
+                "value": "Compendium.pf2e.classfeatures.Item.ZHwGACWQEy6kTzcP"
+              },
+              {
+                "value": "Compendium.pf2e.classfeatures.Item.ibhml5y20g5M3Vgd"
+              },
+              {
+                "value": "Compendium.pf2e.classfeatures.Item.K6hG7nH8yjmbA0Q9"
+              },
+              {
+                "value": "Compendium.pf2e.classfeatures.Item.uNM7qZQokRKAEd7k"
+              },
+              {
+                "value": "Compendium.pf2e.classfeatures.Item.rHxkPijLnQ9O9AGV"
+              },
+              {
+                "value": "Compendium.pf2e.classfeatures.Item.qczCKdg47eAmCOUD"
+              }
+            ],
+            "key": "ChoiceSet",
+            "prompt": "PF2E.SpecificRule.Wizard.ArcaneSchool.Prompt",
+            "flag": "arcaneSchool",
+            "selection": "Compendium.pf2e.classfeatures.Item.ibhml5y20g5M3Vgd"
+          },
+          {
+            "key": "GrantItem",
+            "uuid": "{item|flags.pf2e.rulesSelections.arcaneSchool}",
+            "flag": "evocation"
+          }
+        ],
+        "slug": "arcane-school",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "wizard"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": "PC3ib7VZZN5zyBvr"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.7nbKDBGvwSx9T27G"
+        },
+        "pf2e": {
+          "itemGrants": {
+            "evocation": {
+              "id": "UZsUTsPNzJSJZsnl",
+              "onDelete": "detach"
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.7.4",
+        "coreVersion": "10.291",
+        "createdTime": 1675999808494,
+        "modifiedTime": 1675999808494,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "PT7raATM4vHWeOiu",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.PT7raATM4vHWeOiu"
+    },
+    {
+      "img": "systems/pf2e/icons/features/classes/arcane-thesis.webp",
+      "name": "Arcane Thesis",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>During your studies to become a full-fledged wizard, you produced a thesis of unique magical research on one of a variety of topics. You gain a special benefit depending on the topic of your thesis research. The arcane thesis topics presented in this book are below; your specific thesis probably has a much longer and more technical title like \"On the Methods of Spell Interpolation and the Genesis of a New Understanding of the Building Blocks of Magic.\"</p>"
+        },
+        "rules": [
+          {
+            "adjustName": false,
+            "allowedDrops": {
+              "label": "level 1 Wizard class feature",
+              "predicate": [
+                "item:level:1",
+                "item:trait:wizard",
+                "item:type:feature"
+              ]
+            },
+            "choices": [
+              {
+                "value": "Compendium.pf2e.classfeatures.Item.SNZ46g3u7U6x0XJj"
+              },
+              {
+                "value": "Compendium.pf2e.classfeatures.Item.89zWKD2CN7nRu2xp"
+              },
+              {
+                "value": "Compendium.pf2e.classfeatures.Item.OAcxS625AXSGrQIC"
+              },
+              {
+                "value": "Compendium.pf2e.classfeatures.Item.QzWXMCSGNfvvpYgF"
+              },
+              {
+                "value": "Compendium.pf2e.classfeatures.Item.Klb35AwlkNrq1gpB"
+              }
+            ],
+            "key": "ChoiceSet",
+            "prompt": "PF2E.SpecificRule.Wizard.ArcaneThesis.Prompt",
+            "flag": "arcaneThesis",
+            "selection": "Compendium.pf2e.classfeatures.Item.Klb35AwlkNrq1gpB"
+          },
+          {
+            "key": "GrantItem",
+            "uuid": "{item|flags.pf2e.rulesSelections.arcaneThesis}",
+            "flag": "staffNexus"
+          }
+        ],
+        "slug": "arcane-thesis",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "wizard"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": "PC3ib7VZZN5zyBvr"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.M89l9FOnjHe63wD7"
+        },
+        "pf2e": {
+          "itemGrants": {
+            "staffNexus": {
+              "id": "ofbCumDl3O2fpxvX",
+              "onDelete": "detach"
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.7.4",
+        "coreVersion": "10.291",
+        "createdTime": 1675999808496,
+        "modifiedTime": 1675999808496,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "Z0c2neEBRiVLSsLP",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.Z0c2neEBRiVLSsLP"
+    },
+    {
+      "img": "systems/pf2e/icons/features/classes/arcane-bond.webp",
+      "name": "Arcane Bond",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You place some of your magical power in a bonded item. Each day when you prepare your spells, you can designate a single item you own as your bonded item. This is typically an item associated with spellcasting, such as a wand, ring, or staff, but you are free to designate a weapon or other item. You gain the @UUID[Compendium.pf2e.actionspf2e.Item.v82XtjAVN4ffgVVR]{Drain Bonded Item} free action.</p>"
+        },
+        "rules": [
+          {
+            "key": "GrantItem",
+            "uuid": "Compendium.pf2e.actionspf2e.Item.v82XtjAVN4ffgVVR",
+            "flag": "drainBondedItem"
+          }
+        ],
+        "slug": "arcane-bond",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "wizard"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": "PC3ib7VZZN5zyBvr"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.au0lwQ1nAcNQwcGh"
+        },
+        "pf2e": {
+          "itemGrants": {
+            "drainBondedItem": {
+              "id": "VdoCY5EmwdbqJAr1",
+              "onDelete": "detach"
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.7.4",
+        "coreVersion": "10.291",
+        "createdTime": 1675999808496,
+        "modifiedTime": 1675999808496,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "EkvwyqD9sdkB8e5K",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.EkvwyqD9sdkB8e5K"
+    },
+    {
+      "img": "systems/pf2e/icons/features/classes/archwizards-spellcraft.webp",
+      "name": "Arcane Spellcasting (Wizard)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Through dedicated study and practice, you can harness arcane power to cast spells. You can cast arcane spells using the @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast a Spell} activity, and you can supply material, somatic, and verbal components when casting spells.</p>\n<p>At 1st level, you can prepare up to two 1st-level spells and five cantrips each morning from the spells in your spellbook, plus one extra cantrip and spell of your chosen school of each level you can cast if you are a specialist wizard. Prepared spells remain available to you until you cast them or until you prepare your spells again. The number of spells you can prepare is called your spell slots.</p>\n<p>As you increase in level as a wizard, your number of spell slots and the highest level of spells you can cast from spell slots increase.</p>"
+        },
+        "rules": [
+          {
+            "key": "GrantItem",
+            "uuid": "Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz",
+            "flag": "castASpell"
+          }
+        ],
+        "slug": "arcane-spellcasting-wizard",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "wizard"
+          ],
+          "rarity": "common",
+          "custom": "",
+          "selected": {}
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": "PC3ib7VZZN5zyBvr"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.S6WW4Yyg4XonXGHD"
+        },
+        "pf2e": {
+          "itemGrants": {
+            "castASpell": {
+              "id": "uGd9pzJoapd1oRuC",
+              "onDelete": "detach"
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.7.4",
+        "coreVersion": "10.291",
+        "createdTime": 1675999808497,
+        "modifiedTime": 1675999808497,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "bZHJHAxPDue6LsTe",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.bZHJHAxPDue6LsTe"
+    },
+    {
+      "img": "systems/pf2e/icons/features/classes/evocation.webp",
+      "name": "Evocation",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>As an evoker, you revel in the raw power of magic, using it to create and destroy with ease. You can call forth elements, forces, and energy to devastate your foes or to assist you in other ways. You understand that the most direct approach is the most elegant. You add one 1st-level evocation spell (such as <em>@UUID[Compendium.pf2e.spells-srd.Item.r3NeUnsgt9mS03Sn]{Shocking Grasp}</em>) to your spellbook. You learn the <em>@UUID[Compendium.pf2e.spells-srd.Item.Hu38hoAUSYeFpkVa]{Force Bolt}</em> school spell.</p>"
+        },
+        "rules": [],
+        "slug": "evocation",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "wizard"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": null
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.ibhml5y20g5M3Vgd"
+        },
+        "pf2e": {
+          "grantedBy": {
+            "id": "PT7raATM4vHWeOiu",
+            "onDelete": "cascade"
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.7.4",
+        "coreVersion": "10.291",
+        "createdTime": 1675999808497,
+        "modifiedTime": 1675999808497,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "UZsUTsPNzJSJZsnl",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.UZsUTsPNzJSJZsnl"
+    },
+    {
+      "img": "systems/pf2e/icons/features/classes/staff-nexus.webp",
+      "name": "Staff Nexus",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Your thesis maintains that early and intense adoption of staves from the first days of study can create a symbiotic bond between spellcaster and @UUID[Compendium.pf2e.equipment-srd.Item.FVjTuBCIefAgloUU]{Staff}, allowing them to create remarkable magic together. You've formed such a connection with a makeshift staff you built, and you are ready to infuse any staff you encounter with greater power.</p>\n<p>You begin play with a makeshift staff of your own invention. It contains one cantrip and one 1st-level spell, both from your spellbook, but it gains no charges normally during your preparations; you must expend a spell slot to grant it charges in the same way you would add additional charges to a normal staff. You can @UUID[Compendium.pf2e.actionspf2e.Item.rmwa3OyhTZ2i2AHl]{Craft} your makeshift staff into any other type of staff for the new staff's usual cost, adding the two spells you originally chose to the staff you Craft.</p>\n<p>At 8th level, you can expend two spells instead of one when preparing your staff, adding additional charges equal to the combined levels of the expended spells. At 16th level, you can expend up to a total of three spells to add charges to the staff, adding additional charges equal to the combined levels of all three spells.</p>"
+        },
+        "rules": [],
+        "slug": "staff-nexus",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "wizard"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Advanced Player's Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": null
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.Klb35AwlkNrq1gpB"
+        },
+        "pf2e": {
+          "grantedBy": {
+            "id": "Z0c2neEBRiVLSsLP",
+            "onDelete": "cascade"
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.7.4",
+        "coreVersion": "10.291",
+        "createdTime": 1675999808498,
+        "modifiedTime": 1675999808498,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "ofbCumDl3O2fpxvX",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.ofbCumDl3O2fpxvX"
+    },
+    {
+      "img": "systems/pf2e/icons/actions/FreeAction.webp",
+      "name": "Drain Bonded Item",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You expend the power stored in your bonded item, as long as the item is on your person. During your turn, you gain the ability to cast one spell you prepared today and already cast, without spending a spell slot. You must still @UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{Cast the Spell} and meet the spell's other requirements.</p>"
+        },
+        "rules": [],
+        "slug": "drain-bonded-item",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "wizard",
+            "arcane"
+          ],
+          "custom": "",
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "free"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        },
+        "deathNote": false,
+        "weapon": {
+          "value": ""
+        }
+      },
+      "type": "action",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.actionspf2e.Item.v82XtjAVN4ffgVVR"
+        },
+        "pf2e": {
+          "grantedBy": {
+            "id": "EkvwyqD9sdkB8e5K",
+            "onDelete": "cascade"
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.7.4",
+        "coreVersion": "10.291",
+        "createdTime": 1675999808498,
+        "modifiedTime": 1675999808498,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "VdoCY5EmwdbqJAr1",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.VdoCY5EmwdbqJAr1"
+    },
+    {
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Cast a Spell",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You cast a spell you have prepared or in your repertoire. Casting a Spell is a special activity that takes a variable number of actions depending on the spell, as listed in each spell's stat block. As soon as the spellcasting actions are complete, the spell effect occurs.</p>\n<p>Some spells are cast as a reaction or free action. In those cases, you Cast the Spell as a reaction or free action (as appropriate) instead of as an activity. Such cases will be noted in the spell's stat block-for example, \"[reaction] verbal.\"</p>\n<p><strong>Long Casting</strong> Times Some spells take minutes or hours to cast. The Cast a Spell activity for these spells includes a mix of the listed spell components, but it's not necessary to break down which one you're providing at a given time. You can't use other actions or reactions while casting such a spell, though at the GM's discretion, you might be able to speak a few sentences. As with other activities that take a long time, these spells have the exploration trait, and you can't cast them in an encounter. If combat breaks out while you're casting one, your spell is disrupted.</p>\n<p><strong>Spell Components</strong> Each spell lists the spell components required to cast it after the action icons or text, such as \"[three-actions] material, somatic, verbal.\" The spell components, described in detail below, add traits and requirements to the Cast a Spell activity. If you can't provide the components, you fail to Cast the Spell.</p>\n<ul>\n<li>Material (manipulate)</li>\n<li>Somatic (manipulate)</li>\n<li>Verbal (concentrate)</li>\n<li>Focus (manipulate)</li>\n</ul>\n<p><strong>Disrupted and Lost Spells</strong> Some abilities and spells can disrupt a spell, causing it to have no effect and be lost. When you lose a spell, you've already expended the spell slot, spent the spell's costs and actions, and used the Cast a Spell activity. If a spell is disrupted during a @UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{Sustain a Spell} action, the spell immediately ends.</p>"
+        },
+        "rules": [],
+        "slug": "cast-a-spell",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "general"
+          ],
+          "custom": "",
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        },
+        "deathNote": false,
+        "weapon": {
+          "value": ""
+        }
+      },
+      "type": "action",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz"
+        },
+        "pf2e": {
+          "grantedBy": {
+            "id": "bZHJHAxPDue6LsTe",
+            "onDelete": "cascade"
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.7.4",
+        "coreVersion": "10.291",
+        "createdTime": 1675999808500,
+        "modifiedTime": 1675999808500,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "uGd9pzJoapd1oRuC",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.uGd9pzJoapd1oRuC"
+    },
+    {
+      "img": "systems/pf2e/icons/features/ancestry/versatile-heritage.webp",
+      "name": "Versatile Heritage",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Humanity's versatility and ambition have fueled its ascendance to be the most common ancestry in most nations throughout the world. Select a general feat of your choice for which you meet the prerequisites (as with your ancestry feat, you can select this general feat at any point during character creation).</p>"
+        },
+        "rules": [
+          {
+            "adjustName": false,
+            "allowedDrops": {
+              "label": "PF2E.SpecificRule.GeneralTraining.AllowedDrops",
+              "predicate": [
+                "item:type:feat",
+                "item:level:1",
+                "item:trait:general"
+              ]
+            },
+            "choices": {
+              "query": "{\"system.level.value\":1,\"system.traits.value\":{\"$elemMatch\":\"general\"}}"
+            },
+            "key": "ChoiceSet",
+            "prompt": "PF2E.SpecificRule.GeneralTraining.Prompt",
+            "flag": "versatileHeritage",
+            "selection": "Compendium.pf2e.feats-srd.Item.AmP0qu7c5dlBSath"
+          },
+          {
+            "key": "GrantItem",
+            "uuid": "{item|flags.pf2e.rulesSelections.versatileHeritage}",
+            "flag": "toughness"
+          }
+        ],
+        "slug": "versatile-heritage",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "ancestry": {
+          "name": "Human",
+          "uuid": "Compendium.pf2e.ancestries.Item.IiG7DgeLWYrSNXuX",
+          "slug": "human"
+        }
+      },
+      "type": "heritage",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.heritages.Item.hFBwsVcSnNCJoimo"
+        },
+        "pf2e": {
+          "itemGrants": {
+            "toughness": {
+              "id": "tjgY6Gn3e2b71tQk",
+              "onDelete": "detach"
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.7.4",
+        "coreVersion": "10.291",
+        "createdTime": 1675999886277,
+        "modifiedTime": 1675999886277,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "cCRzil1gTzOe76RM",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.cCRzil1gTzOe76RM"
+    },
+    {
+      "img": "systems/pf2e/icons/features/feats/feats.webp",
+      "name": "Toughness",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You can withstand more punishment than most before succumbing. Increase your maximum Hit Points by your level. The DC of recovery checks is equal to 9 + your dying condition value.</p>"
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "selector": "hp",
+            "value": "@actor.level"
+          },
+          {
+            "key": "ActiveEffectLike",
+            "mode": "downgrade",
+            "path": "system.attributes.dying.recoveryDC",
+            "value": 9
+          }
+        ],
+        "slug": "toughness",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "general"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "general",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": null
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.feats-srd.Item.AmP0qu7c5dlBSath"
+        },
+        "pf2e": {
+          "grantedBy": {
+            "id": "cCRzil1gTzOe76RM",
+            "onDelete": "cascade"
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.10.4",
+        "coreVersion": "10.291",
+        "createdTime": 1675999886278,
+        "modifiedTime": 1682377139921,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "tjgY6Gn3e2b71tQk",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.tjgY6Gn3e2b71tQk"
+    },
+    {
+      "img": "systems/pf2e/icons/default-icons/background.svg",
+      "name": "Shadow Haunted",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Prerequisite</strong> Region - Old Cheliax</p>\n<hr />\n<p>You are from Nidal, and regardless of your personal values, Zon-Kuthon has a claim on your soul due to an ancient pact. The Midnight Lord's unsettling influence is bred deep into your bones.</p>\n<p>Choose two ability boosts. One must be to <strong>Intelligence</strong> or <strong>Wisdom</strong>, and one is a free ability boost.</p>\n<p>You're trained in the Intimidation skill and the Shadow Plane Lore skill. You gain the @UUID[Compendium.pf2e.feats-srd.Item.ar2DUlvDK4LDcH9J]{Quick Coercion} skill feat.</p>"
+        },
+        "rules": [],
+        "slug": "shadow-haunted",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens: World Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "boosts": {
+          "0": {
+            "value": [
+              "int",
+              "wis"
+            ],
+            "selected": "int"
+          },
+          "1": {
+            "value": [
+              "cha",
+              "con",
+              "dex",
+              "int",
+              "str",
+              "wis"
+            ],
+            "selected": "con"
+          }
+        },
+        "items": {
+          "9db55": {
+            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "level": 1,
+            "name": "Quick Coercion",
+            "uuid": "Compendium.pf2e.feats-srd.Item.ar2DUlvDK4LDcH9J"
+          }
+        },
+        "trainedLore": "Shadow Plane Lore",
+        "trainedSkills": {
+          "value": [
+            "itm"
+          ]
+        }
+      },
+      "type": "background",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.backgrounds.Item.V31KRG7aA7xS0m8L"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.7.4",
+        "coreVersion": "10.291",
+        "createdTime": 1675999894279,
+        "modifiedTime": 1675999909869,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "bKBJtyervOmmrmUx",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.bKBJtyervOmmrmUx"
+    },
+    {
+      "img": "systems/pf2e/icons/features/feats/feats.webp",
+      "name": "Quick Coercion",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You can bully others with just a few choice implications. You can @UUID[Compendium.pf2e.actionspf2e.Item.tHCqgwjtQtzNqVvd]{Coerce} a creature after 1 round of conversation instead of 1 minute. You still can't Coerce a creature in the midst of combat, or without engaging in a conversation.</p>"
+        },
+        "rules": [],
+        "slug": "quick-coercion",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "general",
+            "skill"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1,
+          "taken": 1
+        },
+        "category": "skill",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": [
+            {
+              "value": "trained in Intimidation"
+            }
+          ]
+        },
+        "location": "bKBJtyervOmmrmUx"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.feats-srd.Item.ar2DUlvDK4LDcH9J"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.7.4",
+        "coreVersion": "10.291",
+        "createdTime": 1675999894279,
+        "modifiedTime": 1675999894279,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "KFsX5we2CFn4HpWb",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.KFsX5we2CFn4HpWb"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/clothes-explorers.webp",
+      "name": "Explorer's Clothing",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Explorer's clothing is sturdy enough that it can be reinforced to protect you, even though it isn't a suit of armor. It comes in many forms, though the most common sorts look like clerical vestments, monk's garments, or wizard's robes, as members of all three classes are likely to avoid wearing armor.</p>"
+        },
+        "rules": [],
+        "slug": "explorers-clothing",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "comfort"
+          ],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": "explorers-clothing",
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "1"
+        },
+        "equippedBulk": {
+          "value": "L"
+        },
+        "price": {
+          "value": {
+            "sp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "inSlot": true,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "wornarmor"
+        },
+        "category": "unarmored",
+        "group": "cloth",
+        "acBonus": 0,
+        "strength": null,
+        "dexCap": 5,
+        "checkPenalty": null,
+        "speedPenalty": null,
+        "potencyRune": {
+          "value": 0
+        },
+        "resiliencyRune": {
+          "value": ""
+        },
+        "propertyRune1": {
+          "value": ""
+        },
+        "propertyRune2": {
+          "value": ""
+        },
+        "propertyRune3": {
+          "value": ""
+        },
+        "propertyRune4": {
+          "value": ""
+        }
+      },
+      "type": "armor",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1676000027830,
+        "modifiedTime": 1677625647504,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "W8MmZE5xh3HaEzG4",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.W8MmZE5xh3HaEzG4"
+    },
+    {
+      "_id": "OTXhCuaSu6Z1QK3b",
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/backpack.webp",
+      "name": "Backpack",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A backpack holds up to 4 Bulk of items and the first 2 Bulk of these items don't count against your Bulk limits. If you're carrying or stowing the pack rather than wearing it on your back, its Bulk is light instead of negligible</p>"
+        },
+        "rules": [],
+        "slug": "backpack",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": "0"
+        },
+        "price": {
+          "value": {
+            "sp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "inSlot": false
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "2"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "wornbackpack"
+        },
+        "bulkCapacity": {
+          "value": "4"
+        },
+        "collapsed": false,
+        "stowing": true
+      },
+      "type": "backpack",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.3lgwjrFEsQVKzhh7"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1676170778701,
+        "modifiedTime": 1677625647504,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.OTXhCuaSu6Z1QK3b"
+    },
+    {
+      "_id": "poEmQUmaW8ov00pD",
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/rope.webp",
+      "name": "Rope",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>50 feet of rope.</p>"
+        },
+        "rules": [],
+        "slug": "rope",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "sp": 5
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": ""
+        },
+        "containerId": "OTXhCuaSu6Z1QK3b",
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "type": "equipment",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1676170778701,
+        "modifiedTime": 1677625647504,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.poEmQUmaW8ov00pD"
+    },
+    {
+      "_id": "7UWuCqwbEcozjS6Z",
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/waterskin.webp",
+      "name": "Waterskin",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>When it's full, a waterskin contains roughly 1 day's worth of water for a Small or Medium creature.</p>"
+        },
+        "rules": [],
+        "slug": "waterskin",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "cp": 5
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": "OTXhCuaSu6Z1QK3b",
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "type": "equipment",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.VnPh324pKwd2ZB66"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1676170778702,
+        "modifiedTime": 1677625647504,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.7UWuCqwbEcozjS6Z"
+    },
+    {
+      "_id": "ZnzKNkIaCZg9RKRq",
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/chalk.webp",
+      "name": "Chalk",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": "chalk",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 10,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "-"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "cp": 1
+          },
+          "per": 10
+        },
+        "equipped": {
+          "carryType": "worn"
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": "OTXhCuaSu6Z1QK3b",
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "other"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1
+        },
+        "consume": {
+          "value": ""
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null
+      },
+      "type": "consumable",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.xShIDyydOMkGvGNb"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1676170778702,
+        "modifiedTime": 1677625647504,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.ZnzKNkIaCZg9RKRq"
+    },
+    {
+      "_id": "eEGrc2A05rgZqgIm",
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/flint-and-steel.webp",
+      "name": "Flint and Steel",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Flint and steel are useful in creating a fire if you have the time to catch a spark, though using them is typically too time‑consuming to be practical during an encounter. Even in ideal conditions, using flint and steel to light a flame requires using at least 3 actions, and often significantly longer.</p>"
+        },
+        "rules": [],
+        "slug": "flint-and-steel",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "-"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "cp": 5
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": "OTXhCuaSu6Z1QK3b",
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "type": "equipment",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.UlIxxLm71UdRgCFE"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1676170778703,
+        "modifiedTime": 1677625647505,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.eEGrc2A05rgZqgIm"
+    },
+    {
+      "_id": "ZXCIMxCILYV90Bfi",
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/rations.webp",
+      "name": "Rations",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": "rations",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 2,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "sp": 4
+          }
+        },
+        "equipped": {
+          "carryType": "worn"
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": "OTXhCuaSu6Z1QK3b",
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "other"
+        },
+        "charges": {
+          "value": 7,
+          "max": 7
+        },
+        "consume": {
+          "value": ""
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null
+      },
+      "type": "consumable",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.L9ZV076913otGtiB"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1676170778703,
+        "modifiedTime": 1677625647505,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.ZXCIMxCILYV90Bfi"
+    },
+    {
+      "_id": "8W8Pmn5W9RRMi2dK",
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/torch.webp",
+      "name": "Torch",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A torch sheds bright light in a 20-foot radius (and dim light to the next 20 feet) for 1 hour. It can be used as an improvised weapon that deals 1d4 bludgeoning damage plus 1 fire damage.</p>"
+        },
+        "rules": [
+          {
+            "key": "TokenLight",
+            "predicate": [
+              "lit-torch"
+            ],
+            "value": {
+              "animation": {
+                "intensity": 4,
+                "speed": 1,
+                "type": "torch"
+              },
+              "bright": 20,
+              "color": "#9b7337",
+              "dim": 40,
+              "shadows": 0.2
+            }
+          },
+          {
+            "category": "simple",
+            "damage": {
+              "base": {
+                "damageType": "bludgeoning",
+                "dice": 1,
+                "die": "d4"
+              }
+            },
+            "key": "Strike",
+            "otherTags": [
+              "improvised"
+            ]
+          },
+          {
+            "damageType": "fire",
+            "key": "FlatModifier",
+            "predicate": [
+              "lit-torch"
+            ],
+            "selector": "{item|_id}-damage",
+            "value": 1
+          },
+          {
+            "domain": "all",
+            "key": "RollOption",
+            "label": "PF2E.SpecificRule.LitTorch",
+            "option": "lit-torch",
+            "toggleable": true
+          },
+          {
+            "key": "TokenEffectIcon",
+            "predicate": [
+              "lit-torch"
+            ],
+            "value": "systems/pf2e/icons/equipment/held-items/everburning-torch.webp"
+          }
+        ],
+        "slug": "torch",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 5,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "cp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "type": "equipment",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.8Jdw4yAzWYylGePS"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1676170778704,
+        "modifiedTime": 1677742396836,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.8W8Pmn5W9RRMi2dK"
+    },
+    {
+      "_id": "aXoGs9IeKDAVV871",
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/bedroll.webp",
+      "name": "Bedroll",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A rolled up bed.</p>"
+        },
+        "rules": [],
+        "slug": "bedroll",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "cp": 2
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": "OTXhCuaSu6Z1QK3b",
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "type": "equipment",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.fagzYdmfYyMQ6J77"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1000000,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1676170778706,
+        "modifiedTime": 1677625647505,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.aXoGs9IeKDAVV871"
+    },
+    {
+      "_id": "NprQDWOCa01aR6Pn",
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/soap.webp",
+      "name": "Soap",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Bar of soap.</p>"
+        },
+        "rules": [],
+        "slug": "soap",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "custom": ""
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "-"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "cp": 2
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": "OTXhCuaSu6Z1QK3b",
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "type": "equipment",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.81aHsD27HFGnq1Nt"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1100000,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1676170778706,
+        "modifiedTime": 1677625647505,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.NprQDWOCa01aR6Pn"
+    },
+    {
+      "name": "Arcane Prepared Spells",
+      "type": "spellcastingEntry",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "ability": {
+          "value": "int"
+        },
+        "spelldc": {
+          "value": 0,
+          "dc": 0
+        },
+        "tradition": {
+          "value": "arcane"
+        },
+        "prepared": {
+          "value": "prepared",
+          "flexible": false
+        },
+        "showUnpreparedSpells": {
+          "value": false
+        },
+        "showSlotlessLevels": {
+          "value": false
+        },
+        "proficiency": {
+          "value": 1,
+          "slug": ""
+        },
+        "displayLevels": {},
+        "slots": {
+          "slot0": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot1": {
+            "prepared": {
+              "3": {
+                "id": "MgNzFO2i6SBJVu4u"
+              },
+              "5": {
+                "id": "MgNzFO2i6SBJVu4u"
+              },
+              "6": {
+                "id": "MgNzFO2i6SBJVu4u"
+              }
+            },
+            "value": 7,
+            "max": 7
+          },
+          "slot2": {
+            "prepared": {
+              "0": {
+                "id": "MgNzFO2i6SBJVu4u"
+              }
+            },
+            "value": 7,
+            "max": 7
+          },
+          "slot3": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot4": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot5": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot6": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot7": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot8": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot9": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot10": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot11": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          }
+        },
+        "autoHeightenLevel": {
+          "value": null
+        }
+      },
+      "_id": "NJXwTyalDkqpAzq9",
+      "img": "systems/pf2e/icons/default-icons/spellcastingEntry.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1677566546996,
+        "modifiedTime": 1677966339933,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.NJXwTyalDkqpAzq9"
+    },
+    {
+      "_id": "MgNzFO2i6SBJVu4u",
+      "img": "systems/pf2e/icons/spells/burning-hands.webp",
+      "name": "Burning Hands",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Gouts of flame rush from your hands. You deal 2d6 fire damage to creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
+        },
+        "rules": [],
+        "slug": "burning-hands",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "fire",
+            "evocation"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "spellType": {
+          "value": "save"
+        },
+        "category": {
+          "value": "spell"
+        },
+        "traditions": {
+          "value": [
+            "arcane",
+            "primal"
+          ]
+        },
+        "components": {
+          "focus": false,
+          "material": false,
+          "somatic": true,
+          "verbal": true
+        },
+        "materials": {
+          "value": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": ""
+        },
+        "area": {
+          "type": "cone",
+          "value": 15
+        },
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": ""
+        },
+        "damage": {
+          "value": {
+            "0": {
+              "type": {
+                "categories": [],
+                "value": "fire"
+              },
+              "value": "2d6"
+            }
+          }
+        },
+        "save": {
+          "value": "reflex",
+          "basic": "basic"
+        },
+        "sustained": {
+          "value": false
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "NJXwTyalDkqpAzq9",
+          "signature": true
+        },
+        "hasCounteractCheck": {
+          "value": false
+        },
+        "ability": {
+          "value": ""
+        },
+        "heightening": {
+          "damage": {
+            "0": "2d6"
+          },
+          "interval": 1,
+          "type": "interval"
+        },
+        "prepared": {
+          "value": ""
+        },
+        "primarycheck": {
+          "value": ""
+        },
+        "secondarycasters": {
+          "value": ""
+        },
+        "secondarycheck": {
+          "value": ""
+        }
+      },
+      "type": "spell",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1677566565208,
+        "modifiedTime": 1677566583671,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.MgNzFO2i6SBJVu4u"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/staves/staff-of-evocation.webp",
+      "name": "Staff of Evocation",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This staff is tapered at the base and carved into a gem-studded twist at the top. While wielding the staff, you gain a +2 circumstance bonus to checks to identify evocation magic.</p>\n<p><strong>Activate</strong> Cast a Spell</p>\n<hr />\n<p><strong>Effect</strong> You expend a number of charges from the staff to cast a spell from its list.</p>\n<ul>\n<li><strong>Cantrip</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh]{Ray of Frost}</em></li>\n<li><strong>1st</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM]{Magic Missile}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.r3NeUnsgt9mS03Sn]{Shocking Grasp}</em></li>\n<li><strong>2nd</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0]{Acid Arrow}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE]{Glitterdust}</em></li>\n</ul>\n<p><strong>Craft Requirements</strong> Supply one casting of all listed levels of all listed spells.</p>"
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "label": "Staff of Evocation (identify evocation magic)",
+            "predicate": [
+              "action:identify-magic",
+              "evocation"
+            ],
+            "selector": "skill-check",
+            "type": "circumstance",
+            "value": 2
+          }
+        ],
+        "slug": "staff-of-evocation",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "enchantment",
+            "magical",
+            "staff",
+            "two-hand-d8"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 6
+        },
+        "quantity": 1,
+        "baseItem": "staff",
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "1"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 230
+          }
+        },
+        "equipped": {
+          "carryType": "held",
+          "invested": null,
+          "handsHeld": 2
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "simple",
+        "group": "club",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d4",
+          "damageType": "bludgeoning",
+          "persistent": null
+        },
+        "bonusDamage": {
+          "value": 0
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": null,
+        "reload": {
+          "value": ""
+        },
+        "potencyRune": {
+          "value": null
+        },
+        "strikingRune": {
+          "value": ""
+        },
+        "specific": {
+          "value": false
+        },
+        "propertyRune1": {
+          "value": ""
+        },
+        "propertyRune2": {
+          "value": ""
+        },
+        "propertyRune3": {
+          "value": ""
+        },
+        "propertyRune4": {
+          "value": ""
+        },
+        "property1": {
+          "value": "",
+          "dice": 0,
+          "die": "",
+          "damageType": "",
+          "critDice": 0,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": ""
+        }
+      },
+      "type": "weapon",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.96VBd7CV8NQyv3lP"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1200000,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1677622382450,
+        "modifiedTime": 1677625647505,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "f6LBelH4A8rbLdbt",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.f6LBelH4A8rbLdbt"
+    },
+    {
+      "type": "spellcastingEntry",
+      "name": "Staff of Evocation",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "ability": {
+          "value": "cha"
+        },
+        "spelldc": {
+          "value": 0,
+          "dc": 0
+        },
+        "tradition": {
+          "value": "arcane"
+        },
+        "prepared": {
+          "value": "charge"
+        },
+        "showUnpreparedSpells": {
+          "value": false
+        },
+        "showSlotlessLevels": {
+          "value": true
+        },
+        "proficiency": {
+          "value": 1
+        },
+        "displayLevels": {},
+        "slots": {
+          "slot0": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot1": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot2": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot3": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot4": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot5": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot6": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot7": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot8": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot9": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot10": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot11": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          }
+        },
+        "autoHeightenLevel": {
+          "value": null
+        }
+      },
+      "flags": {
+        "pf2e-staves": {
+          "staveID": "f6LBelH4A8rbLdbt",
+          "charges": 2
+        }
+      },
+      "_id": "pOyvZLv8PySoht4o",
+      "img": "systems/pf2e/icons/default-icons/spellcastingEntry.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1677622382677,
+        "modifiedTime": 1677966339933,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.pOyvZLv8PySoht4o"
+    },
+    {
+      "img": "systems/pf2e/icons/spells/ray-of-frost.webp",
+      "name": "Ray of Frost",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You blast an icy ray. Make a spell attack roll. The ray deals cold damage equal to 1d4 + your spellcasting ability modifier.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double damage and takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.I4PsUAaYSUJ8pwKC]{Spell Effect: Ray of Frost}</p>\n<p><strong>Success</strong> The target takes normal damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>"
+        },
+        "rules": [],
+        "slug": "ray-of-frost",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "attack",
+            "cold",
+            "cantrip",
+            "evocation"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "spellType": {
+          "value": "attack"
+        },
+        "category": {
+          "value": "spell"
+        },
+        "traditions": {
+          "value": [
+            "arcane",
+            "primal"
+          ],
+          "custom": ""
+        },
+        "components": {
+          "focus": false,
+          "material": false,
+          "somatic": true,
+          "verbal": true
+        },
+        "materials": {
+          "value": ""
+        },
+        "target": {
+          "value": "1 creature"
+        },
+        "range": {
+          "value": "120 feet"
+        },
+        "area": null,
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": ""
+        },
+        "damage": {
+          "value": {
+            "0": {
+              "applyMod": true,
+              "type": {
+                "categories": [],
+                "value": "cold"
+              },
+              "value": "1d4"
+            }
+          }
+        },
+        "save": {
+          "value": "",
+          "basic": ""
+        },
+        "sustained": {
+          "value": false
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "pOyvZLv8PySoht4o",
+          "heightenedLevel": 0
+        },
+        "hasCounteractCheck": {
+          "value": false
+        },
+        "ability": {
+          "value": ""
+        },
+        "heightening": {
+          "damage": {
+            "0": "1d4"
+          },
+          "interval": 1,
+          "type": "interval"
+        },
+        "prepared": {
+          "value": ""
+        },
+        "primarycheck": {
+          "value": ""
+        },
+        "secondarycasters": {
+          "value": ""
+        },
+        "secondarycheck": {
+          "value": ""
+        }
+      },
+      "type": "spell",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1677625648304,
+        "modifiedTime": 1677625648304,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "dYW5bYoIeYBz2TLv",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.dYW5bYoIeYBz2TLv"
+    },
+    {
+      "img": "systems/pf2e/icons/spells/magic-missile.webp",
+      "name": "Magic Missile",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You send a dart of force streaking toward a creature that you can see. It automatically hits and deals 1d4+1 force damage. For each additional action you use when Casting the Spell, increase the number of missiles you shoot by one, to a maximum of three missiles for 3 actions. You choose the target for each missile individually. If you shoot more than one missile at the same target, combine the damage before applying bonuses or penalties to damage, resistances, weaknesses, and so forth.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You shoot one additional missile with each action you spend.</p>"
+        },
+        "rules": [],
+        "slug": "magic-missile",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "force",
+            "evocation"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "spellType": {
+          "value": "utility"
+        },
+        "category": {
+          "value": "spell"
+        },
+        "traditions": {
+          "value": [
+            "arcane",
+            "occult"
+          ]
+        },
+        "components": {
+          "focus": false,
+          "material": false,
+          "somatic": true,
+          "verbal": true
+        },
+        "materials": {
+          "value": ""
+        },
+        "target": {
+          "value": "1 creature"
+        },
+        "range": {
+          "value": "120 feet"
+        },
+        "area": null,
+        "time": {
+          "value": "1 to 3"
+        },
+        "duration": {
+          "value": ""
+        },
+        "damage": {
+          "value": {
+            "0": {
+              "applyMod": false,
+              "type": {
+                "categories": [],
+                "subtype": "",
+                "value": "force"
+              },
+              "value": "1d4+1"
+            }
+          }
+        },
+        "save": {
+          "value": "",
+          "basic": ""
+        },
+        "sustained": {
+          "value": false
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "pOyvZLv8PySoht4o",
+          "heightenedLevel": 1
+        },
+        "hasCounteractCheck": {
+          "value": false
+        },
+        "ability": {
+          "value": ""
+        },
+        "overlays": {},
+        "prepared": {
+          "value": ""
+        },
+        "primarycheck": {
+          "value": ""
+        },
+        "secondarycasters": {
+          "value": ""
+        },
+        "secondarycheck": {
+          "value": ""
+        }
+      },
+      "type": "spell",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1677625648427,
+        "modifiedTime": 1677625648427,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "ZQaLqdEFiMR5k9yG",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.ZQaLqdEFiMR5k9yG"
+    },
+    {
+      "img": "systems/pf2e/icons/spells/shocking-grasp.webp",
+      "name": "Shocking Grasp",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You shroud your hands in a crackling field of lightning. Make a melee spell attack roll. On a hit, the target takes 2d12 electricity damage. If the target is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to your attack roll with shocking grasp, and the target also takes [[/r 1d4[persistent,electricity]]] damage on a hit. On a critical hit, double the initial damage, but not the @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Damage}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12, and the persistent electricity damage increases by 1.</p>"
+        },
+        "rules": [],
+        "slug": "shocking-grasp",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "attack",
+            "electricity",
+            "evocation"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "spellType": {
+          "value": "attack"
+        },
+        "category": {
+          "value": "spell"
+        },
+        "traditions": {
+          "value": [
+            "arcane",
+            "primal"
+          ]
+        },
+        "components": {
+          "focus": false,
+          "material": false,
+          "somatic": true,
+          "verbal": true
+        },
+        "materials": {
+          "value": ""
+        },
+        "target": {
+          "value": "1 creature"
+        },
+        "range": {
+          "value": "touch"
+        },
+        "area": null,
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": ""
+        },
+        "damage": {
+          "value": {
+            "0": {
+              "type": {
+                "categories": [],
+                "value": "electricity"
+              },
+              "value": "2d12"
+            }
+          }
+        },
+        "save": {
+          "value": "",
+          "basic": ""
+        },
+        "sustained": {
+          "value": false
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "pOyvZLv8PySoht4o",
+          "heightenedLevel": 1
+        },
+        "hasCounteractCheck": {
+          "value": false
+        },
+        "ability": {
+          "value": ""
+        },
+        "heightening": {
+          "damage": {
+            "0": "1d12"
+          },
+          "interval": 1,
+          "type": "interval"
+        },
+        "prepared": {
+          "value": ""
+        },
+        "primarycheck": {
+          "value": ""
+        },
+        "secondarycasters": {
+          "value": ""
+        },
+        "secondarycheck": {
+          "value": ""
+        }
+      },
+      "type": "spell",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.r3NeUnsgt9mS03Sn"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1677625648551,
+        "modifiedTime": 1677625648551,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "CiFEOItHbmpZqv7t",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.CiFEOItHbmpZqv7t"
+    },
+    {
+      "img": "systems/pf2e/icons/spells/acid-arrow.webp",
+      "name": "Acid Arrow",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You conjure an arrow of acid that keeps corroding the target after it hits. Make a spell attack against the target. On a hit, you deal 3d8 acid damage plus @Localize[PF2E.PersistentDamage.Acid1d6.success]. On a critical hit, double the initial damage, but not the persistent damage.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 2d8, and the @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Damage} increases by 1d6.</p>"
+        },
+        "rules": [],
+        "slug": "acid-arrow",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "acid",
+            "attack",
+            "evocation"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 2
+        },
+        "spellType": {
+          "value": "attack"
+        },
+        "category": {
+          "value": "spell"
+        },
+        "traditions": {
+          "value": [
+            "arcane",
+            "primal"
+          ]
+        },
+        "components": {
+          "focus": false,
+          "material": false,
+          "somatic": true,
+          "verbal": true
+        },
+        "materials": {
+          "value": ""
+        },
+        "target": {
+          "value": "1 creature"
+        },
+        "range": {
+          "value": "120 feet"
+        },
+        "area": null,
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": ""
+        },
+        "damage": {
+          "value": {
+            "0": {
+              "applyMod": false,
+              "type": {
+                "categories": [],
+                "subtype": "",
+                "value": "acid"
+              },
+              "value": "3d8"
+            }
+          }
+        },
+        "save": {
+          "value": "",
+          "basic": ""
+        },
+        "sustained": {
+          "value": false
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "pOyvZLv8PySoht4o",
+          "heightenedLevel": 2
+        },
+        "hasCounteractCheck": {
+          "value": false
+        },
+        "ability": {
+          "value": ""
+        },
+        "heightening": {
+          "damage": {
+            "0": "2d8"
+          },
+          "interval": 2,
+          "type": "interval"
+        },
+        "prepared": {
+          "value": ""
+        },
+        "primarycheck": {
+          "value": ""
+        },
+        "secondarycasters": {
+          "value": ""
+        },
+        "secondarycheck": {
+          "value": ""
+        }
+      },
+      "type": "spell",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1677625648774,
+        "modifiedTime": 1677625648774,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "diWcKrGSm85t49hR",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.diWcKrGSm85t49hR"
+    },
+    {
+      "img": "systems/pf2e/icons/spells/glitterdust.webp",
+      "name": "Glitterdust",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Creatures in the area are outlined by glittering dust. Each creature must attempt a Reflex save. If a creature has its invisibility negated by this spell, it is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} instead of @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}. This applies both if the creature was already Invisible and if it benefits from new invisibility effects before the end of the invisibility negation effect from this spell.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's invisibility is negated for 2 rounds.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute and its invisibility is negated for 1 minute.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and Dazzled for 10 minutes. Its invisibility is negated for 10 minutes.</p>"
+        },
+        "rules": [],
+        "slug": "glitterdust",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "evocation"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 2
+        },
+        "spellType": {
+          "value": "save"
+        },
+        "category": {
+          "value": "spell"
+        },
+        "traditions": {
+          "value": [
+            "arcane",
+            "primal"
+          ]
+        },
+        "components": {
+          "focus": false,
+          "material": false,
+          "somatic": true,
+          "verbal": true
+        },
+        "materials": {
+          "value": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "120 feet"
+        },
+        "area": {
+          "type": "burst",
+          "value": 10
+        },
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": ""
+        },
+        "damage": {
+          "value": {}
+        },
+        "save": {
+          "value": "reflex",
+          "basic": ""
+        },
+        "sustained": {
+          "value": false
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "pOyvZLv8PySoht4o",
+          "heightenedLevel": 2
+        },
+        "hasCounteractCheck": {
+          "value": false
+        },
+        "ability": {
+          "value": ""
+        },
+        "prepared": {
+          "value": ""
+        },
+        "primarycheck": {
+          "value": ""
+        },
+        "secondarycasters": {
+          "value": ""
+        },
+        "secondarycheck": {
+          "value": ""
+        }
+      },
+      "type": "spell",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1677625648931,
+        "modifiedTime": 1677625648931,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "s7zgXANg5d2Z6mcz",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.s7zgXANg5d2Z6mcz"
+    },
+    {
+      "name": "Divine Spontaneous Spells",
+      "type": "spellcastingEntry",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "ability": {
+          "value": "cha"
+        },
+        "spelldc": {
+          "value": 0,
+          "dc": 0
+        },
+        "tradition": {
+          "value": "divine"
+        },
+        "prepared": {
+          "value": "spontaneous"
+        },
+        "showUnpreparedSpells": {
+          "value": false
+        },
+        "showSlotlessLevels": {
+          "value": true
+        },
+        "proficiency": {
+          "value": 1,
+          "slug": ""
+        },
+        "displayLevels": {},
+        "slots": {
+          "slot0": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot1": {
+            "prepared": [],
+            "value": 3,
+            "max": 3
+          },
+          "slot2": {
+            "prepared": [],
+            "value": 3,
+            "max": 3
+          },
+          "slot3": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot4": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot5": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot6": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot7": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot8": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot9": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot10": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot11": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          }
+        },
+        "autoHeightenLevel": {
+          "value": null
+        }
+      },
+      "_id": "wt84AgTb1LQUpqnU",
+      "img": "systems/pf2e/icons/default-icons/spellcastingEntry.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1677736691998,
+        "modifiedTime": 1677966339933,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.wt84AgTb1LQUpqnU"
+    },
+    {
+      "img": "systems/pf2e/icons/spells/heal.webp",
+      "name": "Heal",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You channel positive energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of positive damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"pf2-icon\">1</span> <strong>(somatic)</strong> The spell has a range of touch.</p>\n<p><span class=\"pf2-icon\">2</span> <strong>(verbal, somatic)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8</p>\n<p><span class=\"pf2-icon\">3</span> <strong>(material, somatic, verbal)</strong> You disperse positive energy in a 30-foot emanation. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
+        },
+        "rules": [],
+        "slug": "heal",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "healing",
+            "vitality",
+            "necromancy"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "spellType": {
+          "value": "heal"
+        },
+        "category": {
+          "value": "spell"
+        },
+        "traditions": {
+          "value": [
+            "divine",
+            "primal"
+          ],
+          "custom": ""
+        },
+        "components": {
+          "focus": false,
+          "material": false,
+          "somatic": false,
+          "verbal": false
+        },
+        "materials": {
+          "value": ""
+        },
+        "target": {
+          "value": "1 willing living creature or 1 undead"
+        },
+        "range": {
+          "value": "varies"
+        },
+        "area": {
+          "details": "varies",
+          "type": "emanation",
+          "value": 30
+        },
+        "time": {
+          "value": "1 to 3"
+        },
+        "duration": {
+          "value": ""
+        },
+        "damage": {
+          "value": {
+            "0": {
+              "applyMod": false,
+              "type": {
+                "categories": [],
+                "subtype": "",
+                "value": "vitality"
+              },
+              "value": "1d8"
+            }
+          }
+        },
+        "save": {
+          "value": "fortitude",
+          "basic": "basic"
+        },
+        "sustained": {
+          "value": false
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "wt84AgTb1LQUpqnU",
+          "heightenedLevel": 1,
+          "signature": false
+        },
+        "hasCounteractCheck": {
+          "value": false
+        },
+        "ability": {
+          "value": ""
+        },
+        "heightening": {
+          "damage": {
+            "0": "1d8"
+          },
+          "interval": 1,
+          "type": "interval"
+        },
+        "overlays": {
+          "37gy7l19tik74o4s": {
+            "_id": "37gy7l19tik74o4s",
+            "name": "Heal (vs. Living)",
+            "overlayType": "override",
+            "sort": 2,
+            "system": {
+              "area": {
+                "areaType": "",
+                "value": ""
+              },
+              "components": {
+                "somatic": true,
+                "verbal": true
+              },
+              "damage": {
+                "value": {
+                  "0": {
+                    "value": "1d8+8"
+                  }
+                }
+              },
+              "heightenedLevel": {},
+              "heightening": {
+                "damage": {
+                  "0": "1d8+8"
+                }
+              },
+              "range": {
+                "value": "30 feet"
+              },
+              "save": {
+                "basic": "",
+                "value": ""
+              },
+              "time": {
+                "value": "2"
+              }
+            }
+          },
+          "7qdtetowq348s9oc": {
+            "_id": "7qdtetowq348s9oc",
+            "overlayType": "override",
+            "sort": 1,
+            "system": {
+              "area": {
+                "areaType": "",
+                "value": ""
+              },
+              "components": {
+                "somatic": true
+              },
+              "heightenedLevel": {},
+              "range": {
+                "value": "touch"
+              },
+              "time": {
+                "value": "1"
+              }
+            }
+          },
+          "7vbvdrv2cl87sqta": {
+            "_id": "7vbvdrv2cl87sqta",
+            "overlayType": "override",
+            "sort": 4,
+            "system": {
+              "components": {
+                "material": true,
+                "somatic": true,
+                "verbal": true
+              },
+              "heightenedLevel": {},
+              "range": {
+                "value": ""
+              },
+              "target": {
+                "value": "all living and undead creatures"
+              },
+              "time": {
+                "value": "3"
+              }
+            }
+          },
+          "lfxcoz2d3f8j2zq1": {
+            "_id": "lfxcoz2d3f8j2zq1",
+            "name": "Heal (vs. Undead)",
+            "overlayType": "override",
+            "sort": 3,
+            "system": {
+              "area": {
+                "areaType": "",
+                "value": ""
+              },
+              "components": {
+                "somatic": true,
+                "verbal": true
+              },
+              "heightenedLevel": {},
+              "range": {
+                "value": "30 feet"
+              },
+              "spellType": {
+                "value": "save"
+              },
+              "target": {
+                "value": "1 undead"
+              },
+              "time": {
+                "value": "2"
+              }
+            }
+          }
+        },
+        "prepared": {
+          "value": ""
+        },
+        "primarycheck": {
+          "value": ""
+        },
+        "secondarycasters": {
+          "value": ""
+        },
+        "secondarycheck": {
+          "value": ""
+        }
+      },
+      "type": "spell",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1677736871484,
+        "modifiedTime": 1677736875015,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "KnVmwU8svqI7MwXP",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.KnVmwU8svqI7MwXP"
+    },
+    {
+      "img": "systems/pf2e/icons/spells/burning-hands.webp",
+      "name": "Burning Hands",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Gouts of flame rush from your hands. You deal 2d6 fire damage to creatures in the area.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>"
+        },
+        "rules": [],
+        "slug": "burning-hands",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "fire",
+            "evocation"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "spellType": {
+          "value": "save"
+        },
+        "category": {
+          "value": "spell"
+        },
+        "traditions": {
+          "value": [
+            "arcane",
+            "primal"
+          ]
+        },
+        "components": {
+          "focus": false,
+          "material": false,
+          "somatic": true,
+          "verbal": true
+        },
+        "materials": {
+          "value": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": ""
+        },
+        "area": {
+          "type": "cone",
+          "value": 15
+        },
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": ""
+        },
+        "damage": {
+          "value": {
+            "0": {
+              "type": {
+                "categories": [],
+                "value": "fire"
+              },
+              "value": "2d6"
+            }
+          }
+        },
+        "save": {
+          "value": "reflex",
+          "basic": "basic"
+        },
+        "sustained": {
+          "value": false
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "wt84AgTb1LQUpqnU",
+          "heightenedLevel": 2
+        },
+        "hasCounteractCheck": {
+          "value": false
+        },
+        "ability": {
+          "value": ""
+        },
+        "heightening": {
+          "damage": {
+            "0": "2d6"
+          },
+          "interval": 1,
+          "type": "interval"
+        },
+        "prepared": {
+          "value": ""
+        },
+        "primarycheck": {
+          "value": ""
+        },
+        "secondarycasters": {
+          "value": ""
+        },
+        "secondarycheck": {
+          "value": ""
+        }
+      },
+      "type": "spell",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1677736886401,
+        "modifiedTime": 1677736957800,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_id": "Ur6Um0jRVIEb5001",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.Ur6Um0jRVIEb5001"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-tools/sunrod.webp",
+      "name": "Sunrod",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>This 1-foot-long, gold-tipped rod glows after it's struck on a hard surface. For the next 6 hours, it sheds bright light in a 20-foot radius (and dim light to the next 40 feet).</p>"
+        },
+        "rules": [
+          {
+            "key": "TokenLight",
+            "predicate": [
+              "lit-sunrod"
+            ],
+            "value": {
+              "animation": {
+                "intensity": 4,
+                "speed": 1,
+                "type": "torch"
+              },
+              "bright": 20,
+              "color": "#9b7337",
+              "dim": 40,
+              "shadows": 0.2
+            }
+          },
+          {
+            "domain": "all",
+            "key": "RollOption",
+            "label": "Lit Sunrod",
+            "option": "lit-sunrod",
+            "toggleable": true
+          }
+        ],
+        "slug": "sunrod",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "light"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 3
+          }
+        },
+        "equipped": {
+          "carryType": "held",
+          "handsHeld": 1
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Object",
+            "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "other"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1
+        },
+        "consume": {
+          "value": ""
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null
+      },
+      "type": "consumable",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.y4WJY8rCbY6d1MET"
+        }
+      },
+      "effects": [],
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.8.3",
+        "coreVersion": "10.291",
+        "createdTime": 1677742289102,
+        "modifiedTime": 1677742488046,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "folder": null,
+      "sort": 0,
+      "_id": "JfGRwdNSN10GzcQY",
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.JfGRwdNSN10GzcQY"
+    },
+    {
+      "type": "lore",
+      "img": "systems/pf2e/icons/default-icons/lore.svg",
+      "name": "Chicago Lore",
+      "effects": [],
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.84,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "mod": {
+          "value": 0
+        },
+        "proficient": {
+          "value": 0
+        }
+      },
+      "_id": "a6GXtZ0hZj5EYX2I",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "ANMn0vc4t8tYEOWE": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.11.0",
+        "coreVersion": "10.291",
+        "createdTime": 1682659234135,
+        "modifiedTime": 1682659238079,
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+      },
+      "_key": "!actors.items!3tNL6OD4nFL8SNrW.a6GXtZ0hZj5EYX2I"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "pf2e": {
+      "freeCrafting": false,
+      "showBasicUnarmed": true
+    },
+    "core": {
+      "sourceId": "Actor.EjMYnjM8RNDw59XG"
+    },
+    "cf": null
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1674098028063,
+    "modifiedTime": 1697493242096,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "_id": "3tNL6OD4nFL8SNrW",
+  "ownership": {
+    "default": 1,
+    "ANMn0vc4t8tYEOWE": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "folder": "50JTtiPvXhI4uf9S",
+  "sort": 0,
+  "_key": "!actors!3tNL6OD4nFL8SNrW"
+}

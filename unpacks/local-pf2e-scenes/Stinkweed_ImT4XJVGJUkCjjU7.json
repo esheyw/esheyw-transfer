@@ -1,0 +1,3192 @@
+{
+  "_id": "ImT4XJVGJUkCjjU7",
+  "name": "Stinkweed",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "navName": "",
+  "foreground": "modules/troubles-in-otari-remade-maps/maps/stinkweed-foreground.webp",
+  "thumb": "modules/esheyw-transfer/assets/scenes/local-pf2e-scenes-ImT4XJVGJUkCjjU7-thumb.png",
+  "width": 2000,
+  "height": 2000,
+  "padding": 0.25,
+  "initial": {},
+  "backgroundColor": "#999999",
+  "grid": {
+    "size": 100,
+    "type": 1,
+    "color": "#000000",
+    "alpha": 0.2,
+    "distance": 5,
+    "units": "ft"
+  },
+  "tokenVision": true,
+  "fogExploration": true,
+  "fogReset": 1647131450548,
+  "globalLight": false,
+  "globalLightThreshold": null,
+  "darkness": 0,
+  "drawings": [],
+  "tokens": [
+    {
+      "_id": "jeoINV7FKtxOOCu5",
+      "name": "Viper Urn",
+      "displayName": 20,
+      "actorId": "j7jhEXIRY5W1wr9s",
+      "actorLink": false,
+      "width": 1,
+      "height": 1,
+      "x": 1500,
+      "y": 1600,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "attenuation": 0.5
+      },
+      "disposition": 0,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": false,
+          "autoscale": false
+        }
+      },
+      "delta": {
+        "flags": {
+          "pf2e": {
+            "editHazard": {
+              "value": false
+            }
+          },
+          "pf2e_updatednpcsheet": {
+            "npcNotes": {
+              "value": ""
+            }
+          }
+        },
+        "items": [
+          {
+            "_id": "dwvQyKJ9gUWC4S3f",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/actions/Reaction.webp",
+            "name": "Topple",
+            "sort": 100000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>When someone pulls the trip wire, the urn smashes against a creature in the doorway, making a shattering urn Strike against that creature, then releases a viper into the square that contained the trap. The viper attacks any non-plant creature it detects.</p>"
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "reaction"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.158-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": ""
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.jeoINV7FKtxOOCu5.jeoINV7FKtxOOCu5.dwvQyKJ9gUWC4S3f"
+          },
+          {
+            "_id": "0SzWuQBdiVOEj4WC",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Shattering Urn",
+            "sort": 200000,
+            "type": "melee",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "deadly-d10"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "weaponType": {
+                "value": "melee"
+              },
+              "attack": {
+                "value": ""
+              },
+              "damageRolls": {
+                "gv20dhv8z48yakj4o79cyf": {
+                  "damage": "2d6+5",
+                  "damageType": "slashing"
+                }
+              },
+              "bonus": {
+                "value": 12
+              },
+              "attackEffects": {
+                "value": []
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.158-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.jeoINV7FKtxOOCu5.jeoINV7FKtxOOCu5.0SzWuQBdiVOEj4WC"
+          }
+        ],
+        "system": {
+          "schema": {
+            "version": 0.769,
+            "lastMigration": {
+              "datetime": "2022-09-05T18:25:34.158-07:00",
+              "version": {
+                "schema": 0.751,
+                "foundry": "9.280",
+                "system": "3.13.6"
+              }
+            }
+          }
+        },
+        "_id": "jeoINV7FKtxOOCu5",
+        "name": null,
+        "type": null,
+        "img": null,
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "_key": "!scenes.tokens.delta!ImT4XJVGJUkCjjU7.jeoINV7FKtxOOCu5.jeoINV7FKtxOOCu5"
+      },
+      "texture": {
+        "src": "pdftofoundry/troubles-in-otari/viper-urn.token.webp",
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!ImT4XJVGJUkCjjU7.jeoINV7FKtxOOCu5"
+    },
+    {
+      "_id": "okZvOVwNQRbBVuJR",
+      "name": "Stinkweed Shambler",
+      "displayName": 20,
+      "actorId": "HR81NSGNWbGcsVVG",
+      "actorLink": false,
+      "width": 1,
+      "height": 1,
+      "x": 1500,
+      "y": 1300,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "attenuation": 0.5
+      },
+      "disposition": -1,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": true,
+          "autoscale": true
+        }
+      },
+      "delta": {
+        "items": [
+          {
+            "_id": "56wLde8SVEfys89N",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Vine",
+            "sort": 100000,
+            "type": "melee",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "agile",
+                  "finesse"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "weaponType": {
+                "value": "melee"
+              },
+              "attack": {
+                "value": ""
+              },
+              "damageRolls": {
+                "n3xw9uy16ocsyfs7p8xb": {
+                  "damage": "1d8+2",
+                  "damageType": "bludgeoning"
+                }
+              },
+              "bonus": {
+                "value": 11
+              },
+              "attackEffects": {
+                "value": []
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.170-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.56wLde8SVEfys89N"
+          },
+          {
+            "_id": "Wigs6zeZoSmogj8P",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Seedpod",
+            "sort": 200000,
+            "type": "melee",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "range-increment-30"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "weaponType": {
+                "value": "ranged"
+              },
+              "attack": {
+                "value": ""
+              },
+              "damageRolls": {
+                "n0qqo3n5rbdcvvqlgxf4": {
+                  "damage": "2d4+2",
+                  "damageType": "bludgeoning"
+                }
+              },
+              "bonus": {
+                "value": 11
+              },
+              "attackEffects": {
+                "value": []
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.170-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.Wigs6zeZoSmogj8P"
+          },
+          {
+            "_id": "0gQuuCA2OyaQRNwR",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Stench",
+            "sort": 300000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[type:fortitude|dc:14] save or become @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} for 1 round (and @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round on a critical failure). A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "aura",
+                  "olfactory"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.170-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "defensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.0gQuuCA2OyaQRNwR"
+          },
+          {
+            "_id": "742oUZV30i6otpgL",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Stinky Leaves",
+            "sort": 400000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>The foul smell emitted by a stinkweed shambler becomes stronger when its leaves are crushed or burned. When a stinkweed shambler takes bludgeoning or fire damage, the DC for its Stench ability increases to 18 and its Stealth bonus decreases to +4. Both of these effects last for 1 minute.</p>"
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.170-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "defensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.742oUZV30i6otpgL"
+          },
+          {
+            "_id": "H8wipabcGbcu7thF",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Waving Weed",
+            "sort": 500000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>The stinkweed shambler Strides up to half its Speed. This movement doesn't provoke reactions.</p>"
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "action"
+              },
+              "category": null,
+              "actions": {
+                "value": 1
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.170-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "offensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.H8wipabcGbcu7thF"
+          },
+          {
+            "_id": "zNOKH6cGU4FaspAX",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Woodland Stride",
+            "sort": 600000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>A stinkweed shambler ignores difficult terrain and greater difficult terrain from non-magical foliage.</p>"
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.170-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "offensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.zNOKH6cGU4FaspAX"
+          },
+          {
+            "_id": "6nif0me5GDS4kwmP",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Acrobatics",
+            "sort": 700000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 8
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.170-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.6nif0me5GDS4kwmP"
+          },
+          {
+            "_id": "zIeezZf0M8Fy6rBe",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Intimidation",
+            "sort": 800000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 6
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.170-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.zIeezZf0M8Fy6rBe"
+          },
+          {
+            "_id": "jCunmvIGBXW6MZt8",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Stealth",
+            "sort": 900000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 8
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.170-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.jCunmvIGBXW6MZt8"
+          },
+          {
+            "_id": "QV5vCXBOv7O9YLUC",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Survival",
+            "sort": 1000000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 6
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.170-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.QV5vCXBOv7O9YLUC"
+          }
+        ],
+        "system": {
+          "attributes": {
+            "speed": {
+              "otherSpeeds": [
+                {
+                  "type": "climb",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "traits": {
+            "dv": [
+              {
+                "label": "Fire",
+                "type": "fire",
+                "value": "4"
+              }
+            ]
+          },
+          "schema": {
+            "version": 0.769,
+            "lastMigration": {
+              "datetime": "2022-09-05T18:25:34.170-07:00",
+              "version": {
+                "schema": 0.751,
+                "foundry": "9.280",
+                "system": "3.13.6"
+              }
+            }
+          }
+        },
+        "_id": "okZvOVwNQRbBVuJR",
+        "name": null,
+        "type": null,
+        "img": null,
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR"
+      },
+      "texture": {
+        "src": "pdftofoundry/troubles-in-otari/stinkweed-shambler.token.webp",
+        "scaleX": 0.8,
+        "scaleY": 0.8,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR"
+    },
+    {
+      "_id": "7dN9pmImExQVtYGJ",
+      "name": "Stinkweed Shambler",
+      "displayName": 20,
+      "actorId": "HR81NSGNWbGcsVVG",
+      "actorLink": false,
+      "width": 1,
+      "height": 1,
+      "x": 1600,
+      "y": 1400,
+      "elevation": 0,
+      "lockRotation": false,
+      "rotation": 0,
+      "effects": [],
+      "alpha": 1,
+      "hidden": true,
+      "light": {
+        "alpha": 0.5,
+        "angle": 360,
+        "bright": 0,
+        "coloration": 1,
+        "dim": 0,
+        "luminosity": 0.5,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "animation": {
+          "speed": 5,
+          "intensity": 5,
+          "reverse": false,
+          "type": null
+        },
+        "darkness": {
+          "min": 0,
+          "max": 1
+        },
+        "attenuation": 0.5
+      },
+      "disposition": -1,
+      "displayBars": 50,
+      "bar1": {
+        "attribute": "attributes.hp"
+      },
+      "bar2": {
+        "attribute": null
+      },
+      "flags": {
+        "pf2e": {
+          "linkToActorSize": true,
+          "autoscale": true
+        }
+      },
+      "delta": {
+        "items": [
+          {
+            "_id": "56wLde8SVEfys89N",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Vine",
+            "sort": 100000,
+            "type": "melee",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "agile",
+                  "finesse"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "weaponType": {
+                "value": "melee"
+              },
+              "attack": {
+                "value": ""
+              },
+              "damageRolls": {
+                "n3xw9uy16ocsyfs7p8xb": {
+                  "damage": "1d8+2",
+                  "damageType": "bludgeoning"
+                }
+              },
+              "bonus": {
+                "value": 11
+              },
+              "attackEffects": {
+                "value": []
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.185-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.56wLde8SVEfys89N"
+          },
+          {
+            "_id": "Wigs6zeZoSmogj8P",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/melee.svg",
+            "name": "Seedpod",
+            "sort": 200000,
+            "type": "melee",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "range-increment-30"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "weaponType": {
+                "value": "ranged"
+              },
+              "attack": {
+                "value": ""
+              },
+              "damageRolls": {
+                "n0qqo3n5rbdcvvqlgxf4": {
+                  "damage": "2d4+2",
+                  "damageType": "bludgeoning"
+                }
+              },
+              "bonus": {
+                "value": 11
+              },
+              "attackEffects": {
+                "value": []
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.185-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.Wigs6zeZoSmogj8P"
+          },
+          {
+            "_id": "0gQuuCA2OyaQRNwR",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Stench",
+            "sort": 300000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>10 feet. A creature entering the aura or starting its turn in the aura must succeed at a @Check[type:fortitude|dc:14] save or become @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} for 1 round (and @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round on a critical failure). A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [
+                  "aura",
+                  "olfactory"
+                ],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.185-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "defensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.0gQuuCA2OyaQRNwR"
+          },
+          {
+            "_id": "742oUZV30i6otpgL",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Stinky Leaves",
+            "sort": 400000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>The foul smell emitted by a stinkweed shambler becomes stronger when its leaves are crushed or burned. When a stinkweed shambler takes bludgeoning or fire damage, the DC for its Stench ability increases to 18 and its Stealth bonus decreases to +4. Both of these effects last for 1 minute.</p>"
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.185-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "defensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.742oUZV30i6otpgL"
+          },
+          {
+            "_id": "H8wipabcGbcu7thF",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/actions/OneAction.webp",
+            "name": "Waving Weed",
+            "sort": 500000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>The stinkweed shambler Strides up to half its Speed. This movement doesn't provoke reactions.</p>"
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "action"
+              },
+              "category": null,
+              "actions": {
+                "value": 1
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.185-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "offensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.H8wipabcGbcu7thF"
+          },
+          {
+            "_id": "zNOKH6cGU4FaspAX",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/actions/Passive.webp",
+            "name": "Woodland Stride",
+            "sort": 600000,
+            "type": "action",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": "<p>A stinkweed shambler ignores difficult terrain and greater difficult terrain from non-magical foliage.</p>"
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "actionType": {
+                "value": "passive"
+              },
+              "category": null,
+              "actions": {
+                "value": null
+              },
+              "requirements": {
+                "value": ""
+              },
+              "trigger": {
+                "value": ""
+              },
+              "deathNote": false,
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.185-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              },
+              "actionCategory": {
+                "value": "offensive"
+              },
+              "weapon": {
+                "value": ""
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.zNOKH6cGU4FaspAX"
+          },
+          {
+            "_id": "6nif0me5GDS4kwmP",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Acrobatics",
+            "sort": 700000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 8
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.185-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.6nif0me5GDS4kwmP"
+          },
+          {
+            "_id": "zIeezZf0M8Fy6rBe",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Intimidation",
+            "sort": 800000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 6
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.185-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.zIeezZf0M8Fy6rBe"
+          },
+          {
+            "_id": "jCunmvIGBXW6MZt8",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Stealth",
+            "sort": 900000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 8
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.185-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.jCunmvIGBXW6MZt8"
+          },
+          {
+            "_id": "QV5vCXBOv7O9YLUC",
+            "effects": [],
+            "flags": {},
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Survival",
+            "sort": 1000000,
+            "type": "lore",
+            "folder": null,
+            "system": {
+              "description": {
+                "gm": "",
+                "value": ""
+              },
+              "rules": [],
+              "slug": null,
+              "_migration": {
+                "version": null,
+                "lastMigration": null
+              },
+              "traits": {
+                "otherTags": [],
+                "value": [],
+                "rarity": "common",
+                "custom": ""
+              },
+              "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+              },
+              "mod": {
+                "value": 6
+              },
+              "proficient": {
+                "value": 0
+              },
+              "source": {
+                "value": ""
+              },
+              "schema": {
+                "version": 0.769,
+                "lastMigration": {
+                  "datetime": "2022-09-05T18:25:34.186-07:00",
+                  "version": {
+                    "schema": 0.751,
+                    "foundry": "9.280",
+                    "system": "3.13.6"
+                  }
+                }
+              }
+            },
+            "ownership": {
+              "default": 0
+            },
+            "_stats": {
+              "systemId": null,
+              "systemVersion": null,
+              "coreVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null
+            },
+            "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.QV5vCXBOv7O9YLUC"
+          }
+        ],
+        "system": {
+          "attributes": {
+            "speed": {
+              "otherSpeeds": [
+                {
+                  "type": "climb",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "traits": {
+            "dv": [
+              {
+                "label": "Fire",
+                "type": "fire",
+                "value": "4"
+              }
+            ]
+          },
+          "schema": {
+            "version": 0.769,
+            "lastMigration": {
+              "datetime": "2022-09-05T18:25:34.185-07:00",
+              "version": {
+                "schema": 0.751,
+                "foundry": "9.280",
+                "system": "3.13.6"
+              }
+            }
+          }
+        },
+        "_id": "7dN9pmImExQVtYGJ",
+        "name": null,
+        "type": null,
+        "img": null,
+        "effects": [],
+        "ownership": {
+          "default": 0
+        },
+        "flags": {},
+        "_key": "!scenes.tokens.delta!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ"
+      },
+      "texture": {
+        "src": "pdftofoundry/troubles-in-otari/stinkweed-shambler.token.webp",
+        "scaleX": 0.8,
+        "scaleY": 0.8,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "sight": {
+        "angle": 360,
+        "enabled": false,
+        "range": 0,
+        "brightness": 1,
+        "visionMode": "basic",
+        "attenuation": 0.1,
+        "saturation": 0,
+        "contrast": 0
+      },
+      "appendNumber": false,
+      "prependAdjective": false,
+      "detectionModes": [],
+      "_key": "!scenes.tokens!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ"
+    }
+  ],
+  "lights": [],
+  "notes": [
+    {
+      "_id": "3CV39AQ8Im51Qg9x",
+      "entryId": "oaC63E17V9NUIVVD",
+      "x": 1450,
+      "y": 1450,
+      "iconSize": 40,
+      "fontFamily": "Signika",
+      "fontSize": 48,
+      "textAnchor": 1,
+      "textColor": "#FFFFFF",
+      "flags": {},
+      "texture": {
+        "src": "icons/svg/book.svg",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "pageId": null,
+      "global": false,
+      "_key": "!scenes.notes!ImT4XJVGJUkCjjU7.3CV39AQ8Im51Qg9x"
+    }
+  ],
+  "sounds": [],
+  "templates": [],
+  "tiles": [
+    {
+      "_id": "JP4XUgAzX5XL64KU",
+      "width": 900,
+      "height": 600,
+      "x": 600,
+      "y": 500,
+      "z": 100,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "overhead": true,
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0.3,
+        "radius": null
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {},
+      "texture": {
+        "src": "modules/troubles-in-otari-remade-maps/maps/stinkweed-tile-tree1.webp",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "roof": false,
+      "_key": "!scenes.tiles!ImT4XJVGJUkCjjU7.JP4XUgAzX5XL64KU"
+    },
+    {
+      "_id": "0ctv3P3lH8Vfs6aq",
+      "width": 900,
+      "height": 800,
+      "x": 500,
+      "y": 1700,
+      "z": 100,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "overhead": true,
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0.3,
+        "radius": null
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {},
+      "texture": {
+        "src": "modules/troubles-in-otari-remade-maps/maps/stinkweed-tile-tree2.webp",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "roof": false,
+      "_key": "!scenes.tiles!ImT4XJVGJUkCjjU7.0ctv3P3lH8Vfs6aq"
+    },
+    {
+      "_id": "ez3CBdYhr4HQsNuQ",
+      "width": 700,
+      "height": 700,
+      "x": 1800,
+      "y": 1800,
+      "z": 100,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "overhead": true,
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0.3,
+        "radius": null
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {},
+      "texture": {
+        "src": "modules/troubles-in-otari-remade-maps/maps/stinkweed-tile-tree3.webp",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "roof": false,
+      "_key": "!scenes.tiles!ImT4XJVGJUkCjjU7.ez3CBdYhr4HQsNuQ"
+    },
+    {
+      "_id": "lwiHDYqepEZ01ZI2",
+      "width": 900,
+      "height": 700,
+      "x": 1000,
+      "y": 1100,
+      "z": 100,
+      "rotation": 0,
+      "alpha": 1,
+      "hidden": false,
+      "locked": false,
+      "overhead": true,
+      "occlusion": {
+        "mode": 1,
+        "alpha": 0,
+        "radius": null
+      },
+      "video": {
+        "loop": true,
+        "autoplay": true,
+        "volume": 0
+      },
+      "flags": {},
+      "texture": {
+        "src": "modules/troubles-in-otari-remade-maps/maps/stinkweed-tile-roof.webp",
+        "tint": null,
+        "scaleX": 1,
+        "scaleY": 1,
+        "offsetX": 0,
+        "offsetY": 0,
+        "rotation": 0
+      },
+      "roof": true,
+      "_key": "!scenes.tiles!ImT4XJVGJUkCjjU7.lwiHDYqepEZ01ZI2"
+    }
+  ],
+  "walls": [
+    {
+      "_id": "XiX3JuhwIy9x44dz",
+      "c": [
+        1600,
+        1200,
+        1100,
+        1200
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.XiX3JuhwIy9x44dz"
+    },
+    {
+      "_id": "XgDbD1xln3tpDdlK",
+      "c": [
+        1100,
+        1200,
+        1100,
+        1400
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.XgDbD1xln3tpDdlK"
+    },
+    {
+      "_id": "iK6wGPGK9zrYYtO2",
+      "c": [
+        1100,
+        1400,
+        1200,
+        1400
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.iK6wGPGK9zrYYtO2"
+    },
+    {
+      "_id": "iVsp420WqSgMTyrU",
+      "c": [
+        1200,
+        1400,
+        1200,
+        1700
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.iVsp420WqSgMTyrU"
+    },
+    {
+      "_id": "TLOIu8bplXhU90Mr",
+      "c": [
+        1387,
+        1700,
+        1500,
+        1700
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.TLOIu8bplXhU90Mr"
+    },
+    {
+      "_id": "KCStMgp2ukokLR5z",
+      "c": [
+        1600,
+        1700,
+        1700,
+        1700
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.KCStMgp2ukokLR5z"
+    },
+    {
+      "_id": "UHjPrdRoOd41xNt4",
+      "c": [
+        1700,
+        1700,
+        1700,
+        1600
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.UHjPrdRoOd41xNt4"
+    },
+    {
+      "_id": "kY662yyFDkLTjeUE",
+      "c": [
+        1700,
+        1600,
+        1800,
+        1600
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.kY662yyFDkLTjeUE"
+    },
+    {
+      "_id": "YDgAwKCK9zdTMixW",
+      "c": [
+        1800,
+        1600,
+        1800,
+        1400
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.YDgAwKCK9zdTMixW"
+    },
+    {
+      "_id": "GbBcF33pP9DuPd0J",
+      "c": [
+        1700,
+        1400,
+        1800,
+        1400
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.GbBcF33pP9DuPd0J"
+    },
+    {
+      "_id": "BRBe4hqx4Oe4J5NJ",
+      "c": [
+        1700,
+        1400,
+        1700,
+        1300
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.BRBe4hqx4Oe4J5NJ"
+    },
+    {
+      "_id": "wvv7WV7k57Tjsukz",
+      "c": [
+        1600,
+        1300,
+        1700,
+        1300
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.wvv7WV7k57Tjsukz"
+    },
+    {
+      "_id": "EXoOs2drhergmY4J",
+      "c": [
+        1600,
+        1200,
+        1600,
+        1300
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 1,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.EXoOs2drhergmY4J"
+    },
+    {
+      "_id": "4gYL5Jf9phSnKcGI",
+      "c": [
+        1600,
+        1700,
+        1500,
+        1700
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 1,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.4gYL5Jf9phSnKcGI"
+    },
+    {
+      "_id": "l4AzWmzJMzkba4oE",
+      "c": [
+        1200,
+        1700,
+        1226,
+        1700
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.l4AzWmzJMzkba4oE"
+    },
+    {
+      "_id": "NE3tv4CYKrHAtpx6",
+      "c": [
+        1226,
+        1700,
+        1225,
+        1720
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.NE3tv4CYKrHAtpx6"
+    },
+    {
+      "_id": "zJfHdWmzSfg9KsVs",
+      "c": [
+        1225,
+        1720,
+        1244,
+        1760
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 2,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.zJfHdWmzSfg9KsVs"
+    },
+    {
+      "_id": "0k9zLPAagtEu4a70",
+      "c": [
+        1244,
+        1760,
+        1285,
+        1784
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.0k9zLPAagtEu4a70"
+    },
+    {
+      "_id": "D8jW2CwgVQhxhXAf",
+      "c": [
+        1285,
+        1784,
+        1329,
+        1783
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 2,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.D8jW2CwgVQhxhXAf"
+    },
+    {
+      "_id": "ORZzq6cA8TNVswhq",
+      "c": [
+        1329,
+        1783,
+        1367,
+        1761
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.ORZzq6cA8TNVswhq"
+    },
+    {
+      "_id": "8HVhEnxvRupum1ys",
+      "c": [
+        1367,
+        1761,
+        1385,
+        1718
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 2,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.8HVhEnxvRupum1ys"
+    },
+    {
+      "_id": "mau5DYvNof442oAi",
+      "c": [
+        1385,
+        1718,
+        1387,
+        1700
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 20,
+      "sight": 20,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.mau5DYvNof442oAi"
+    },
+    {
+      "_id": "dOVVzCF44Hi7gr5b",
+      "c": [
+        1400,
+        1850,
+        1450,
+        1900
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.dOVVzCF44Hi7gr5b"
+    },
+    {
+      "_id": "bxw382ilc9UK4xVL",
+      "c": [
+        1400,
+        1850,
+        1451,
+        1804
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.bxw382ilc9UK4xVL"
+    },
+    {
+      "_id": "Hy8uuhzTMckZgKfE",
+      "c": [
+        1450,
+        1804,
+        1500,
+        1850
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.Hy8uuhzTMckZgKfE"
+    },
+    {
+      "_id": "HDEwRtFteLWUC5Gq",
+      "c": [
+        1450,
+        1900,
+        1500,
+        1850
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.HDEwRtFteLWUC5Gq"
+    },
+    {
+      "_id": "2h9oubbHlbPYuloI",
+      "c": [
+        900,
+        2200,
+        900,
+        2300
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.2h9oubbHlbPYuloI"
+    },
+    {
+      "_id": "lvIiwxRDVZzN9aQ6",
+      "c": [
+        900,
+        2200,
+        1000,
+        2200
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.lvIiwxRDVZzN9aQ6"
+    },
+    {
+      "_id": "CcbbXsYVS8Cn5yw8",
+      "c": [
+        1000,
+        2200,
+        1000,
+        2300
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.CcbbXsYVS8Cn5yw8"
+    },
+    {
+      "_id": "fEBeRtEwAjo8hCu5",
+      "c": [
+        1000,
+        2300,
+        900,
+        2300
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.fEBeRtEwAjo8hCu5"
+    },
+    {
+      "_id": "4dvkFriOuz81dfzW",
+      "c": [
+        2137,
+        2200,
+        2201,
+        2140
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.4dvkFriOuz81dfzW"
+    },
+    {
+      "_id": "GZ6Cn10SUYEhsdJ1",
+      "c": [
+        2201,
+        2140,
+        2251,
+        2200
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.GZ6Cn10SUYEhsdJ1"
+    },
+    {
+      "_id": "1xOo7RIgt49IpA2G",
+      "c": [
+        2251,
+        2200,
+        2192,
+        2259
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.1xOo7RIgt49IpA2G"
+    },
+    {
+      "_id": "hXN4dYtomFyUnrTE",
+      "c": [
+        2192,
+        2259,
+        2189,
+        2260
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.hXN4dYtomFyUnrTE"
+    },
+    {
+      "_id": "kTN4EG89eZ6jbMRA",
+      "c": [
+        2189,
+        2260,
+        2137,
+        2200
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.kTN4EG89eZ6jbMRA"
+    },
+    {
+      "_id": "RZ8zqnvRV5I1hfl1",
+      "c": [
+        937,
+        700,
+        999,
+        645
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.RZ8zqnvRV5I1hfl1"
+    },
+    {
+      "_id": "Dg328BkDPdvTv2yB",
+      "c": [
+        999,
+        645,
+        1051,
+        707
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.Dg328BkDPdvTv2yB"
+    },
+    {
+      "_id": "crm6opnZ3RzMuhXS",
+      "c": [
+        1051,
+        707,
+        982,
+        760
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.crm6opnZ3RzMuhXS"
+    },
+    {
+      "_id": "H1XL0YISWfbpRLS8",
+      "c": [
+        982,
+        760,
+        937,
+        700
+      ],
+      "move": 20,
+      "sound": 20,
+      "dir": 0,
+      "door": 0,
+      "ds": 0,
+      "flags": {},
+      "light": 10,
+      "sight": 10,
+      "threshold": {
+        "light": null,
+        "sight": null,
+        "sound": null,
+        "attenuation": false
+      },
+      "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.H1XL0YISWfbpRLS8"
+    }
+  ],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "weather": "",
+  "folder": "JmcGCHKY2xJWPkXP",
+  "sort": 0,
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.troubles-in-otari-remade-maps.troubles-in-otari-maps-remake-by-narchy.vWkmw3ybsVMuoUb3"
+    },
+    "scene-packer": {
+      "hash": "b6dcd69344f22e9a7cca9991d57f39415353e13b"
+    },
+    "token-attacher": {},
+    "cf": null
+  },
+  "ownership": {
+    "M22dRxbECY9l1C6E": 3,
+    "default": 0,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "background": {
+    "src": "modules/troubles-in-otari-remade-maps/maps/stinkweed-background.webp",
+    "offsetX": 0,
+    "offsetY": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+  },
+  "foregroundElevation": null,
+  "journalEntryPage": null,
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1697493028488,
+    "modifiedTime": 1697493028488,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "_key": "!scenes!ImT4XJVGJUkCjjU7"
+}

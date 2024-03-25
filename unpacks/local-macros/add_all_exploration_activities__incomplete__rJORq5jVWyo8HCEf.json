@@ -1,0 +1,27 @@
+{
+  "name": "add all exploration activities (incomplete)",
+  "type": "script",
+  "scope": "global",
+  "_id": "rJORq5jVWyo8HCEf",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "const pack = game.packs.get('pf2e.actionspf2e');\nconst index = await pack.getIndex({\n  fields: [\"system.traits\"]\n});\nconst filtered = index.filter(i => i.system?.traits?.value?.includes('exploration'));\nconsole.warn(\n  // index,\n  filtered,\n);",
+  "folder": "S2KSaNQJxdlRFkyr",
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1699584030813,
+    "modifiedTime": 1702343866245,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "v0RvORcwGexWLCjc": 3
+  },
+  "_key": "!macros!rJORq5jVWyo8HCEf"
+}

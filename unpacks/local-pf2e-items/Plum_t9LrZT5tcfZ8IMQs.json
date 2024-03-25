@@ -1,0 +1,143 @@
+{
+  "name": "Plum",
+  "type": "consumable",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>A fresh plum.</p>"
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.878,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.815,
+        "foundry": "11.313",
+        "system": "5.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "quantity": 9,
+    "baseItem": null,
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "weight": {
+      "value": "-"
+    },
+    "equippedBulk": {
+      "value": ""
+    },
+    "price": {
+      "value": {
+        "cp": 2
+      }
+    },
+    "equipped": {
+      "carryType": "worn"
+    },
+    "stackGroup": null,
+    "negateBulk": {
+      "value": "0"
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "Unusual Object",
+        "img": "systems/pf2e/icons/unidentified_item_icons/other-consumables.webp",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "consumableType": {
+      "value": "other"
+    },
+    "charges": {
+      "value": 0,
+      "max": 0
+    },
+    "consume": {
+      "value": ""
+    },
+    "autoDestroy": {
+      "value": true
+    },
+    "spell": null,
+    "activation": {
+      "type": "",
+      "cost": 0,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": 0,
+      "per": null
+    }
+  },
+  "img": "Assets/items/Plum-transformed.webp",
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "aw963p9jZnpqNivn": 3,
+    "CRg5jauQloHLIL5G": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1666478171234,
+    "modifiedTime": 1697493557092,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "folder": null,
+  "_id": "t9LrZT5tcfZ8IMQs",
+  "sort": 600000,
+  "_key": "!items!t9LrZT5tcfZ8IMQs"
+}

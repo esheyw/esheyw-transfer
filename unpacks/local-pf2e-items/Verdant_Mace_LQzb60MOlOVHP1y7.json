@@ -1,0 +1,166 @@
+{
+  "img": "Assets/character%20art/verdant%20mace.webp",
+  "name": "Verdant Mace",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>With a stout haft and a heavy metal head, a mace is sturdy and allows its wielder to deliver powerful blows and dent armor.</p>"
+    },
+    "rules": [],
+    "slug": "mace",
+    "_migration": {
+      "version": 0.878,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.815,
+        "foundry": "11.313",
+        "system": "5.7.2"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "shove"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "quantity": 1,
+    "baseItem": "mace",
+    "hp": {
+      "value": 0,
+      "max": 0
+    },
+    "hardness": 0,
+    "weight": {
+      "value": "1"
+    },
+    "equippedBulk": {
+      "value": ""
+    },
+    "price": {
+      "value": {
+        "gp": 1
+      }
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "stackGroup": null,
+    "negateBulk": {
+      "value": "0"
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "Unusual Mace",
+        "img": "systems/pf2e/icons/unidentified_item_icons/weapon.webp",
+        "data": {
+          "description": {
+            "value": ""
+          }
+        }
+      },
+      "misidentified": {}
+    },
+    "usage": {
+      "value": "held-in-one-hand"
+    },
+    "category": "simple",
+    "group": "club",
+    "bonus": {
+      "value": 0
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d6",
+      "damageType": "bludgeoning",
+      "persistent": null,
+      "value": ""
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": 0
+    },
+    "range": null,
+    "reload": {
+      "value": ""
+    },
+    "potencyRune": {
+      "value": null
+    },
+    "strikingRune": {
+      "value": null
+    },
+    "specific": {
+      "value": false
+    },
+    "propertyRune1": {
+      "value": null
+    },
+    "propertyRune2": {
+      "value": null
+    },
+    "propertyRune3": {
+      "value": null
+    },
+    "propertyRune4": {
+      "value": null
+    },
+    "property1": {
+      "value": "",
+      "dice": null,
+      "die": "",
+      "damageType": "",
+      "critDice": null,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": "",
+      "criticalConditionType": "",
+      "criticalConditionValue": null,
+      "strikeConditionType": "",
+      "strikeConditionValue": null
+    }
+  },
+  "type": "weapon",
+  "flags": {
+    "core": {}
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0,
+    "aw963p9jZnpqNivn": 3,
+    "CRg5jauQloHLIL5G": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1666481862117,
+    "modifiedTime": 1697493557092,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "folder": null,
+  "_id": "LQzb60MOlOVHP1y7",
+  "sort": 400000,
+  "_key": "!items!LQzb60MOlOVHP1y7"
+}

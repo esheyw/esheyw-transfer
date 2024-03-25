@@ -1,0 +1,34 @@
+{
+  "name": "Compendium Savings",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/game-icons-net/blackbackground/pie-chart.svg",
+  "command": "/**\n * Compendium Savings\n *\n * Displays how much data actors/items use on world load currently\n *   and how much they'd use if they were in compendiums.\n */\n\nconst countTrueSize = (arr) => arr.reduce((t, i) => t + JSON.stringify(i.toObject()).length, 0);\nconst countIndexSize = (arr) => arr.reduce((t, i) => {\n\tconst { _id, name, type, img } = i.toObject();\n\treturn t + JSON.stringify({ _id, name, type, img }).length;\n}, 0);\n\nconst maxPrecision = (num, decimalPlaces = 0, type = 'round') => {\n\tconst p = Math.pow(10, decimalPlaces || 0),\n\t\tn = num * p * (1 + Number.EPSILON);\n\treturn Math[type](n) / p;\n}\n\nconst templateData = {\n\titems: {\n\t\tunpacked: maxPrecision(countTrueSize(game.items) / 1000, 2),\n\t\tpacked: maxPrecision(countIndexSize(game.items) / 1000, 2),\n\t\tget ratio() {\n\t\t\treturn this.packed / this.unpacked;\n\t\t},\n\t\tget savings() {\n\t\t\treturn maxPrecision(1 - this.ratio, 3) * 100;\n\t\t}\n\t},\n\tactors: {\n\t\tunpacked: maxPrecision(countTrueSize(game.actors) / 1000, 2),\n\t\tpacked: maxPrecision(countIndexSize(game.actors) / 1000, 2),\n\t\tget ratio() {\n\t\t\treturn this.packed / this.unpacked;\n\t\t},\n\t\tget savings() {\n\t\t\treturn maxPrecision(1 - this.ratio, 3) * 100;\n\t\t}\n\t}\n};\n\nconst template = `\n<div style=\"display:grid;grid-template-columns:5fr 2fr 2fr 2fr;gap:0.2rem;white-space:nowrap;\">\n<h3>Category</h3><h3>Unpacked (kB)</h3><h3>Packed (kB)</h3><h3>Savings</h3>\n<label>Items</label><span style='justify-self:right;'>{{items.unpacked}}</span><span style='justify-self:right;'>{{items.packed}}</span><span style='justify-self:right;'>{{items.savings}}%</span>\n<label>Actors</label><span style='justify-self:right;'>{{actors.unpacked}}</span><span style='justify-self:right;'>{{actors.packed}}</span><span style='justify-self:right;'>{{actors.savings}}%</span>\n</div>\n<hr>\n`;\n\nconst compiled = Handlebars.compile(template);\nDialog.prompt({\n\ttitle: 'Compendium Savings',\n\tcontent: compiled(templateData, { allowProtoMethodsByDefault: true, allowProtoPropertiesByDefault: true }),\n});",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForSpecificUser": ""
+    },
+    "cf": null,
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1680987791732,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "ZZeuGAwc769XJuIL",
+  "folder": "MUrlWbVP9uj79bSv",
+  "sort": 1800000,
+  "ownership": {
+    "default": 0,
+    "holNdNHqtCzAbMAV": 3,
+    "717Xeq3czH96acPF": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_key": "!macros!ZZeuGAwc769XJuIL"
+}

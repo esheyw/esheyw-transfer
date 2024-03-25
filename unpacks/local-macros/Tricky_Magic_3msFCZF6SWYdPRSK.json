@@ -1,0 +1,33 @@
+{
+  "name": "Tricky Magic",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/game-icons-net/blackbackground/fairy-wand.svg",
+  "command": "const DamageRoll = CONFIG.Dice.rolls.find(((R) => R.name === \"DamageRoll\"));\nconst CheckRoll = CONFIG.Dice.rolls.find(((R) => R.name === \"CheckRoll\"));\n\n\nlet caster;\nif (!game.user.targets.size || game.user.targets.size > 1) {\n    ui.notifications.warn('You must have a single target for Tricky Magic.');\n    return;\n}\nif (!(canvas.tokens.controlled.length)) {\n    const charToken = canvas.scene.tokens.filter(t => t.actor?.id === game.user.character?.id).pop();\n    if (charToken) {\n        caster = charToken.actor;\n        ui.notifications.info(\"Falling back to assigned Character.\");\n    } else {\n        ui.notifications.warn(\"Please select exactly one token\");\n        return;\n    }\n}\ncaster ??= canvas.tokens.controlled[0].actor;\nconst target = game.user.targets.first().actor;\n\n// const rollopts = () => [\n    // ...caster.getRollOptions(['all','skill-check']),\n    // 'action:tricky-magic'\n// ];\n// cwarn(rollopts());\nconst perdc = target.perception.dc.value;\nawait caster.skills.arcana.roll({dc: perdc, event})",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForSpecificUser": ""
+    },
+    "cf": null,
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1679847697808,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "3msFCZF6SWYdPRSK",
+  "folder": "kRXPZuklNQ37eqyN",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "holNdNHqtCzAbMAV": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_key": "!macros!3msFCZF6SWYdPRSK"
+}

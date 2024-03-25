@@ -1,0 +1,19 @@
+{
+  "color": "#000000",
+  "name": "Troubles in Otari Scenes",
+  "sorting": "m",
+  "type": "Scene",
+  "folder": null,
+  "_id": "JmcGCHKY2xJWPkXP",
+  "sort": 100000,
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1697493020050,
+    "modifiedTime": 1697493032704,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "_key": "!folders!JmcGCHKY2xJWPkXP"
+}

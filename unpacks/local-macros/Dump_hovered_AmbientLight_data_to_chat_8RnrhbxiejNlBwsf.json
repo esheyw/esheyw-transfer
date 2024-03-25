@@ -1,0 +1,27 @@
+{
+  "name": "Dump hovered AmbientLight data to chat",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/light.svg",
+  "command": "ChatMessage.create({content: JSON.stringify(canvas.lighting.hover.document.config)})",
+  "folder": "MUrlWbVP9uj79bSv",
+  "ownership": {
+    "default": 0,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1691866295446,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "8RnrhbxiejNlBwsf",
+  "sort": 200000,
+  "_key": "!macros!8RnrhbxiejNlBwsf"
+}

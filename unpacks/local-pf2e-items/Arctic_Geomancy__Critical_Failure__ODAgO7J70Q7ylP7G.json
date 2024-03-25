@@ -1,0 +1,81 @@
+{
+  "name": "Arctic Geomancy (Critical Failure)",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": ""
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.attributes.speed.value",
+        "value": -10,
+        "mode": "add"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.878,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.837,
+        "foundry": "11.313",
+        "system": "5.7.3"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 2,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "target": null,
+    "unidentified": false
+  },
+  "img": "Assets/icons/game-icons-net/whitebackground/ice-bolt.svg",
+  "folder": "U53VSnkyDxGt4ovB",
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3
+  },
+  "flags": {
+    "core": {
+      "sourceId": "Item.s2gDkpMi1dL2bPg7"
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1679856824173,
+    "modifiedTime": 1698035467430,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "ODAgO7J70Q7ylP7G",
+  "_key": "!items!ODAgO7J70Q7ylP7G"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Deities",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "description": "",
+  "sort": 100000,
+  "color": "#ede3e3",
+  "flags": {
+    "df-qol": {
+      "colour": "#000000"
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1698035474212,
+    "modifiedTime": 1698035474236,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "5lHRvLVah1MGoOZg",
+  "_key": "!folders!5lHRvLVah1MGoOZg"
+}

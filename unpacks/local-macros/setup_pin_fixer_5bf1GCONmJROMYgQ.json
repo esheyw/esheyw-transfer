@@ -1,0 +1,27 @@
+{
+  "name": "setup pin fixer",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "await canvas.notes.updateAll({\n  \"flags.pinfix.minZoomLevel\": 0.1,\n  \"flags.pinfix.showName\": true,\n  \"flags.pin-cushion.textAlwaysVisible\":true,\n  \"fontSize\":24,\n  \"iconSize\":40,\n});\n\nawait canvas.scene.update({\n  \"flags.pinfix.enable\":true,\n  \"flags.pinfix.aboveFog\":true,\n  \"flags.pinfix.minScale\":0.5,\n});",
+  "folder": "S2KSaNQJxdlRFkyr",
+  "ownership": {
+    "default": 0,
+    "v0RvORcwGexWLCjc": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1698724896292,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "5bf1GCONmJROMYgQ",
+  "sort": 500000,
+  "_key": "!macros!5bf1GCONmJROMYgQ"
+}

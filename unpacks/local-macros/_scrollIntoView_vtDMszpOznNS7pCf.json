@@ -1,0 +1,27 @@
+{
+  "name": ".scrollIntoView",
+  "type": "script",
+  "scope": "global",
+  "_id": "vtDMszpOznNS7pCf",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": ".scrollIntoView()",
+  "folder": "S2KSaNQJxdlRFkyr",
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1701272631093,
+    "modifiedTime": 1702343866245,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "v0RvORcwGexWLCjc": 3
+  },
+  "_key": "!macros!vtDMszpOznNS7pCf"
+}

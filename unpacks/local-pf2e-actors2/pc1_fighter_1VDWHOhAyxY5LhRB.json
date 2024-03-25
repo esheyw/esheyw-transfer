@@ -1,0 +1,3153 @@
+{
+  "prototypeToken": {
+    "displayName": 20,
+    "displayBars": 20,
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": true,
+        "autoscale": true
+      }
+    },
+    "height": 1,
+    "width": 1,
+    "actorLink": true,
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "name": "pc1",
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "systems/pf2e/icons/default-icons/character.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "detectionModes": [],
+    "randomImg": false
+  },
+  "name": "pc1 fighter",
+  "type": "character",
+  "ownership": {
+    "default": 1,
+    "v0RvORcwGexWLCjc": 3
+  },
+  "effects": [],
+  "system": {
+    "attributes": {
+      "hp": {
+        "value": 80,
+        "temp": 0
+      },
+      "initiative": {
+        "statistic": "perception"
+      },
+      "speed": {
+        "value": 25,
+        "otherSpeeds": []
+      }
+    },
+    "details": {
+      "level": {
+        "value": 8
+      },
+      "biography": {
+        "appearance": "",
+        "backstory": "",
+        "birthPlace": "",
+        "attitude": "",
+        "beliefs": "",
+        "anathema": "",
+        "edicts": "",
+        "likes": "",
+        "dislikes": "",
+        "catchphrases": "",
+        "campaignNotes": "",
+        "allies": "",
+        "enemies": "",
+        "organizations": "",
+        "visibility": {
+          "appearance": true,
+          "backstory": false,
+          "personality": false,
+          "campaign": false
+        }
+      },
+      "keyability": {
+        "value": "str"
+      },
+      "xp": {
+        "value": 0,
+        "min": 0,
+        "max": 1000,
+        "pct": 0
+      },
+      "age": {
+        "value": ""
+      },
+      "height": {
+        "value": ""
+      },
+      "weight": {
+        "value": ""
+      },
+      "gender": {
+        "value": ""
+      },
+      "ethnicity": {
+        "value": ""
+      },
+      "nationality": {
+        "value": ""
+      },
+      "alliance": "party"
+    },
+    "traits": {
+      "value": [],
+      "senses": [],
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "resources": {
+      "heroPoints": {
+        "value": 1,
+        "max": 3
+      }
+    },
+    "_migration": {
+      "version": 0.904,
+      "previous": {
+        "schema": 0.903,
+        "foundry": "11.315",
+        "system": "5.10.5"
+      }
+    },
+    "abilities": null,
+    "skills": {
+      "acr": {
+        "rank": 0
+      },
+      "arc": {
+        "rank": 0
+      },
+      "ath": {
+        "rank": 2
+      },
+      "cra": {
+        "rank": 0
+      },
+      "dec": {
+        "rank": 0
+      },
+      "dip": {
+        "rank": 0
+      },
+      "itm": {
+        "rank": 0
+      },
+      "med": {
+        "rank": 0
+      },
+      "nat": {
+        "rank": 0
+      },
+      "occ": {
+        "rank": 0
+      },
+      "prf": {
+        "rank": 0
+      },
+      "rel": {
+        "rank": 0
+      },
+      "soc": {
+        "rank": 0
+      },
+      "ste": {
+        "rank": 0
+      },
+      "sur": {
+        "rank": 0
+      },
+      "thi": {
+        "rank": 0
+      }
+    },
+    "pfs": {
+      "playerNumber": null,
+      "characterNumber": null,
+      "levelBump": false,
+      "currentFaction": "EA",
+      "school": null,
+      "reputation": {
+        "EA": null,
+        "GA": null,
+        "HH": null,
+        "VS": null,
+        "RO": null,
+        "VW": null
+      }
+    },
+    "exploration": [],
+    "build": {
+      "attributes": {
+        "boosts": {
+          "1": [
+            "str",
+            "con",
+            "dex",
+            "int"
+          ],
+          "5": [
+            "int",
+            "con",
+            "cha"
+          ]
+        }
+      }
+    },
+    "crafting": {
+      "formulas": [
+        {
+          "uuid": "Compendium.pf2e.equipment-srd.Item.N3nNqO5Nw2DIFhrv"
+        }
+      ]
+    }
+  },
+  "_id": "1VDWHOhAyxY5LhRB",
+  "img": "systems/pf2e/icons/default-icons/character.svg",
+  "items": [
+    {
+      "img": "systems/pf2e/icons/classes/fighter.webp",
+      "name": "Fighter",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><em>Fighting for honor, greed, loyalty, or simply the thrill of battle, you are an undisputed master of weaponry and combat techniques. You combine your actions through clever combinations of opening moves, finishing strikes, and counterattacks whenever your foes are unwise enough to drop their guard. Whether you are a knight, mercenary, sharpshooter, or blade master, you have honed your martial skills into an art form and perform devastating critical attacks on your enemies.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.HZbrRRVzW7w17L2W]{Fighter}</em></p>"
+        },
+        "rules": [],
+        "slug": "fighter",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "keyAbility": {
+          "value": [
+            "dex",
+            "str"
+          ],
+          "selected": "str"
+        },
+        "items": {
+          "0c3e5": {
+            "img": "systems/pf2e/icons/features/classes/weapon-legend.webp",
+            "level": 13,
+            "name": "Weapon Legend",
+            "uuid": "Compendium.pf2e.classfeatures.Item.F5VenhIQMDkeGvmV"
+          },
+          "2jey6": {
+            "img": "icons/equipment/head/helm-barbute-rounded-steel.webp",
+            "level": 11,
+            "name": "Fighter Expertise",
+            "uuid": "Compendium.pf2e.classfeatures.Item.bAaI7h937Nr3g93U"
+          },
+          "9c5ay": {
+            "img": "systems/pf2e/icons/features/classes/armor-expertise.webp",
+            "level": 11,
+            "name": "Armor Expertise",
+            "uuid": "Compendium.pf2e.classfeatures.Item.x5jaCJxsmD5sx3KB"
+          },
+          "e1e4m": {
+            "img": "systems/pf2e/icons/features/classes/shield-block.webp",
+            "level": 1,
+            "name": "Shield Block",
+            "uuid": "Compendium.pf2e.classfeatures.Item.eZNCckLzbH3GyncH"
+          },
+          "enizk": {
+            "img": "systems/pf2e/icons/features/classes/improved-flexibility.webp",
+            "level": 15,
+            "name": "Improved Flexibility",
+            "uuid": "Compendium.pf2e.classfeatures.Item.W2rwudMNcAxs8VoX"
+          },
+          "ij943": {
+            "img": "systems/pf2e/icons/features/classes/battlefield-surveyor.webp",
+            "level": 7,
+            "name": "Battlefield Surveyor",
+            "uuid": "Compendium.pf2e.classfeatures.Item.TIvzBALymvb56L79"
+          },
+          "lakjk": {
+            "img": "systems/pf2e/icons/features/classes/bravery.webp",
+            "level": 3,
+            "name": "Bravery",
+            "uuid": "Compendium.pf2e.classfeatures.Item.GJKJafDGuX4BeAeN"
+          },
+          "lphi1": {
+            "img": "systems/pf2e/icons/features/classes/juggerenaut.webp",
+            "level": 9,
+            "name": "Juggernaut",
+            "uuid": "Compendium.pf2e.classfeatures.Item.OMZs5y16jZRW9KQK"
+          },
+          "q0xyz": {
+            "img": "icons/equipment/chest/breastplate-sculpted-grey.webp",
+            "level": 17,
+            "name": "Armor Mastery",
+            "uuid": "Compendium.pf2e.classfeatures.Item.CGB1TczFhQhdQxml"
+          },
+          "r6269": {
+            "img": "systems/pf2e/icons/features/classes/attack-of-opportunity.webp",
+            "level": 1,
+            "name": "Attack of Opportunity",
+            "uuid": "Compendium.pf2e.classfeatures.Item.hmShTfPOcTaKgbf4"
+          },
+          "r6jbx": {
+            "img": "icons/magic/fire/explosion-embers-evade-silhouette.webp",
+            "level": 15,
+            "name": "Evasion",
+            "uuid": "Compendium.pf2e.classfeatures.Item.MV6XIuAgN9uSA0Da"
+          },
+          "txlgu": {
+            "img": "systems/pf2e/icons/features/classes/combat-flexibility.webp",
+            "level": 9,
+            "name": "Combat Flexibility",
+            "uuid": "Compendium.pf2e.classfeatures.Item.8g6HzARbhfcgilP8"
+          },
+          "u1d1r": {
+            "img": "systems/pf2e/icons/features/classes/weapon-specialization.webp",
+            "level": 7,
+            "name": "Weapon Specialization",
+            "uuid": "Compendium.pf2e.classfeatures.Item.9EqIasqfI8YIM3Pt"
+          },
+          "u8k07": {
+            "img": "systems/pf2e/icons/features/classes/fighter-weapon-mastery.webp",
+            "level": 5,
+            "name": "Fighter Weapon Mastery",
+            "uuid": "Compendium.pf2e.classfeatures.Item.gApJtAdNb9ST4Ms9"
+          },
+          "vis8d": {
+            "img": "systems/pf2e/icons/features/classes/greater-weapon-specialization.webp",
+            "level": 15,
+            "name": "Greater Weapon Specialization (Level 15)",
+            "uuid": "Compendium.pf2e.classfeatures.Item.Z7HX6TeFsaup7Dx9"
+          },
+          "x98c2": {
+            "img": "systems/pf2e/icons/features/classes/versatile-legend.webp",
+            "level": 19,
+            "name": "Versatile Legend",
+            "uuid": "Compendium.pf2e.classfeatures.Item.0H2LxtiZTJ275pSD"
+          }
+        },
+        "hp": 10,
+        "trainedSkills": {
+          "value": [],
+          "additional": 3
+        },
+        "perception": 2,
+        "savingThrows": {
+          "fortitude": 2,
+          "reflex": 2,
+          "will": 1
+        },
+        "attacks": {
+          "simple": 2,
+          "martial": 2,
+          "advanced": 1,
+          "unarmed": 2,
+          "other": {
+            "name": "",
+            "rank": 0
+          }
+        },
+        "defenses": {
+          "unarmored": 1,
+          "light": 1,
+          "medium": 1,
+          "heavy": 1
+        },
+        "spellcasting": 0,
+        "ancestryFeatLevels": {
+          "value": [
+            1,
+            5,
+            9,
+            13,
+            17
+          ]
+        },
+        "classFeatLevels": {
+          "value": [
+            1,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18,
+            20
+          ]
+        },
+        "generalFeatLevels": {
+          "value": [
+            3,
+            7,
+            11,
+            15,
+            19
+          ]
+        },
+        "skillFeatLevels": {
+          "value": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18,
+            20
+          ]
+        },
+        "skillIncreaseLevels": {
+          "value": [
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15,
+            17,
+            19
+          ]
+        }
+      },
+      "type": "class",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classes.Item.8zn3cD6GSmoo1LW4"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.2",
+        "coreVersion": "11.313",
+        "createdTime": 1697779243932,
+        "modifiedTime": 1697779301258,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "tnnfQTngljND6DWq",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.tnnfQTngljND6DWq"
+    },
+    {
+      "img": "systems/pf2e/icons/features/classes/attack-of-opportunity.webp",
+      "name": "Attack of Opportunity",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Ever watchful for weaknesses, you can quickly attack foes that leave an opening in their defenses. You gain the @UUID[Compendium.pf2e.actionspf2e.Item.KAVf7AmRnbCAHrkT]{Attack of Opportunity} reaction.</p>"
+        },
+        "rules": [
+          {
+            "key": "GrantItem",
+            "uuid": "Compendium.pf2e.actionspf2e.Item.KAVf7AmRnbCAHrkT",
+            "flag": "attackOfOpportunity"
+          }
+        ],
+        "slug": "attack-of-opportunity",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "fighter"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": "tnnfQTngljND6DWq"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.hmShTfPOcTaKgbf4"
+        },
+        "pf2e": {
+          "itemGrants": {
+            "attackOfOpportunity": {
+              "id": "LrKQDEnOcLtWRtPg",
+              "onDelete": "detach"
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.4",
+        "coreVersion": "11.313",
+        "createdTime": 1697779243932,
+        "modifiedTime": 1698547265060,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "09ttXpTaHL9XcVlr",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.09ttXpTaHL9XcVlr"
+    },
+    {
+      "img": "systems/pf2e/icons/features/classes/shield-block.webp",
+      "name": "Shield Block",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You gain the @UUID[Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8]{Shield Block} general feat, a reaction that lets you reduce damage with your shield.</p>"
+        },
+        "rules": [
+          {
+            "key": "GrantItem",
+            "uuid": "Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8",
+            "flag": "shieldBlock"
+          }
+        ],
+        "slug": "shield-block",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "champion",
+            "druid",
+            "fighter"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": "tnnfQTngljND6DWq"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.eZNCckLzbH3GyncH"
+        },
+        "pf2e": {
+          "itemGrants": {
+            "shieldBlock": {
+              "id": "SaPdahbQu3KXr5kE",
+              "onDelete": "detach"
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.2",
+        "coreVersion": "11.313",
+        "createdTime": 1697779243932,
+        "modifiedTime": 1697779243932,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "oGgtmBqBaOdqzZD2",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.oGgtmBqBaOdqzZD2"
+    },
+    {
+      "img": "systems/pf2e/icons/actions/Reaction.webp",
+      "name": "Attack of Opportunity",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Trigger</strong> A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p>You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>"
+        },
+        "rules": [],
+        "slug": "attack-of-opportunity",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "reaction"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        },
+        "deathNote": false
+      },
+      "type": "action",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.actionspf2e.Item.KAVf7AmRnbCAHrkT"
+        },
+        "pf2e": {
+          "grantedBy": {
+            "id": "09ttXpTaHL9XcVlr",
+            "onDelete": "cascade"
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.2",
+        "coreVersion": "11.313",
+        "createdTime": 1697779243932,
+        "modifiedTime": 1697779243932,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "LrKQDEnOcLtWRtPg",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.LrKQDEnOcLtWRtPg"
+    },
+    {
+      "img": "systems/pf2e/icons/features/feats/feats.webp",
+      "name": "Shield Block",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Trigger</strong> While you have your shield raised, you would take damage from a physical attack</p>\n<hr />\n<p>You snap your shield in place to ward off a blow. Your shield prevents you from taking an amount of damage up to the shield's Hardness. You and the shield each take any remaining damage, possibly breaking or destroying the shield.</p>"
+        },
+        "rules": [],
+        "slug": "shield-block",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "general"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "general",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "reaction"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": null
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8"
+        },
+        "pf2e": {
+          "grantedBy": {
+            "id": "oGgtmBqBaOdqzZD2",
+            "onDelete": "cascade"
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.2",
+        "coreVersion": "11.313",
+        "createdTime": 1697779243932,
+        "modifiedTime": 1697779243932,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "SaPdahbQu3KXr5kE",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.SaPdahbQu3KXr5kE"
+    },
+    {
+      "img": "systems/pf2e/icons/default-icons/alternatives/ancestries/elf.svg",
+      "name": "Elf",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><em>As an ancient people, elves have seen great change and have the perspective that can come only from watching the arc of history. After leaving the world in ancient times, they returned to a changed land, and they still struggle to reclaim their ancestral homes, most notably from terrible demons that have invaded parts of their lands. To some, the elves are objects of awe—graceful and beautiful, with immense talent and knowledge. Among themselves, however, the elves place far more importance on personal freedom than on living up to these ideals.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.45SK8rdbbxvEHfMn.JournalEntryPage.3cfdiId1IoxLsF9V]{Elf}</em></p>"
+        },
+        "rules": [],
+        "slug": "elf",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "elf",
+            "humanoid"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "hp": 6,
+        "size": "med",
+        "reach": 5,
+        "speed": 30,
+        "boosts": {
+          "0": {
+            "value": [
+              "dex"
+            ]
+          },
+          "1": {
+            "value": [
+              "int"
+            ]
+          },
+          "2": {
+            "value": [
+              "str",
+              "dex",
+              "con",
+              "int",
+              "wis",
+              "cha"
+            ],
+            "selected": "str"
+          }
+        },
+        "flaws": {
+          "0": {
+            "value": [
+              "con"
+            ]
+          }
+        },
+        "languages": {
+          "value": [
+            "common",
+            "elven"
+          ],
+          "custom": ""
+        },
+        "additionalLanguages": {
+          "count": 0,
+          "value": [
+            "empyrean",
+            "draconic",
+            "fey",
+            "gnoll",
+            "gnomish",
+            "goblin",
+            "orcish"
+          ],
+          "custom": ""
+        },
+        "items": {},
+        "vision": "lowLightVision"
+      },
+      "type": "ancestry",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.ancestries.Item.PgKmsA2aKdbLU6O0"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.2",
+        "coreVersion": "11.313",
+        "createdTime": 1697779250447,
+        "modifiedTime": 1697779331152,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "O2jkIKCMLZueV6DC",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.O2jkIKCMLZueV6DC"
+    },
+    {
+      "img": "systems/pf2e/icons/features/ancestry/woodland-elf.webp",
+      "name": "Woodland Elf",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You're adapted to life in the forest or the deep jungle, and you know how to climb trees and use foliage to your advantage. When @UUID[Compendium.pf2e.actionspf2e.Item.pprgrYQ1QnIDGZiy]{Climbing} trees, vines, and other foliage, you move at half your Speed on a success and at full Speed on a critical success (and you move at full Speed on a success if you have @UUID[Compendium.pf2e.feats-srd.Item.P04Hw8E6WAWARKHP]{Quick Climb}). This doesn't affect you if you're using a climb Speed.</p>\n<p>You can always use the @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{Take Cover} action when you are within forest terrain to gain cover, even if you're not next to an obstacle you can take cover behind.</p>"
+        },
+        "rules": [
+          {
+            "key": "Note",
+            "predicate": [
+              "action:climb",
+              "plants"
+            ],
+            "selector": "athletics",
+            "text": "When you climb trees, vines or other foliage, you move at half your Speed on a success, and full speed on a critical success.",
+            "title": "{item|name}"
+          }
+        ],
+        "slug": "woodland-elf",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "ancestry": {
+          "name": "Elf",
+          "slug": "elf",
+          "uuid": "Compendium.pf2e.ancestries.Item.PgKmsA2aKdbLU6O0"
+        }
+      },
+      "type": "heritage",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.heritages.Item.nW1gi13E62Feto2w"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.2",
+        "coreVersion": "11.313",
+        "createdTime": 1697779288105,
+        "modifiedTime": 1697779288105,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "0Aq4qjw8cOaMc3tX",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.0Aq4qjw8cOaMc3tX"
+    },
+    {
+      "img": "systems/pf2e/icons/default-icons/background.svg",
+      "name": "Acrobat",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>In a circus or on the streets, you earned your pay by performing as an acrobat. You might have turned to adventuring when the money dried up, or simply decided to put your skills to better use.</p>\n<p>Choose two ability boosts. One must be to <strong>Strength</strong> or <strong>Dexterity</strong>, and one is a free ability boost.</p>\n<p>You're trained in the Acrobatics skill and the Circus Lore skill. You gain the @UUID[Compendium.pf2e.feats-srd.Item.CnqMJR8e9jqJR7MM]{Steady Balance} skill feat.</p>"
+        },
+        "rules": [],
+        "slug": "acrobat",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "boosts": {
+          "0": {
+            "value": [
+              "dex",
+              "str"
+            ],
+            "selected": "str"
+          },
+          "1": {
+            "value": [
+              "cha",
+              "con",
+              "dex",
+              "int",
+              "str",
+              "wis"
+            ],
+            "selected": "con"
+          }
+        },
+        "items": {
+          "c4lrh": {
+            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "level": 1,
+            "name": "Steady Balance",
+            "uuid": "Compendium.pf2e.feats-srd.Item.CnqMJR8e9jqJR7MM"
+          }
+        },
+        "trainedLore": "Circus",
+        "trainedSkills": {
+          "value": [
+            "acr"
+          ]
+        }
+      },
+      "type": "background",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.backgrounds.Item.IFHYbU6Nu8BiTsRa"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.2",
+        "coreVersion": "11.313",
+        "createdTime": 1697779370628,
+        "modifiedTime": 1697779376475,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "GpHBvLDTsfnBNAEm",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.GpHBvLDTsfnBNAEm"
+    },
+    {
+      "img": "systems/pf2e/icons/features/feats/feats.webp",
+      "name": "Steady Balance",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You can keep your balance easily, even in adverse conditions. Whenever you roll a success using the @UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{Balance} action, you get a critical success instead. You're not off-guard while attempting to Balance on narrow surfaces and uneven ground. Thanks to your incredible balance, you can attempt an Acrobatics check instead of a Reflex save to @UUID[Compendium.pf2e.actionspf2e.Item.3yoajuKjwHZ9ApUY]{Grab an Edge}.</p>\n<p> </p>\n<p>@Check[type:athletics|defense:athletics]</p>"
+        },
+        "rules": [
+          {
+            "key": "Note",
+            "predicate": [
+              "action:balance"
+            ],
+            "selector": "acrobatics",
+            "text": "PF2E.SpecificRule.SteadyBalance.Note",
+            "title": "{item|name}"
+          },
+          {
+            "adjustment": {
+              "success": "one-degree-better"
+            },
+            "key": "AdjustDegreeOfSuccess",
+            "predicate": [
+              "action:balance"
+            ],
+            "selector": "acrobatics",
+            "type": "skill"
+          }
+        ],
+        "slug": "steady-balance",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "general",
+            "skill"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "skill",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": [
+            {
+              "value": "trained in Acrobatics"
+            }
+          ]
+        },
+        "location": "GpHBvLDTsfnBNAEm"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.feats-srd.Item.CnqMJR8e9jqJR7MM"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.2",
+        "coreVersion": "11.313",
+        "createdTime": 1697779370628,
+        "modifiedTime": 1697952391114,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "tuY6dWAO0E1mlDBD",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.tuY6dWAO0E1mlDBD"
+    },
+    {
+      "img": "icons/weapons/swords/sword-guard-blue.webp",
+      "name": "Longsword",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+        },
+        "rules": [],
+        "slug": "longsword",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "versatile-p"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": "longsword",
+        "bulk": {
+          "value": 1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "dropped",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": "abysium",
+          "grade": "high"
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "Unusual Longsword",
+            "img": "systems/pf2e/icons/unidentified_item_icons/weapon.webp",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "martial",
+        "group": "sword",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 2,
+          "die": "d8",
+          "damageType": "slashing",
+          "persistent": null
+        },
+        "bonusDamage": {
+          "value": 0
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": null,
+        "reload": {
+          "value": ""
+        },
+        "potencyRune": {
+          "value": 3
+        },
+        "strikingRune": {
+          "value": "greaterStriking"
+        },
+        "specific": {
+          "value": false
+        },
+        "propertyRune1": {
+          "value": "anchoring"
+        },
+        "propertyRune2": {
+          "value": "bloodbane"
+        },
+        "propertyRune3": {
+          "value": "axiomatic"
+        },
+        "propertyRune4": {
+          "value": null
+        },
+        "property1": {
+          "value": "",
+          "dice": 0,
+          "die": "",
+          "damageType": "",
+          "critDice": 0,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": "",
+          "strikeConditionType": "",
+          "strikeConditionValue": null,
+          "criticalConditionType": "",
+          "criticalConditionValue": null
+        }
+      },
+      "type": "weapon",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.8.3",
+        "coreVersion": "11.315",
+        "createdTime": 1697941339899,
+        "modifiedTime": 1699832975333,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "nACHJTckyCyAE6Dd",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.nACHJTckyCyAE6Dd"
+    },
+    {
+      "img": "systems/pf2e/icons/features/classes/bravery.webp",
+      "name": "Bravery",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Having faced countless foes and the chaos of battle, you have learned how to stand strong in the face of fear and keep on fighting. Your proficiency rank for Will saves increases to expert. When you roll a success at a Will save against a fear effect, you get a critical success instead. In addition, anytime you gain the frightened condition, reduce its value by 1.</p>"
+        },
+        "rules": [
+          {
+            "key": "Note",
+            "predicate": [
+              "fear"
+            ],
+            "selector": "will",
+            "text": "When you roll a success at a Will save against a fear effect, you get a critical success instead.",
+            "title": "{item|name}"
+          },
+          {
+            "adjustment": {
+              "success": "one-degree-better"
+            },
+            "key": "AdjustDegreeOfSuccess",
+            "predicate": [
+              "fear"
+            ],
+            "selector": "will",
+            "type": "save"
+          },
+          {
+            "key": "ActiveEffectLike",
+            "mode": "upgrade",
+            "path": "system.saves.will.rank",
+            "value": 2
+          }
+        ],
+        "slug": "bravery",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "fighter"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 3
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": "tnnfQTngljND6DWq"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.GJKJafDGuX4BeAeN"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.7.3",
+        "coreVersion": "11.313",
+        "createdTime": 1698041614849,
+        "modifiedTime": 1698041614849,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "CznwjubEzJ7HmbQU",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.CznwjubEzJ7HmbQU"
+    },
+    {
+      "img": "systems/pf2e/icons/features/feats/feats.webp",
+      "name": "The Harder They Fall",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You make your foes fall painfully when you trip them. When you successfully @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} an @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} foe, your target takes @Damage[1d6[bludgeoning]] damage. On a critical success, the target takes 1d6 bludgeoning damage plus your sneak attack damage.</p>"
+        },
+        "rules": [
+          {
+            "key": "Note",
+            "selector": "athletics",
+            "text": "When you successfully Trip a flat-footed foe, your target takes @Damage[1d6[bludgeoning]] damage.",
+            "outcome": [
+              "success"
+            ],
+            "predicate": [
+              "action:trip"
+            ],
+            "title": "The Harder They Fall"
+          },
+          {
+            "key": "Note",
+            "selector": "athletics",
+            "text": "On a critical success, the target takes @Damage[((ceil((@actor.level+2)/6))d6[precision])[bludgeoning]].",
+            "outcome": [
+              "criticalSuccess"
+            ],
+            "predicate": [
+              "action:trip"
+            ],
+            "title": "The Harder They Fall"
+          }
+        ],
+        "slug": "the-harder-they-fall",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "rogue"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Advanced Player's Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 4
+        },
+        "category": "class",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": "class-1"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.feats-srd.Item.k4QU2edqSoB23foo"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.9.5",
+        "coreVersion": "11.315",
+        "createdTime": 1698201151308,
+        "modifiedTime": 1700792068110,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "1IcyDp5vObrZ4Jb7",
+      "sort": 0,
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.1IcyDp5vObrZ4Jb7"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/consumables/ammunition/rounds-small.webp",
+      "name": "Rounds (Dueling Pistol)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
+        },
+        "rules": [],
+        "slug": "rounds-dueling-pistol",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Guns & Gears",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 44,
+        "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "sp": 1
+          },
+          "per": 10
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": "rounds10",
+        "containerId": "null",
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "ammo"
+        },
+        "charges": {
+          "value": 0,
+          "max": 0
+        },
+        "consume": {
+          "value": ""
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null
+      },
+      "type": "consumable",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.FKPuzveKRNJhA1mi"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 150000,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.8.3",
+        "coreVersion": "11.315",
+        "createdTime": 1699510589151,
+        "modifiedTime": 1699510937135,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "iyBcOnCVSjbdw1nJ",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.iyBcOnCVSjbdw1nJ"
+    },
+    {
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "name": "Fighter Weapon Mastery (Axe)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Hours spent training with your preferred weapons, learning and developing new combat techniques, have made you particularly effective with your weapons of choice. Choose one weapon group. Your proficiency rank increases to master with the simple weapons, martial weapons, and unarmed attacks in that group, and to expert with the advanced weapons in that group. You gain access to the critical specialization effects of all weapons and unarmed attacks for which you have master proficiency.</p>"
+        },
+        "rules": [
+          {
+            "choices": "weaponGroups",
+            "flag": "fighterWeaponMastery",
+            "key": "ChoiceSet",
+            "prompt": "PF2E.SpecificRule.Prompt.WeaponGroup",
+            "selection": "axe"
+          },
+          {
+            "definition": [
+              "item:group:{item|flags.pf2e.rulesSelections.fighterWeaponMastery}",
+              {
+                "or": [
+                  "item:category:unarmed",
+                  "item:category:simple",
+                  "item:category:martial"
+                ]
+              }
+            ],
+            "key": "MartialProficiency",
+            "label": "PF2E.SpecificRule.FighterWeaponMasteryLegend.SimpleMartial.{item|flags.pf2e.rulesSelections.fighterWeaponMastery}",
+            "slug": "weapon-mastery-simple-martial",
+            "value": 3
+          },
+          {
+            "definition": [
+              "item:category:advanced",
+              "item:group:{item|flags.pf2e.rulesSelections.fighterWeaponMastery}"
+            ],
+            "key": "MartialProficiency",
+            "label": "PF2E.SpecificRule.FighterWeaponMasteryLegend.Advanced.{item|flags.pf2e.rulesSelections.fighterWeaponMastery}",
+            "slug": "weapon-mastery-advanced",
+            "value": 2
+          },
+          {
+            "key": "CriticalSpecialization",
+            "predicate": [
+              {
+                "gte": [
+                  "item:proficiency:rank",
+                  3
+                ]
+              }
+            ]
+          }
+        ],
+        "slug": "fighter-weapon-mastery",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "fighter"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 5
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": "tnnfQTngljND6DWq"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.gApJtAdNb9ST4Ms9"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.8.3",
+        "coreVersion": "11.315",
+        "createdTime": 1699510853653,
+        "modifiedTime": 1699510853653,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "223IyKSPJ5nOGUv9",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.223IyKSPJ5nOGUv9"
+    },
+    {
+      "img": "systems/pf2e/icons/features/classes/battlefield-surveyor.webp",
+      "name": "Battlefield Surveyor",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Whether taking stock of an enemy army or simply standing guard, you excel at observing your foes. Your proficiency rank for Perception increases to master. In addition, you gain a +2 circumstance bonus to Perception checks for initiative, making you faster to react during combat.</p>"
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "predicate": [
+              "perception"
+            ],
+            "selector": "initiative",
+            "type": "circumstance",
+            "value": 2
+          },
+          {
+            "key": "ActiveEffectLike",
+            "mode": "upgrade",
+            "path": "system.attributes.perception.rank",
+            "value": 3
+          }
+        ],
+        "slug": "battlefield-surveyor",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "fighter"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 7
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": "tnnfQTngljND6DWq"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.TIvzBALymvb56L79"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.8.3",
+        "coreVersion": "11.315",
+        "createdTime": 1699510853653,
+        "modifiedTime": 1699510853653,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "57UjGnYKwPC68XMw",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.57UjGnYKwPC68XMw"
+    },
+    {
+      "img": "systems/pf2e/icons/features/classes/weapon-specialization.webp",
+      "name": "Weapon Specialization",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Champion, Fighter, Gunslinger, Inventor, Investigator, Magus, Monk, Ranger, Rogue, Swashbuckler</strong>: You've learned how to inflict greater injuries with the weapons you know best. You deal 2 additional damage with weapons and unarmed attacks in which you are an expert. This damage increases to 3 if you're a master, and to 4 if you're legendary.</p>\n<p><strong>Alchemist, Bard, Cleric, Druid, Oracle, Psychic, Sorcerer, Summoner, Witch, Wizard</strong> You've learned how to inflict grave wounds with your most practiced weapons. You deal 2 additional damage with weapons and unarmed attacks in which you are an expert. This damage increases to 3 if you're a master, and to 4 if you're legendary.</p>\n<p><strong>Barbarian</strong>: Your rage helps you hit harder. You deal an additional 2 damage with weapons and unarmed attacks in which you have expert proficiency. This damage increases to 3 if you're a master, and 4 if you're legendary.</p>\n<p>You gain your instinct's specialization ability. See specific instincts for more information.</p>"
+        },
+        "rules": [
+          {
+            "hideIfDisabled": true,
+            "key": "FlatModifier",
+            "label": "PF2E.WeaponSpecialization",
+            "predicate": [
+              {
+                "gte": [
+                  "item:proficiency:rank",
+                  2
+                ]
+              }
+            ],
+            "selector": "strike-damage",
+            "slug": "weapon-specialization",
+            "value": 2
+          },
+          {
+            "key": "AdjustModifier",
+            "mode": "upgrade",
+            "predicate": [
+              "item:proficiency:rank:3"
+            ],
+            "priority": 0,
+            "selector": "strike-damage",
+            "slug": "weapon-specialization",
+            "value": 3
+          },
+          {
+            "key": "AdjustModifier",
+            "mode": "upgrade",
+            "predicate": [
+              "item:proficiency:rank:4"
+            ],
+            "priority": 0,
+            "selector": "strike-damage",
+            "slug": "weapon-specialization",
+            "value": 4
+          }
+        ],
+        "slug": "weapon-specialization",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 7
+        },
+        "category": "classfeature",
+        "onlyLevel1": false,
+        "maxTakable": 1,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": "tnnfQTngljND6DWq"
+      },
+      "type": "feat",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.classfeatures.Item.9EqIasqfI8YIM3Pt"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.8.3",
+        "coreVersion": "11.315",
+        "createdTime": 1699510853653,
+        "modifiedTime": 1699510853653,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "PI0GDTJ4EaeLJYn1",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.PI0GDTJ4EaeLJYn1"
+    },
+    {
+      "_id": "OTfxEzFMToficce4",
+      "img": "icons/sundries/scrolls/scroll-symbol-eye-brown.webp",
+      "name": "Scroll of Heal (Rank 1)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{Heal}</p><hr /><p>Casting a Spell from a scroll requires holding the scroll in one hand and activating it with a Cast a Spell activity using the normal number of actions for that spell.</p>\n<p>The spell must appear on your spell list. Because you're the one Casting the Spell, use your spell attack modifier and spell DC. The spell also gains the appropriate trait for your tradition (arcane, divine, occult, or primal).</p>\n<p>Any physical costs are provided when a scroll is created, so you don't need to provide them when casting from a scroll. If the spell requires a locus, you must have that locus to Cast the Spell from a scroll.</p>\n<hr />\n<p><em>Note: To create a scroll or wand of a specific spell, drag the spell from the compendium or compendium browser into the inventory of a PC, NPC, or loot actor.</em></p>"
+        },
+        "rules": [],
+        "slug": "scroll-of-1st-rank-spell",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "consumable",
+            "divine",
+            "healing",
+            "primal",
+            "scroll",
+            "vitality"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder GM Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 1
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 4
+          }
+        },
+        "equipped": {
+          "carryType": "worn"
+        },
+        "stackGroup": null,
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "scroll"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1
+        },
+        "consume": {
+          "value": ""
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": {
+          "img": "icons/magic/life/cross-worn-green.webp",
+          "name": "Heal",
+          "system": {
+            "description": {
+              "gm": "",
+              "value": "<p>You channel vital energy to heal the living or damage the undead. If the target is a willing living creature, you restore 1d8 Hit Points. If the target is undead, you deal that amount of vitality damage to it, and it gets a basic Fortitude save. The number of actions you spend when Casting this Spell determines its targets, range, area, and other parameters.</p>\n<p><span class=\"action-glyph\">1</span> The spell has a range of touch.</p>\n<p><span class=\"action-glyph\">2</span> <strong>(concentrate)</strong> The spell has a range of 30 feet. If you're healing a living creature, increase the Hit Points restored by 8.</p>\n<p><span class=\"action-glyph\">3</span> <strong>(concentrate)</strong> You disperse vital energy in a @Template[type:emanation|distance:30]. This targets all living and undead creatures in the burst.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The amount of healing or damage increases by 1d8, and the extra healing for the 2-action version increases by 8.</p>"
+            },
+            "rules": [],
+            "slug": "heal",
+            "_migration": {
+              "version": 0.894,
+              "lastMigration": null,
+              "previous": null
+            },
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "healing",
+                "manipulate",
+                "vitality"
+              ],
+              "rarity": "common",
+              "traditions": [
+                "divine",
+                "primal"
+              ]
+            },
+            "publication": {
+              "title": "Pathfinder Player Core",
+              "authors": "",
+              "license": "ORC",
+              "remaster": true
+            },
+            "level": {
+              "value": 1
+            },
+            "requirements": "",
+            "target": {
+              "value": "1 willing living creature or 1 undead"
+            },
+            "range": {
+              "value": "varies"
+            },
+            "area": null,
+            "time": {
+              "value": "1 to 3"
+            },
+            "duration": {
+              "value": "",
+              "sustained": false
+            },
+            "damage": {
+              "0": {
+                "applyMod": false,
+                "category": null,
+                "formula": "1d8",
+                "kinds": [
+                  "damage",
+                  "healing"
+                ],
+                "materials": [],
+                "type": "vitality"
+              }
+            },
+            "defense": {
+              "save": {
+                "basic": true,
+                "statistic": "fortitude"
+              }
+            },
+            "cost": {
+              "value": ""
+            },
+            "location": {
+              "value": null,
+              "heightenedLevel": 1
+            },
+            "counteraction": false,
+            "heightening": {
+              "damage": {
+                "0": "1d8"
+              },
+              "interval": 1,
+              "type": "interval"
+            },
+            "overlays": {
+              "37gy7l19tik74o4s": {
+                "_id": "37gy7l19tik74o4s",
+                "name": "Heal (vs. Living)",
+                "overlayType": "override",
+                "sort": 2,
+                "system": {
+                  "damage": {
+                    "0": {
+                      "formula": "1d8+8",
+                      "kinds": [
+                        "healing"
+                      ]
+                    }
+                  },
+                  "heightening": {
+                    "damage": {
+                      "0": "1d8+8"
+                    }
+                  },
+                  "range": {
+                    "value": "30 feet"
+                  },
+                  "time": {
+                    "value": "2"
+                  },
+                  "traits": {
+                    "value": [
+                      "concentrate",
+                      "healing",
+                      "manipulate",
+                      "vitality"
+                    ]
+                  },
+                  "defense": null
+                }
+              },
+              "7qdtetowq348s9oc": {
+                "_id": "7qdtetowq348s9oc",
+                "overlayType": "override",
+                "sort": 1,
+                "system": {
+                  "range": {
+                    "value": "touch"
+                  },
+                  "time": {
+                    "value": "1"
+                  }
+                }
+              },
+              "7vbvdrv2cl87sqta": {
+                "_id": "7vbvdrv2cl87sqta",
+                "overlayType": "override",
+                "sort": 4,
+                "system": {
+                  "area": {
+                    "type": "emanation",
+                    "value": 30
+                  },
+                  "range": {
+                    "value": ""
+                  },
+                  "target": {
+                    "value": "all living and undead creatures"
+                  },
+                  "time": {
+                    "value": "3"
+                  },
+                  "traits": {
+                    "value": [
+                      "concentrate",
+                      "healing",
+                      "manipulate",
+                      "vitality"
+                    ]
+                  }
+                }
+              },
+              "lfxcoz2d3f8j2zq1": {
+                "_id": "lfxcoz2d3f8j2zq1",
+                "name": "Heal (vs. Undead)",
+                "overlayType": "override",
+                "sort": 3,
+                "system": {
+                  "range": {
+                    "value": "30 feet"
+                  },
+                  "target": {
+                    "value": "1 undead"
+                  },
+                  "time": {
+                    "value": "2"
+                  },
+                  "traits": {
+                    "value": [
+                      "concentrate",
+                      "healing",
+                      "manipulate",
+                      "vitality"
+                    ]
+                  },
+                  "damage": {
+                    "0": {
+                      "kinds": [
+                        "damage"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "type": "spell",
+          "flags": {
+            "core": {
+              "sourceId": "Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs"
+            }
+          },
+          "effects": [],
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          },
+          "_stats": {
+            "systemId": null,
+            "systemVersion": null,
+            "coreVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null
+          },
+          "_id": null
+        }
+      },
+      "type": "consumable",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.RjuupS9xyXDLgyIr"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.9.3",
+        "coreVersion": "11.315",
+        "createdTime": 1700368032771,
+        "modifiedTime": 1700368032771,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.OTfxEzFMToficce4"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/weapons/axe-musket.webp",
+      "name": "Axe Musket",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This item, favored by firearms-using dwarves and barbarians, takes the form of a sturdy musket that combine the functionality of melee weapons and with an axeblade attached near the muzzle.</p>"
+        },
+        "rules": [],
+        "slug": "axe-musket",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "combination",
+            "concussive",
+            "fatal-d10"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Guns & Gears",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "quantity": 1,
+        "baseItem": "axe-musket",
+        "bulk": {
+          "value": 2
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 10
+          }
+        },
+        "equipped": {
+          "carryType": "held",
+          "invested": null,
+          "handsHeld": 2
+        },
+        "stackGroup": null,
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-two-hands"
+        },
+        "category": "martial",
+        "group": "firearm",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d6",
+          "damageType": "piercing",
+          "persistent": null
+        },
+        "bonusDamage": {
+          "value": 0
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": 40,
+        "reload": {
+          "value": "1"
+        },
+        "potencyRune": {
+          "value": 0
+        },
+        "strikingRune": {
+          "value": ""
+        },
+        "specific": {
+          "value": false
+        },
+        "propertyRune1": {
+          "value": null
+        },
+        "propertyRune2": {
+          "value": null
+        },
+        "propertyRune3": {
+          "value": null
+        },
+        "propertyRune4": {
+          "value": null
+        },
+        "property1": {
+          "value": "",
+          "dice": 0,
+          "die": "",
+          "damageType": "",
+          "critDice": 0,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": ""
+        },
+        "meleeUsage": {
+          "damage": {
+            "die": "d8",
+            "type": "slashing"
+          },
+          "group": "axe",
+          "traits": [
+            "critical-fusion",
+            "sweep"
+          ]
+        },
+        "selectedAmmoId": "LnLiTzT2gl5vvlEy"
+      },
+      "type": "weapon",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.oUaeLZLK7WfolqBb"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.9.3",
+        "coreVersion": "11.315",
+        "createdTime": 1700457638090,
+        "modifiedTime": 1700457857836,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "kzhuUn5mhO3HdYYH",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.kzhuUn5mhO3HdYYH"
+    },
+    {
+      "img": "icons/weapons/daggers/dagger-straight-blue.webp",
+      "name": "Dagger",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This small, bladed weapon is held in one hand and used to stab a creature in close combat. It can also be thrown.</p>"
+        },
+        "rules": [],
+        "slug": "dagger",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "agile",
+            "finesse",
+            "thrown-10",
+            "versatile-s"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": "dagger",
+        "bulk": {
+          "value": 0.1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "sp": 2
+          }
+        },
+        "equipped": {
+          "carryType": "stowed",
+          "invested": null,
+          "handsHeld": 0,
+          "inSlot": false
+        },
+        "stackGroup": null,
+        "containerId": "qVJAY2DtwM7kgoGS",
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand",
+          "canBeAmmo": false
+        },
+        "category": "simple",
+        "group": "knife",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d4",
+          "damageType": "piercing",
+          "persistent": null
+        },
+        "bonusDamage": {
+          "value": 0
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": null,
+        "reload": {
+          "value": "-"
+        },
+        "potencyRune": {
+          "value": null
+        },
+        "strikingRune": {
+          "value": null
+        },
+        "specific": {
+          "value": false
+        },
+        "propertyRune1": {
+          "value": null
+        },
+        "propertyRune2": {
+          "value": null
+        },
+        "propertyRune3": {
+          "value": null
+        },
+        "propertyRune4": {
+          "value": null
+        },
+        "property1": {
+          "value": "",
+          "dice": 0,
+          "die": "",
+          "damageType": "",
+          "critDice": 0,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": ""
+        }
+      },
+      "type": "weapon",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.rQWaJhI5Bko5x14Z"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.10.0",
+        "coreVersion": "11.315",
+        "createdTime": 1700457677050,
+        "modifiedTime": 1701486769506,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "3tQC5XZf2oouezBZ",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.3tQC5XZf2oouezBZ"
+    },
+    {
+      "img": "systems/pf2e/icons/equipment/consumables/ammunition/rounds-small.webp",
+      "name": "Rounds (Axe Musket)",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Firearms require ammunition consisting of a projectile and black powder. A round of ammo can vary in its composition but is typically either a prepackaged paper cartridge, including wadding, bullet, and black powder, or loose shot packed in manually. Some weapons, like hand cannons and blunderbusses, can fire other materials, but their ammunition has the same Price due to the cost of the black powder. Because making rounds of firearm ammunition requires creating black powder, you need the @UUID[Compendium.pf2e.feats-srd.Item.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat to make them. Firearm rounds are a valid option for magical ammunition, just like arrows or bolts. Crafting magical firearm ammunition requires you to be able to craft both alchemical and magical items.</p>"
+        },
+        "rules": [],
+        "slug": "rounds-axe-musket",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Guns & Gears",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 59,
+        "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "sp": 1
+          },
+          "per": 10
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": "rounds10",
+        "containerId": "null",
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "ammo"
+        },
+        "charges": {
+          "value": 0,
+          "max": 0
+        },
+        "consume": {
+          "value": ""
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null
+      },
+      "type": "consumable",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.VeeH30MvHyTX4QAT"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.9.3",
+        "coreVersion": "11.315",
+        "createdTime": 1700457848113,
+        "modifiedTime": 1700457860541,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "LnLiTzT2gl5vvlEy",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.LnLiTzT2gl5vvlEy"
+    },
+    {
+      "img": "icons/containers/bags/pack-leather-white-tan.webp",
+      "name": "Backpack",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A backpack holds up to 4 Bulk of items and the first 2 Bulk of these items don't count against your Bulk limits. If you're carrying or stowing the pack rather than wearing it on your back, its Bulk is light instead of negligible</p>"
+        },
+        "rules": [],
+        "slug": "backpack",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "bulk": {
+          "value": 0,
+          "heldOrStowed": 0.1,
+          "capacity": 4,
+          "ignored": 2
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "sp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "inSlot": true,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "wornbackpack"
+        },
+        "collapsed": false,
+        "stowing": true
+      },
+      "type": "backpack",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.3lgwjrFEsQVKzhh7"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.10.0",
+        "coreVersion": "11.315",
+        "createdTime": 1701486737256,
+        "modifiedTime": 1701486744280,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "qVJAY2DtwM7kgoGS",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.qVJAY2DtwM7kgoGS"
+    },
+    {
+      "img": "icons/weapons/swords/sword-guard-blue.webp",
+      "name": "Longsword",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Longswords, also known as arming swords, can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+        },
+        "rules": [],
+        "slug": "longsword",
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "versatile-p"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": "longsword",
+        "bulk": {
+          "value": 1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "price": {
+          "value": {
+            "gp": 1
+          }
+        },
+        "equipped": {
+          "carryType": "stowed",
+          "invested": null,
+          "handsHeld": 0,
+          "inSlot": false
+        },
+        "stackGroup": null,
+        "containerId": "qVJAY2DtwM7kgoGS",
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "martial",
+        "group": "sword",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d8",
+          "damageType": "slashing",
+          "persistent": null
+        },
+        "bonusDamage": {
+          "value": 0
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": null,
+        "reload": {
+          "value": ""
+        },
+        "potencyRune": {
+          "value": null
+        },
+        "strikingRune": {
+          "value": null
+        },
+        "specific": {
+          "value": false
+        },
+        "propertyRune1": {
+          "value": null
+        },
+        "propertyRune2": {
+          "value": null
+        },
+        "propertyRune3": {
+          "value": null
+        },
+        "propertyRune4": {
+          "value": null
+        },
+        "property1": {
+          "value": "",
+          "dice": 0,
+          "die": "",
+          "damageType": "",
+          "critDice": 0,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": ""
+        }
+      },
+      "type": "weapon",
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi"
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.10.0",
+        "coreVersion": "11.315",
+        "createdTime": 1701486753945,
+        "modifiedTime": 1701486758976,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "CsMiKfSIE3keP5fG",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.CsMiKfSIE3keP5fG"
+    },
+    {
+      "name": "+1 to saves against intim",
+      "type": "effect",
+      "effects": [],
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "selector": "saving-throw",
+            "value": 1
+          }
+        ],
+        "slug": null,
+        "_migration": {
+          "version": 0.904,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.903,
+            "foundry": "11.315",
+            "system": "5.10.5"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "duration": {
+          "value": -1,
+          "unit": "unlimited",
+          "expiry": null,
+          "sustained": false
+        },
+        "start": {
+          "value": 12,
+          "initiative": null
+        },
+        "tokenIcon": {
+          "show": true
+        },
+        "badge": null,
+        "context": null,
+        "unidentified": false
+      },
+      "img": "systems/pf2e/icons/default-icons/effect.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "v0RvORcwGexWLCjc": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.WQPKV4e5Uml5vcfz"
+        }
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "5.10.3",
+        "coreVersion": "11.315",
+        "createdTime": 1701759563248,
+        "modifiedTime": 1701760335695,
+        "lastModifiedBy": "v0RvORcwGexWLCjc"
+      },
+      "_id": "bCijrFqKx192fdDA",
+      "_key": "!actors.items!1VDWHOhAyxY5LhRB.bCijrFqKx192fdDA"
+    }
+  ],
+  "folder": "3jQlwblv1VTqW69K",
+  "sort": 2400000,
+  "flags": {
+    "pf2e": {
+      "freeCrafting": false
+    },
+    "pf2e-thaum-vuln": {},
+    "world": {
+      "backupPartyOriginalID": "NpQjWAzMrulmxzE0"
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1697779211272,
+    "modifiedTime": 1701979602252,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_key": "!actors!1VDWHOhAyxY5LhRB"
+}

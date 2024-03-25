@@ -1,0 +1,28 @@
+{
+  "name": "Fix World Time for SC+SmallTime",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/game-icons-net/blackbackground/aztec-calendar-sun.svg",
+  "command": "// Fix Simple Calendar being out of sync with smalltime\nlet settime = \"1971-01-01T00:00:00.000Z\";\nlet currtime = game.settings.get(\"pf2e\", \"worldClock.worldCreatedOn\")\nconsole.warn(`Current world time: ${currtime} | Setting to ${settime}`);\ngame.settings.set(\"pf2e\", \"worldClock.worldCreatedOn\", settime)",
+  "folder": "MUrlWbVP9uj79bSv",
+  "ownership": {
+    "default": 0,
+    "717Xeq3czH96acPF": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1687821970538,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "rscu4HHBmzaNO965",
+  "sort": 3000000,
+  "_key": "!macros!rscu4HHBmzaNO965"
+}

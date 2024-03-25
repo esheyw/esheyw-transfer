@@ -1,0 +1,35 @@
+{
+  "name": "Open Action Macros",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "systems/pf2e/icons/actions/OneAction.webp",
+  "command": "_esheywOpenPack(\"pf2e.action-macros\")",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForEveryone": false,
+      "runForSpecificUser": ""
+    },
+    "core": {},
+    "cf": null
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1675989208607,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "m1EeE7G3iOKZ3Rdt",
+  "folder": "LXfU0ElDPq9L8dLU",
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3,
+    "717Xeq3czH96acPF": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_key": "!macros!m1EeE7G3iOKZ3Rdt"
+}

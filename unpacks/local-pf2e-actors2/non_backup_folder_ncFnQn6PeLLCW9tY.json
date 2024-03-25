@@ -1,0 +1,19 @@
+{
+  "name": "non-backup folder",
+  "sorting": "a",
+  "folder": null,
+  "type": "Actor",
+  "_id": "ncFnQn6PeLLCW9tY",
+  "sort": 400000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.3",
+    "coreVersion": "11.315",
+    "createdTime": 1701724778053,
+    "modifiedTime": 1701738908932,
+    "lastModifiedBy": "xuYHxk9sJoYKM7d6"
+  },
+  "_key": "!folders!ncFnQn6PeLLCW9tY"
+}

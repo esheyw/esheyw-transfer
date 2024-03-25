@@ -1,0 +1,24 @@
+{
+  "name": "Geomancer Effects",
+  "sorting": "a",
+  "folder": "6UckxqsIsOpTJSiD",
+  "type": "Item",
+  "description": "",
+  "sort": 0,
+  "color": "#21ac45",
+  "flags": {
+    "df-qol": {
+      "colour": ""
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1698035467412,
+    "modifiedTime": 1698035467412,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "U53VSnkyDxGt4ovB",
+  "_key": "!folders!U53VSnkyDxGt4ovB"
+}

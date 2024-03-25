@@ -1,0 +1,24 @@
+{
+  "name": "Rechargeable Talismans",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "description": "",
+  "sort": 100000,
+  "color": "#c111e4",
+  "flags": {
+    "df-qol": {
+      "colour": "#000"
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1698035483386,
+    "modifiedTime": 1698035483418,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "yTWoC8AjyrX9ZC9R",
+  "_key": "!folders!yTWoC8AjyrX9ZC9R"
+}

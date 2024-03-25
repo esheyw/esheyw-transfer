@@ -1,0 +1,34 @@
+{
+  "name": "Drop Held Torch",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/game-icons-net/whitebackground/drop-weapon.svg",
+  "command": "//Check for exactly one selected token\nif (canvas.tokens.controlled.length > 1) {\n    ui.notifications.warn(\"Please select only a single token.\");\n    return;\n}\nconst token = canvas.tokens.controlled[0] ?? game.user.character?.getActiveTokens()[0];\nif (!token) {    \n    ui.notifications.warn(\"Please select exactly one token or assign yourself a character.\");\n    return;\n}\nconst held = token.actor.items.filter(i => i.carryType === 'held');\n//eventually want this to be a select held item dialog, hardcoding to Torch for now)\nconst [torch] = held.filter(i => i.name === 'Torch');\nif (!torch) {\n    ui.notifications.warn('Token has no held torches!');\n    return;\n}\nconst [removed] = await game.itempiles.API.removeItems(token.actor, [{_id: torch.id, quantity: 1}]);\nconst droppeditem = removed.item;\n\n//fix the quantity\ndroppeditem.system.quantity = 1;\n\n\nlet lightupdate = {};\n//if the item emits light..\nconst [lightrule] = droppeditem.system?.rules?.filter(r => r.key === 'TokenLight');\nif (lightrule) {\n    //...and that light is controlled by a toggle...\n    if (lightrule.predicate?.length === 1) {\n        //..and that toggle is on the item itself... (opu = option predicated upon)\n        const [opu] = droppeditem.system.rules.filter(r => r.toggleable && r.option === lightrule.predicate[0])\n        //..and that toggle is currently on..\n        if (opu && opu.value) {\n            //..turn it off and add the light to the token\n            token.actor.toggleRollOption(opu.domain, opu.option);   \n            lightupdate = lightrule.value;         \n        }\n    } else {\n        //no predicate, always-on light, apply to the token\n        lightupdate = lightrule.value; \n    }    \n}  \nconst aOverrides = {\n    \"img\": \"Assets/icons/painterly/haste-fire-3.png\"\n}\nconst tOverrides = {\n    \"texture.scaleX\": 0.5,\n    \"texture.scaleY\": 0.5,\n    \"texture.src\": \"Assets/icons/painterly/haste-fire-3.png\",\n    \"light\": lightupdate,\n    \"flags.pf2e.linkToActorSize\": false,\n    \"flags.pf2e.autoscale\": false,\n    \"name\": droppeditem.name\n}\nconst options = {\n    position: {\n        x: token.position.x,\n        y: token.position.y\n    },\n    actorOverrides: aOverrides,\n    tokenOverrides: tOverrides,\n    items: [droppeditem],\n    itemPileFlags: {\n        type: game.itempiles.pile_types.PILE,\n        displayOne: false,\n        showItemName: true,\n        overrideSingleItemScale: false\n    }\n}\nconst pile = await game.itempiles.API.createItemPile(options);\n\nconst message = ChatMessage.create({\n    user: game.user.id,\n    type: CONST.CHAT_MESSAGE_TYPES.IC,\n    speaker: ChatMessage.getSpeaker(),\n    content: `${token.name} has dropped their ${droppeditem.name}!`\n});\n// const pactor = fromUuidSync(pile.actorUuid);\n// const ptoken = fromUuidSync(pile.tokenUuid);\n// await ptoken.update(tOverrides);",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForSpecificUser": ""
+    },
+    "cf": null,
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1677618544191,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "nbRpSV4OJ6zL5xoi",
+  "folder": "MUrlWbVP9uj79bSv",
+  "sort": 2500000,
+  "ownership": {
+    "default": 0,
+    "holNdNHqtCzAbMAV": 3,
+    "717Xeq3czH96acPF": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_key": "!macros!nbRpSV4OJ6zL5xoi"
+}

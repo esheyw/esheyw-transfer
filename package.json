@@ -1,0 +1,23 @@
+{
+  "name": "esheyw-transfer",
+  "version": "1.0.0",
+  "description": "local foundry transfer module",
+  "main": "scripts/esheyw-helpers.js",
+  "scripts": {
+    "unpack": "node build/unpack.mjs",
+    "pack": "node build/pack.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:esheyw/esheyw-transfer"
+  },
+  "author": "Emmanuel Wineberg <esheyw@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esheyw/esheyw-transfer/issues"
+  },
+  "homepage": "https://github.com/esheyw/esheyw-transfer#readme",
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.0.2"
+  }
+}

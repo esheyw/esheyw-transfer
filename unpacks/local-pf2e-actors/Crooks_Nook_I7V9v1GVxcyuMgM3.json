@@ -1,0 +1,4203 @@
+{
+  "prototypeToken": {
+    "displayName": 20,
+    "displayBars": 20,
+    "sight": {
+      "enabled": false,
+      "color": null,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": false,
+        "autoscale": false
+      },
+      "perfect-vision": {
+        "visionRules": "default",
+        "monoVisionColor": "",
+        "sightLimit": null,
+        "light": {}
+      },
+      "core": {
+        "priority": null
+      }
+    },
+    "name": "Crooks Nook",
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "actorLink": true,
+    "disposition": 0,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "color": null,
+      "attenuation": 0.5
+    },
+    "texture": {
+      "src": "systems/pf2e/icons/default-icons/loot.svg",
+      "tint": null,
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "_id": "I7V9v1GVxcyuMgM3",
+  "name": "Crooks Nook",
+  "type": "loot",
+  "img": "systems/pf2e/icons/default-icons/loot.svg",
+  "items": [
+    {
+      "_id": "d8hqMGcW2p0Ocuji",
+      "name": "Arsenic",
+      "type": "consumable",
+      "sort": 100000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.OIirLySQDLZgT15S"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/arsenic.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This toxin is a compound of arsenic and other substances. You can't reduce your sickened condition while affected.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact (Ingested)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Maximum Duration</strong> 5 minutes</p>\n<p><strong>Stage 1</strong> [[/r 1d4[poison]]] damage and @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (1 minute)</p>\n<p><strong>Stage 2</strong> [[/r 1d6[poison]]] damage and @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} (1 minute)</p>\n<p><strong>Stage 3</strong> [[/r 2d6[poison]]] damage and @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 3} (1 minute)</p>"
+        },
+        "rules": [],
+        "slug": "arsenic",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "ingested",
+            "poison"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "quantity": 5,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 3
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1,
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.d8hqMGcW2p0Ocuji"
+    },
+    {
+      "_id": "aWWDrS02P7F6FcAa",
+      "name": "Spear Frog Poison",
+      "type": "consumable",
+      "sort": 200000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.CeKPffF0FaEyhLMp"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/spear-frog-poison.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>A single spear frog yields enough toxin to Craft 1 dose of spear frog poison.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:15]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d4[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d6[poison]]] damage and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>"
+        },
+        "rules": [],
+        "slug": "spear-frog-poison",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "injury",
+            "poison"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary 2",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "quantity": 5,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 3
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": "1",
+          "max": "1",
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.aWWDrS02P7F6FcAa"
+    },
+    {
+      "_id": "DWTD9cWEIzuFqdN2",
+      "name": "Giant Centipede Venom",
+      "type": "consumable",
+      "sort": 300000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.txmX5ghhPS72GKXy"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/giant-centipede-venom.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Giant centipede venom causes severe muscle stiffness.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d6[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d8[poison]]] damage and @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 1d12[poison]]] damage, @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>"
+        },
+        "rules": [],
+        "slug": "giant-centipede-venom",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "injury",
+            "poison"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "quantity": 5,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 4
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1,
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.DWTD9cWEIzuFqdN2"
+    },
+    {
+      "_id": "FRxYy9gCTSO1DaGI",
+      "name": "Belladonna",
+      "type": "consumable",
+      "sort": 400000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.FL8QU8TcNauBMMhD"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/belladonna.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Sometimes called \"deadly nightshade\", belladonna is a widely available toxin produced from a plant similar to a tomato.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Ingested)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Maximum Duration</strong> 30 minutes</p>\n<p><strong>Stage 1</strong> @Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} (10 minutes)</p>\n<p><strong>Stage 2</strong> [[/r 1d6[poison]]] damage and @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (10 minutes)</p>\n<p><strong>Stage 3</strong> [[/r 1d6[poison]]] damage, @Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused}, and sickened 1 (1 minute)</p>"
+        },
+        "rules": [],
+        "slug": "belladonna",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "ingested",
+            "poison"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 2
+        },
+        "quantity": 5,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 5
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1,
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.FRxYy9gCTSO1DaGI"
+    },
+    {
+      "_id": "Xm3waxg0lRHXvDKT",
+      "name": "Black Smear Poison",
+      "type": "consumable",
+      "sort": 500000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.cTBmQgWUyf50x3dY"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/black-lotus-extract.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Many calignis use a debilitating poison crafted from subterranean fungi.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">T</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:16]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d6[poison]]] damage and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> As stage 1</p>\n<p><strong>Stage 3</strong> [[/r 1d6[poison]]] damage, and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
+        },
+        "rules": [],
+        "slug": "black-smear-poison",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "injury",
+            "poison"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 2
+        },
+        "quantity": 5,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 5
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1,
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.Xm3waxg0lRHXvDKT"
+    },
+    {
+      "_id": "Rq7k5AhCtIsk0Pnv",
+      "name": "Black Adder Venom",
+      "type": "consumable",
+      "sort": 600000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.ScclzFrjyB0YJlrb"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/black-adder-venom.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Adder venom is a simple but effective way to enhance a weapon.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 3 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d8[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d10[poison]]] damage (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 2d6[poison]]] damage (1 round)</p>"
+        },
+        "rules": [],
+        "slug": "black-adder-venom",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "injury",
+            "poison"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 2
+        },
+        "quantity": 5,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 6
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1,
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.Rq7k5AhCtIsk0Pnv"
+    },
+    {
+      "_id": "rvhX3JDqVZhrDfrv",
+      "name": "Looter's Lethargy",
+      "type": "consumable",
+      "sort": 700000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.p3RduziOxQxtREg9"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/looters-lethargy.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Traps may keep many a thief at bay, but the poison known as looter's lethargy ensures that no thieves are strong enough to walk off with pilfered treasures. Commonly smeared on locks, chests, and even valuable items themselves, the poison slowly saps the strength of those who touch it. Nearby guardians can then simply follow the resulting trail of discarded valuables to find the weakened trespasser.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">1</span> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 1 hour</p>\n<p><strong>Stage 1</strong> reduce Bulk limit by 3 (1 minute)</p>\n<p><strong>Stage 2</strong> @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Off-Guard}, reduce Bulk limit by 4 (10 minutes)</p>\n<p><strong>Stage 3</strong> off-guard, reduce Bulk limit by 5 (10 minutes)</p>"
+        },
+        "rules": [],
+        "slug": "looters-lethargy",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "contact",
+            "poison"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder #157: Devil at the Dreaming Palace",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 2
+        },
+        "quantity": 5,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 6
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": "1",
+          "max": "1",
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.rvhX3JDqVZhrDfrv"
+    },
+    {
+      "_id": "zxbXr4WM3FutMNBu",
+      "name": "Toad Tears",
+      "type": "consumable",
+      "sort": 800000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.mDNDs5P8ZAJXYbDL"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/toad-tears.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Toad tears can be mixed with any other foodstuff or drink, but the poison can also be ingested as is. The process of refining giant toad poison lessens its deadly qualities, and as a result, toad tears are rarely directly fatal. Yet those who are exposed to toad tears often lose control of their actions, making it a dangerous poison nevertheless.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact (Ingested)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>Onset</strong> 5 minutes</p>\n<p><strong>Maximum Duration</strong> 30 minutes</p>\n<p><strong>Stage 1</strong> @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (10 minutes)</p>\n<p><strong>Stage 2</strong> stupefied 1 and @Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} (1 minute)</p>"
+        },
+        "rules": [],
+        "slug": "toad-tears",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "ingested",
+            "poison"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary 2",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 2
+        },
+        "quantity": 5,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 6
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": "1",
+          "max": "1",
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.zxbXr4WM3FutMNBu"
+    },
+    {
+      "_id": "nOUyGsxIQVf3P0ne",
+      "name": "Lethargy Poison",
+      "type": "consumable",
+      "sort": 900000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.zo0ophqfKunJFxZN"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/lethargy-poison.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Lethargy poison is commonly used in hit-and-run tactics by drow and others who want their victims alive; the ambusher retreats until the poison sets in and the victim falls unconscious. Further exposure to lethargy poison does not require the target to attempt additional saving throws; only failing an saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 4 hours</p>\n<p><strong>Stage 1</strong> @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 2</strong> slowed 1 (1 minute)</p>\n<p><strong>Stage 3</strong> @Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> unconscious with no Perception check to wake up ([[/br 1d4 #hours]]{1d4 hours}).</p>"
+        },
+        "rules": [],
+        "slug": "lethargy-poison",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "conjuration",
+            "incapacitation",
+            "injury",
+            "poison",
+            "sleep"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 2
+        },
+        "quantity": 3,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 7
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1,
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.nOUyGsxIQVf3P0ne"
+    },
+    {
+      "_id": "Tduwp53YihqKShkb",
+      "name": "Yellow Musk Poison",
+      "type": "consumable",
+      "sort": 1000000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.bJVk50mhaODgsOUe"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/yellow-musk-vial.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The powdered pollen from a yellow musk creeper addles the mind.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact (Inhaled)</p>\n<p><strong>Saving Throw</strong> @Check[type:will|dc:16]</p>\n<p><strong>Maximum Duration</strong> 2 rounds</p>\n<p><strong>Stage 1</strong> @Compendium[pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} by the poison cloud (1 round)</p>\n<p><strong>Stage 2</strong> fascinated by the poison cloud, and can use no actions but to move closer to the cloud's point of origin (1 round)</p>"
+        },
+        "rules": [],
+        "slug": "yellow-musk-poison",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "inhaled",
+            "mental",
+            "poison"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary 2",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 2
+        },
+        "quantity": 3,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 7
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": "1",
+          "max": "1",
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.Tduwp53YihqKShkb"
+    },
+    {
+      "_id": "KOGpc32FQdRfhGdw",
+      "name": "Blue Dragonfly Poison",
+      "type": "consumable",
+      "sort": 1100000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.rfyWXgrVD2lm91CC"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/blue-dragonfly-poison.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Boggards brew a potent toxin made from blue dragonflies. Swampseers consume this mixture to awaken their divine powers, but the poison inspires crippling hallucinations in most other creatures.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact (Ingested)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Maximum Duration</strong> 30 minutes</p>\n<p><strong>Stage 1</strong> @Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} (10 minutes)</p>\n<p><strong>Stage 2</strong> @Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} and @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (10 minutes)</p>\n<p><strong>Stage 3</strong> @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} and @Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} (1 minute)</p>"
+        },
+        "rules": [],
+        "slug": "blue-dragonfly-poison",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "ingested",
+            "poison"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 3
+        },
+        "quantity": 3,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 7
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1,
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.KOGpc32FQdRfhGdw"
+    },
+    {
+      "_id": "XFyA6r1IGNheDm7t",
+      "name": "Cytillesh Oil",
+      "type": "consumable",
+      "sort": 1200000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.aZm1x9tpvBAT8YCd"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/cytillesh-oil.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This thick substance is distilled from the mind-robbing cytillesh fungus, though it lacks memory-altering capabilities.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d10[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d12[poison]]] damage (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 2d10[poison]]] damage (1 round)</p>"
+        },
+        "rules": [],
+        "slug": "cytillesh-oil",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "injury",
+            "poison"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 3
+        },
+        "quantity": 3,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 10
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1,
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.XFyA6r1IGNheDm7t"
+    },
+    {
+      "_id": "TWfbu1xMVcuLdDcU",
+      "name": "Graveroot",
+      "type": "consumable",
+      "sort": 1300000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.qQqAY59NgGNoy2xr"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/graveroot.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The opaque white sap from the graveroot shrub clouds the mind.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d10[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d12[poison]]] damage and @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 2d6[poison]]] damage and stupefied 2 (1 round)</p>"
+        },
+        "rules": [],
+        "slug": "graveroot",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "injury",
+            "poison"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 3
+        },
+        "quantity": 3,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 10
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1,
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.TWfbu1xMVcuLdDcU"
+    },
+    {
+      "_id": "RWPJirQcpXUuYgjN",
+      "name": "Violet Venom",
+      "type": "consumable",
+      "sort": 1400000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.Oip645RjC5y57wFa"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/violet-venom.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The delicate process of extracting violet venom from a violet fungus leaves it diluted at the best of times. Alchemists are still on the hunt for a truly pure, unadulterated version of this highly toxic poison.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact (Contact)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d6[poison]]] damage plus @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d6[poison]]] damage plus @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 2d6[poison]]] damage plus enfeebled 1 (1 round)</p>"
+        },
+        "rules": [],
+        "slug": "violet-venom",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "contact",
+            "poison"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Bestiary 2",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 3
+        },
+        "quantity": 3,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 12
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": "1",
+          "max": "1",
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "target": {
+          "value": "",
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": "",
+          "long": "",
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": "",
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.RWPJirQcpXUuYgjN"
+    },
+    {
+      "_id": "Y03anvQK10VSV7ro",
+      "name": "Leadenleg",
+      "type": "consumable",
+      "sort": 1500000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.QJ1fTrX42PoEWpK5"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/leadenleg.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Once injected, this synthetic toxin sinks into the extremities, numbing them nearly to paralysis.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:20]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d10[poison]]] damage and -5-foot status penalty to all Speeds (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 2d6[poison]]] damage and -10-foot status penalty to all Speeds (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 2d6[poison]]] damage and -20-foot status penalty to all Speeds (1 round)</p>"
+        },
+        "rules": [],
+        "slug": "leadenleg",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "injury",
+            "poison"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Advanced Player's Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 4
+        },
+        "quantity": 3,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 15
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-two-hands"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1,
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.Y03anvQK10VSV7ro"
+    },
+    {
+      "_id": "Tc7lEhSxlcCgtzWE",
+      "name": "False Death",
+      "type": "consumable",
+      "sort": 1600000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.iUOcC9vFboSFI8fU"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/false-death.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Typically used to fake one's death, this poison swiftly causes the imbiber to lose consciousness and suppresses vital signs. A creature examining the unconscious target must succeed at a Medicine check against the imbiber's Deception DC + 4 to determine that the target is alive, and a critical success allows the examiner to determine that a toxin is causing the effect. The false death toxin has an extremely bitter taste (Perception DC 10 to detect), making it difficult to trick a creature into consuming the poison against its wishes.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Onset</strong> 10 minutes</p>\n<p><strong>Maximum Duration</strong> 5 days</p>\n<p><strong>Stage 1</strong><strong>clumsy 2</strong> (1 round)</p>\n<p><strong>Stage 2</strong> unconscious (1 hour)</p>\n<p><strong>Stage 3</strong> unconscious (1 day)</p>"
+        },
+        "rules": [],
+        "slug": "false-death",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "ingested",
+            "poison"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder #149: Against the Scarlet Triad",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 5
+        },
+        "quantity": 3,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 25
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1,
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.Tc7lEhSxlcCgtzWE"
+    },
+    {
+      "_id": "vlb6kAlWrv5MrcG8",
+      "name": "Hunting Spider Venom",
+      "type": "consumable",
+      "sort": 1700000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.5RGNjhDxZ0yMhTds"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/hunting-spider-venom.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This venom erodes its target's defenses, aiding the spider in securing prey.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d10[poison]]] damage and @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Off-Guard} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d12[poison]]] damage, @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1}, and off-guard (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 2d6[poison]]] damage, clumsy 2, and off-guard (1 round)</p>"
+        },
+        "rules": [],
+        "slug": "hunting-spider-venom",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "alchemical",
+            "consumable",
+            "injury",
+            "poison"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 5
+        },
+        "quantity": 3,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 25
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "consumableType": {
+          "value": "poison"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1,
+          "_deprecated": true
+        },
+        "consume": {
+          "value": "",
+          "_deprecated": true
+        },
+        "autoDestroy": {
+          "value": true
+        },
+        "spell": null,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null,
+          "autoUse": true,
+          "autoDestroy": true
+        },
+        "autoUse": {
+          "value": true,
+          "_deprecated": true
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.vlb6kAlWrv5MrcG8"
+    },
+    {
+      "_id": "3j3QF1ttvTHqDMVm",
+      "name": "Dagger of Eternal Sleep",
+      "type": "weapon",
+      "sort": 1800000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.1S3RgLWa1DBitB9V"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/consumables/other-consumables/dagger-of-eternal-sleep.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This tiny serrated dagger looks like a miniature sawtooth sabre. Until activated, it is too small and ornamental to function as a weapon, which might allow it to be passed off as a weapon-shaped decoration.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<hr />\n<p><strong>Effect</strong> You transform the dagger of eternal sleep into a +1 @Compendium[pf2e.equipment-srd.qUnDHEXteUQGE8yp]{Grievous} striking dagger and Strike an unconscious target with the dagger.</p>\n<p>If you are not in an encounter or otherwise threatened and you roll a hit with your Strike, you get a critical hit instead. The damage from the Strike and the bleed from the critical specialization effect do not awaken the target, though the target becomes temporarily immune to this effect until the next time it wakes up, meaning further daggers of eternal sleep awaken it as normal. The dagger disintegrates immediately after use.</p>"
+        },
+        "rules": [],
+        "slug": "dagger-of-eternal-sleep",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "agile",
+            "consumable",
+            "finesse",
+            "magical",
+            "necromancy",
+            "thrown-10",
+            "versatile-s"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens: Gods & Magic",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 5
+        },
+        "quantity": 1,
+        "baseItem": "dagger",
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 25
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "simple",
+        "group": "knife",
+        "bonus": {
+          "value": 1
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d4",
+          "damageType": "piercing",
+          "persistent": null,
+          "value": ""
+        },
+        "bonusDamage": {
+          "value": 0
+        },
+        "splashDamage": {
+          "value": null
+        },
+        "range": null,
+        "reload": {
+          "value": "-"
+        },
+        "potencyRune": {
+          "value": 1
+        },
+        "strikingRune": {
+          "value": "striking"
+        },
+        "specific": {
+          "value": true,
+          "material": null,
+          "runes": {
+            "potency": 1,
+            "striking": "striking"
+          }
+        },
+        "propertyRune1": {
+          "value": "grievous"
+        },
+        "propertyRune2": {
+          "value": ""
+        },
+        "propertyRune3": {
+          "value": ""
+        },
+        "propertyRune4": {
+          "value": ""
+        },
+        "property1": {
+          "value": "",
+          "dice": null,
+          "die": "",
+          "damageType": "",
+          "critDice": null,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": "",
+          "criticalConditionType": "",
+          "criticalConditionValue": null,
+          "strikeConditionType": "",
+          "strikeConditionValue": null
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.3j3QF1ttvTHqDMVm"
+    },
+    {
+      "_id": "pmVudAI5H8s5hGCm",
+      "name": "Dagger of Venom",
+      "type": "weapon",
+      "sort": 1900000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.ZvIEJCY60fHqzl6r"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/dagger-of-venom.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The serrated blade of this <em>+1 striking</em> dagger has a greenish tinge, and the hilt is sculpted to look like the head of a serpent about to strike.</p>\n<p>When you critically succeed at an attack roll with the dagger of venom, the target becomes sickened 1 unless it succeeds at a DC 19 Fortitude save. This is a poison effect.</p>\n<p>In addition, you can activate the dagger to poison a creature with a more potent poison.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">F</span> Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You damage a creature with the <em>dagger of venom</em></p>\n<hr />\n<p><strong>Effect</strong> You poison the creature you hit with dagger venom.</p>\n<p><strong>Dagger Venom</strong> (poison)</p>\n<p><strong>Saving Throw</strong> Fortitude DC 21</p>\n<p><strong>Maximum Duration</strong> 4 rounds.</p>\n<p><strong>Stage 1</strong> 1d8 poison damage and enfeebled 1.</p>"
+        },
+        "rules": [],
+        "slug": "dagger-of-venom",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "agile",
+            "finesse",
+            "magical",
+            "necromancy",
+            "poison",
+            "thrown-10",
+            "versatile-s"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 5
+        },
+        "quantity": 1,
+        "baseItem": "dagger",
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 150
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "simple",
+        "group": "knife",
+        "bonus": {
+          "value": 1
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d4",
+          "damageType": "piercing",
+          "persistent": null,
+          "value": ""
+        },
+        "bonusDamage": {
+          "value": 0
+        },
+        "splashDamage": {
+          "value": null
+        },
+        "range": null,
+        "reload": {
+          "value": "-"
+        },
+        "potencyRune": {
+          "value": 1
+        },
+        "strikingRune": {
+          "value": "striking"
+        },
+        "specific": {
+          "value": true,
+          "material": null,
+          "runes": {
+            "potency": 1,
+            "striking": "striking"
+          }
+        },
+        "propertyRune1": {
+          "value": ""
+        },
+        "propertyRune2": {
+          "value": ""
+        },
+        "propertyRune3": {
+          "value": ""
+        },
+        "propertyRune4": {
+          "value": ""
+        },
+        "property1": {
+          "value": "",
+          "dice": null,
+          "die": "",
+          "damageType": "",
+          "critDice": null,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": "",
+          "criticalConditionType": "",
+          "criticalConditionValue": null,
+          "strikeConditionType": "",
+          "strikeConditionValue": null
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.pmVudAI5H8s5hGCm"
+    },
+    {
+      "_id": "VJdwLBd1saTghcmd",
+      "name": "Poisonous Dagger",
+      "type": "weapon",
+      "sort": 2000000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.hK5xPjOFd2hb81mi"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/weapons/dagger.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This +1 striking dagger has an image of a snake emblazoned on its blade. When you critically succeed at an attack roll with the dagger, magical fangs emerge and poison the target, dealing @Localize[PF2E.PersistentDamage.Poison1d4.success].</p>"
+        },
+        "rules": [],
+        "slug": "poisonous-dagger",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "agile",
+            "finesse",
+            "magical",
+            "necromancy",
+            "poison",
+            "thrown-10",
+            "versatile-s"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Beginners Box",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 5
+        },
+        "quantity": 1,
+        "baseItem": "dagger",
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 150
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "simple",
+        "group": "knife",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d4",
+          "damageType": "piercing",
+          "persistent": null,
+          "value": ""
+        },
+        "bonusDamage": {
+          "value": 0
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": null,
+        "reload": {
+          "value": "-"
+        },
+        "potencyRune": {
+          "value": 1
+        },
+        "strikingRune": {
+          "value": "striking"
+        },
+        "specific": {
+          "value": true,
+          "material": null,
+          "runes": {
+            "potency": 1,
+            "striking": "striking"
+          }
+        },
+        "propertyRune1": {
+          "value": ""
+        },
+        "propertyRune2": {
+          "value": ""
+        },
+        "propertyRune3": {
+          "value": ""
+        },
+        "propertyRune4": {
+          "value": ""
+        },
+        "property1": {
+          "value": "",
+          "dice": 0,
+          "die": "",
+          "damageType": "",
+          "critDice": 0,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": "",
+          "criticalConditionType": "",
+          "criticalConditionValue": null,
+          "strikeConditionType": "",
+          "strikeConditionValue": null
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.VJdwLBd1saTghcmd"
+    },
+    {
+      "_id": "6cmCY5FMqZeiXnLe",
+      "name": "Thieves' Tools",
+      "type": "equipment",
+      "sort": 2100000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.zvLyCVD8g2PdHJAc"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/thieves-tools.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @Compendium[pf2e.equipment-srd.Sw7MBLASN3xK4Y44]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action.</p>"
+        },
+        "rules": [],
+        "slug": "thieves-tools",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 3
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": "",
+        "negateBulk": {
+          "value": ""
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.6cmCY5FMqZeiXnLe"
+    },
+    {
+      "_id": "X2gLQK6BSSqYF26q",
+      "name": "Thieves' Tools (Infiltrator)",
+      "type": "equipment",
+      "sort": 2200000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.6nrCxNQFycUVFOV2"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/thieves-tools.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill. Infiltrator thieves' tools add a +1 item bonus to checks to Pick Locks and Disable Devices.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @Compendium[pf2e.equipment-srd.BznmPaRjI4Orb0IH]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action.</p>"
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "label": "Thieves' Tools (Pick Lock & Disable Devices)",
+            "predicate": [
+              {
+                "or": [
+                  "action:disable-device",
+                  "action:pick-a-lock"
+                ]
+              }
+            ],
+            "selector": "thievery",
+            "type": "item",
+            "value": 1
+          }
+        ],
+        "slug": "thieves-tools-infiltrator",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 3
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 50
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": ""
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.X2gLQK6BSSqYF26q"
+    },
+    {
+      "_id": "NNJhTUctKDLnDMdR",
+      "name": "Thieves' Tools (Replacement Picks)",
+      "type": "equipment",
+      "sort": 2300000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.Sw7MBLASN3xK4Y44"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/thieves-tools.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>These are replacement picks for @Compendium[pf2e.equipment-srd.zvLyCVD8g2PdHJAc]{Thieves' Tools}.</p>"
+        },
+        "rules": [],
+        "slug": "thieves-tools-replacement-picks",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 0
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "sp": 3
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.NNJhTUctKDLnDMdR"
+    },
+    {
+      "_id": "LZgcYAIXeygd9uLz",
+      "name": "Thieves' Tools (Infiltrator Picks)",
+      "type": "equipment",
+      "sort": 2400000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.BznmPaRjI4Orb0IH"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/thieves-tools.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>These are replacement picks for @Compendium[pf2e.equipment-srd.6nrCxNQFycUVFOV2]{Thieves' Tools (Infiltrator)}.</p>"
+        },
+        "rules": [],
+        "slug": "thieves-tools-infiltrator-picks",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "Pathfinder Core Rulebook",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 3
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 3
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.LZgcYAIXeygd9uLz"
+    },
+    {
+      "_id": "Sb3reOi1XULHADna",
+      "name": "Thieves' Tools (Concealable)",
+      "type": "equipment",
+      "sort": 2500000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.Ejmv9IHGp9Ad9dgu"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/thieves-tools.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You need thieves' tools to Pick Locks or Disable Devices (of some types) using the Thievery skill. Infiltrator thieves' tools add a +1 item bonus to checks to Pick Locks and Disable Devices.</p>\n<p>Smaller and made of stronger materials than most sets of thieves' tools, the items in this kit are much easier to conceal. You gain a +1 item bonus to Stealth checks to Conceal these tools.</p>\n<p>If your thieves' tools are broken, you can repair them by replacing the lock picks with @Compendium[pf2e.equipment-srd.TxMFNfkoccirCitP]{Replacement Picks} appropriate to your tools; this doesn't require using the Repair action.</p>"
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "label": "Thieves' Tools (Pick Lock & Disable Devices)",
+            "predicate": [
+              {
+                "or": [
+                  "action:disable-device",
+                  "action:pick-a-lock"
+                ]
+              }
+            ],
+            "selector": "thievery",
+            "type": "item",
+            "value": 1
+          },
+          {
+            "key": "FlatModifier",
+            "label": "Thieves' Tools (Conceal tools)",
+            "predicate": [
+              "action:conceal-an-object",
+              "target:concealable-tools"
+            ],
+            "selector": "stealth",
+            "type": "item",
+            "value": 1
+          }
+        ],
+        "slug": "thieves-tools-concealable",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens: Pathfinder Society Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 4
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "L"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 80
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-two-hands"
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.Sb3reOi1XULHADna"
+    },
+    {
+      "_id": "hQTZAhJVOV9ep7J3",
+      "name": "Thieves' Tools (Concealable Picks)",
+      "type": "equipment",
+      "sort": 2600000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.TxMFNfkoccirCitP"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/adventuring-gear/thieves-tools.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>These are replacement picks for @Compendium[pf2e.equipment-srd.Ejmv9IHGp9Ad9dgu]{Thieves' Tools (Concealable)}.</p>"
+        },
+        "rules": [],
+        "slug": "thieves-tools-concealable-picks",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Lost Omens: Pathfinder Society Guide",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 4
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "-"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 10
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.hQTZAhJVOV9ep7J3"
+    },
+    {
+      "_id": "I9OYtv3YsQzjnDKY",
+      "name": "Flaying Knife",
+      "type": "weapon",
+      "sort": 2700000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.equipment-srd.Item.dfheZ5lK0thQUTVT"
+        }
+      },
+      "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/flaying-knife.webp",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>This long, thin +1 striking @Compendium[pf2e.equipment-srd.fo6Yhq5mbQXsnZs0]{Wounding} dagger has a smooth edge on one side and a serrated edge on the other.</p>\n<p>Its persistent bleed damage comes from slicing away long strips of the target's flesh, and it deals @Localize[PF2E.PersistentDamage.Bleed1d8.success] on a hit instead of 1d6. A creature takes a -2 status penalty to saving throws against diseases for as long as it has persistent bleed damage from this knife.</p>"
+        },
+        "rules": [
+          {
+            "key": "Note",
+            "outcome": [
+              "success"
+            ],
+            "selector": "{item|_id}-attack",
+            "text": "PF2E.PersistentDamage.Bleed1d8.success"
+          },
+          {
+            "key": "Note",
+            "outcome": [
+              "criticalSuccess"
+            ],
+            "selector": "{item|_id}-attack",
+            "text": "PF2E.PersistentDamage.Bleed1d8.criticalSuccess"
+          }
+        ],
+        "slug": "flaying-knife",
+        "_migration": {
+          "version": 0.878,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.769,
+            "foundry": "11.313",
+            "system": "5.7.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "agile",
+            "finesse",
+            "magical",
+            "necromancy",
+            "thrown-10",
+            "versatile-s"
+          ],
+          "rarity": "uncommon"
+        },
+        "publication": {
+          "title": "Pathfinder Adventure: The Slithering",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 8
+        },
+        "quantity": 1,
+        "baseItem": "dagger",
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "hardness": 0,
+        "weight": {
+          "value": "1"
+        },
+        "equippedBulk": {
+          "value": ""
+        },
+        "price": {
+          "value": {
+            "gp": 480
+          }
+        },
+        "equipped": {
+          "carryType": "worn",
+          "invested": null,
+          "handsHeld": 0
+        },
+        "stackGroup": null,
+        "negateBulk": {
+          "value": "0"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification": {
+          "status": "identified",
+          "unidentified": {
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        },
+        "usage": {
+          "value": "held-in-one-hand"
+        },
+        "category": "simple",
+        "group": "knife",
+        "bonus": {
+          "value": 0
+        },
+        "damage": {
+          "dice": 1,
+          "die": "d4",
+          "damageType": "piercing",
+          "persistent": null,
+          "value": ""
+        },
+        "bonusDamage": {
+          "value": 0
+        },
+        "splashDamage": {
+          "value": 0
+        },
+        "range": null,
+        "reload": {
+          "value": "-"
+        },
+        "potencyRune": {
+          "value": 1
+        },
+        "strikingRune": {
+          "value": "striking"
+        },
+        "specific": {
+          "value": true,
+          "material": null,
+          "runes": {
+            "potency": 1,
+            "striking": "striking"
+          }
+        },
+        "propertyRune1": {
+          "value": "wounding"
+        },
+        "propertyRune2": {
+          "value": ""
+        },
+        "propertyRune3": {
+          "value": ""
+        },
+        "propertyRune4": {
+          "value": ""
+        },
+        "property1": {
+          "value": "",
+          "dice": null,
+          "die": "",
+          "damageType": "",
+          "critDice": 0,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": "",
+          "criticalConditionType": "",
+          "criticalConditionValue": null,
+          "strikeConditionType": "",
+          "strikeConditionValue": null
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!I7V9v1GVxcyuMgM3.I9OYtv3YsQzjnDKY"
+    }
+  ],
+  "effects": [],
+  "folder": "l5vwPUmET4uksNKe",
+  "sort": 0,
+  "flags": {
+    "pf2e": {
+      "editLoot": {
+        "value": false
+      }
+    },
+    "exportSource": {
+      "world": "abominationvaults",
+      "system": "pf2e",
+      "coreVersion": "0.8.7",
+      "systemVersion": "2.4.0.6221"
+    },
+    "core": {
+      "sourceId": "Compendium.shopping-experience.otari-shops.Actor.a2y3WhzVAv31TsiX"
+    },
+    "cf": null
+  },
+  "system": {
+    "attributes": {},
+    "details": {
+      "description": "",
+      "level": {
+        "value": 0
+      }
+    },
+    "lootSheetType": "Merchant",
+    "hiddenWhenEmpty": false,
+    "_migration": {
+      "version": 0.878,
+      "previous": {
+        "schema": 0.769,
+        "foundry": "11.313",
+        "system": "5.7.2"
+      }
+    },
+    "traits": {
+      "rarity": "common",
+      "size": {
+        "value": "med"
+      },
+      "value": []
+    },
+    "customModifiers": {}
+  },
+  "ownership": {
+    "default": 1,
+    "WP8iX5Oga3kaT5wZ": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.2",
+    "coreVersion": "11.313",
+    "createdTime": 1697493226120,
+    "modifiedTime": 1697493226120,
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+  },
+  "_key": "!actors!I7V9v1GVxcyuMgM3"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Bestiary Dump",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/game-icons-net/blackbackground/bookmarklet.svg",
+  "command": "async function compendiumFilter(packs, indexfields=[], filter=null) {\n    let out = [];\n    const fields = (Array.isArray(indexfields) && indexfields.length) ? {fields: indexfields} : {};\n    const indicies = await Promise.all(packs.map(p => game.packs.get(p).getIndex(fields)));\n    for (let i=0; i < indicies.length; i++) {              \n        const filtered = indicies[i].filter(filter);\n        const mapped = await Promise.all(filtered.map(a => fromUuid('Compendium.'+packs[i]+'.'+a._id)));\n        out.push(...mapped); \n    }\n    return out;\n}\nconst packs = ['pf2e.pathfinder-bestiary', 'pf2e.pathfinder-bestiary-2', 'pf2e.pathfinder-bestiary-3'];\nconst fields = ['system.details.level.value']\nconst fcallback = (a) => a.system.details.level.value < 3;\nconst monsters = await compendiumFilter(packs, fields, fcallback);",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForSpecificUser": ""
+    },
+    "cf": null,
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1681928275100,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "1hxM2jBRb3BTdxXi",
+  "folder": "MUrlWbVP9uj79bSv",
+  "sort": 1000000,
+  "ownership": {
+    "default": 0,
+    "holNdNHqtCzAbMAV": 3,
+    "717Xeq3czH96acPF": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_key": "!macros!1hxM2jBRb3BTdxXi"
+}

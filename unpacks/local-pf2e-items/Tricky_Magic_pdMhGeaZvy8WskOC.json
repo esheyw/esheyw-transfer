@@ -1,0 +1,81 @@
+{
+  "folder": "0ARsu1VBqGfrkHAm",
+  "name": "Tricky Magic",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Target has been confounded by eldritch trickery. Off-guard against spell attacks from the Eldritch Trickster.</p>"
+    },
+    "rules": [
+      {
+        "key": "EphemeralEffect",
+        "affects": "origin",
+        "selectors": [
+          "spell-attack",
+          "spell-damage"
+        ],
+        "uuid": "Item.jFCOiD7Tj1B8THjF"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.878,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.837,
+        "foundry": "11.313",
+        "system": "5.7.3"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "target": null,
+    "unidentified": false
+  },
+  "img": "Assets/icons/game-icons-net/whitebackground/magick-trick.svg",
+  "sort": 200000,
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3,
+    "uf6e8eMmegowqPE9": 2
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1682274186012,
+    "modifiedTime": 1698035467430,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "pdMhGeaZvy8WskOC",
+  "_key": "!items!pdMhGeaZvy8WskOC"
+}

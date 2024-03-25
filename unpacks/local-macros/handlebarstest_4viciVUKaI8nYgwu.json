@@ -1,0 +1,32 @@
+{
+  "name": "handlebarstest",
+  "type": "script",
+  "scope": "global",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "icons/svg/dice-target.svg",
+  "command": "let moduleID = 'pf2-flat-check';\nlet templateData = {\n    \n    flatCheckRollResultClass: 'flat-check-success',\n    flatCheckDC: 5\n};\nconst content = await renderTemplate(`modules/${moduleID}/templates/flat-check.hbs`, templateData);\n//cwarn(content)\n\nconst content2 = `<div>\n    {{#if actor.condition}}<b>{{actor.name}}</b> is <b>{{actor.condition}}</b>.</br>{{/if}}\n    {{#each targets as |target|}}\n    <b>{{target.name}}</b> is <b>{{target.condition}}</b> to attacker.</br>\n    {{/each}}\n    Flat Check DC is <b>{{flatCheckDC}}</b>.\n</div>\n<div class=\"dice-roll\">\n<div class=\"dice-result {{flatCheckRollResultClass}}\">\n    <h4 class=\"dice-total flat-check\">{{flatCheckRollResult}}</h4>\n</div>\n</div>`\nconsole.warn(Handlebars.compile(content2)(templateData))",
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForSpecificUser": ""
+    },
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1682657186598,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "folder": "S2KSaNQJxdlRFkyr",
+  "sort": 800000,
+  "_id": "4viciVUKaI8nYgwu",
+  "_key": "!macros!4viciVUKaI8nYgwu"
+}

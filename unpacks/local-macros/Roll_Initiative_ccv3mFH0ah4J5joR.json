@@ -1,0 +1,34 @@
+{
+  "name": "Roll Initiative",
+  "type": "script",
+  "author": "v0RvORcwGexWLCjc",
+  "img": "Assets/icons/game-icons-net/whitebackground/polar-star.svg",
+  "scope": "global",
+  "command": "const combat = game.combat;\nif (!combat) return ui.notifications.warn(\"COMBAT.NoneActive\", {localize: true});\n\nasync function chronoInit(token) {    \n    const stabDialogData = {\n        title: `Adjust Timestream for ${token.name}?`,\n        buttons: {\n            stabilize: {\n                label: 'Stabilize',\n                icon: `<i class='fas fa-scale-balanced'></i>`\n            },\n            destabilize: {\n                label: 'Destabilize',\n                icon: `<i class='fas fa-scale-unbalanced fa-beat-fade'></i>`\n            },\n            roll: {\n                label: 'Regular Roll',\n                icon: `<i class='fas fa-dice-d20 fa-spin-pulse'></i>`\n            }\n        },\n        close: () => {return 'close'},\n    }\n    return await Dialog.wait(stabDialogData);   \n}\nlet scoutidx = 0;\nconst scoutids = [\n    '',\n    'Compendium.pf2e.other-effects.EMqGwUi3VMhCjTlF', //Effect: Scouting\n    'Compendium.pf2e.other-effects.la8rWwUtReElgTS6', //Effect: Scouting (Incredible Scout)\n];\nconst scoutingmods = [\n    '',\n    new game.pf2e.Modifier('Scouting', 1, 'circumstance'),\n    new game.pf2e.Modifier('Scouting (Incredible Scout)', 2, 'circumstance')\n];\n\nconst ownedcombatants = game.combat.combatants.filter(c=>c.players.includes(game.user));\nlet playertokens = canvas.tokens.controlled;\nif (!playertokens.length) {\n    //if nothing selected, check combat tracker for our tokens (assumption being they're added by the start combat macro)\n    const ownedcombatanttokens = ownedcombatants.map(c=>canvas.tokens.get(c.tokenId));\n    //if nothing in the tracker, maybe our assigned character forgot to get added to initiative\n    if (!ownedcombatanttokens) {\n        const charToken = game.user.character?.getActiveTokens()[0];\n        //no hope, bail\n        if (!charToken) return ui.notifications.warn(\"You have no tokens selected, no owned tokens in combat, and no tokens of your assigned character on this scene.\");\n\n        playertokens.push(charToken);\n    } else {\n        playertokens = playertokens.concat(ownedcombatanttokens);\n    }        \n}\n//check party for scouts\nconst partytokens = canvas.tokens.placeables.filter(p => p.actor.system.details.alliance === 'party' && !p.actor.traits.has('minion'));\nlet skimmers = [];\nfor (const partytoken of partytokens) {\n    const rollopts = partytoken.actor.getRollOptions(['initiative']);\n    if (rollopts.some(re => ['self:effect:scout', 'self:effect:scouting'].includes(re))) {\n        scoutidx = Math.max(scoutidx, rollopts.includes('feat:incredible-scout') ? 2 : 1);\n    }\n    //check for Chronoskimmers \n    if (rollopts.includes('feat:chronoskimmer-dedication')) skimmers.push(partytoken) \n}\n\n//roll our tokens, adding to combat if they somehow got missed\nfor (const playertoken of playertokens) {    \n    const rollData = {event};\n    let response = '';\n    let rollflavor = '';\n    if (scoutidx) rollData.modifiers = [scoutingmods[scoutidx]];\n    if (!playertoken.inCombat) await playertoken.toggleCombat();\n    const combatant = game.combat.getCombatantByToken(playertoken.id);\n    //if you want to reroll initiatve, blank it on the tracker first\n    if (combatant.initiative === null) {\n        if (skimmers.includes(playertoken)) {            \n            const response = await chronoInit(playertoken);\n            switch (response) {\n                case 'stabilize':\n                    rollflavor = `<strong>Timestream Stabilized</strong>`;\n                    rollData.extraRollOptions = [`chronoskimming:stabilized`];\n                    break;\n                case 'destabilize':\n                    const fc = await new Roll('1d20').roll({async: true});\n                    //show DsN for the flat check since there's no d20\n                    if (game.modules.get('dice-so-nice')?.active) game.dice3d.showForRoll(fc, game.user, true); \n                    const fcs = fc.total > 10;\n                    rollflavor = `<strong>Timestream Destabilization: <span data-tooltip=\"${fc.result}\" data-tooltip-direction=\"UP\" style=\"color:${fcs? 'green\">Positive!':'red\">Negative.'}</span></strong>`;\n                    rollData.extraRollOptions = [`chronoskimming:destabilized:${fcs?\"positive\":\"negative\"}`];\n                    break;\n                case 'roll':\n                default:\n                    break;\n            }\n        }        \n        await playertoken.actor.initiative.roll(rollData);\n        if (skimmers.includes(playertoken)) {\n            initmessage = game.messages.contents.slice().reverse().find(m=>m.speaker.token===playertoken.id)\n            await initmessage.update({\n                flavor: rollflavor + initmessage.flavor\n            });\n        }\n    }\n}",
+  "flags": {
+    "advanced-macros": {
+      "runAsGM": false,
+      "runForSpecificUser": ""
+    },
+    "core": {},
+    "cf": null
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.10.5",
+    "coreVersion": "11.315",
+    "createdTime": 1677998491177,
+    "modifiedTime": 1702343866185,
+    "lastModifiedBy": "v0RvORcwGexWLCjc"
+  },
+  "_id": "ccv3mFH0ah4J5joR",
+  "folder": "MUrlWbVP9uj79bSv",
+  "sort": 2000000,
+  "ownership": {
+    "default": 0,
+    "holNdNHqtCzAbMAV": 3,
+    "717Xeq3czH96acPF": 3,
+    "ZMxdSpEKesYc7gvn": 3
+  },
+  "_key": "!macros!ccv3mFH0ah4J5joR"
+}

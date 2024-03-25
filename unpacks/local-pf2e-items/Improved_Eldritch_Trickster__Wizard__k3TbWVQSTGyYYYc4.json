@@ -1,0 +1,77 @@
+{
+  "name": "Improved Eldritch Trickster (Wizard)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>If you are a master in the skill matching the spellcasting tradition of your multiclass dedication, you become an expert in spell attack rolls and spell DCs for that tradition. If you are legendary in the associated skill, you become a master in spell attack rolls and spell DCs for that tradition. The relevant skills are Arcana for arcane, Nature for primal, Occultism for occult, and Religion for divine.</p>"
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "upgrade",
+        "path": "system.proficiencies.traditions.arcane.rank",
+        "value": "-1+@actor.system.skills.arc.rank",
+        "phase": "applyAEs"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.878,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.837,
+        "foundry": "11.313",
+        "system": "5.7.3"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "rogue"
+      ],
+      "rarity": "unique"
+    },
+    "publication": {
+      "title": "https://docs.google.com/document/d/1UJi0IztNbjrTXrCT_Vk87D6EVmarAw35iQdfxf19cfg/",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "category": "bonus",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null
+  },
+  "img": "systems/pf2e/icons/default-icons/feat.svg",
+  "effects": [],
+  "folder": "FWDReABYAPJHTjJJ",
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "ANMn0vc4t8tYEOWE": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.7.3",
+    "coreVersion": "11.313",
+    "createdTime": 1677724813277,
+    "modifiedTime": 1698035469406,
+    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+  },
+  "_id": "k3TbWVQSTGyYYYc4",
+  "_key": "!items!k3TbWVQSTGyYYYc4"
+}
