@@ -105,9 +105,7 @@
       }
     }
   ],
-  "scripts": [
-    "scripts/esheyw-helpers.js"
-  ],
+  "esmodules": ["src/esheyw-helpers.mjs"],
   "packFolders": [
     {
       "name": "Local Compendia",
