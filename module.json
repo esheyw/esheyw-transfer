@@ -12,32 +12,18 @@
   "version": "1.3.0",
   "compatibility": {
     "minimum": "11",
-    "verified": "11.313"
+    "verified": "13.332"
   },
-  "relationships": {
-    "systems": [
-      {
-        "id": "pf2e",
-        "type": "system",
-        "compatibility": {}
-      },
-      {
-        "id": "dnd5e",
-        "type": "system",
-        "compatibility": {}
-      },
-      {
-        "id": "starwarsffg",
-        "type": "system",
-        "compatibility": {}
-      }
-    ]
+  "relationships": {},
+  "flags": {
+    "hotReload": {
+      "extensions": ["css", "hbs", "json"]
+    }
   },
   "packs": [
     {
       "name": "local-macros",
       "label": "Local Macros",
-      "banner": "modules/esheyw-transfer/assets/blankbanner.webp",
       "path": "packs/local-macros",
       "type": "Macro",
       "ownership": {
@@ -48,12 +34,19 @@
     {
       "name": "local-journals",
       "label": "Local Journals",
-      "banner": "modules/esheyw-transfer/assets/blankbanner.webp",
+      "banner": null,
       "path": "packs/local-journals",
       "type": "JournalEntry",
       "ownership": {
         "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
+        "TRUSTED": "INHERIT",
+        "ASSISTANT": "OWNER",
+        "NONE": "NONE"
+      },
+      "flags": {
+        "core": {
+          "foo": true
+        }
       }
     },
     {

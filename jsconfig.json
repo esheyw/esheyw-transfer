@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "ES2022"
+    // ,"checkJs": true
+  },
+  "exclude": ["mhl-dist.mjs", "node_modules", "**/node_modules/*", "foundry.mjs"],
+  "include": ["src/esheyw-helpers.mjs", "foundry/*.mjs", "foundry/**/.mjs"],
+  "typeAcquisition": {
+    "include": ["jquery"]
+  }
+}

@@ -1,9 +1,13 @@
 export const defaultConfig = {
   users: {
+    testuser: {
+      name: "Test User",
+      role: CONST.USER_ROLES.GAMEMASTER,
+    },
     paul: {
       name: `Paul`,
       role: CONST.USER_ROLES.TRUSTED,
-      color: "#21AC45",
+      color: "#21ac45",
       flags: {
         pf2e: {
           settings: {
@@ -19,7 +23,7 @@ export const defaultConfig = {
     lindsey: {
       name: `Lindsey`,
       role: CONST.USER_ROLES.TRUSTED,
-      color: "#CC28C6",
+      color: "#cc28c6",
       flags: {
         pf2e: {
           settings: {
@@ -35,7 +39,7 @@ export const defaultConfig = {
     nick: {
       name: `Nick`,
       role: CONST.USER_ROLES.TRUSTED,
-      color: "#CC9028",
+      color: "#cc9028",
       flags: {
         pf2e: {
           settings: {
@@ -51,7 +55,7 @@ export const defaultConfig = {
     becca: {
       name: `Becca`,
       role: CONST.USER_ROLES.TRUSTED,
-      color: "#4028CC",
+      color: "#4028cc",
       flags: {
         pf2e: {
           settings: {
@@ -67,7 +71,7 @@ export const defaultConfig = {
     dmpcs: {
       name: `DMPCs`,
       role: CONST.USER_ROLES.TRUSTED,
-      color: "#B3292F",
+      color: "#b3292f",
       flags: {
         pf2e: {
           settings: {
