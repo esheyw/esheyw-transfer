@@ -11,12 +11,12 @@
     "rules": [],
     "slug": null,
     "_migration": {
-      "version": 0.878,
+      "version": 0.925,
       "lastMigration": null,
       "previous": {
-        "schema": 0.849,
-        "foundry": "11.313",
-        "system": "5.7.2"
+        "schema": 0.878,
+        "foundry": "11.315",
+        "system": "5.14.4"
       }
     },
     "traits": {
@@ -35,27 +35,22 @@
     },
     "quantity": 1,
     "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
     "hp": {
       "value": 0,
       "max": 0
     },
     "hardness": 0,
-    "weight": {
-      "value": "L"
-    },
-    "equippedBulk": {
-      "value": ""
-    },
     "price": {
       "value": {}
     },
     "equipped": {
       "carryType": "worn",
-      "invested": null
-    },
-    "stackGroup": null,
-    "negateBulk": {
-      "value": "0"
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
     },
     "containerId": null,
     "size": "med",
@@ -76,34 +71,19 @@
       },
       "misidentified": {}
     },
-    "usage": {
-      "value": "wornarmor"
-    },
     "category": "light",
     "group": null,
     "acBonus": 0,
     "strength": 0,
     "dexCap": 0,
-    "checkPenalty": null,
-    "speedPenalty": null,
-    "potencyRune": {
-      "value": null
+    "checkPenalty": 0,
+    "speedPenalty": 0,
+    "runes": {
+      "potency": 0,
+      "resilient": 0,
+      "property": []
     },
-    "resiliencyRune": {
-      "value": null
-    },
-    "propertyRune1": {
-      "value": null
-    },
-    "propertyRune2": {
-      "value": null
-    },
-    "propertyRune3": {
-      "value": null
-    },
-    "propertyRune4": {
-      "value": null
-    }
+    "subitems": []
   },
   "_id": "1ceiixnVPkKOAh8b",
   "img": "systems/pf2e/icons/default-icons/armor.svg",
@@ -115,11 +95,14 @@
   "flags": {},
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.7.2",
-    "coreVersion": "11.313",
+    "systemVersion": "5.14.4",
+    "coreVersion": "13.342",
     "createdTime": 1690169401709,
-    "modifiedTime": 1697493534964,
-    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+    "modifiedTime": 1711396466703,
+    "lastModifiedBy": "dr4PZnZ9KX7ge6hN",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!items!1ceiixnVPkKOAh8b"
 }

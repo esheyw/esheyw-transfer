@@ -6,9 +6,7 @@
   "folder": "patF1AmNkB12sAu7",
   "sort": 100000,
   "flags": {
-    "core": {
-      "sourceId": "Actor.VJ8t4Uo2LSiRSuFz.Item.rEiHZko0wszvqCNZ"
-    }
+    "core": {}
   },
   "system": {
     "description": {
@@ -18,12 +16,12 @@
     "rules": [],
     "slug": null,
     "_migration": {
-      "version": 0.878,
+      "version": 0.925,
       "lastMigration": null,
       "previous": {
-        "schema": 0.837,
-        "foundry": "11.313",
-        "system": "5.7.3"
+        "schema": 0.878,
+        "foundry": "11.315",
+        "system": "5.14.4"
       }
     },
     "traits": {
@@ -42,28 +40,22 @@
     },
     "quantity": 1,
     "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
     "hp": {
       "value": 0,
       "max": 0
     },
     "hardness": 0,
-    "weight": {
-      "value": "-"
-    },
-    "equippedBulk": {
-      "value": ""
-    },
     "price": {
       "value": {
         "gp": 5
       }
     },
     "equipped": {
-      "carryType": "worn"
-    },
-    "stackGroup": "",
-    "negateBulk": {
-      "value": "0"
+      "carryType": "worn",
+      "handsHeld": 0
     },
     "containerId": null,
     "size": "med",
@@ -84,9 +76,7 @@
       },
       "misidentified": {}
     },
-    "usage": {
-      "value": ""
-    }
+    "stackGroup": null
   },
   "ownership": {
     "default": 0,
@@ -95,11 +85,14 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.7.3",
-    "coreVersion": "11.313",
+    "systemVersion": "5.14.4",
+    "coreVersion": "13.342",
     "createdTime": 1674100185576,
-    "modifiedTime": 1698035485335,
-    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+    "modifiedTime": 1711396466703,
+    "lastModifiedBy": "dr4PZnZ9KX7ge6hN",
+    "compendiumSource": "Actor.VJ8t4Uo2LSiRSuFz.Item.rEiHZko0wszvqCNZ",
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_id": "k6K3LX3EcXhx0vDW",
   "_key": "!items!k6K3LX3EcXhx0vDW"

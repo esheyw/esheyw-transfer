@@ -20,12 +20,12 @@
     ],
     "slug": null,
     "_migration": {
-      "version": 0.878,
+      "version": 0.925,
       "lastMigration": null,
       "previous": {
-        "schema": 0.837,
-        "foundry": "11.313",
-        "system": "5.7.3"
+        "schema": 0.878,
+        "foundry": "11.315",
+        "system": "5.14.4"
       }
     },
     "traits": {
@@ -44,7 +44,7 @@
     "duration": {
       "value": -1,
       "unit": "unlimited",
-      "expiry": "turn-start",
+      "expiry": null,
       "sustained": false
     },
     "start": {
@@ -68,11 +68,14 @@
   "flags": {},
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.7.3",
-    "coreVersion": "11.313",
+    "systemVersion": "5.14.4",
+    "coreVersion": "13.342",
     "createdTime": 1682274273078,
-    "modifiedTime": 1698035467430,
-    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+    "modifiedTime": 1711396466703,
+    "lastModifiedBy": "dr4PZnZ9KX7ge6hN",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_id": "jFCOiD7Tj1B8THjF",
   "_key": "!items!jFCOiD7Tj1B8THjF"

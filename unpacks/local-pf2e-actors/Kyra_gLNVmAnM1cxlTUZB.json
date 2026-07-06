@@ -13,7 +13,7 @@
       "saturation": 0,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "name": "Kyra",
     "actorLink": true,
     "width": 1,
@@ -42,7 +42,9 @@
         "max": 1
       },
       "color": null,
-      "attenuation": 0.5
+      "attenuation": 0.5,
+      "negative": false,
+      "priority": 0
     },
     "disposition": 1,
     "bar1": {
@@ -94,15 +96,39 @@
     "randomImg": false,
     "texture": {
       "src": "systems/pf2e/icons/iconics/Kyra.webp",
-      "tint": null,
+      "tint": "#ffffff",
       "scaleX": 1,
       "scaleY": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "rotation": 0
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
     },
     "appendNumber": false,
-    "prependAdjective": false
+    "prependAdjective": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "depth": 1
   },
   "_id": "gLNVmAnM1cxlTUZB",
   "name": "Kyra",
@@ -118,9 +144,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.ancestries.Item.IiG7DgeLWYrSNXuX"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -130,12 +154,12 @@
         "rules": [],
         "slug": "human",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -154,6 +178,7 @@
         },
         "hp": 8,
         "size": "med",
+        "hands": 2,
         "reach": 5,
         "speed": 25,
         "boosts": {
@@ -207,10 +232,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.ancestries.Item.IiG7DgeLWYrSNXuX",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.l92cldk1mm27mdlc"
     },
@@ -223,9 +251,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classes.Item.EizrWvUPMS67Pahd"
-        },
+        "core": {},
         "pf2e": {
           "insertedClassFeaturesLevel": 1
         }
@@ -235,22 +261,15 @@
           "gm": "",
           "value": "<p><em>Deities work their will upon the world in infinite ways, and you serve as one of their most stalwart mortal servants. Blessed with divine magic, you live the ideals of your faith, adorn yourself with the symbols of your church, and train diligently to wield your deity's favored weapon. Your spells might protect and heal your allies, or they might punish foes and enemies of your faith, as your deity wills. Yours is a life of devotion, spreading the teachings of your faith through both word and deed.</em></p>\n<p><strong>Key Ability: WISDOM</strong></p>\n<p>At 1st level, your class gives you an ability boost to Wisdom.</p>\n<p><strong>Hit Points: 8 plus your Constitution modifier</strong></p>\n<p>You increase your maximum number of HP by this number at 1st level and every level thereafter.</p>\n<h1>Roleplaying the Cleric</h1>\n<h2>During Combat Encounters...</h2>\n<p>If you're a warpriest, you balance between casting spells and attacking with weapons- typically the favored weapon of your deity. If you're a cloistered cleric, you primarily cast spells. Most of your spells can boost, protect, or heal your allies. Depending on your deity, you get extra spells to heal your allies or harm your enemies.</p>\n<h2>During Social Encounters...</h2>\n<p>You might make diplomatic overtures or deliver impressive speeches. Because you're wise, you also pick up on falsehoods others tell.</p>\n<h2>While Exploring...</h2>\n<p>You detect nearby magic and interpret any religious writing you come across. You might also concentrate on a protective spell for your allies in case of attack. After a battle or hazard, you might heal anyone who was hurt.</p>\n<h2>In Downtime...</h2>\n<p>You might perform services at a temple, travel to spread the word of your deity, research scripture, celebrate holy days, or even found a new temple.</p>\n<h2>You Might...</h2>\n<ul>\n<li>Visit the temples and holy places sacred to your faith, and have an immediate affinity with other worshippers of your deity.</li>\n<li>Know the teachings of your religion's holy texts and how they apply to a dilemma.</li>\n<li>Cooperate with your allies, provided they don't ask you to go against divine will.</li>\n</ul>\n<h2>Others Probably...</h2>\n<ul>\n<li>Find your devotion impressive, even if they don't understand it.</li>\n<li>Expect you to heal their wounds.</li>\n<li>Rely on you to interact with other religious figures.</li>\n</ul>\n<h1>Initial Proficiencies</h1>\n<p>At 1st level, you gain the listed proficiency ranks in the following statistics. You are untrained in anything not listed unless you gain a better proficiency rank in some other way.</p>\n<h2>Perception</h2>\n<p>Trained in Perception</p>\n<h2>Saving Throws</h2>\n<p>Trained in Fortitude</p>\n<p>Trained in Reflex</p>\n<p>Expert in Will</p>\n<h2>Skills</h2>\n<p>Trained in Religion</p>\n<p>Trained in one skill determined by your choice of deity</p>\n<p>Trained in a number of additional skills equal to 2 plus your Intelligence modifier</p>\n<h2>Attacks</h2>\n<p>Trained in simple weapons</p>\n<p>Trained in the favored weapon of your deity. If your deity's favored weapon is uncommon, you also gain access to that weapon.</p>\n<p>Trained in unarmed attacks</p>\n<h2>Defenses</h2>\n<p>Untrained in all armor, though your doctrine might alter this</p>\n<p>Trained in unarmored defense</p>\n<h2>Spells</h2>\n<p>Trained in divine spell attacks</p>\n<p>Trained in divine spell DCs</p>\n<h1>Class Features</h1>\n<p>You gain these features as a Cleric. Abilities gained at higher levels list the levels at which you gain them next to the features' names.</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Your Level</th>\n<th>Class Features</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Ancestry and background, initial proficiencies, deity, divine spellcasting, divine font, doctrine</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Cleric feat, skill feat</td>\n</tr>\n<tr>\n<td>3</td>\n<td>2nd-level spells, general feat, second doctrine, skill increase</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Cleric feat, skill feat</td>\n</tr>\n<tr>\n<td>5</td>\n<td>3rd-level spells, ability boosts, alertness, ancestry feat, skill increase</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Cleric feat, skill feat</td>\n</tr>\n<tr>\n<td>7</td>\n<td>4th-level spells, general feat, skill increase, third doctrine</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Cleric feat, skill feat</td>\n</tr>\n<tr>\n<td>9</td>\n<td>5th-level spells, ancestry feat, resolve, skill increase</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Ability boosts, cleric feat, skill feat</td>\n</tr>\n<tr>\n<td>11</td>\n<td>6th-level spells, fourth doctrine, general feat, lightning reflexes, skill increase</td>\n</tr>\n<tr>\n<td>12</td>\n<td>Cleric feat, skill feat</td>\n</tr>\n<tr>\n<td>13</td>\n<td>7th-level spells, ancestry feat, divine defense, skill increase, weapon specialization</td>\n</tr>\n<tr>\n<td>14</td>\n<td>Cleric feat, skill feat</td>\n</tr>\n<tr>\n<td>15</td>\n<td>8th-level spells, ability boosts, fifth doctrine, general feat, skill increase</td>\n</tr>\n<tr>\n<td>16</td>\n<td>Cleric feat, skill feat</td>\n</tr>\n<tr>\n<td>17</td>\n<td>9th-level spells, ancestry feat, skill increase</td>\n</tr>\n<tr>\n<td>18</td>\n<td>Cleric feat, skill feat</td>\n</tr>\n<tr>\n<td>19</td>\n<td>Final doctrine, general feat, miraculous spell, skill increase</td>\n</tr>\n<tr>\n<td>20</td>\n<td>Ability boosts, cleric feat, skill feat</td>\n</tr>\n</tbody>\n</table>\n<h2>Ancestry and Background</h2>\n<p>In addition to the abilities provided by your class at 1st level, you have the benefits of your selected ancestry and background.</p>\n<h2>Deity</h2>\n<p>As a cleric, you are a mortal servitor of a deity you revere above all others. Your alignment must be one allowed by your deity, as listed in their entry. Your deity grants you the trained proficiency rank in one skill and with the deity's favored weapon. If the favored weapon is uncommon, you also get access to that weapon.</p>\n<p>Your deity also adds spells to your spell list. You can prepare these just like you can any spell on the divine spell list, once you can prepare spells of their level as a cleric. Some of these spells aren't normally on the divine list, but they're divine spells if you prepare them this way.</p>\n<p>A list of all deities can be found in the Deities compendium.</p>\n<h3><strong>Anathema</strong></h3>\n<p>Acts fundamentally opposed to your deity's alignment or ideals are anathema to your faith. Learning or casting spells, committing acts, and using items that are anathema to your deity remove you from your deity's good graces.</p>\n<p>If you perform enough acts that are anathema to your deity, or if your alignment changes to one not allowed by your deity, you lose the magical abilities that come from your connection to your deity. The class features that you lose are determined by the GM, but they likely include your divine font and all divine spellcasting. These abilities can be regained only if you demonstrate your repentance by conducting an <em>@Compendium[pf2e.spells-srd.7Fd4lxozd11MQ55N]{Atone}</em> ritual.</p>\n<h2>Divine Font</h2>\n<p>Through your deity's blessing, you gain additional spells that channel either the life force called positive energy or its counterforce, negative energy. When you prepare your spells each day, you can prepare additional <em>@Compendium[pf2e.spells-srd.rfZpqmj0AIIdkVIs]{Heal}</em> or <em>@Compendium[pf2e.spells-srd.wdA52JJnsuQWeyqz]{Harm}</em> spells, depending on your deity. The divine font spell your deity provides is listed in the Divine Font entry for your deity; if both are listed, you can choose between <em>heal</em> or <em>harm</em>. Once you choose, you can't change your choice short of an ethical shift or divine intervention.</p>\n<p><strong>Healing Font</strong> You gain additional spell slots each day at your highest level of cleric spell slots. You can prepare only <em>heal</em> spells in these slots, and the number of slots is equal to 1 plus your Charisma modifier.</p>\n<p><strong>Harmful Font</strong> You gain additional spell slots each day at your highest level of cleric spell slots. You can prepare only <em>harm</em> spells in these slots, and the number of slots is equal to 1 plus your Charisma modifier.</p>\n<h2>Divine Spellcasting</h2>\n<p>Your deity bestows on you the power to cast divine spells. You can cast divine spells using the Cast a Spell activity, and you can supply material, somatic, and verbal components when casting spells. Because you're a cleric, you can usually hold a divine focus (such as a religious symbol) for spells requiring material components instead of needing to use a spell component pouch.</p>\n<p>At 1st level, you can prepare two 1st-level spells and five cantrips each morning from the common spells on the divine spell list in this book or from other divine spells to which you gain access. Prepared spells remain available to you until you cast them or until you prepare your spells again. The number of spells you can prepare is called your spell slots.</p>\n<p>As you increase in level as a cleric, the number of spells you can prepare each day increases, as does the highest level of spell you can cast, as shown in Table 3-9: Cleric Spells per Day.</p>\n<p>Some of your spells require you to attempt a spell attack roll to see how effective they are, or your enemies to roll against your spell DC (typically by attempting a saving throw). Since your key ability is Wisdom, your spell attack rolls and spell DCs use your Wisdom modifier.</p>\n<h3><strong>Heightening Spells</strong></h3>\n<p>When you get spell slots of 2nd level and higher, you can fill those slots with stronger versions of lower-level spells. This increases the spell's level, heightening it to match the spell slot. Many spells have specific improvements when they are heightened to certain levels.</p>\n<h3><strong>Cantrips</strong></h3>\n<p>A cantrip is a special type of spell that doesn't use spell slots. You can cast a cantrip at will, any number of times per day. A cantrip is always automatically heightened to half your level rounded up-this is usually equal to the highest level of spell you can cast as a cleric. For example, as a 1st-level cleric, your cantrips are 1st-level spells, and as a 5th-level cleric, your cantrips are 3rd-level spells.</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Your Level</th>\n<th>Cantrips</th>\n<th>1st</th>\n<th>2nd</th>\n<th>3rd</th>\n<th>4th</th>\n<th>5th</th>\n<th>6th</th>\n<th>7th</th>\n<th>8th</th>\n<th>9th</th>\n<th>10th</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>5</td>\n<td>2*</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>2</td>\n<td>5</td>\n<td>3*</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>3</td>\n<td>5</td>\n<td>3</td>\n<td>2*</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>4</td>\n<td>5</td>\n<td>3</td>\n<td>3*</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>5</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>2*</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>6</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3*</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>7</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>2*</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>8</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3*</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>9</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>2*</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>10</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3*</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>11</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>2*</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>12</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3*</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>13</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>2*</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3*</td>\n<td>-</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>15</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>2*</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>16</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3*</td>\n<td>-</td>\n<td>-</td>\n</tr>\n<tr>\n<td>17</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>2*</td>\n<td>-</td>\n</tr>\n<tr>\n<td>18</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3*</td>\n<td>-</td>\n</tr>\n<tr>\n<td>19</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>1*†</td>\n</tr>\n<tr>\n<td>20</td>\n<td>5</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>3</td>\n<td>1*†</td>\n</tr>\n<tr>\n<td style=\"color: white; width: 120px; background-color: #522e2c; text-align: center; height: 25px;\" colspan=\"12\">* Your divine font gives you additional <em>heal</em> or <em>harm</em> spells of this level. The number is equal to 1 + your Charisma modifier.\n<p>† The miraculous spell class feature gives you a 10th-level spell slot that works a bit differently from other spell slots.</p></td>\n</tr>\n</tbody>\n</table>\n<h2>Doctrine</h2>\n<p>Even among followers of the same deity, there are numerous doctrines and beliefs, which sometimes vary wildly between clerics. At 1st level, you select a doctrine and gain the benefits of its first doctrine. The doctrines presented in this book are cloistered cleric and warpriest. Each doctrine grants you initial benefits at 1st level. At 3rd, 7th, 11th, 15th, and 19th levels, you gain the benefits granted by your doctrine's second, third, fourth, fifth, and final doctrines respectively.</p>\n<p>Doctrines can be found here (@Compendium[pf2e.classfeatures.ZZzLMOUAtBVgV1DF]{Cloistered Cleric} and @Compendium[pf2e.classfeatures.0Aocw3igLwna9cjp]{Warpriest}).</p>\n<h2>Initial Proficiencies</h2>\n<p>At 1st level, you gain a number of proficiencies that represent your basic training, noted at the start of this class.</p>\n<h2>Cleric Feats<span style=\"float: right;\">Level 2</span></h2>\n<p>At 2nd level and every 2 levels thereafter, you gain a cleric class feat.</p>\n<h2>Skill Feats<span style=\"float: right;\">Level 2</span></h2>\n<p>At 2nd level and every 2 levels thereafter, you gain a skill feat. You must be trained or better in the corresponding skill to select a skill feat.</p>\n<h2>General Feats<span style=\"float: right;\">Level 3</span></h2>\n<p>At 3rd level and every 4 levels thereafter, you gain a general feat.</p>\n<h2>Skill Increases<span style=\"float: right;\">Level 3</span></h2>\n<p>At 3rd level and every 2 levels thereafter, you gain a skill increase. You can use this increase to either become trained in one skill you're untrained in, or become an expert in one skill in which you're already trained.</p>\n<p>You can use any of these skill increases you gain at 7th level or higher to become a master in a skill in which you're already an expert, and any of these skill increases you gain at 15th level or higher to become legendary in a skill in which you're already a master.</p>\n<h2>Ability Boosts<span style=\"float: right;\">Level 5</span></h2>\n<p>At 5th level and every 5 levels thereafter, you boost four different ability scores. You can use these ability boosts to increase your ability scores above 18. Boosting an ability score increases it by 1 if it's already 18 or above, or by 2 if it starts out below 18.</p>\n<h2>Alertness<span style=\"float: right;\">Level 5</span></h2>\n<p>You remain alert to threats around you. Your proficiency rank for Perception increases to expert.</p>\n<h2>Ancestry Feats<span style=\"float: right;\">Level 5</span></h2>\n<p>In addition to the ancestry feat you started with, you gain an ancestry feat at 5th level and every 4 levels thereafter.</p>\n<h2>Resolve<span style=\"float: right;\">Level 9</span></h2>\n<p>You've steeled your mind with resolve. Your proficiency rank for Will saves increases to master. When you roll a success at a Will save, you get a critical success instead.</p>\n<h2>Lightning Reflexes<span style=\"float: right;\">Level 11</span></h2>\n<p>Your reflexes are lightning fast. Your proficiency rank for Reflex saves increases to expert.</p>\n<h2>Divine Defense<span style=\"float: right;\">Level 13</span></h2>\n<p>Your training and your deity protect you from harm. Your proficiency rank in unarmored defense increases to expert.</p>\n<h2>Weapon Specialization<span style=\"float: right;\">Level 13</span></h2>\n<p>You've learned how to inflict greater injuries with the weapons you know best. You deal 2 additional damage with weapons and unarmed attacks in which you are an expert. This damage increases to 3 if you're a master, and to 4 if you're legendary.</p>\n<h2>Miraculous Spell<span style=\"float: right;\">Level 19</span></h2>\n<p>You're exalted by your deity and gain truly incredible spells. You gain a single 10th-level spell slot and can prepare a spell in that slot using divine spellcasting. You don't gain more 10th-level spells as you level up, though you can take the @Compendium[pf2e.feats-srd.QDjpZKOrWIV1G8XJ]{Maker of Miracles} feat to gain a second slot.</p>"
         },
-        "rules": [
-          {
-            "key": "ActiveEffectLike",
-            "mode": "upgrade",
-            "path": "system.proficiencies.traditions.divine.rank",
-            "value": 1
-          }
-        ],
+        "rules": [],
         "slug": "cleric",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -402,7 +421,7 @@
           "medium": 0,
           "heavy": 0
         },
-        "classDC": 0,
+        "spellcasting": 1,
         "ancestryFeatLevels": {
           "value": [
             1,
@@ -470,10 +489,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classes.Item.EizrWvUPMS67Pahd",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.jg0jvttqmxly891z"
     },
@@ -486,9 +508,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.backgrounds.Item.CAjQrHZZbALE7Qjy"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -498,12 +518,12 @@
         "rules": [],
         "slug": "acolyte",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -543,12 +563,13 @@
             "uuid": "Compendium.pf2e.feats-srd.Item.x7EMZNMavris2aHY"
           }
         },
-        "trainedLore": "Scribing",
         "trainedSkills": {
           "value": [
             "rel"
-          ]
-        }
+          ],
+          "lore": []
+        },
+        "trainedLore": "Scribing"
       },
       "ownership": {
         "default": 0,
@@ -557,10 +578,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.backgrounds.Item.CAjQrHZZbALE7Qjy",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.w7xy1zm6odvnp2va"
     },
@@ -573,9 +597,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.x7EMZNMavris2aHY"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -614,12 +636,12 @@
         ],
         "slug": "student-of-the-canon",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -665,10 +687,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.x7EMZNMavris2aHY",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.g20jlczn55dm5x1j"
     },
@@ -681,9 +706,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.heritages.Item.hFBwsVcSnNCJoimo"
-        },
+        "core": {},
         "pf2e": {
           "itemGrants": {
             "versatileHeritage": {
@@ -723,12 +746,12 @@
         ],
         "slug": "versatile-heritage",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -755,10 +778,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.heritages.Item.hFBwsVcSnNCJoimo",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.hFBwsVcSnNCJoimo"
     },
@@ -771,9 +797,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.BStw1cANwx5baL6d"
-        },
+        "core": {},
         "pf2e": {
           "grantedBy": {
             "id": "hFBwsVcSnNCJoimo"
@@ -788,12 +812,12 @@
         "rules": [],
         "slug": "armor-proficiency",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -833,10 +857,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.BStw1cANwx5baL6d",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.2pclx8l528s1z7tw"
     },
@@ -849,9 +876,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.5Ew82vBF9YfaiY9f"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -861,12 +886,12 @@
         "rules": [],
         "slug": "silver-pieces",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -885,17 +910,14 @@
         },
         "quantity": 130,
         "baseItem": null,
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": 0
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 1
@@ -904,10 +926,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": "coins",
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "null",
         "size": "med",
@@ -928,14 +946,9 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": ""
-        },
+        "stackGroup": "coins",
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
@@ -949,10 +962,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.5Ew82vBF9YfaiY9f",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.JH9JUV12BSHHYu8N"
     },
@@ -965,9 +981,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.B6B7tBWJSqOBz5zz"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -977,12 +991,12 @@
         "rules": [],
         "slug": "gold-pieces",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1001,17 +1015,14 @@
         },
         "quantity": 18,
         "baseItem": null,
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": 0
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 1
@@ -1020,10 +1031,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": "coins",
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "null",
         "size": "med",
@@ -1044,14 +1051,9 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": ""
-        },
+        "stackGroup": "coins",
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
@@ -1065,10 +1067,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.B6B7tBWJSqOBz5zz",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.2JN9b6lz9euCXiLY"
     },
@@ -1081,9 +1086,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.JuNPeK5Qm1w6wpb4"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -1093,12 +1096,12 @@
         "rules": [],
         "slug": "platinum-pieces",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1117,17 +1120,14 @@
         },
         "quantity": 0,
         "baseItem": null,
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": 0
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "pp": 1
@@ -1135,10 +1135,6 @@
         },
         "equipped": {
           "carryType": "worn"
-        },
-        "stackGroup": "coins",
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "null",
         "size": "med",
@@ -1159,14 +1155,9 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": ""
-        },
+        "stackGroup": "coins",
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
@@ -1180,10 +1171,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.JuNPeK5Qm1w6wpb4",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.xzR3GUTeOHgxks72"
     },
@@ -1196,9 +1190,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.lzJ8AVhRcbFul5fh"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -1208,12 +1200,12 @@
         "rules": [],
         "slug": "copper-pieces",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1232,17 +1224,14 @@
         },
         "quantity": 357,
         "baseItem": null,
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": 0
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "cp": 1
@@ -1251,10 +1240,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": "coins",
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "null",
         "size": "med",
@@ -1275,14 +1260,9 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": ""
-        },
+        "stackGroup": "coins",
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
@@ -1296,10 +1276,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.lzJ8AVhRcbFul5fh",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.N2hPdFNwO2ohfXJX"
     },
@@ -1312,9 +1295,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.upzjwQ96cZG0Xlmx"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -1324,12 +1305,12 @@
         "rules": [],
         "slug": "religious-symbol-silver",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1348,17 +1329,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 2
@@ -1368,10 +1346,6 @@
           "carryType": "worn",
           "invested": null,
           "inSlot": true
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "null",
         "size": "med",
@@ -1395,11 +1369,9 @@
         "usage": {
           "value": "held-in-one-hand"
         },
+        "subitems": [],
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
@@ -1416,10 +1388,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.upzjwQ96cZG0Xlmx",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.g5Z3z0oJX4KHYqSR"
     },
@@ -1432,9 +1407,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -1444,12 +1417,12 @@
         "rules": [],
         "slug": "healers-tools",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1468,17 +1441,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 5
@@ -1488,10 +1458,6 @@
           "carryType": "held",
           "invested": null,
           "handsHeld": 2
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "null",
         "size": "med",
@@ -1515,11 +1481,9 @@
         "usage": {
           "value": "held-in-two-hands"
         },
+        "subitems": [],
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
@@ -1536,10 +1500,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.s1vB3HdXjMigYAnY",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.sMg10YCrW9oEcaNd"
     },
@@ -1552,9 +1519,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.VnPh324pKwd2ZB66"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -1564,12 +1529,12 @@
         "rules": [],
         "slug": "waterskin",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1588,17 +1553,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "cp": 5
@@ -1609,10 +1571,6 @@
           "invested": null,
           "handsHeld": 1
         },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
-        },
         "containerId": "null",
         "size": "med",
         "material": {
@@ -1635,11 +1593,9 @@
         "usage": {
           "value": "held-in-one-hand"
         },
+        "subitems": [],
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
@@ -1656,25 +1612,26 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.VnPh324pKwd2ZB66",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.vNvBpPragovORysk"
     },
     {
       "_id": "pFUnPnkkcob1v0JY",
       "name": "Steel Shield",
-      "type": "armor",
+      "type": "shield",
       "img": "systems/pf2e/icons/equipment/shields/steel-shield.webp",
       "effects": [],
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -1684,18 +1641,19 @@
         "rules": [],
         "slug": "steel-shield",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [],
-          "rarity": "common"
+          "rarity": "common",
+          "integrated": null
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -1707,18 +1665,15 @@
           "value": 0
         },
         "quantity": 1,
-        "baseItem": null,
+        "baseItem": "steel-shield",
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 20,
           "max": 20
         },
         "hardness": 5,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 2
@@ -1728,10 +1683,6 @@
           "carryType": "held",
           "invested": null,
           "handsHeld": 1
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "null",
         "size": "med",
@@ -1752,47 +1703,26 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "held-in-one-hand"
-        },
-        "category": "shield",
-        "group": null,
         "acBonus": 2,
-        "strength": null,
-        "dexCap": 0,
-        "checkPenalty": null,
-        "speedPenalty": null,
-        "potencyRune": {
-          "value": 0
+        "grade": null,
+        "runes": {
+          "reinforcing": 0,
+          "potency": 0,
+          "resilient": 0,
+          "property": []
         },
-        "resiliencyRune": {
-          "value": 0
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
-        },
+        "specific": null,
+        "speedPenalty": 0,
+        "subitems": [],
         "maxHp": {
           "value": 20
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
         },
         "invested": {
           "value": null
-        },
-        "potency": {}
+        }
       },
       "ownership": {
         "default": 0,
@@ -1802,10 +1732,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.pFUnPnkkcob1v0JY"
     },
@@ -1818,9 +1751,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -1830,12 +1761,12 @@
         "rules": [],
         "slug": "chain-shirt",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1857,17 +1788,14 @@
         },
         "quantity": 1,
         "baseItem": "chain-shirt",
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "2"
-        },
-        "equippedBulk": {
-          "value": "1"
-        },
         "price": {
           "value": {
             "gp": 5
@@ -1877,10 +1805,6 @@
           "carryType": "worn",
           "invested": null,
           "inSlot": true
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "null",
         "size": "med",
@@ -1901,47 +1825,29 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "wornarmor"
-        },
         "category": "light",
         "group": "chain",
         "acBonus": 2,
         "strength": 1,
         "dexCap": 3,
         "checkPenalty": -1,
-        "speedPenalty": null,
-        "potencyRune": {
-          "value": 0
+        "speedPenalty": 0,
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "resilient": 0,
+          "property": []
         },
-        "resiliencyRune": {
-          "value": ""
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
-        },
+        "subitems": [],
         "maxHp": {
           "value": null
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
         },
         "invested": {
           "value": null
-        },
-        "potency": {}
+        }
       },
       "ownership": {
         "default": 0,
@@ -1951,10 +1857,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.MPcM4Wt6KmWE2kGL",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.S0lDl7HsCg5Qv8oK"
     },
@@ -1967,9 +1876,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.grmaV4GdoGD7sKbn"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -1979,12 +1886,12 @@
         "rules": [],
         "slug": "scimitar",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -2006,17 +1913,14 @@
         },
         "quantity": 1,
         "baseItem": "scimitar",
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 1
@@ -2026,10 +1930,6 @@
           "carryType": "held",
           "invested": null,
           "handsHeld": 1
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "null",
         "size": "med",
@@ -2065,36 +1965,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": null,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": ""
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": null
-        },
-        "propertyRune2": {
-          "value": null
-        },
-        "propertyRune3": {
-          "value": null
-        },
-        "propertyRune4": {
-          "value": null
         },
         "property1": {
           "value": "",
@@ -2112,9 +2001,6 @@
         },
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
@@ -2134,10 +2020,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.grmaV4GdoGD7sKbn",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.zDKTwWdf03l6zpdk"
     },
@@ -2150,9 +2039,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.3lgwjrFEsQVKzhh7"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -2162,12 +2049,12 @@
         "rules": [],
         "slug": "backpack",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -2186,17 +2073,17 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0,
+          "heldOrStowed": 0.1,
+          "capacity": 4,
+          "ignored": 2
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": "0"
-        },
         "price": {
           "value": {
             "sp": 1
@@ -2206,10 +2093,6 @@
           "carryType": "worn",
           "invested": null,
           "inSlot": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "2"
         },
         "containerId": "null",
         "size": "med",
@@ -2230,14 +2113,11 @@
           },
           "misidentified": {}
         },
+        "collapsed": false,
+        "stowing": true,
         "usage": {
           "value": "wornbackpack"
         },
-        "bulkCapacity": {
-          "value": "4"
-        },
-        "collapsed": false,
-        "stowing": true,
         "maxHp": {
           "value": 0
         },
@@ -2265,10 +2145,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.3lgwjrFEsQVKzhh7",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.ixb8ZzsMqQQpMPhZ"
     },
@@ -2281,9 +2164,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.81aHsD27HFGnq1Nt"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -2293,12 +2174,12 @@
         "rules": [],
         "slug": "soap",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -2317,17 +2198,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "-"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "cp": 2
@@ -2337,10 +2215,6 @@
           "carryType": "stowed",
           "invested": null,
           "value": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "ixb8ZzsMqQQpMPhZ",
         "size": "med",
@@ -2364,11 +2238,9 @@
         "usage": {
           "value": "held-in-one-hand"
         },
+        "subitems": [],
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
@@ -2385,10 +2257,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.81aHsD27HFGnq1Nt",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.Ovk8ZxJeOPumWHs5"
     },
@@ -2401,9 +2276,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.8Jdw4yAzWYylGePS"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -2413,12 +2286,12 @@
         "rules": [],
         "slug": "torch",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -2437,17 +2310,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "cp": 1
@@ -2457,10 +2327,6 @@
           "carryType": "stowed",
           "invested": null,
           "value": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "ixb8ZzsMqQQpMPhZ",
         "size": "med",
@@ -2484,11 +2350,9 @@
         "usage": {
           "value": "held-in-one-hand"
         },
+        "subitems": [],
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
@@ -2505,10 +2369,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.8Jdw4yAzWYylGePS",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.08hOgheVaUGRiOBN"
     },
@@ -2521,9 +2388,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.UlIxxLm71UdRgCFE"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -2533,12 +2398,12 @@
         "rules": [],
         "slug": "flint-and-steel",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -2557,17 +2422,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "-"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "cp": 5
@@ -2577,10 +2439,6 @@
           "carryType": "stowed",
           "invested": null,
           "value": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "ixb8ZzsMqQQpMPhZ",
         "size": "med",
@@ -2604,11 +2462,9 @@
         "usage": {
           "value": "held-in-one-hand"
         },
+        "subitems": [],
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
@@ -2625,10 +2481,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.UlIxxLm71UdRgCFE",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.NAGq6oFlZpJDgS7O"
     },
@@ -2641,9 +2500,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.fagzYdmfYyMQ6J77"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -2653,12 +2510,12 @@
         "rules": [],
         "slug": "bedroll",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -2677,17 +2534,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "cp": 2
@@ -2697,10 +2551,6 @@
           "carryType": "stowed",
           "invested": null,
           "value": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "ixb8ZzsMqQQpMPhZ",
         "size": "med",
@@ -2724,11 +2574,9 @@
         "usage": {
           "value": "held-in-one-hand"
         },
+        "subitems": [],
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
@@ -2745,10 +2593,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.fagzYdmfYyMQ6J77",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.cdp63Xu5Eq5J9MjB"
     },
@@ -2761,9 +2612,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -2773,12 +2622,12 @@
         "rules": [],
         "slug": "rope",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -2797,17 +2646,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 5
@@ -2817,10 +2663,6 @@
           "carryType": "stowed",
           "invested": null,
           "value": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": ""
         },
         "containerId": "ixb8ZzsMqQQpMPhZ",
         "size": "med",
@@ -2844,11 +2686,9 @@
         "usage": {
           "value": "held-in-one-hand"
         },
+        "subitems": [],
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
@@ -2865,10 +2705,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.2zrSxLUjZJ46cAOs"
     },
@@ -2881,9 +2724,7 @@
       "folder": null,
       "sort": 100000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.L9ZV076913otGtiB"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -2893,12 +2734,12 @@
         "rules": [],
         "slug": "rations",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -2917,17 +2758,14 @@
         },
         "quantity": 2,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 4
@@ -2936,10 +2774,6 @@
         "equipped": {
           "carryType": "stowed",
           "value": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "ixb8ZzsMqQQpMPhZ",
         "size": "med",
@@ -2960,25 +2794,20 @@
           },
           "misidentified": {}
         },
+        "category": "other",
+        "uses": {
+          "value": 7,
+          "max": 7,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "other"
-        },
-        "charges": {
-          "value": 7,
-          "max": 7,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -2998,13 +2827,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -3021,10 +2843,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.L9ZV076913otGtiB",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.mE7En2jvQFxPi0Hp"
     },
@@ -3037,9 +2862,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.xShIDyydOMkGvGNb"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -3049,12 +2872,12 @@
         "rules": [],
         "slug": "chalk",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -3073,17 +2896,14 @@
         },
         "quantity": 10,
         "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "-"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "cp": 1
@@ -3093,10 +2913,6 @@
           "carryType": "stowed",
           "invested": null,
           "value": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "ixb8ZzsMqQQpMPhZ",
         "size": "med",
@@ -3120,11 +2936,9 @@
         "usage": {
           "value": "held-in-one-hand"
         },
+        "subitems": [],
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
@@ -3141,10 +2955,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.xShIDyydOMkGvGNb",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.zqABqWtgE6t4cVMW"
     },
@@ -3157,9 +2974,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.D3SuA5MaKucO1flE"
-        },
+        "core": {},
         "pf2e": {
           "itemGrants": {
             "generalTraining": {
@@ -3199,12 +3014,12 @@
         ],
         "slug": "general-training",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -3245,10 +3060,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.D3SuA5MaKucO1flE",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.D3SuA5MaKucO1flE"
     },
@@ -3261,9 +3079,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8"
-        },
+        "core": {},
         "pf2e": {
           "grantedBy": {
             "id": "D3SuA5MaKucO1flE"
@@ -3278,12 +3094,12 @@
         "rules": [],
         "slug": "shield-block",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -3323,10 +3139,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.jM72TjJ965jocBV8",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.ct45qxveydbi7xxe"
     },
@@ -3347,12 +3166,12 @@
         "rules": [],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -3379,16 +3198,12 @@
           "value": "prepared",
           "flexible": false
         },
-        "showUnpreparedSpells": {
-          "value": true
-        },
         "showSlotlessLevels": {
           "value": true
         },
         "proficiency": {
           "value": 1
         },
-        "displayLevels": {},
         "slots": {
           "slot0": {
             "prepared": [],
@@ -3396,18 +3211,18 @@
             "max": 0
           },
           "slot1": {
-            "prepared": {
-              "0": {
+            "prepared": [
+              {
                 "id": "h6VYMnHL4KuaEoNH",
                 "expended": true
               },
-              "1": {
+              {
                 "id": "h6VYMnHL4KuaEoNH"
               },
-              "2": {
+              {
                 "id": "h6VYMnHL4KuaEoNH"
               }
-            },
+            ],
             "value": 0,
             "max": 3
           },
@@ -3464,7 +3279,11 @@
         },
         "autoHeightenLevel": {
           "value": null
-        }
+        },
+        "showUnpreparedSpells": {
+          "value": true
+        },
+        "displayLevels": {}
       },
       "ownership": {
         "default": 0,
@@ -3473,10 +3292,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.SnXJNDjaKi0T0Wf1"
     },
@@ -3489,9 +3311,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs"
-        },
+        "core": {},
         "enhanced-terrain-layer": {
           "multiple": null,
           "elevation": null,
@@ -3507,21 +3327,26 @@
         "rules": [],
         "slug": "heal",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
             "healing",
-            "necromancy"
+            "manipulate",
+            "vitality"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "divine",
+            "primal"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -3532,28 +3357,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "heal"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "divine",
-            "primal"
-          ],
-          "custom": ""
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": false,
-          "verbal": false
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 willing living creature or 1 undead"
         },
@@ -3565,52 +3369,30 @@
           "value": "1 to 3"
         },
         "duration": {
-          "value": ""
+          "value": "",
+          "sustained": false
         },
         "damage": {
-          "value": {
-            "0": {
-              "applyMod": false,
-              "type": {
-                "categories": [],
-                "subtype": "",
-                "value": "vitality"
-              },
-              "value": "1d8"
-            }
+          "0": {
+            "applyMod": false,
+            "formula": "1d8",
+            "type": "vitality",
+            "category": null,
+            "materials": [],
+            "kinds": [
+              "damage",
+              "healing"
+            ]
           }
         },
-        "save": {
-          "value": "",
-          "basic": ""
-        },
-        "sustained": {
-          "value": false
-        },
+        "defense": null,
         "cost": {
           "value": ""
         },
         "location": {
           "value": "SnXJNDjaKi0T0Wf1"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        },
+        "counteraction": false,
         "heightening": {
           "type": "interval",
           "interval": 1,
@@ -3626,10 +3408,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.h6VYMnHL4KuaEoNH"
     },
@@ -3650,12 +3435,12 @@
         "rules": [],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -3682,60 +3467,54 @@
           "value": "prepared",
           "flexible": false
         },
-        "showUnpreparedSpells": {
-          "value": true
-        },
         "showSlotlessLevels": {
           "value": true
         },
         "proficiency": {
           "value": 0
         },
-        "displayLevels": {
-          "0": true
-        },
         "slots": {
           "slot0": {
-            "prepared": {
-              "0": {
+            "prepared": [
+              {
                 "id": "pAcQ00BAwCCOlJhz"
               },
-              "1": {
+              {
                 "id": "FEIAF9Pn1OvTGhhO"
               },
-              "2": {
+              {
                 "id": "49h6yGnBMqKtmWvL"
               },
-              "3": {
+              {
                 "id": "8Xr2Jp4lAYBY2LWW"
               },
-              "4": {
+              {
                 "id": "VDuKzuje9krCdjvG"
               },
-              "5": {
+              {
                 "id": "blpZrziT2TEXQTTe"
               },
-              "6": {
+              {
                 "id": "hiiauuiIX5MAaYyw"
               }
-            },
+            ],
             "value": 0,
             "max": 7
           },
           "slot1": {
-            "prepared": {
-              "0": {
+            "prepared": [
+              {
                 "id": "EwacGo91R9DJ8RaC",
                 "expended": false
               },
-              "1": {
+              {
                 "id": "UcyGFb9qxC5XqkP7"
               },
-              "2": {
+              {
                 "id": "mP3YTv3H1tYfRGhR",
                 "expended": true
               }
-            },
+            ],
             "value": 0,
             "max": 3
           },
@@ -3792,6 +3571,12 @@
         },
         "autoHeightenLevel": {
           "value": null
+        },
+        "showUnpreparedSpells": {
+          "value": true
+        },
+        "displayLevels": {
+          "0": true
         }
       },
       "ownership": {
@@ -3801,10 +3586,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.6GrTwNmY2OYdBHm9"
     },
@@ -3817,9 +3605,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.TFitdEOpQC4SzKQQ"
-        },
+        "core": {},
         "enhanced-terrain-layer": {
           "multiple": null,
           "elevation": null,
@@ -3835,20 +3621,26 @@
         "rules": [],
         "slug": "magic-weapon",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
-            "transmutation"
+            "concentrate",
+            "manipulate"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -3859,28 +3651,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "utility"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "arcane",
-            "divine",
-            "occult"
-          ]
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": true,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 weapon that is unattended or wielded by you or a willing ally"
         },
@@ -3892,42 +3663,18 @@
           "value": "2"
         },
         "duration": {
-          "value": "1 minute"
+          "value": "1 minute",
+          "sustained": false
         },
-        "damage": {
-          "value": {}
-        },
-        "save": {
-          "value": "",
-          "basic": ""
-        },
-        "sustained": {
-          "value": false
-        },
+        "damage": {},
+        "defense": null,
         "cost": {
           "value": ""
         },
         "location": {
           "value": "6GrTwNmY2OYdBHm9"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        }
+        "counteraction": false
       },
       "ownership": {
         "default": 0,
@@ -3937,10 +3684,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.TFitdEOpQC4SzKQQ",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.EwacGo91R9DJ8RaC"
     },
@@ -3953,9 +3703,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -3965,21 +3713,26 @@
         "rules": [],
         "slug": "burning-hands",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
+            "concentrate",
             "fire",
-            "evocation"
+            "manipulate"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "primal"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -3990,27 +3743,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "save"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "arcane",
-            "primal"
-          ]
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": true,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": ""
         },
@@ -4025,25 +3758,26 @@
           "value": "2"
         },
         "duration": {
-          "value": ""
+          "value": "",
+          "sustained": false
         },
         "damage": {
-          "value": {
-            "0": {
-              "type": {
-                "categories": [],
-                "value": "fire"
-              },
-              "value": "2d6"
-            }
+          "0": {
+            "formula": "2d6",
+            "type": "fire",
+            "category": null,
+            "materials": [],
+            "kinds": [
+              "damage"
+            ]
           }
         },
-        "save": {
-          "value": "reflex",
-          "basic": "basic"
-        },
-        "sustained": {
-          "value": false
+        "defense": {
+          "passive": null,
+          "save": {
+            "statistic": "reflex",
+            "basic": true
+          }
         },
         "cost": {
           "value": ""
@@ -4051,24 +3785,7 @@
         "location": {
           "value": "6GrTwNmY2OYdBHm9"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        },
+        "counteraction": false,
         "heightening": {
           "type": "interval",
           "interval": 1,
@@ -4085,10 +3802,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.UcyGFb9qxC5XqkP7"
     },
@@ -4101,9 +3821,7 @@
       "folder": null,
       "sort": -100000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -4113,22 +3831,29 @@
         "rules": [],
         "slug": "detect-magic",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
-            "detection",
             "cantrip",
-            "divination"
+            "concentrate",
+            "detection",
+            "manipulate"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -4139,30 +3864,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "utility"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "arcane",
-            "divine",
-            "occult",
-            "primal"
-          ],
-          "custom": ""
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": true,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": ""
         },
@@ -4177,42 +3879,18 @@
           "value": "2"
         },
         "duration": {
-          "value": ""
-        },
-        "damage": {
-          "value": {}
-        },
-        "save": {
           "value": "",
-          "basic": ""
+          "sustained": false
         },
-        "sustained": {
-          "value": false
-        },
+        "damage": {},
+        "defense": null,
         "cost": {
           "value": ""
         },
         "location": {
           "value": "6GrTwNmY2OYdBHm9"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        }
+        "counteraction": false
       },
       "ownership": {
         "default": 0,
@@ -4222,10 +3900,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.pAcQ00BAwCCOlJhz"
     },
@@ -4238,9 +3919,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.SnjhtQYexDtNDdEg"
-        },
+        "core": {},
         "enhanced-terrain-layer": {
           "multiple": 1,
           "min": null,
@@ -4256,22 +3935,27 @@
         "rules": [],
         "slug": "stabilize",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
-            "healing",
             "cantrip",
-            "necromancy"
+            "concentrate",
+            "healing",
+            "manipulate"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "divine",
+            "primal"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -4282,28 +3966,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "heal"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "divine",
-            "primal"
-          ],
-          "custom": ""
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": true,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 dying creature"
         },
@@ -4315,42 +3978,18 @@
           "value": "2"
         },
         "duration": {
-          "value": ""
-        },
-        "damage": {
-          "value": {}
-        },
-        "save": {
           "value": "",
-          "basic": ""
+          "sustained": false
         },
-        "sustained": {
-          "value": false
-        },
+        "damage": {},
+        "defense": null,
         "cost": {
           "value": ""
         },
         "location": {
           "value": "6GrTwNmY2OYdBHm9"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        }
+        "counteraction": false
       },
       "ownership": {
         "default": 0,
@@ -4360,10 +3999,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.SnjhtQYexDtNDdEg",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.VDuKzuje9krCdjvG"
     },
@@ -4376,9 +4018,7 @@
       "folder": null,
       "sort": -25000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -4388,22 +4028,29 @@
         "rules": [],
         "slug": "light",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
-            "light",
             "cantrip",
-            "evocation"
+            "concentrate",
+            "light",
+            "manipulate"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -4414,30 +4061,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "utility"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "arcane",
-            "divine",
-            "occult",
-            "primal"
-          ],
-          "custom": ""
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": true,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 object of 1 Bulk or less, either unattended or possessed by you or a willing ally"
         },
@@ -4449,42 +4073,18 @@
           "value": "2"
         },
         "duration": {
-          "value": "until the next time you make your daily preparations"
+          "value": "until the next time you make your daily preparations",
+          "sustained": false
         },
-        "damage": {
-          "value": {}
-        },
-        "save": {
-          "value": "",
-          "basic": ""
-        },
-        "sustained": {
-          "value": false
-        },
+        "damage": {},
+        "defense": null,
         "cost": {
           "value": ""
         },
         "location": {
           "value": "6GrTwNmY2OYdBHm9"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        }
+        "counteraction": false
       },
       "ownership": {
         "default": 0,
@@ -4494,10 +4094,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.49h6yGnBMqKtmWvL"
     },
@@ -4510,9 +4113,7 @@
       "folder": null,
       "sort": -50000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.kcelf6IHl3L9VXXg"
-        },
+        "core": {},
         "enhanced-terrain-layer": {
           "multiple": 1,
           "min": null,
@@ -4528,21 +4129,26 @@
         "rules": [],
         "slug": "disrupt-undead",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
             "cantrip",
-            "necromancy"
+            "concentrate",
+            "manipulate"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "divine",
+            "primal"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -4553,28 +4159,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "save"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "divine",
-            "primal"
-          ],
-          "custom": ""
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": true,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 undead creature"
         },
@@ -4586,27 +4171,27 @@
           "value": "2"
         },
         "duration": {
-          "value": ""
+          "value": "",
+          "sustained": false
         },
         "damage": {
-          "value": {
-            "0": {
-              "applyMod": true,
-              "type": {
-                "categories": [],
-                "value": "vitality",
-                "subtype": ""
-              },
-              "value": "1d6"
-            }
+          "0": {
+            "applyMod": true,
+            "formula": "1d6",
+            "type": "vitality",
+            "category": null,
+            "materials": [],
+            "kinds": [
+              "damage"
+            ]
           }
         },
-        "save": {
-          "value": "fortitude",
-          "basic": ""
-        },
-        "sustained": {
-          "value": false
+        "defense": {
+          "passive": null,
+          "save": {
+            "statistic": "fortitude",
+            "basic": false
+          }
         },
         "cost": {
           "value": ""
@@ -4614,24 +4199,7 @@
         "location": {
           "value": "6GrTwNmY2OYdBHm9"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        },
+        "counteraction": false,
         "heightening": {
           "type": "interval",
           "interval": 1,
@@ -4648,10 +4216,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.kcelf6IHl3L9VXXg",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.FEIAF9Pn1OvTGhhO"
     },
@@ -4664,9 +4235,7 @@
       "folder": null,
       "sort": -12500,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.vLzFcIaSXs7YTIqJ"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -4676,12 +4245,12 @@
         "rules": [],
         "slug": "message",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -4689,11 +4258,17 @@
           "value": [
             "auditory",
             "cantrip",
+            "concentrate",
+            "illusion",
             "linguistic",
-            "mental",
-            "illusion"
+            "mental"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -4704,28 +4279,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "utility"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "arcane",
-            "divine",
-            "occult"
-          ]
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": false,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 creature"
         },
@@ -4737,42 +4291,18 @@
           "value": "1"
         },
         "duration": {
-          "value": "see below"
+          "value": "see below",
+          "sustained": false
         },
-        "damage": {
-          "value": {}
-        },
-        "save": {
-          "value": "",
-          "basic": ""
-        },
-        "sustained": {
-          "value": false
-        },
+        "damage": {},
+        "defense": null,
         "cost": {
           "value": ""
         },
         "location": {
           "value": "6GrTwNmY2OYdBHm9"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        }
+        "counteraction": false
       },
       "ownership": {
         "default": 0,
@@ -4782,10 +4312,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.vLzFcIaSXs7YTIqJ",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.8Xr2Jp4lAYBY2LWW"
     },
@@ -4798,9 +4331,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classfeatures.Item.tyrBwBTzo5t9Zho7"
-        },
+        "core": {},
         "pf2e": {
           "itemGrants": {
             "doctrine": {
@@ -4845,12 +4376,12 @@
         ],
         "slug": "doctrine",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -4890,10 +4421,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classfeatures.Item.tyrBwBTzo5t9Zho7",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.ke720i03uqwnozws"
     },
@@ -4906,9 +4440,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classfeatures.Item.UV1HlClbWCNcaKBZ"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -4918,12 +4450,12 @@
         "rules": [],
         "slug": "anathema-cleric",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -4963,10 +4495,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classfeatures.Item.UV1HlClbWCNcaKBZ",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.9iykk6ghbawdbnvb"
     },
@@ -4979,9 +4514,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classfeatures.Item.DutW12WMFPHBoLTH"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -4991,12 +4524,12 @@
         "rules": [],
         "slug": "deity",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5036,10 +4569,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classfeatures.Item.DutW12WMFPHBoLTH",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.pee8kpqp21433twr"
     },
@@ -5052,9 +4588,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classfeatures.Item.gblTFUOgolqFS9v4"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -5064,12 +4598,12 @@
         "rules": [],
         "slug": "divine-font",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5109,10 +4643,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classfeatures.Item.gblTFUOgolqFS9v4",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.lgtt4ulhedbt69zi"
     },
@@ -5125,9 +4662,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classfeatures.Item.AvNbdGSOTWNRgcxs"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -5137,12 +4672,12 @@
         "rules": [],
         "slug": "divine-spellcasting-cleric",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5182,10 +4717,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classfeatures.Item.AvNbdGSOTWNRgcxs",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.4zac6eccoumnyrku"
     },
@@ -5198,9 +4736,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classfeatures.Item.Qejo7FUWQtPTpgWH"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -5210,12 +4746,12 @@
         "rules": [],
         "slug": "first-doctrine",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5255,10 +4791,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classfeatures.Item.Qejo7FUWQtPTpgWH",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.4bvqnqwgo8j0h2pe"
     },
@@ -5271,9 +4810,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classfeatures.Item.ZZzLMOUAtBVgV1DF"
-        },
+        "core": {},
         "pf2e": {
           "grantedBy": {
             "id": "ke720i03uqwnozws"
@@ -5302,12 +4839,12 @@
         ],
         "slug": "cloistered-cleric",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5347,10 +4884,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classfeatures.Item.ZZzLMOUAtBVgV1DF",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.96h5wf0tuemmvzed"
     },
@@ -5363,31 +4903,22 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.hT4INKGtly4QY8KN"
-        }
+        "core": {}
       },
       "system": {
         "description": {
           "gm": "",
           "value": "<p>Your deity bestows a special spell related to their powers. Select one domain - a subject of particular interest to you within your religion - from your deity's list. You gain an initial domain spell for that domain, a spell unique to the domain and not available to other clerics.</p>\n<p>Domain spells are a type of focus spell. It costs 1 Focus Point to cast a focus spell, and you start with a focus pool of 1 Focus Point. You refill your focus pool during your daily preparations, and you can regain 1 Focus Point by spending 10 minutes using the Refocus activity to pray to your deity or do service toward their causes. Focus spells are automatically heightened to half your level rounded up.</p>\n<p>Focus spells don't require spell slots, nor can you cast them using spell slots. Certain feats can give you more focus spells and increase the size of your focus pool, though your focus pool can never hold more than 3 Focus Points.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat multiple times, selecting a different domain each time and gaining its domain spell.</p>"
         },
-        "rules": [
-          {
-            "key": "ActiveEffectLike",
-            "mode": "add",
-            "path": "system.resources.focus.max",
-            "value": 1
-          }
-        ],
+        "rules": [],
         "slug": "domain-initiate",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5427,10 +4958,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.hT4INKGtly4QY8KN",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.lBfYB5lrPwVwFPwM"
     },
@@ -5443,9 +4977,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.FXKIALDXAzEBfj5A"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -5455,12 +4987,12 @@
         "rules": [],
         "slug": "deitys-domain",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5500,10 +5032,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.FXKIALDXAzEBfj5A",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.SsZ0IrpSsUAEQOYO"
     },
@@ -5524,12 +5059,12 @@
         "rules": [],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5556,16 +5091,12 @@
           "value": "focus",
           "flexible": false
         },
-        "showUnpreparedSpells": {
-          "value": true
-        },
         "showSlotlessLevels": {
           "value": true
         },
         "proficiency": {
           "value": 0
         },
-        "displayLevels": {},
         "slots": {
           "slot0": {
             "prepared": [],
@@ -5630,7 +5161,11 @@
         },
         "autoHeightenLevel": {
           "value": null
-        }
+        },
+        "showUnpreparedSpells": {
+          "value": true
+        },
+        "displayLevels": {}
       },
       "ownership": {
         "default": 0,
@@ -5639,10 +5174,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.WmBvBtdw6QOO66Ou"
     },
@@ -5655,9 +5193,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.oJKZi8OQgmVXHOc0"
-        },
+        "core": {},
         "enhanced-terrain-layer": {
           "multiple": 1,
           "min": null,
@@ -5683,12 +5219,12 @@
         ],
         "slug": "fire-ray",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5696,10 +5232,13 @@
           "value": [
             "attack",
             "cleric",
+            "concentrate",
             "fire",
-            "evocation"
+            "focus",
+            "manipulate"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": []
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -5710,24 +5249,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "attack"
-        },
-        "category": {
-          "value": "focus"
-        },
-        "traditions": {
-          "value": []
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": true,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 creature"
         },
@@ -5739,52 +5261,29 @@
           "value": "2"
         },
         "duration": {
-          "value": ""
+          "value": "",
+          "sustained": false
         },
         "damage": {
-          "value": {
-            "0": {
-              "type": {
-                "categories": [],
-                "value": "fire",
-                "subtype": ""
-              },
-              "value": "2d6",
-              "applyMod": false
-            }
+          "0": {
+            "applyMod": false,
+            "formula": "2d6",
+            "type": "fire",
+            "category": null,
+            "materials": [],
+            "kinds": [
+              "damage"
+            ]
           }
         },
-        "save": {
-          "value": "",
-          "basic": ""
-        },
-        "sustained": {
-          "value": false
-        },
+        "defense": null,
         "cost": {
           "value": ""
         },
         "location": {
           "value": "WmBvBtdw6QOO66Ou"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        },
+        "counteraction": false,
         "heightening": {
           "type": "interval",
           "interval": 1,
@@ -5801,10 +5300,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.oJKZi8OQgmVXHOc0",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.YEcmZDwjf2FDs64c"
     },
@@ -5825,12 +5327,12 @@
         "rules": [],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5858,25 +5360,26 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.YWzbAQbqjad2f0MR"
     },
     {
       "_id": "KznndWize0CvHCEO",
       "name": "Steel Shield",
-      "type": "armor",
+      "type": "shield",
       "img": "systems/pf2e/icons/equipment/shields/steel-shield.webp",
       "effects": [],
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -5886,18 +5389,19 @@
         "rules": [],
         "slug": "steel-shield",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [],
-          "rarity": "common"
+          "rarity": "common",
+          "integrated": null
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -5909,18 +5413,15 @@
           "value": 0
         },
         "quantity": 1,
-        "baseItem": null,
+        "baseItem": "steel-shield",
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 20,
           "max": 20
         },
         "hardness": 5,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 2
@@ -5930,10 +5431,6 @@
           "carryType": "stowed",
           "invested": null,
           "value": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "ixb8ZzsMqQQpMPhZ",
         "size": "med",
@@ -5954,47 +5451,26 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "held-in-one-hand"
-        },
-        "category": "shield",
-        "group": null,
         "acBonus": 2,
-        "strength": null,
-        "dexCap": 0,
-        "checkPenalty": null,
-        "speedPenalty": null,
-        "potencyRune": {
-          "value": 0
+        "grade": null,
+        "runes": {
+          "reinforcing": 0,
+          "potency": 0,
+          "resilient": 0,
+          "property": []
         },
-        "resiliencyRune": {
-          "value": ""
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
-        },
+        "specific": null,
+        "speedPenalty": 0,
+        "subitems": [],
         "maxHp": {
           "value": 20
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
         },
         "invested": {
           "value": false
-        },
-        "potency": {}
+        }
       },
       "ownership": {
         "default": 0,
@@ -6003,10 +5479,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.KznndWize0CvHCEO"
     },
@@ -6019,9 +5498,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.hMIG86aqKcVYJGsg"
-        },
+        "core": {},
         "scene-packer": {
           "hash": "d16945a4a4e831e8f9347791fbcc53bc535aa309"
         }
@@ -6034,12 +5511,12 @@
         "rules": [],
         "slug": "emerald",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -6058,17 +5535,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "-"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 20
@@ -6077,10 +5551,6 @@
         "equipped": {
           "carryType": "stowed",
           "value": false
-        },
-        "stackGroup": "gems",
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": "ixb8ZzsMqQQpMPhZ",
         "size": "med",
@@ -6101,29 +5571,28 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": ""
-        },
+        "stackGroup": "gems",
         "maxHp": {
           "value": 0
-        },
-        "bulkCapacity": {
-          "value": ""
         },
         "collapsed": {
           "value": false
         }
       },
       "ownership": {
-        "ht93EMGXXKCpAGpS": 3
+        "ht93EMGXXKCpAGpS": 3,
+        "default": 0
       },
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.hMIG86aqKcVYJGsg",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.y80dmHj3RwegUyi4"
     },
@@ -6136,9 +5605,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.A7ofsoPva0UtjqrX"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -6148,12 +5615,12 @@
         "rules": [],
         "slug": "cantrip-expansion-prepared-caster",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -6196,10 +5663,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.A7ofsoPva0UtjqrX",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.kA1HRTjxoyPoYIIy"
     },
@@ -6212,9 +5682,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.wYerMk6F1RZb0Fwt"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -6224,12 +5692,12 @@
         "rules": [],
         "slug": "battle-medicine",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -6277,10 +5745,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.wYerMk6F1RZb0Fwt",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.2nsfsnKv47I8np8J"
     },
@@ -6293,9 +5764,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.kBhaPuzLUSwS6vVf"
-        },
+        "core": {},
         "enhanced-terrain-layer": {
           "multiple": null,
           "elevation": null,
@@ -6311,22 +5780,27 @@
         "rules": [],
         "slug": "electric-arc",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
-            "electricity",
             "cantrip",
-            "evocation"
+            "concentrate",
+            "electricity",
+            "manipulate"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "primal"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -6337,28 +5811,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "save"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "arcane",
-            "primal"
-          ],
-          "custom": ""
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": true,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 or 2 creatures"
         },
@@ -6370,27 +5823,27 @@
           "value": "2"
         },
         "duration": {
-          "value": ""
+          "value": "",
+          "sustained": false
         },
         "damage": {
-          "value": {
-            "0": {
-              "applyMod": true,
-              "type": {
-                "categories": [],
-                "value": "electricity",
-                "subtype": ""
-              },
-              "value": "1d4"
-            }
+          "0": {
+            "applyMod": true,
+            "formula": "1d4",
+            "type": "electricity",
+            "category": null,
+            "materials": [],
+            "kinds": [
+              "damage"
+            ]
           }
         },
-        "save": {
-          "value": "reflex",
-          "basic": "basic"
-        },
-        "sustained": {
-          "value": false
+        "defense": {
+          "passive": null,
+          "save": {
+            "statistic": "reflex",
+            "basic": true
+          }
         },
         "cost": {
           "value": ""
@@ -6398,24 +5851,7 @@
         "location": {
           "value": "6GrTwNmY2OYdBHm9"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        },
+        "counteraction": false,
         "heightening": {
           "type": "interval",
           "interval": 1,
@@ -6431,10 +5867,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.kBhaPuzLUSwS6vVf",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.blpZrziT2TEXQTTe"
     },
@@ -6447,9 +5886,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.izcxFQFwf3woCnFs"
-        },
+        "core": {},
         "enhanced-terrain-layer": {
           "multiple": null,
           "elevation": null,
@@ -6465,21 +5902,26 @@
         "rules": [],
         "slug": "guidance",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
             "cantrip",
-            "divination"
+            "concentrate"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "divine",
+            "occult",
+            "primal"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -6490,29 +5932,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "utility"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "divine",
-            "occult",
-            "primal"
-          ],
-          "custom": ""
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": false,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 creature"
         },
@@ -6524,42 +5944,18 @@
           "value": "1"
         },
         "duration": {
-          "value": "until the start of your next turn"
+          "value": "until the start of your next turn",
+          "sustained": false
         },
-        "damage": {
-          "value": {}
-        },
-        "save": {
-          "value": "",
-          "basic": ""
-        },
-        "sustained": {
-          "value": false
-        },
+        "damage": {},
+        "defense": null,
         "cost": {
           "value": ""
         },
         "location": {
           "value": "6GrTwNmY2OYdBHm9"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        }
+        "counteraction": false
       },
       "ownership": {
         "default": 0,
@@ -6568,10 +5964,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.izcxFQFwf3woCnFs",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.hiiauuiIX5MAaYyw"
     },
@@ -6584,9 +5983,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.8xRzLhwGL7Dgy3EZ"
-        },
+        "core": {},
         "enhanced-terrain-layer": {
           "multiple": null,
           "elevation": null,
@@ -6602,20 +5999,25 @@
         "rules": [],
         "slug": "sanctuary",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
-            "abjuration"
+            "concentrate",
+            "manipulate"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "divine",
+            "occult"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -6626,27 +6028,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "utility"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "divine",
-            "occult"
-          ]
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": true,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 creature"
         },
@@ -6658,42 +6040,18 @@
           "value": "2"
         },
         "duration": {
-          "value": "1 minute"
+          "value": "1 minute",
+          "sustained": false
         },
-        "damage": {
-          "value": {}
-        },
-        "save": {
-          "value": "",
-          "basic": ""
-        },
-        "sustained": {
-          "value": false
-        },
+        "damage": {},
+        "defense": null,
         "cost": {
           "value": ""
         },
         "location": {
           "value": "6GrTwNmY2OYdBHm9"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        }
+        "counteraction": false
       },
       "ownership": {
         "default": 0,
@@ -6702,10 +6060,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.8xRzLhwGL7Dgy3EZ",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.mP3YTv3H1tYfRGhR"
     },
@@ -6718,9 +6079,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -6730,21 +6089,21 @@
         "rules": [],
         "slug": "magic-wand-1st-level-spell",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
-            "magical",
-            "wand",
             "divine",
-            "primal"
+            "magical",
+            "primal",
+            "wand"
           ],
           "rarity": "common"
         },
@@ -6759,17 +6118,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 60
@@ -6778,10 +6134,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -6802,23 +6154,17 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "held-in-one-hand"
-        },
-        "consumableType": {
-          "value": "wand"
-        },
-        "charges": {
+        "category": "wand",
+        "uses": {
           "value": 1,
           "max": 1,
-          "_deprecated": true
+          "autoDestroy": false,
+          "per": null,
+          "autoUse": true
         },
-        "consume": {
-          "value": "",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": false
+        "damage": null,
+        "usage": {
+          "value": "held-in-one-hand"
         },
         "spell": {
           "heightenedLevel": 1,
@@ -6844,36 +6190,19 @@
             "traits": {
               "value": [
                 "healing",
-                "necromancy"
+                "manipulate",
+                "vitality"
               ],
-              "rarity": "common"
+              "rarity": "common",
+              "traditions": [
+                "divine",
+                "primal"
+              ]
             },
             "rules": [],
             "slug": "heal",
             "level": {
               "value": 1
-            },
-            "spellType": {
-              "value": "heal"
-            },
-            "category": {
-              "value": "spell"
-            },
-            "traditions": {
-              "value": [
-                "divine",
-                "primal"
-              ],
-              "custom": ""
-            },
-            "components": {
-              "focus": false,
-              "material": false,
-              "somatic": false,
-              "verbal": false
-            },
-            "materials": {
-              "value": ""
             },
             "target": {
               "value": "1 willing living creature or 1 undead"
@@ -6886,50 +6215,26 @@
               "value": "1 to 3"
             },
             "duration": {
-              "value": ""
+              "value": "",
+              "sustained": false
             },
             "damage": {
-              "value": {
-                "0": {
-                  "applyMod": false,
-                  "type": {
-                    "categories": [],
-                    "subtype": "",
-                    "value": "vitality"
-                  },
-                  "value": "1d8"
-                }
+              "0": {
+                "applyMod": false,
+                "formula": "1d8",
+                "type": "vitality",
+                "category": null,
+                "materials": [],
+                "kinds": [
+                  "damage",
+                  "healing"
+                ]
               }
-            },
-            "save": {
-              "value": "",
-              "basic": ""
-            },
-            "sustained": {
-              "value": false
             },
             "cost": {
               "value": ""
             },
-            "ability": {
-              "value": ""
-            },
             "location": {
-              "value": ""
-            },
-            "hasCounteractCheck": {
-              "value": false
-            },
-            "prepared": {
-              "value": ""
-            },
-            "primarycheck": {
-              "value": ""
-            },
-            "secondarycasters": {
-              "value": ""
-            },
-            "secondarycheck": {
               "value": ""
             },
             "heightening": {
@@ -6948,9 +6253,13 @@
               "authors": "",
               "license": "OGL",
               "remaster": false
-            }
+            },
+            "requirements": "",
+            "counteraction": false,
+            "defense": null
           }
         },
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -6970,13 +6279,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": false
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -6993,10 +6295,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.mdoMx50AgtQ9Wily"
     },
@@ -7009,9 +6314,7 @@
       "folder": "kqsPClKBIkpq5rPe",
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao"
-        }
+        "core": {}
       },
       "system": {
         "description": {
@@ -7021,12 +6324,12 @@
         "rules": [],
         "slug": "healing-potion-minor",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.73,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -7035,7 +6338,6 @@
             "consumable",
             "healing",
             "magical",
-            "necromancy",
             "potion"
           ],
           "rarity": "common"
@@ -7051,17 +6353,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 4
@@ -7069,10 +6368,6 @@
         },
         "equipped": {
           "carryType": "worn"
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -7093,25 +6388,24 @@
           },
           "misidentified": {}
         },
+        "category": "potion",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": {
+          "formula": "1d8",
+          "kind": "healing",
+          "type": "untyped"
+        },
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "potion"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "1d8",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -7131,13 +6425,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -7147,17 +6434,104 @@
         }
       },
       "ownership": {
-        "ht93EMGXXKCpAGpS": 3
+        "ht93EMGXXKCpAGpS": 3,
+        "default": 0
       },
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!gLNVmAnM1cxlTUZB.fxr6o1Db9a1QDSHX"
+    },
+    {
+      "_id": "OC3645KJ3HjjTNiL",
+      "effects": [],
+      "flags": {},
+      "folder": null,
+      "img": "icons/sundries/books/book-red-exclamation.webp",
+      "name": "Custom Changes",
+      "sort": 0,
+      "type": "feat",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [
+          {
+            "key": "ActorTraits",
+            "add": [
+              "good"
+            ]
+          }
+        ],
+        "slug": "custom-changes",
+        "_migration": {
+          "version": 0.925,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "11.315",
+            "system": "5.14.4"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "unique"
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "bonus",
+        "onlyLevel1": false,
+        "maxTakable": null,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": null,
+        "subfeatures": {
+          "proficiencies": {
+            "light": {
+              "rank": 1
+            }
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": "14.360",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!gLNVmAnM1cxlTUZB.OC3645KJ3HjjTNiL"
     }
   ],
   "effects": [],
@@ -7167,9 +6541,7 @@
     "pf2e": {
       "freeCrafting": false
     },
-    "core": {
-      "sourceId": "Actor.IZRufj3rNbvvPnRd"
-    },
+    "core": {},
     "scene-packer": {
       "sourceId": "Actor.6QN9IsOvUY6ISHfJ",
       "defaultPermission": 1,
@@ -7181,16 +6553,13 @@
       "unconscious": false,
       "dying": false
     },
-    "cf": null
+    "cf": {}
   },
   "system": {
     "attributes": {
       "hp": {
         "value": 30,
         "temp": 0
-      },
-      "initiative": {
-        "statistic": "perception"
       },
       "speed": {
         "value": 25,
@@ -7201,9 +6570,15 @@
         "success": 0
       }
     },
+    "initiative": {
+      "statistic": "perception"
+    },
     "details": {
-      "alignment": {
-        "value": "NG"
+      "languages": {
+        "value": [
+          "kelish"
+        ],
+        "details": ""
       },
       "level": {
         "value": 2
@@ -7214,6 +6589,8 @@
         "birthPlace": "",
         "attitude": "",
         "beliefs": "",
+        "anathema": [],
+        "edicts": [],
         "likes": "",
         "dislikes": "",
         "catchphrases": "",
@@ -7260,17 +6637,6 @@
         "image": "systems/pf2e/icons/deity/Sarenrae.webp"
       }
     },
-    "traits": {
-      "value": [],
-      "senses": [],
-      "languages": {
-        "value": [
-          "kelish"
-        ],
-        "custom": "",
-        "selected": []
-      }
-    },
     "resources": {
       "heroPoints": {
         "value": 0,
@@ -7284,14 +6650,33 @@
       }
     },
     "_migration": {
-      "version": 0.878,
+      "version": 0.925,
       "previous": {
-        "schema": 0.73,
-        "foundry": "11.313",
-        "system": "5.7.2"
+        "schema": 0.878,
+        "foundry": "11.315",
+        "system": "5.14.4"
       }
     },
-    "exploration": [],
+    "abilities": {
+      "str": {
+        "mod": 1
+      },
+      "dex": {
+        "mod": 1
+      },
+      "con": {
+        "mod": 1
+      },
+      "int": {
+        "mod": 0
+      },
+      "wis": {
+        "mod": 4
+      },
+      "cha": {
+        "mod": 2
+      }
+    },
     "skills": {
       "acr": {
         "rank": 0
@@ -7358,26 +6743,7 @@
       },
       "fame": 0
     },
-    "abilities": {
-      "str": {
-        "mod": 1
-      },
-      "dex": {
-        "mod": 1
-      },
-      "con": {
-        "mod": 1
-      },
-      "int": {
-        "mod": 0
-      },
-      "wis": {
-        "mod": 4
-      },
-      "cha": {
-        "mod": 2
-      }
-    },
+    "exploration": [],
     "saves": {},
     "crafting": {
       "formulas": []
@@ -7405,11 +6771,7 @@
       ]
     },
     "proficiencies": {
-      "defenses": {
-        "light": {
-          "rank": 1
-        }
-      },
+      "defenses": {},
       "attacks": {
         "weapon-base-scimitar": {
           "custom": true,
@@ -7426,11 +6788,14 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.7.2",
-    "coreVersion": "11.313",
+    "systemVersion": "5.14.4",
+    "coreVersion": "14.360",
     "createdTime": 1697493219216,
-    "modifiedTime": 1697493219216,
-    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+    "modifiedTime": 1711396394975,
+    "lastModifiedBy": "dr4PZnZ9KX7ge6hN",
+    "compendiumSource": "Actor.IZRufj3rNbvvPnRd",
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!actors!gLNVmAnM1cxlTUZB"
 }

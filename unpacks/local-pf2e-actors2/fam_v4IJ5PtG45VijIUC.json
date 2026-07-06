@@ -19,7 +19,8 @@
       "attenuation": 0.1,
       "brightness": 0,
       "saturation": 0,
-      "contrast": 0
+      "contrast": 0,
+      "color": null
     },
     "name": "fam",
     "appendNumber": false,
@@ -28,9 +29,11 @@
       "src": "systems/pf2e/icons/default-icons/familiar.svg",
       "scaleX": 1,
       "scaleY": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "rotation": 0
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
     },
     "lockRotation": false,
     "rotation": 0,
@@ -62,10 +65,36 @@
       "darkness": {
         "min": 0,
         "max": 1
+      },
+      "negative": false,
+      "priority": 0,
+      "color": null
+    },
+    "detectionModes": {},
+    "randomImg": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
       }
     },
-    "detectionModes": [],
-    "randomImg": false
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "depth": 0.5
   },
   "name": "fam",
   "type": "familiar",
@@ -134,7 +163,8 @@
           }
         },
         "traits": {
-          "otherTags": []
+          "otherTags": [],
+          "value": []
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -164,9 +194,7 @@
       },
       "type": "condition",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2"
-        }
+        "core": {}
       },
       "effects": [],
       "folder": null,
@@ -178,10 +206,13 @@
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "5.11.1",
-        "coreVersion": "11.315",
+        "coreVersion": "14.360",
         "createdTime": 1702656398188,
         "modifiedTime": 1702656398188,
-        "lastModifiedBy": "xuYHxk9sJoYKM7d6"
+        "lastModifiedBy": "xuYHxk9sJoYKM7d6",
+        "compendiumSource": "Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_id": "qzEI6RJ1FWHUrOdb",
       "_key": "!actors.items!v4IJ5PtG45VijIUC.qzEI6RJ1FWHUrOdb"
@@ -218,7 +249,8 @@
           }
         },
         "traits": {
-          "otherTags": []
+          "otherTags": [],
+          "value": []
         },
         "publication": {
           "title": "Pathfinder Player Core",
@@ -246,9 +278,7 @@
       },
       "type": "condition",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR"
-        }
+        "core": {}
       },
       "effects": [],
       "folder": null,
@@ -260,10 +290,13 @@
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "5.11.1",
-        "coreVersion": "11.315",
+        "coreVersion": "14.360",
         "createdTime": 1702656410252,
         "modifiedTime": 1702656410252,
-        "lastModifiedBy": "xuYHxk9sJoYKM7d6"
+        "lastModifiedBy": "xuYHxk9sJoYKM7d6",
+        "compendiumSource": "Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_id": "SqnJ0eLzdE8hda5r",
       "_key": "!actors.items!v4IJ5PtG45VijIUC.SqnJ0eLzdE8hda5r"
@@ -276,10 +309,13 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "5.12.0",
-    "coreVersion": "11.315",
+    "coreVersion": "14.360",
     "createdTime": 1702656369015,
     "modifiedTime": 1704595757735,
-    "lastModifiedBy": "xuYHxk9sJoYKM7d6"
+    "lastModifiedBy": "xuYHxk9sJoYKM7d6",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_id": "v4IJ5PtG45VijIUC",
   "sort": 0,

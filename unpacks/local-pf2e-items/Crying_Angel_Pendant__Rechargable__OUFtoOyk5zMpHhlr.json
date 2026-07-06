@@ -9,12 +9,12 @@
     "rules": [],
     "slug": "crying-angel-pendant",
     "_migration": {
-      "version": 0.878,
+      "version": 0.925,
       "lastMigration": null,
       "previous": {
-        "schema": 0.837,
-        "foundry": "11.313",
-        "system": "5.7.3"
+        "schema": 0.878,
+        "foundry": "11.315",
+        "system": "5.14.4"
       }
     },
     "traits": {
@@ -22,7 +22,6 @@
       "value": [
         "consumable",
         "divine",
-        "necromancy",
         "talisman"
       ],
       "rarity": "common"
@@ -38,28 +37,22 @@
     },
     "quantity": 1,
     "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
     "hp": {
       "value": 0,
       "max": 0
     },
     "hardness": 0,
-    "weight": {
-      "value": "-"
-    },
-    "equippedBulk": {
-      "value": ""
-    },
     "price": {
       "value": {
         "gp": 7
       }
     },
     "equipped": {
-      "carryType": "worn"
-    },
-    "stackGroup": null,
-    "negateBulk": {
-      "value": "0"
+      "carryType": "worn",
+      "handsHeld": 0
     },
     "containerId": null,
     "size": "med",
@@ -80,22 +73,18 @@
       },
       "misidentified": {}
     },
+    "category": "wand",
+    "uses": {
+      "value": 1,
+      "max": 1,
+      "autoDestroy": false,
+      "per": null
+    },
+    "damage": null,
     "usage": {
       "value": "affixed-to-armor"
     },
-    "consumableType": {
-      "value": "wand"
-    },
-    "charges": {
-      "value": 1,
-      "max": 1
-    },
-    "consume": {
-      "value": ""
-    },
-    "autoDestroy": {
-      "value": false
-    },
+    "stackGroup": null,
     "spell": null,
     "activation": {
       "type": "",
@@ -115,11 +104,6 @@
       "value": null,
       "long": null,
       "units": ""
-    },
-    "uses": {
-      "value": 0,
-      "max": 0,
-      "per": null
     }
   },
   "img": "systems/pf2e/icons/equipment/consumables/talismans/crying-angel-pendant.webp",
@@ -129,26 +113,27 @@
     "ANMn0vc4t8tYEOWE": 3
   },
   "flags": {
-    "core": {
-      "sourceId": "Compendium.pf2e.equipment-srd.Item.HHELOoN5GVonUiIa"
-    },
+    "core": {},
     "scene-packer": {
       "hash": "8277771f2e271ff042e2cd97e17bc76e2fb5ae50"
-    },
-    "exportSource": {
-      "world": "av2",
-      "system": "pf2e",
-      "coreVersion": "9.280",
-      "systemVersion": "3.13.6"
     }
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.7.3",
-    "coreVersion": "11.313",
+    "systemVersion": "5.14.4",
+    "coreVersion": "13.342",
     "createdTime": 1666482125140,
-    "modifiedTime": 1698035483399,
-    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+    "modifiedTime": 1711396466703,
+    "lastModifiedBy": "dr4PZnZ9KX7ge6hN",
+    "compendiumSource": "Compendium.pf2e.equipment-srd.Item.HHELOoN5GVonUiIa",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "av2",
+      "uuid": null,
+      "coreVersion": "9.280",
+      "systemId": "pf2e",
+      "systemVersion": "3.13.6"
+    }
   },
   "folder": "yTWoC8AjyrX9ZC9R",
   "sort": 100000,

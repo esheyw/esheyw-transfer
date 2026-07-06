@@ -9,12 +9,12 @@
     "rules": [],
     "slug": "onyx-panther",
     "_migration": {
-      "version": 0.878,
+      "version": 0.925,
       "lastMigration": null,
       "previous": {
-        "schema": 0.837,
-        "foundry": "11.313",
-        "system": "5.7.3"
+        "schema": 0.878,
+        "foundry": "11.315",
+        "system": "5.14.4"
       }
     },
     "traits": {
@@ -22,8 +22,7 @@
       "value": [
         "consumable",
         "magical",
-        "talisman",
-        "transmutation"
+        "talisman"
       ],
       "rarity": "common"
     },
@@ -38,28 +37,22 @@
     },
     "quantity": 1,
     "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
     "hp": {
       "value": 0,
       "max": 0
     },
     "hardness": 0,
-    "weight": {
-      "value": "-"
-    },
-    "equippedBulk": {
-      "value": ""
-    },
     "price": {
       "value": {
         "gp": 7
       }
     },
     "equipped": {
-      "carryType": "worn"
-    },
-    "stackGroup": null,
-    "negateBulk": {
-      "value": "0"
+      "carryType": "worn",
+      "handsHeld": 0
     },
     "containerId": null,
     "size": "med",
@@ -80,24 +73,19 @@
       },
       "misidentified": {}
     },
+    "category": "wand",
+    "uses": {
+      "value": 1,
+      "max": 1,
+      "autoDestroy": false,
+      "per": null,
+      "autoUse": true
+    },
+    "damage": null,
     "usage": {
       "value": "affixed-to-armor"
     },
-    "consumableType": {
-      "value": "wand"
-    },
-    "charges": {
-      "value": 1,
-      "max": 1,
-      "_deprecated": true
-    },
-    "consume": {
-      "value": "",
-      "_deprecated": true
-    },
-    "autoDestroy": {
-      "value": false
-    },
+    "stackGroup": null,
     "spell": null,
     "activation": {
       "type": "",
@@ -118,13 +106,6 @@
       "long": null,
       "units": ""
     },
-    "uses": {
-      "value": 0,
-      "max": 0,
-      "per": null,
-      "autoUse": true,
-      "autoDestroy": true
-    },
     "autoUse": {
       "value": true,
       "_deprecated": true
@@ -139,26 +120,27 @@
     "ANMn0vc4t8tYEOWE": 3
   },
   "flags": {
-    "core": {
-      "sourceId": "Compendium.pf2e.equipment-srd.Item.0aSdDSjJ5sMzBz1U"
-    },
+    "core": {},
     "scene-packer": {
       "hash": "3c66913b97585d89fc5dbbeeb720599ff06d1264"
-    },
-    "exportSource": {
-      "world": "av2",
-      "system": "pf2e",
-      "coreVersion": "9.280",
-      "systemVersion": "3.13.6"
     }
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.7.3",
-    "coreVersion": "11.313",
+    "systemVersion": "5.14.4",
+    "coreVersion": "13.342",
     "createdTime": 1698035483399,
-    "modifiedTime": 1698035483399,
-    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+    "modifiedTime": 1711396466703,
+    "lastModifiedBy": "dr4PZnZ9KX7ge6hN",
+    "compendiumSource": "Compendium.pf2e.equipment-srd.Item.0aSdDSjJ5sMzBz1U",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "av2",
+      "uuid": null,
+      "coreVersion": "9.280",
+      "systemId": "pf2e",
+      "systemVersion": "3.13.6"
+    }
   },
   "_id": "da7moMQD7H4KZGNU",
   "_key": "!items!da7moMQD7H4KZGNU"

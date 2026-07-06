@@ -7,9 +7,11 @@
       "src": "systems/pf2e/icons/iconics/Ezren.webp",
       "scaleX": 1,
       "scaleY": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "rotation": 0
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
     },
     "actorLink": true,
     "appendNumber": false,
@@ -46,7 +48,10 @@
       "darkness": {
         "min": 0,
         "max": 1
-      }
+      },
+      "negative": false,
+      "priority": 0,
+      "color": null
     },
     "sight": {
       "enabled": true,
@@ -56,16 +61,40 @@
       "attenuation": 0.1,
       "brightness": 0,
       "saturation": 0,
-      "contrast": 0
+      "contrast": 0,
+      "color": null
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "flags": {
       "pf2e": {
         "linkToActorSize": true,
         "autoscale": true
       }
     },
-    "randomImg": false
+    "randomImg": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "depth": 1
   },
   "img": "systems/pf2e/icons/iconics/EzrenFull.webp",
   "items": [
@@ -116,19 +145,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.J20vhrflAsamCq4H"
     },
     {
       "_id": "xPfA98Spv4LlcXyk",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.heritages.Item.zVf0Hlp5xG0Q7kmc"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/features/ancestry/skilled-heritage.webp",
       "name": "Skilled Heritage",
@@ -175,19 +205,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.heritages.Item.zVf0Hlp5xG0Q7kmc",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.xPfA98Spv4LlcXyk"
     },
     {
       "_id": "ETlMQfPobLMDjbTw",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.backgrounds.Item.KMv7ollLVaZ81XDV"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/default-icons/background.svg",
       "name": "Merchant",
@@ -247,12 +278,13 @@
             "uuid": "Compendium.pf2e.feats-srd.Item.5nc5ridFBfYpn2Om"
           }
         },
-        "trainedLore": "Mercantile Lore",
         "trainedSkills": {
           "value": [
             "dip"
-          ]
-        }
+          ],
+          "lore": []
+        },
+        "trainedLore": "Mercantile Lore"
       },
       "type": "background",
       "effects": [],
@@ -263,19 +295,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.backgrounds.Item.KMv7ollLVaZ81XDV",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.ETlMQfPobLMDjbTw"
     },
     {
       "_id": "I9POy1sPaWCySEjv",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.5nc5ridFBfYpn2Om"
-        }
+        "core": {}
       },
       "img": "icons/sundries/books/book-red-exclamation.webp",
       "name": "Bargain Hunter",
@@ -341,19 +374,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.5nc5ridFBfYpn2Om",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.I9POy1sPaWCySEjv"
     },
     {
       "_id": "YHfheZE7mPseQtUl",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.lwLcUHQMOqfaNND4"
-        }
+        "core": {}
       },
       "img": "icons/sundries/books/book-red-exclamation.webp",
       "name": "Cooperative Nature",
@@ -424,19 +458,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.lwLcUHQMOqfaNND4",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.YHfheZE7mPseQtUl"
     },
     {
       "_id": "pVbLEGCRXP3SYKwJ",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.Rfyhlyql1GSoDkI2"
-        }
+        "core": {}
       },
       "img": "icons/sundries/books/book-red-exclamation.webp",
       "name": "Natural Skill",
@@ -497,19 +532,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.Rfyhlyql1GSoDkI2",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.pVbLEGCRXP3SYKwJ"
     },
     {
       "_id": "gQYneSk2NZVBXqiD",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.EpBG4CFMNSZQx7vI"
-        }
+        "core": {}
       },
       "img": "icons/sundries/books/book-red-exclamation.webp",
       "name": "Counterspell (Prepared)",
@@ -572,19 +608,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.EpBG4CFMNSZQx7vI",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.gQYneSk2NZVBXqiD"
     },
     {
       "_id": "YCFy1owQ7C5VwY9z",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.blMeVamjGz4ODWxq"
-        }
+        "core": {}
       },
       "img": "icons/sundries/books/book-red-exclamation.webp",
       "name": "Arcane Sense",
@@ -650,19 +687,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.blMeVamjGz4ODWxq",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.YCFy1owQ7C5VwY9z"
     },
     {
       "_id": "ILmBhEKC0OmG4s43",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.JtjnFsOToBLnSRO9"
-        }
+        "core": {}
       },
       "img": "icons/sundries/books/book-red-exclamation.webp",
       "name": "Courtly Graces",
@@ -728,19 +766,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.JtjnFsOToBLnSRO9",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.ILmBhEKC0OmG4s43"
     },
     {
       "_id": "hYHLfL48fpnZSzuC",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.m7KjpkAAh9PptJsY"
-        },
+        "core": {},
         "pf2e": {
           "itemGrants": {
             "naturalAmbition": {
@@ -835,19 +874,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.m7KjpkAAh9PptJsY",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.hYHLfL48fpnZSzuC"
     },
     {
       "_id": "P2jIZ8st4L6zeq65",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.PodajLVxqYSAqVox"
-        },
+        "core": {},
         "pf2e": {
           "grantedBy": {
             "id": "hYHLfL48fpnZSzuC",
@@ -914,19 +954,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.PodajLVxqYSAqVox",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.P2jIZ8st4L6zeq65"
     },
     {
       "_id": "MghOg7aJMddBXusu",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.FVjTuBCIefAgloUU"
-        }
+        "core": {}
       },
       "img": "icons/weapons/staves/staff-simple.webp",
       "name": "Staff",
@@ -981,7 +1022,6 @@
           "invested": null,
           "handsHeld": 0
         },
-        "stackGroup": null,
         "containerId": null,
         "size": "med",
         "material": {
@@ -1015,24 +1055,44 @@
           "damageType": "bludgeoning",
           "persistent": null
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": null,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": ""
         },
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": {
+          "value": false
+        },
+        "subitems": [],
+        "bonusDamage": {
+          "value": 0
+        },
+        "property1": {
+          "value": "",
+          "dice": 0,
+          "die": "",
+          "damageType": "",
+          "critDice": 0,
+          "critDie": "",
+          "critDamage": "",
+          "critDamageType": ""
+        },
+        "stackGroup": null,
         "potencyRune": {
           "value": 1
         },
         "strikingRune": {
           "value": "striking"
-        },
-        "specific": {
-          "value": false
         },
         "propertyRune1": {
           "value": null
@@ -1045,16 +1105,6 @@
         },
         "propertyRune4": {
           "value": null
-        },
-        "property1": {
-          "value": "",
-          "dice": 0,
-          "die": "",
-          "damageType": "",
-          "critDice": 0,
-          "critDie": "",
-          "critDamage": "",
-          "critDamageType": ""
         }
       },
       "type": "weapon",
@@ -1066,19 +1116,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.FVjTuBCIefAgloUU",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.MghOg7aJMddBXusu"
     },
     {
       "_id": "6bvphRcfQYiCABsL",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB"
-        }
+        "core": {}
       },
       "img": "icons/equipment/chest/shirt-collared-pink.webp",
       "name": "Explorer's Clothing",
@@ -1136,7 +1187,6 @@
           "handsHeld": 0,
           "inSlot": true
         },
-        "stackGroup": null,
         "containerId": null,
         "size": "med",
         "material": {
@@ -1156,9 +1206,6 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "wornarmor"
-        },
         "category": "unarmored",
         "group": "cloth",
         "acBonus": 0,
@@ -1166,6 +1213,17 @@
         "dexCap": 5,
         "checkPenalty": 0,
         "speedPenalty": 0,
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "resilient": 0,
+          "property": []
+        },
+        "subitems": [],
+        "stackGroup": null,
+        "usage": {
+          "value": "wornarmor"
+        },
         "potencyRune": {
           "value": 1
         },
@@ -1197,19 +1255,20 @@
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "5.10.1",
-        "coreVersion": "11.315",
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": 1701556648832,
-        "lastModifiedBy": "v0RvORcwGexWLCjc"
+        "lastModifiedBy": "v0RvORcwGexWLCjc",
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.dDIPA1WE9ESF67EB",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.6bvphRcfQYiCABsL"
     },
     {
       "_id": "SHx92909fBohpqgd",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.r1hgg2rweqGL1LBl"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/hand-of-the-mage.webp",
       "name": "Hand of the Mage",
@@ -1267,7 +1326,6 @@
           "invested": true,
           "handsHeld": 0
         },
-        "stackGroup": null,
         "containerId": null,
         "size": "med",
         "material": {
@@ -1289,7 +1347,9 @@
         },
         "usage": {
           "value": "worn"
-        }
+        },
+        "subitems": [],
+        "stackGroup": null
       },
       "type": "equipment",
       "effects": [],
@@ -1300,19 +1360,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.r1hgg2rweqGL1LBl",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.SHx92909fBohpqgd"
     },
     {
       "_id": "hVE0s1QPrPm9KshM",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.VHxXMvBeBTq2FSdf"
-        }
+        "core": {}
       },
       "img": "icons/containers/bags/pack-engraved-leather-blue.webp",
       "name": "Material Component Pouch",
@@ -1366,7 +1427,6 @@
           "carryType": "worn",
           "invested": null
         },
-        "stackGroup": null,
         "containerId": null,
         "size": "med",
         "material": {
@@ -1388,7 +1448,9 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": [],
+        "stackGroup": null
       },
       "type": "equipment",
       "effects": [],
@@ -1399,19 +1461,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.VHxXMvBeBTq2FSdf",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.hVE0s1QPrPm9KshM"
     },
     {
       "_id": "pGvBAGV4f4BWvujA",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/elixir-of-life.webp",
       "name": "Elixir of Life (Lesser)",
@@ -1469,7 +1532,6 @@
         "equipped": {
           "carryType": "worn"
         },
-        "stackGroup": null,
         "containerId": null,
         "size": "med",
         "material": {
@@ -1489,9 +1551,18 @@
           },
           "misidentified": {}
         },
+        "category": "other",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
+        "spell": null,
+        "stackGroup": null,
         "consumableType": {
           "value": "elixir"
         },
@@ -1504,8 +1575,7 @@
         },
         "autoDestroy": {
           "value": true
-        },
-        "spell": null
+        }
       },
       "type": "consumable",
       "effects": [],
@@ -1516,19 +1586,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.pGvBAGV4f4BWvujA"
     },
     {
       "_id": "WijdnVlb8LotGSAt",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.GyO89RBVjAKFxsFm"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/mistform-elixir.webp",
       "name": "Mistform Elixir (Lesser)",
@@ -1587,7 +1658,6 @@
         "equipped": {
           "carryType": "worn"
         },
-        "stackGroup": null,
         "containerId": null,
         "size": "med",
         "material": {
@@ -1607,9 +1677,18 @@
           },
           "misidentified": {}
         },
+        "category": "other",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
+        "spell": null,
+        "stackGroup": null,
         "consumableType": {
           "value": "elixir"
         },
@@ -1622,8 +1701,7 @@
         },
         "autoDestroy": {
           "value": true
-        },
-        "spell": null
+        }
       },
       "type": "consumable",
       "effects": [],
@@ -1634,19 +1712,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.GyO89RBVjAKFxsFm",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.WijdnVlb8LotGSAt"
     },
     {
       "_id": "LPwaMavBqWpLqknY",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/wands/magic-wands/magic-wand.webp",
       "name": "Wand of Mage Armor (Level 1)",
@@ -1704,7 +1783,6 @@
         "equipped": {
           "carryType": "worn"
         },
-        "stackGroup": null,
         "containerId": null,
         "size": "med",
         "material": {
@@ -1724,21 +1802,15 @@
           },
           "misidentified": {}
         },
+        "category": "other",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
-        },
-        "consumableType": {
-          "value": "wand"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1
-        },
-        "consume": {
-          "value": ""
-        },
-        "autoDestroy": {
-          "value": false
         },
         "spell": {
           "_id": null,
@@ -1802,6 +1874,20 @@
             }
           },
           "type": "spell"
+        },
+        "stackGroup": null,
+        "consumableType": {
+          "value": "wand"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1
+        },
+        "consume": {
+          "value": ""
+        },
+        "autoDestroy": {
+          "value": false
         }
       },
       "type": "consumable",
@@ -1813,19 +1899,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.LPwaMavBqWpLqknY"
     },
     {
       "_id": "IFcH5qLuWvbwDvQp",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/wands/magic-wands/magic-wand.webp",
       "name": "Wand of Magic Missile (Level 1)",
@@ -1883,7 +1970,6 @@
         "equipped": {
           "carryType": "worn"
         },
-        "stackGroup": null,
         "containerId": null,
         "size": "med",
         "material": {
@@ -1903,21 +1989,15 @@
           },
           "misidentified": {}
         },
+        "category": "other",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
-        },
-        "consumableType": {
-          "value": "wand"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1
-        },
-        "consume": {
-          "value": ""
-        },
-        "autoDestroy": {
-          "value": false
         },
         "spell": {
           "_id": null,
@@ -1994,6 +2074,20 @@
             }
           },
           "type": "spell"
+        },
+        "stackGroup": null,
+        "consumableType": {
+          "value": "wand"
+        },
+        "charges": {
+          "value": 1,
+          "max": 1
+        },
+        "consume": {
+          "value": ""
+        },
+        "autoDestroy": {
+          "value": false
         }
       },
       "type": "consumable",
@@ -2005,19 +2099,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.UJWiN0K3jqVjxvKk",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.IFcH5qLuWvbwDvQp"
     },
     {
       "_id": "fsmMWG1MbH9hunJm",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.B6B7tBWJSqOBz5zz"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/treasure/currency/gold-pieces.webp",
       "name": "Gold Pieces",
@@ -2070,7 +2165,6 @@
         "equipped": {
           "carryType": "worn"
         },
-        "stackGroup": "coins",
         "containerId": null,
         "size": "med",
         "material": {
@@ -2090,6 +2184,7 @@
           },
           "misidentified": {}
         },
+        "stackGroup": "coins",
         "usage": {
           "value": ""
         }
@@ -2103,19 +2198,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.B6B7tBWJSqOBz5zz",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.fsmMWG1MbH9hunJm"
     },
     {
       "_id": "sxBPogFx4Uhx2Gys",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.5Ew82vBF9YfaiY9f"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/treasure/currency/silver-pieces.webp",
       "name": "Silver Pieces",
@@ -2168,7 +2264,6 @@
         "equipped": {
           "carryType": "worn"
         },
-        "stackGroup": "coins",
         "containerId": null,
         "size": "med",
         "material": {
@@ -2188,6 +2283,7 @@
           },
           "misidentified": {}
         },
+        "stackGroup": "coins",
         "usage": {
           "value": ""
         }
@@ -2201,19 +2297,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.5Ew82vBF9YfaiY9f",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.sxBPogFx4Uhx2Gys"
     },
     {
       "_id": "iHsaOi44AL272U1E",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.3lgwjrFEsQVKzhh7"
-        }
+        "core": {}
       },
       "img": "icons/containers/bags/pack-leather-white-tan.webp",
       "name": "Backpack",
@@ -2272,7 +2369,6 @@
           "handsHeld": 0,
           "inSlot": true
         },
-        "stackGroup": null,
         "containerId": null,
         "size": "med",
         "material": {
@@ -2292,11 +2388,12 @@
           },
           "misidentified": {}
         },
+        "collapsed": false,
+        "stowing": true,
         "usage": {
           "value": "wornbackpack"
         },
-        "collapsed": false,
-        "stowing": true
+        "stackGroup": null
       },
       "type": "backpack",
       "effects": [],
@@ -2307,19 +2404,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.3lgwjrFEsQVKzhh7",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.iHsaOi44AL272U1E"
     },
     {
       "_id": "vyHOdKoGXY57Spbc",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS"
-        }
+        "core": {}
       },
       "img": "icons/sundries/survival/rope-wrapped-brown.webp",
       "name": "Rope",
@@ -2373,7 +2471,6 @@
           "carryType": "worn",
           "invested": null
         },
-        "stackGroup": null,
         "containerId": "iHsaOi44AL272U1E",
         "size": "med",
         "material": {
@@ -2395,7 +2492,9 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": [],
+        "stackGroup": null
       },
       "type": "equipment",
       "effects": [],
@@ -2406,19 +2505,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.vyHOdKoGXY57Spbc"
     },
     {
       "_id": "kcIXnhjBUCunhYH9",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.VnPh324pKwd2ZB66"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/waterskin.webp",
       "name": "Waterskin",
@@ -2472,7 +2572,6 @@
           "carryType": "worn",
           "invested": null
         },
-        "stackGroup": null,
         "containerId": "iHsaOi44AL272U1E",
         "size": "med",
         "material": {
@@ -2494,7 +2593,9 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": [],
+        "stackGroup": null
       },
       "type": "equipment",
       "effects": [],
@@ -2505,19 +2606,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.VnPh324pKwd2ZB66",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.kcIXnhjBUCunhYH9"
     },
     {
       "_id": "EMySoKhbCIyuHDMY",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.xShIDyydOMkGvGNb"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/chalk.webp",
       "name": "Chalk",
@@ -2571,7 +2673,6 @@
         "equipped": {
           "carryType": "worn"
         },
-        "stackGroup": null,
         "containerId": "iHsaOi44AL272U1E",
         "size": "med",
         "material": {
@@ -2591,9 +2692,18 @@
           },
           "misidentified": {}
         },
+        "category": "other",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
+        "spell": null,
+        "stackGroup": null,
         "consumableType": {
           "value": "other"
         },
@@ -2606,8 +2716,7 @@
         },
         "autoDestroy": {
           "value": true
-        },
-        "spell": null
+        }
       },
       "type": "consumable",
       "effects": [],
@@ -2618,19 +2727,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.xShIDyydOMkGvGNb",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.EMySoKhbCIyuHDMY"
     },
     {
       "_id": "uPBGA4PUOjRj833z",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.UlIxxLm71UdRgCFE"
-        }
+        "core": {}
       },
       "img": "icons/commodities/stone/geode-raw-tan.webp",
       "name": "Flint and Steel",
@@ -2684,7 +2794,6 @@
           "carryType": "worn",
           "invested": null
         },
-        "stackGroup": null,
         "containerId": "iHsaOi44AL272U1E",
         "size": "med",
         "material": {
@@ -2706,7 +2815,9 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": [],
+        "stackGroup": null
       },
       "type": "equipment",
       "effects": [],
@@ -2717,19 +2828,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.UlIxxLm71UdRgCFE",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.uPBGA4PUOjRj833z"
     },
     {
       "_id": "gJnlTQAYZaWAgIBI",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.L9ZV076913otGtiB"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/rations.webp",
       "name": "Rations",
@@ -2782,7 +2894,6 @@
         "equipped": {
           "carryType": "worn"
         },
-        "stackGroup": null,
         "containerId": "iHsaOi44AL272U1E",
         "size": "med",
         "material": {
@@ -2802,9 +2913,18 @@
           },
           "misidentified": {}
         },
+        "category": "other",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
+        "spell": null,
+        "stackGroup": null,
         "consumableType": {
           "value": "other"
         },
@@ -2817,8 +2937,7 @@
         },
         "autoDestroy": {
           "value": true
-        },
-        "spell": null
+        }
       },
       "type": "consumable",
       "effects": [],
@@ -2829,19 +2948,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.L9ZV076913otGtiB",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.gJnlTQAYZaWAgIBI"
     },
     {
       "_id": "xazLwz9kynwVaIVB",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.8Jdw4yAzWYylGePS"
-        }
+        "core": {}
       },
       "img": "icons/sundries/lights/torch-brown.webp",
       "name": "Torch",
@@ -2975,7 +3095,6 @@
           "carryType": "worn",
           "invested": null
         },
-        "stackGroup": null,
         "containerId": "iHsaOi44AL272U1E",
         "size": "med",
         "material": {
@@ -2997,7 +3116,9 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": [],
+        "stackGroup": null
       },
       "type": "equipment",
       "effects": [],
@@ -3008,19 +3129,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.8Jdw4yAzWYylGePS",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.xazLwz9kynwVaIVB"
     },
     {
       "_id": "7oOwwa4jUpeggZD4",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.fagzYdmfYyMQ6J77"
-        }
+        "core": {}
       },
       "img": "icons/containers/ammunition/quiver-simple-brown.webp",
       "name": "Bedroll",
@@ -3074,7 +3196,6 @@
           "carryType": "worn",
           "invested": null
         },
-        "stackGroup": null,
         "containerId": "iHsaOi44AL272U1E",
         "size": "med",
         "material": {
@@ -3096,7 +3217,9 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": [],
+        "stackGroup": null
       },
       "type": "equipment",
       "effects": [],
@@ -3107,19 +3230,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.fagzYdmfYyMQ6J77",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.7oOwwa4jUpeggZD4"
     },
     {
       "_id": "bbVMfC67kUVDCsR4",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.81aHsD27HFGnq1Nt"
-        }
+        "core": {}
       },
       "img": "icons/sundries/survival/soap.webp",
       "name": "Soap",
@@ -3173,7 +3297,6 @@
           "carryType": "worn",
           "invested": null
         },
-        "stackGroup": null,
         "containerId": "iHsaOi44AL272U1E",
         "size": "med",
         "material": {
@@ -3195,7 +3318,9 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": [],
+        "stackGroup": null
       },
       "type": "equipment",
       "effects": [],
@@ -3206,19 +3331,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.81aHsD27HFGnq1Nt",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.bbVMfC67kUVDCsR4"
     },
     {
       "_id": "TdY213e92GovUbKZ",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE"
-        }
+        "core": {}
       },
       "img": "icons/sundries/books/book-symbol-spiral-silver-blue.webp",
       "name": "Spellbook",
@@ -3273,7 +3399,6 @@
           "invested": null,
           "handsHeld": 0
         },
-        "stackGroup": null,
         "containerId": "iHsaOi44AL272U1E",
         "size": "med",
         "material": {
@@ -3295,7 +3420,9 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": [],
+        "stackGroup": null
       },
       "type": "equipment",
       "effects": [],
@@ -3306,19 +3433,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.FOWF5f0tCaApv9RE",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.TdY213e92GovUbKZ"
     },
     {
       "_id": "UM5D6XGB148aoOAn",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.6DCy7tEF1cxaIJMy"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/grapling-hook.webp",
       "name": "Grappling Hook",
@@ -3372,7 +3500,6 @@
           "carryType": "worn",
           "invested": null
         },
-        "stackGroup": null,
         "containerId": "iHsaOi44AL272U1E",
         "size": "med",
         "material": {
@@ -3394,7 +3521,9 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": [],
+        "stackGroup": null
       },
       "type": "equipment",
       "effects": [],
@@ -3405,19 +3534,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.6DCy7tEF1cxaIJMy",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.UM5D6XGB148aoOAn"
     },
     {
       "_id": "trr2tYFoU7Z9C599",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.QJb8S927Yj81EgHH"
-        }
+        "core": {}
       },
       "img": "icons/tools/scribal/ink-quill-red.webp",
       "name": "Writing Set",
@@ -3471,7 +3601,6 @@
           "carryType": "worn",
           "invested": null
         },
-        "stackGroup": null,
         "containerId": "iHsaOi44AL272U1E",
         "size": "med",
         "material": {
@@ -3493,7 +3622,9 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": [],
+        "stackGroup": null
       },
       "type": "equipment",
       "effects": [],
@@ -3504,10 +3635,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.QJb8S927Yj81EgHH",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.trr2tYFoU7Z9C599"
     },
@@ -3555,9 +3689,6 @@
           "value": "prepared",
           "flexible": false
         },
-        "showUnpreparedSpells": {
-          "value": false
-        },
         "showSlotlessLevels": {
           "value": true
         },
@@ -3565,7 +3696,6 @@
           "value": 1,
           "slug": ""
         },
-        "displayLevels": {},
         "slots": {
           "slot0": {
             "prepared": {
@@ -3680,7 +3810,11 @@
         },
         "autoHeightenLevel": {
           "value": null
-        }
+        },
+        "showUnpreparedSpells": {
+          "value": false
+        },
+        "displayLevels": {}
       },
       "type": "spellcastingEntry",
       "effects": [],
@@ -3692,19 +3826,20 @@
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "5.10.5",
-        "coreVersion": "11.315",
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": 1701931043757,
-        "lastModifiedBy": "v0RvORcwGexWLCjc"
+        "lastModifiedBy": "v0RvORcwGexWLCjc",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.eB2ib8L8XWOvMFGB"
     },
     {
       "_id": "5vO6OQR9rEBQO6BL",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.gISYsBFby1TiXfBt"
-        }
+        "core": {}
       },
       "img": "icons/magic/acid/projectile-smoke-glowing.webp",
       "name": "Acid Splash",
@@ -3881,19 +4016,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.gISYsBFby1TiXfBt",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.5vO6OQR9rEBQO6BL"
     },
     {
       "_id": "7NdQ0HaKI5BESwPc",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/detect-magic.webp",
       "name": "Detect Magic",
@@ -3976,19 +4112,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.7NdQ0HaKI5BESwPc"
     },
     {
       "_id": "04VG3XRYPkza2hO0",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.kBhaPuzLUSwS6vVf"
-        }
+        "core": {}
       },
       "img": "icons/magic/lightning/bolt-strike-forked-blue.webp",
       "name": "Electric Arc",
@@ -4089,19 +4226,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.kBhaPuzLUSwS6vVf",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.04VG3XRYPkza2hO0"
     },
     {
       "_id": "NkpAWb9qxrDQog7x",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/light.webp",
       "name": "Light",
@@ -4181,19 +4319,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.NkpAWb9qxrDQog7x"
     },
     {
       "_id": "P4urnPsVnU9azLRL",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/mage-hand.webp",
       "name": "Telekinetic Hand",
@@ -4290,19 +4429,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.P4urnPsVnU9azLRL"
     },
     {
       "_id": "zva8iSfXwycom5JX",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.vLzFcIaSXs7YTIqJ"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/message.webp",
       "name": "Message",
@@ -4393,19 +4533,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.vLzFcIaSXs7YTIqJ",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.zva8iSfXwycom5JX"
     },
     {
       "_id": "1ou1Tkl4Y5iPjMcl",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh"
-        }
+        "core": {}
       },
       "img": "icons/magic/movement/trail-streak-impact-blue.webp",
       "name": "Ray of Frost",
@@ -4502,19 +4643,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.gYjPm7YwGtEa1oxh",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.1ou1Tkl4Y5iPjMcl"
     },
     {
       "_id": "uIITb4ngtkbiyakf",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.OhD2Z6rIGGD5ocZA"
-        }
+        "core": {}
       },
       "img": "icons/magic/light/explosion-star-glow-silhouette.webp",
       "name": "Read Aura",
@@ -4609,19 +4751,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.OhD2Z6rIGGD5ocZA",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.uIITb4ngtkbiyakf"
     },
     {
       "_id": "7Z1IDP0Ht22yuSuC",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/shield.webp",
       "name": "Shield",
@@ -4699,19 +4842,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.7Z1IDP0Ht22yuSuC"
     },
     {
       "_id": "L2TyA5dChq33mMtW",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.60sgbuMWN0268dB7"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/telekinetic-projectile.webp",
       "name": "Telekinetic Projectile",
@@ -4851,19 +4995,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.60sgbuMWN0268dB7",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.L2TyA5dChq33mMtW"
     },
     {
       "_id": "uaKqwxZEZ8oIoY6d",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/burning-hands.webp",
       "name": "Breathe Fire",
@@ -4966,19 +5111,20 @@
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "5.10.5",
-        "coreVersion": "11.315",
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": 1701931041117,
-        "lastModifiedBy": "v0RvORcwGexWLCjc"
+        "lastModifiedBy": "v0RvORcwGexWLCjc",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.y6rAdMK6EFlV6U0t",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.uaKqwxZEZ8oIoY6d"
     },
     {
       "_id": "wBMEwwmfEjujZVgt",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.UKsIOWmMx4hSpafl"
-        }
+        "core": {}
       },
       "img": "icons/magic/control/buff-luck-fortune-rainbow.webp",
       "name": "Color Spray",
@@ -5065,19 +5211,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.UKsIOWmMx4hSpafl",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.wBMEwwmfEjujZVgt"
     },
     {
       "_id": "et625nxD5eOV90m1",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.Wu0xFpewMKRK3HG8"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/grease.webp",
       "name": "Grease",
@@ -5158,19 +5305,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.Wu0xFpewMKRK3HG8",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.et625nxD5eOV90m1"
     },
     {
       "_id": "H8hELT8z52K7hzJP",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.aAbfKn8maGjJjk2W"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/mage-armor.webp",
       "name": "Mystic Armor",
@@ -5248,19 +5396,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.aAbfKn8maGjJjk2W",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.H8hELT8z52K7hzJP"
     },
     {
       "_id": "f51cyzeTIx9d1N2N",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/magic-missile.webp",
       "name": "Magic Missile",
@@ -5349,19 +5498,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.gKKqvLohtrSJj3BM",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.f51cyzeTIx9d1N2N"
     },
     {
       "_id": "w6F4YPiAtKmruAil",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.r3NeUnsgt9mS03Sn"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/shocking-grasp.webp",
       "name": "Shocking Grasp",
@@ -5456,19 +5606,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.r3NeUnsgt9mS03Sn",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.w6F4YPiAtKmruAil"
     },
     {
       "_id": "l0b0fhUuTWlTYihf",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh"
-        }
+        "core": {}
       },
       "img": "icons/skills/melee/strike-blade-scimitar-gray-red.webp",
       "name": "True Strike",
@@ -5544,19 +5695,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.Gb7SeieEvd0pL2Eh",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.l0b0fhUuTWlTYihf"
     },
     {
       "_id": "6osSQA0RyQyOhSbI",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0"
-        }
+        "core": {}
       },
       "img": "icons/skills/melee/spear-tips-double-purple.webp",
       "name": "Acid Arrow",
@@ -5652,19 +5804,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.f8hRqLJaxBVhF1u0",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.6osSQA0RyQyOhSbI"
     },
     {
       "_id": "gRZWdhc5ozqtOxrz",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/dispel-magic.webp",
       "name": "Dispel Magic",
@@ -5742,19 +5895,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.gRZWdhc5ozqtOxrz"
     },
     {
       "_id": "9Jwevi26hqMnSXRC",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/glitterdust.webp",
       "name": "Glitterdust",
@@ -5838,19 +5992,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.0qaqksrGGDj74HXE",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.9Jwevi26hqMnSXRC"
     },
     {
       "_id": "h0A8nBndQiNxWUGD",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.j8vIoIEWElvpwkcI"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/mirror-image.webp",
       "name": "Mirror Image",
@@ -5928,19 +6083,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.j8vIoIEWElvpwkcI",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.h0A8nBndQiNxWUGD"
     },
     {
       "_id": "8bIouu31u9KlNCoG",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd"
-        }
+        "core": {}
       },
       "img": "icons/magic/fire/projectile-fireball-orange-yellow.webp",
       "name": "Fireball",
@@ -6043,19 +6199,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.8bIouu31u9KlNCoG"
     },
     {
       "_id": "RrUVNCjzhGsmEbVA",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/haste.webp",
       "name": "Haste",
@@ -6142,10 +6299,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.o6YCGx4lycsYpww4",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.RrUVNCjzhGsmEbVA"
     },
@@ -6192,9 +6352,6 @@
         "prepared": {
           "value": "focus"
         },
-        "showUnpreparedSpells": {
-          "value": false
-        },
         "showSlotlessLevels": {
           "value": true
         },
@@ -6202,7 +6359,6 @@
           "value": 1,
           "slug": ""
         },
-        "displayLevels": {},
         "slots": {
           "slot0": {
             "prepared": [],
@@ -6267,7 +6423,11 @@
         },
         "autoHeightenLevel": {
           "value": null
-        }
+        },
+        "showUnpreparedSpells": {
+          "value": false
+        },
+        "displayLevels": {}
       },
       "type": "spellcastingEntry",
       "effects": [],
@@ -6279,19 +6439,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.no60QT2wvZVf3hyE"
     },
     {
       "_id": "OqVBLhxfzj3H68y5",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.bSDTWUIvgXkBaEv8"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/hand-of-the-apprentice.webp",
       "name": "Hand of the Apprentice",
@@ -6366,19 +6527,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.bSDTWUIvgXkBaEv8",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.OqVBLhxfzj3H68y5"
     },
     {
       "_id": "W21iTrNBNuKn5Q6i",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classes.Item.RwjIZzIxzPpUglnK"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/classes/wizard.webp",
       "name": "Wizard",
@@ -6637,19 +6799,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classes.Item.RwjIZzIxzPpUglnK",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.W21iTrNBNuKn5Q6i"
     },
     {
       "_id": "tIMcU1gp70Bbvgkc",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.ancestries.Item.IiG7DgeLWYrSNXuX"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/default-icons/alternatives/ancestries/human.svg",
       "name": "Human",
@@ -6686,6 +6849,7 @@
         },
         "hp": 8,
         "size": "med",
+        "hands": 2,
         "reach": 5,
         "speed": 25,
         "boosts": {
@@ -6743,19 +6907,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.ancestries.Item.IiG7DgeLWYrSNXuX",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.tIMcU1gp70Bbvgkc"
     },
     {
       "_id": "Gi9S80KENDN0XOxQ",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classfeatures.Item.7nbKDBGvwSx9T27G"
-        },
+        "core": {},
         "pf2e": {
           "itemGrants": {}
         }
@@ -6818,19 +6983,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classfeatures.Item.7nbKDBGvwSx9T27G",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.Gi9S80KENDN0XOxQ"
     },
     {
       "_id": "znYIIr3ZqZxVBX9P",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classfeatures.Item.M89l9FOnjHe63wD7"
-        },
+        "core": {},
         "pf2e": {
           "itemGrants": {
             "metamagicalExperimentation": {
@@ -6916,19 +7082,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classfeatures.Item.M89l9FOnjHe63wD7",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.znYIIr3ZqZxVBX9P"
     },
     {
       "_id": "0q3td9hTS2TqCdSm",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classfeatures.Item.au0lwQ1nAcNQwcGh"
-        },
+        "core": {},
         "pf2e": {
           "itemGrants": {
             "drainBondedItem": {
@@ -7002,19 +7169,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classfeatures.Item.au0lwQ1nAcNQwcGh",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.0q3td9hTS2TqCdSm"
     },
     {
       "_id": "xrf6HQFuMocqRFko",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classfeatures.Item.S6WW4Yyg4XonXGHD"
-        },
+        "core": {},
         "pf2e": {
           "itemGrants": {
             "castASpell": {
@@ -7089,19 +7257,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classfeatures.Item.S6WW4Yyg4XonXGHD",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.xrf6HQFuMocqRFko"
     },
     {
       "_id": "Rk5PF1zBKCXQXRtu",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classfeatures.Item.TUOeATt52P43r5W0"
-        }
+        "core": {}
       },
       "img": "icons/magic/symbols/symbol-lightning-bolt.webp",
       "name": "Lightning Reflexes",
@@ -7166,19 +7335,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classfeatures.Item.TUOeATt52P43r5W0",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.Rk5PF1zBKCXQXRtu"
     },
     {
       "_id": "cvh0KxWPE78z8oyf",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q"
-        },
+        "core": {},
         "pf2e": {
           "grantedBy": {
             "id": "neg0n3pxT240pHqN",
@@ -7250,19 +7420,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.FoWO4RnHRwfEIC7Q",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.cvh0KxWPE78z8oyf"
     },
     {
       "_id": "neg0n3pxT240pHqN",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classfeatures.Item.89zWKD2CN7nRu2xp"
-        },
+        "core": {},
         "pf2e": {
           "grantedBy": {
             "id": "znYIIr3ZqZxVBX9P",
@@ -7375,19 +7546,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classfeatures.Item.89zWKD2CN7nRu2xp",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.neg0n3pxT240pHqN"
     },
     {
       "_id": "7t4CPEdCXwGr2Txm",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.actionspf2e.Item.v82XtjAVN4ffgVVR"
-        },
+        "core": {},
         "pf2e": {
           "grantedBy": {
             "id": "0q3td9hTS2TqCdSm",
@@ -7435,13 +7607,13 @@
         "actions": {
           "value": null
         },
+        "deathNote": false,
         "requirements": {
           "value": ""
         },
         "trigger": {
           "value": ""
         },
-        "deathNote": false,
         "frequency": {
           "max": 1,
           "per": "day"
@@ -7459,19 +7631,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.actionspf2e.Item.v82XtjAVN4ffgVVR",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.7t4CPEdCXwGr2Txm"
     },
     {
       "_id": "VIR8NcIOnPF1lI1U",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz"
-        },
+        "core": {},
         "pf2e": {
           "grantedBy": {
             "id": "xrf6HQFuMocqRFko",
@@ -7518,13 +7691,13 @@
         "actions": {
           "value": null
         },
+        "deathNote": false,
         "requirements": {
           "value": ""
         },
         "trigger": {
           "value": ""
         },
-        "deathNote": false,
         "weapon": {
           "value": ""
         }
@@ -7538,19 +7711,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.VIR8NcIOnPF1lI1U"
     },
     {
       "_id": "NcwZb5hqQav2MLTO",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.classfeatures.Item.qczCKdg47eAmCOUD"
-        },
+        "core": {},
         "pf2e": {
           "itemGrants": {
             "reachSpell": {
@@ -7641,19 +7815,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.classfeatures.Item.qczCKdg47eAmCOUD",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.NcwZb5hqQav2MLTO"
     },
     {
       "_id": "24jV4lYDXurJY6pn",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.BWomK7EVY0WXxWgh"
-        },
+        "core": {},
         "pf2e": {
           "grantedBy": {
             "id": "NcwZb5hqQav2MLTO",
@@ -7727,19 +7902,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.BWomK7EVY0WXxWgh",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.24jV4lYDXurJY6pn"
     },
     {
       "_id": "syeaURK7h2g2UAYb",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.feats-srd.Item.tWBK7Zbt80JlPryC"
-        }
+        "core": {}
       },
       "img": "icons/sundries/books/book-red-exclamation.webp",
       "name": "Bespell Strikes",
@@ -7809,10 +7985,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.feats-srd.Item.tWBK7Zbt80JlPryC",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.syeaURK7h2g2UAYb"
     },
@@ -7879,17 +8058,18 @@
         "v0RvORcwGexWLCjc": 3
       },
       "flags": {
-        "core": {
-          "sourceId": "Item.pUqWb5yELX6MJQIJ"
-        }
+        "core": {}
       },
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "5.10.3",
-        "coreVersion": "11.315",
+        "coreVersion": "14.360",
         "createdTime": 1701810717653,
         "modifiedTime": 1701810776733,
-        "lastModifiedBy": "v0RvORcwGexWLCjc"
+        "lastModifiedBy": "v0RvORcwGexWLCjc",
+        "compendiumSource": "Item.pUqWb5yELX6MJQIJ",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.C2oSJCuC9RAjJpW8"
     },
@@ -7956,17 +8136,18 @@
         "v0RvORcwGexWLCjc": 3
       },
       "flags": {
-        "core": {
-          "sourceId": "Item.pUqWb5yELX6MJQIJ"
-        }
+        "core": {}
       },
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "5.10.3",
-        "coreVersion": "11.315",
+        "coreVersion": "14.360",
         "createdTime": 1701810717653,
         "modifiedTime": 1701810798034,
-        "lastModifiedBy": "v0RvORcwGexWLCjc"
+        "lastModifiedBy": "v0RvORcwGexWLCjc",
+        "compendiumSource": "Item.pUqWb5yELX6MJQIJ",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.KKrJctDYkWW7hcwm"
     },
@@ -8033,17 +8214,18 @@
         "v0RvORcwGexWLCjc": 3
       },
       "flags": {
-        "core": {
-          "sourceId": "Item.pUqWb5yELX6MJQIJ"
-        }
+        "core": {}
       },
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "5.10.3",
-        "coreVersion": "11.315",
+        "coreVersion": "14.360",
         "createdTime": 1701810717653,
         "modifiedTime": 1701810801875,
-        "lastModifiedBy": "v0RvORcwGexWLCjc"
+        "lastModifiedBy": "v0RvORcwGexWLCjc",
+        "compendiumSource": "Item.pUqWb5yELX6MJQIJ",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!pPlpEfPAUuj6ajwQ.syMHV1mk0U1cu3ZP"
     }
@@ -8055,15 +8237,22 @@
         "value": 53,
         "temp": 0
       },
-      "initiative": {
-        "statistic": "perception"
-      },
       "speed": {
         "value": 25,
         "otherSpeeds": []
+      },
+      "initiative": {
+        "statistic": "perception"
       }
     },
+    "initiative": {
+      "statistic": "perception"
+    },
     "details": {
+      "languages": {
+        "value": [],
+        "details": ""
+      },
       "level": {
         "value": 5
       },
@@ -8120,23 +8309,6 @@
       "deity": {
         "image": "systems/pf2e/icons/default-icons/deity.svg",
         "value": ""
-      }
-    },
-    "traits": {
-      "value": [
-        "good"
-      ],
-      "senses": [],
-      "languages": {
-        "value": [
-          "draconic",
-          "dwarven",
-          "halfling",
-          "sakvroth",
-          "varisian"
-        ],
-        "custom": "",
-        "selected": []
       }
     },
     "resources": {
@@ -8224,6 +8396,23 @@
       "fame": 0
     },
     "exploration": [],
+    "traits": {
+      "value": [
+        "good"
+      ],
+      "senses": [],
+      "languages": {
+        "value": [
+          "draconic",
+          "dwarven",
+          "halfling",
+          "sakvroth",
+          "varisian"
+        ],
+        "custom": "",
+        "selected": []
+      }
+    },
     "build": {
       "attributes": {
         "boosts": {
@@ -8250,9 +8439,7 @@
   },
   "type": "character",
   "flags": {
-    "core": {
-      "sourceId": "Compendium.pf2e.iconics.Actor.XI1j0hr3An6W5gAe"
-    },
+    "core": {},
     "pf2e": {
       "freeCrafting": false
     },
@@ -8269,10 +8456,13 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "5.10.5",
-    "coreVersion": "11.315",
+    "coreVersion": "14.360",
     "createdTime": 1701556381554,
     "modifiedTime": 1701980682576,
-    "lastModifiedBy": "v0RvORcwGexWLCjc"
+    "lastModifiedBy": "v0RvORcwGexWLCjc",
+    "compendiumSource": "Compendium.pf2e.iconics.Actor.XI1j0hr3An6W5gAe",
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_id": "pPlpEfPAUuj6ajwQ",
   "sort": 2650000,

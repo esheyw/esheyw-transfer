@@ -10,16 +10,19 @@
       "runAsGM": false,
       "runForSpecificUser": ""
     },
-    "cf": null,
+    "cf": {},
     "core": {}
   },
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "5.10.5",
-    "coreVersion": "11.315",
+    "coreVersion": "13.342",
     "createdTime": 1677456072582,
     "modifiedTime": 1702343866185,
-    "lastModifiedBy": "v0RvORcwGexWLCjc"
+    "lastModifiedBy": "v0RvORcwGexWLCjc",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_id": "cSZrUoDf8dDsI90r",
   "folder": "MUrlWbVP9uj79bSv",

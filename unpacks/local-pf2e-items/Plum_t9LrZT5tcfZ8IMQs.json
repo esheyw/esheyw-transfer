@@ -9,12 +9,12 @@
     "rules": [],
     "slug": null,
     "_migration": {
-      "version": 0.878,
+      "version": 0.925,
       "lastMigration": null,
       "previous": {
-        "schema": 0.815,
-        "foundry": "11.313",
-        "system": "5.7.2"
+        "schema": 0.878,
+        "foundry": "11.315",
+        "system": "5.14.4"
       }
     },
     "traits": {
@@ -33,28 +33,22 @@
     },
     "quantity": 9,
     "baseItem": null,
+    "bulk": {
+      "value": 0
+    },
     "hp": {
       "value": 0,
       "max": 0
     },
     "hardness": 0,
-    "weight": {
-      "value": "-"
-    },
-    "equippedBulk": {
-      "value": ""
-    },
     "price": {
       "value": {
         "cp": 2
       }
     },
     "equipped": {
-      "carryType": "worn"
-    },
-    "stackGroup": null,
-    "negateBulk": {
-      "value": "0"
+      "carryType": "worn",
+      "handsHeld": 0
     },
     "containerId": null,
     "size": "med",
@@ -75,22 +69,18 @@
       },
       "misidentified": {}
     },
+    "category": "other",
+    "uses": {
+      "value": 1,
+      "max": 1,
+      "autoDestroy": true,
+      "per": null
+    },
+    "damage": null,
     "usage": {
       "value": "held-in-one-hand"
     },
-    "consumableType": {
-      "value": "other"
-    },
-    "charges": {
-      "value": 0,
-      "max": 0
-    },
-    "consume": {
-      "value": ""
-    },
-    "autoDestroy": {
-      "value": true
-    },
+    "stackGroup": null,
     "spell": null,
     "activation": {
       "type": "",
@@ -110,11 +100,6 @@
       "value": null,
       "long": null,
       "units": ""
-    },
-    "uses": {
-      "value": 0,
-      "max": 0,
-      "per": null
     }
   },
   "img": "Assets/items/Plum-transformed.webp",
@@ -130,11 +115,14 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.7.2",
-    "coreVersion": "11.313",
+    "systemVersion": "5.14.4",
+    "coreVersion": "13.342",
     "createdTime": 1666478171234,
-    "modifiedTime": 1697493557092,
-    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+    "modifiedTime": 1711396466703,
+    "lastModifiedBy": "dr4PZnZ9KX7ge6hN",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
   "folder": null,
   "_id": "t9LrZT5tcfZ8IMQs",

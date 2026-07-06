@@ -13,16 +13,19 @@
     "world": {
       "breathEffect": "Item.k2sy9dfV3MKbxzQX"
     },
-    "cf": null,
+    "cf": {},
     "core": {}
   },
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "5.10.5",
-    "coreVersion": "11.315",
+    "coreVersion": "13.342",
     "createdTime": 1681618829904,
     "modifiedTime": 1702343866185,
-    "lastModifiedBy": "v0RvORcwGexWLCjc"
+    "lastModifiedBy": "v0RvORcwGexWLCjc",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_id": "9FWvhTThyBG5N0WK",
   "folder": "MUrlWbVP9uj79bSv",

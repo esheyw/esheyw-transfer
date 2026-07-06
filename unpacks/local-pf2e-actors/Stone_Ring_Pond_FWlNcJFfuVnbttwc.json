@@ -13,7 +13,7 @@
       "saturation": 0,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "flags": {
       "pf2e": {
         "linkToActorSize": false,
@@ -65,19 +65,45 @@
         "max": 1
       },
       "color": null,
-      "attenuation": 0.5
+      "attenuation": 0.5,
+      "negative": false,
+      "priority": 0
     },
     "texture": {
       "src": "systems/pf2e/icons/default-icons/loot.svg",
-      "tint": null,
+      "tint": "#ffffff",
       "scaleX": 1,
       "scaleY": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "rotation": 0
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
     },
     "appendNumber": false,
-    "prependAdjective": false
+    "prependAdjective": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "depth": 1
   },
   "_id": "FWlNcJFfuVnbttwc",
   "name": "Stone Ring Pond",
@@ -90,9 +116,7 @@
       "type": "armor",
       "sort": 300000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/armor/leather-armor.webp",
       "effects": [],
@@ -105,12 +129,12 @@
         "rules": [],
         "slug": "leather-armor",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -129,17 +153,14 @@
         },
         "quantity": 3,
         "baseItem": "leather-armor",
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "2"
-        },
-        "equippedBulk": {
-          "value": "1"
-        },
         "price": {
           "value": {
             "gp": 2
@@ -150,10 +171,6 @@
           "invested": null,
           "handsHeld": 0,
           "inSlot": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -174,35 +191,20 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "wornarmor"
-        },
         "category": "light",
         "group": "leather",
         "acBonus": 1,
         "strength": 0,
         "dexCap": 4,
         "checkPenalty": -1,
-        "speedPenalty": null,
-        "potencyRune": {
-          "value": 0
+        "speedPenalty": 0,
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "resilient": 0,
+          "property": []
         },
-        "resiliencyRune": {
-          "value": ""
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
-        },
-        "potency": {}
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -210,10 +212,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.8I19QZQ5EAIe4ReK"
     },
@@ -223,9 +228,7 @@
       "type": "armor",
       "sort": 400000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.ewQZ0VeL38v3qFnN"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/armor/studded-leather-armor.webp",
       "effects": [],
@@ -238,12 +241,12 @@
         "rules": [],
         "slug": "studded-leather-armor",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -262,17 +265,14 @@
         },
         "quantity": 3,
         "baseItem": "studded-leather-armor",
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "2"
-        },
-        "equippedBulk": {
-          "value": "1"
-        },
         "price": {
           "value": {
             "gp": 3
@@ -283,10 +283,6 @@
           "invested": null,
           "handsHeld": 0,
           "inSlot": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -307,35 +303,20 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "wornarmor"
-        },
         "category": "light",
         "group": "leather",
         "acBonus": 2,
         "strength": 1,
         "dexCap": 3,
         "checkPenalty": -1,
-        "speedPenalty": null,
-        "potencyRune": {
-          "value": 0
+        "speedPenalty": 0,
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "resilient": 0,
+          "property": []
         },
-        "resiliencyRune": {
-          "value": ""
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
-        },
-        "potency": {}
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -343,10 +324,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.ewQZ0VeL38v3qFnN",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.CYvbTPPjbHw4lmef"
     },
@@ -356,9 +340,7 @@
       "type": "armor",
       "sort": 500000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.YMQr577asquZIP65"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/armor/scale-mail.webp",
       "effects": [],
@@ -371,12 +353,12 @@
         "rules": [],
         "slug": "scale-mail",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -395,17 +377,14 @@
         },
         "quantity": 3,
         "baseItem": "scale-mail",
+        "bulk": {
+          "value": 2
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "3"
-        },
-        "equippedBulk": {
-          "value": "2"
-        },
         "price": {
           "value": {
             "gp": 4
@@ -416,10 +395,6 @@
           "invested": null,
           "handsHeld": 0,
           "inSlot": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -440,9 +415,6 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "wornarmor"
-        },
         "category": "medium",
         "group": "composite",
         "acBonus": 3,
@@ -450,25 +422,13 @@
         "dexCap": 2,
         "checkPenalty": -2,
         "speedPenalty": -5,
-        "potencyRune": {
-          "value": 0
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "resilient": 0,
+          "property": []
         },
-        "resiliencyRune": {
-          "value": ""
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
-        },
-        "potency": {}
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -476,10 +436,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.YMQr577asquZIP65",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.PbGFFt5xBFIHgh85"
     },
@@ -489,9 +452,7 @@
       "type": "consumable",
       "sort": 600000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.GnXKCkgZQG0UmuHz"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/consumables/talismans/dragon-turtle-scale.webp",
       "effects": [],
@@ -504,12 +465,12 @@
         "rules": [],
         "slug": "dragon-turtle-scale",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -517,8 +478,7 @@
           "value": [
             "consumable",
             "magical",
-            "talisman",
-            "transmutation"
+            "talisman"
           ],
           "rarity": "common"
         },
@@ -533,17 +493,14 @@
         },
         "quantity": 2,
         "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "-"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 13
@@ -552,10 +509,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -576,25 +529,20 @@
           },
           "misidentified": {}
         },
+        "category": "talisman",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": null,
         "usage": {
           "value": "affixed-to-armor"
         },
-        "consumableType": {
-          "value": "talisman"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -614,13 +562,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -632,10 +573,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.GnXKCkgZQG0UmuHz",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.AeC7aYj5icV9C876"
     },
@@ -645,9 +589,7 @@
       "type": "consumable",
       "sort": 700000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/consumables/potions/healing-potion.webp",
       "effects": [],
@@ -660,12 +602,12 @@
         "rules": [],
         "slug": "healing-potion-lesser",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -674,7 +616,6 @@
             "consumable",
             "healing",
             "magical",
-            "necromancy",
             "potion"
           ],
           "rarity": "common"
@@ -690,17 +631,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 12
@@ -709,10 +647,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -733,25 +667,24 @@
           },
           "misidentified": {}
         },
+        "category": "potion",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": {
+          "formula": "2d8+5",
+          "kind": "healing",
+          "type": "untyped"
+        },
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "potion"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "2d8+5",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -771,13 +704,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -789,10 +715,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.gW8NIMLgG67BkrVb"
     },
@@ -802,9 +731,7 @@
       "type": "consumable",
       "sort": 800000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/consumables/potions/healing-potion.webp",
       "effects": [],
@@ -817,12 +744,12 @@
         "rules": [],
         "slug": "healing-potion-minor",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -831,7 +758,6 @@
             "consumable",
             "healing",
             "magical",
-            "necromancy",
             "potion"
           ],
           "rarity": "common"
@@ -847,17 +773,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 4
@@ -866,10 +789,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -890,25 +809,24 @@
           },
           "misidentified": {}
         },
+        "category": "potion",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": {
+          "formula": "1d8",
+          "kind": "healing",
+          "type": "untyped"
+        },
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "potion"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "1d8",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -928,13 +846,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -946,10 +857,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.2RuepCemJhrpKKao",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.7TcZE4Hzjc6N5iG8"
     },
@@ -959,9 +873,7 @@
       "type": "consumable",
       "sort": 900000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/consumables/potions/healing-potion.webp",
       "effects": [],
@@ -974,12 +886,12 @@
         "rules": [],
         "slug": "healing-potion-moderate",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -988,7 +900,6 @@
             "consumable",
             "healing",
             "magical",
-            "necromancy",
             "potion"
           ],
           "rarity": "common"
@@ -1004,17 +915,14 @@
         },
         "quantity": 3,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 50
@@ -1023,10 +931,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -1047,25 +951,24 @@
           },
           "misidentified": {}
         },
+        "category": "potion",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": {
+          "formula": "3d8+10",
+          "kind": "healing",
+          "type": "untyped"
+        },
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "potion"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "3d8+10",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -1085,13 +988,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -1103,10 +999,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.G7haQ5gDt30ftJLC",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.oOg7Szw9hiKMT3Qc"
     },
@@ -1116,9 +1015,7 @@
       "type": "consumable",
       "sort": 1000000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.TSrbwHW8zm0mhkwb"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/consumables/potions/healing-potion.webp",
       "effects": [],
@@ -1131,12 +1028,12 @@
         "rules": [],
         "slug": "healing-potion-greater",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1145,7 +1042,6 @@
             "consumable",
             "healing",
             "magical",
-            "necromancy",
             "potion"
           ],
           "rarity": "common"
@@ -1161,17 +1057,14 @@
         },
         "quantity": 2,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 400
@@ -1180,10 +1073,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -1204,25 +1093,24 @@
           },
           "misidentified": {}
         },
+        "category": "potion",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": {
+          "formula": "6d8+20",
+          "kind": "healing",
+          "type": "untyped"
+        },
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "potion"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "6d8+20",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -1242,13 +1130,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -1260,10 +1141,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.TSrbwHW8zm0mhkwb",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.KZT0AnuWZUIXQrbN"
     },
@@ -1273,9 +1157,7 @@
       "type": "consumable",
       "sort": 1100000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.p3ppzFSsZXFRe3H8"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/consumables/potions/healing-potion.webp",
       "effects": [],
@@ -1288,12 +1170,12 @@
         "rules": [],
         "slug": "healing-potion-major",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1302,7 +1184,6 @@
             "consumable",
             "healing",
             "magical",
-            "necromancy",
             "potion"
           ],
           "rarity": "common"
@@ -1318,17 +1199,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 5000
@@ -1337,10 +1215,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -1361,25 +1235,24 @@
           },
           "misidentified": {}
         },
+        "category": "potion",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": {
+          "formula": "8d8+30",
+          "kind": "healing",
+          "type": "untyped"
+        },
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "potion"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "8d8+30",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -1399,13 +1272,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -1417,10 +1283,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.p3ppzFSsZXFRe3H8",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.J5tKYxvnfojjpRDm"
     },
@@ -1430,9 +1299,7 @@
       "type": "weapon",
       "sort": 1200000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.3OkOKxCee9WruGU5"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/staves/staff-of-healing.webp",
       "effects": [],
@@ -1445,19 +1312,18 @@
         "rules": [],
         "slug": "staff-of-healing",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
             "magical",
-            "necromancy",
             "staff",
             "two-hand-d8"
           ],
@@ -1474,17 +1340,14 @@
         },
         "quantity": 3,
         "baseItem": "staff",
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 90
@@ -1494,10 +1357,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -1533,36 +1392,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": null,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": ""
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
         },
         "property1": {
           "value": "",
@@ -1585,10 +1433,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.3OkOKxCee9WruGU5",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.NaHUvdPYUoUy0aAf"
     },
@@ -1598,9 +1449,7 @@
       "type": "armor",
       "sort": 1300000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.AnwzlOs0njF9Jqnr"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/armor/hide.webp",
       "effects": [],
@@ -1613,12 +1462,12 @@
         "rules": [],
         "slug": "hide-armor",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1637,17 +1486,14 @@
         },
         "quantity": 3,
         "baseItem": "hide-armor",
+        "bulk": {
+          "value": 2
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "3"
-        },
-        "equippedBulk": {
-          "value": "2"
-        },
         "price": {
           "value": {
             "gp": 2
@@ -1658,10 +1504,6 @@
           "invested": null,
           "handsHeld": 0,
           "inSlot": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -1682,9 +1524,6 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "wornarmor"
-        },
         "category": "medium",
         "group": "leather",
         "acBonus": 3,
@@ -1692,25 +1531,13 @@
         "dexCap": 2,
         "checkPenalty": -2,
         "speedPenalty": -5,
-        "potencyRune": {
-          "value": 0
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "resilient": 0,
+          "property": []
         },
-        "resiliencyRune": {
-          "value": ""
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
-        },
-        "potency": {}
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -1718,10 +1545,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.AnwzlOs0njF9Jqnr",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.cD446pKzmCSoGFtG"
     },
@@ -1731,9 +1561,7 @@
       "type": "armor",
       "sort": 1400000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.C4XKMcHZoGzrAZBl"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/armor/specific-magic-armor/rhino-hide.webp",
       "effects": [],
@@ -1767,20 +1595,19 @@
         ],
         "slug": "rhino-hide",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
             "invested",
-            "magical",
-            "transmutation"
+            "magical"
           ],
           "rarity": "common"
         },
@@ -1795,17 +1622,14 @@
         },
         "quantity": 1,
         "baseItem": "hide-armor",
+        "bulk": {
+          "value": 2
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "3"
-        },
-        "equippedBulk": {
-          "value": "2"
-        },
         "price": {
           "value": {
             "gp": 700
@@ -1816,10 +1640,6 @@
           "invested": null,
           "handsHeld": 0,
           "inSlot": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -1840,44 +1660,29 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "wornarmor"
-        },
         "category": "medium",
         "group": "leather",
         "acBonus": 3,
         "strength": 2,
         "dexCap": 2,
         "checkPenalty": -1,
-        "speedPenalty": null,
-        "potencyRune": {
-          "value": 1
+        "speedPenalty": 0,
+        "grade": null,
+        "runes": {
+          "potency": 1,
+          "resilient": 1,
+          "property": []
         },
-        "resiliencyRune": {
-          "value": "resilient"
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
-        },
-        "potency": {},
+        "subitems": [],
         "specific": {
-          "value": true,
           "material": {
             "type": null,
             "grade": null
           },
           "runes": {
             "potency": 1,
-            "resilient": 1
+            "resilient": 1,
+            "property": []
           }
         }
       },
@@ -1887,10 +1692,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.C4XKMcHZoGzrAZBl",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.AVMACIQ6TTbxqcw1"
     },
@@ -1900,9 +1708,7 @@
       "type": "armor",
       "sort": 1500000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.zBYEU9E7034ENCmh"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/armor/padded-armor.webp",
       "effects": [],
@@ -1915,12 +1721,12 @@
         "rules": [],
         "slug": "padded-armor",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1941,17 +1747,14 @@
         },
         "quantity": 3,
         "baseItem": "padded-armor",
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": "L"
-        },
         "price": {
           "value": {
             "sp": 2
@@ -1962,10 +1765,6 @@
           "invested": null,
           "handsHeld": 0,
           "inSlot": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -1986,35 +1785,20 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "wornarmor"
-        },
         "category": "light",
         "group": null,
         "acBonus": 1,
         "strength": 0,
         "dexCap": 3,
-        "checkPenalty": null,
-        "speedPenalty": null,
-        "potencyRune": {
-          "value": 0
+        "checkPenalty": 0,
+        "speedPenalty": 0,
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "resilient": 0,
+          "property": []
         },
-        "resiliencyRune": {
-          "value": ""
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
-        },
-        "potency": {}
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -2022,22 +1806,23 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.zBYEU9E7034ENCmh",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.pkPPr2xRTcpOf5xY"
     },
     {
       "_id": "CuhMng629qQkpP1Y",
       "name": "Wooden Shield",
-      "type": "armor",
+      "type": "shield",
       "sort": 1600000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.ezVp13Uw8cWW08Da"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/shields/wooden-shield.webp",
       "effects": [],
@@ -2050,18 +1835,19 @@
         "rules": [],
         "slug": "wooden-shield",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [],
-          "rarity": "common"
+          "rarity": "common",
+          "integrated": null
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -2073,18 +1859,15 @@
           "value": 0
         },
         "quantity": 3,
-        "baseItem": null,
+        "baseItem": "wooden-shield",
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 12,
           "max": 12
         },
         "hardness": 3,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 1
@@ -2094,10 +1877,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -2118,35 +1897,17 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "held-in-one-hand"
-        },
-        "category": "shield",
-        "group": null,
         "acBonus": 2,
-        "strength": null,
-        "dexCap": 0,
-        "checkPenalty": null,
-        "speedPenalty": null,
-        "potencyRune": {
-          "value": 0
+        "grade": null,
+        "runes": {
+          "reinforcing": 0,
+          "potency": 0,
+          "resilient": 0,
+          "property": []
         },
-        "resiliencyRune": {
-          "value": ""
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
-        },
-        "potency": {}
+        "specific": null,
+        "speedPenalty": 0,
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -2154,22 +1915,23 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.ezVp13Uw8cWW08Da",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.CuhMng629qQkpP1Y"
     },
     {
       "_id": "fC3qFsGuXfakrE8B",
       "name": "Buckler",
-      "type": "armor",
+      "type": "shield",
       "sort": 1700000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.1k3AsSW7lpU0kEpY"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/shields/buckler.webp",
       "effects": [],
@@ -2182,18 +1944,19 @@
         "rules": [],
         "slug": "buckler",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [],
-          "rarity": "common"
+          "rarity": "common",
+          "integrated": null
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -2205,18 +1968,15 @@
           "value": 0
         },
         "quantity": 3,
-        "baseItem": null,
+        "baseItem": "buckler",
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 6,
           "max": 6
         },
         "hardness": 3,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 1
@@ -2226,10 +1986,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -2250,35 +2006,17 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "held-in-one-hand"
-        },
-        "category": "shield",
-        "group": null,
         "acBonus": 1,
-        "strength": null,
-        "dexCap": 0,
-        "checkPenalty": null,
-        "speedPenalty": null,
-        "potencyRune": {
-          "value": 0
+        "grade": null,
+        "runes": {
+          "reinforcing": 0,
+          "potency": 0,
+          "resilient": 0,
+          "property": []
         },
-        "resiliencyRune": {
-          "value": ""
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
-        },
-        "potency": {}
+        "specific": null,
+        "speedPenalty": 0,
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -2286,10 +2024,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.1k3AsSW7lpU0kEpY",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.fC3qFsGuXfakrE8B"
     },
@@ -2299,9 +2040,7 @@
       "type": "weapon",
       "sort": 1800000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.ynnBwzkzsR6B73iO"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/sickle.webp",
       "effects": [],
@@ -2314,12 +2053,12 @@
         "rules": [],
         "slug": "sickle",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -2342,17 +2081,14 @@
         },
         "quantity": 3,
         "baseItem": "sickle",
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 2
@@ -2362,10 +2098,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -2401,36 +2133,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": null,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": ""
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
         },
         "property1": {
           "value": "",
@@ -2453,10 +2174,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.ynnBwzkzsR6B73iO",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.UPkyzcMMxHh2p5cZ"
     },
@@ -2466,9 +2190,7 @@
       "type": "weapon",
       "sort": 1900000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.9iDqOLNFKxiTcFKE"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/mace.webp",
       "effects": [],
@@ -2481,12 +2203,12 @@
         "rules": [],
         "slug": "mace",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -2507,17 +2229,14 @@
         },
         "quantity": 3,
         "baseItem": "mace",
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 1
@@ -2527,10 +2246,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -2566,36 +2281,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": null,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": ""
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
         },
         "property1": {
           "value": "",
@@ -2618,10 +2322,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.9iDqOLNFKxiTcFKE",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.rqLa07kjTfKMFwpa"
     },
@@ -2631,9 +2338,7 @@
       "type": "weapon",
       "sort": 2000000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.aXuJh4i8HqSu6NYV"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/longspear.webp",
       "effects": [],
@@ -2646,12 +2351,12 @@
         "rules": [],
         "slug": "longspear",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -2672,17 +2377,14 @@
         },
         "quantity": 3,
         "baseItem": "longspear",
+        "bulk": {
+          "value": 2
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "2"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 5
@@ -2692,10 +2394,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -2731,36 +2429,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": null,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": ""
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
         },
         "property1": {
           "value": "",
@@ -2783,10 +2470,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.aXuJh4i8HqSu6NYV",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.qu6DwpdW2CF1UKWR"
     },
@@ -2796,9 +2486,7 @@
       "type": "weapon",
       "sort": 2100000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/spear.webp",
       "effects": [],
@@ -2811,12 +2499,12 @@
         "rules": [],
         "slug": "spear",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -2837,17 +2525,14 @@
         },
         "quantity": 3,
         "baseItem": "spear",
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 1
@@ -2857,10 +2542,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -2896,36 +2577,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": null,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": "-"
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
         },
         "property1": {
           "value": "",
@@ -2948,10 +2618,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.tOhoGvmCMw4JpWcS",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.1zvkqNFMKxlqXwr7"
     },
@@ -2961,9 +2634,7 @@
       "type": "consumable",
       "sort": 2200000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.CeKPffF0FaEyhLMp"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/spear-frog-poison.webp",
       "effects": [],
@@ -2976,12 +2647,12 @@
         "rules": [],
         "slug": "spear-frog-poison",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -3005,17 +2676,14 @@
         },
         "quantity": 3,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 3
@@ -3024,10 +2692,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -3048,25 +2712,20 @@
           },
           "misidentified": {}
         },
+        "category": "poison",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "poison"
-        },
-        "charges": {
-          "value": "1",
-          "max": "1",
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -3086,13 +2745,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -3104,10 +2756,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.CeKPffF0FaEyhLMp",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.ZFira71qjZxqOv61"
     },
@@ -3117,9 +2772,7 @@
       "type": "consumable",
       "sort": 2300000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.sqhr1crb184s3Vnd"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/blowgun-dart.webp",
       "effects": [],
@@ -3132,12 +2785,12 @@
         "rules": [],
         "slug": "blowgun-darts",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -3156,17 +2809,14 @@
         },
         "quantity": 10,
         "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "-"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "cp": 5
@@ -3176,10 +2826,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": "blowgunDarts",
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -3200,25 +2846,20 @@
           },
           "misidentified": {}
         },
+        "category": "ammo",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "ammo"
-        },
-        "charges": {
-          "value": 0,
-          "max": 0,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": "blowgunDarts",
         "activation": {
           "type": "",
           "cost": 0,
@@ -3238,13 +2879,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -3256,10 +2890,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.sqhr1crb184s3Vnd",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.QYXy9q5y9mc8fLMe"
     },
@@ -3269,9 +2906,7 @@
       "type": "weapon",
       "sort": 2400000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.FPwsiGqMCNPLHmjX"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/blowgun.webp",
       "effects": [],
@@ -3284,12 +2919,12 @@
         "rules": [],
         "slug": "blowgun",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -3311,17 +2946,14 @@
         },
         "quantity": 3,
         "baseItem": "blowgun",
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 1
@@ -3331,10 +2963,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -3370,36 +2998,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": 20,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": "1"
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
         },
         "property1": {
           "value": "",
@@ -3422,10 +3039,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.FPwsiGqMCNPLHmjX",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.mEVicYNrQ3d72Kio"
     },
@@ -3435,9 +3055,7 @@
       "type": "weapon",
       "sort": 2500000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.62nnVQvGhoVLLl2K"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/crossbow.webp",
       "effects": [],
@@ -3450,12 +3068,12 @@
         "rules": [],
         "slug": "crossbow",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -3474,17 +3092,14 @@
         },
         "quantity": 3,
         "baseItem": "crossbow",
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 3
@@ -3494,10 +3109,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -3522,7 +3133,7 @@
           "value": "held-in-two-hands"
         },
         "category": "simple",
-        "group": "bow",
+        "group": "crossbow",
         "bonus": {
           "value": 0
         },
@@ -3533,36 +3144,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": 120,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": "1"
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
         },
         "property1": {
           "value": "",
@@ -3585,10 +3185,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.62nnVQvGhoVLLl2K",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.IBk4HQlSlhHz3Kvm"
     },
@@ -3598,9 +3201,7 @@
       "type": "weapon",
       "sort": 2600000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.XyA6PKV46aNlLXOd"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/hand-crossbow.webp",
       "effects": [],
@@ -3613,12 +3214,12 @@
         "rules": [],
         "slug": "hand-crossbow",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -3637,17 +3238,14 @@
         },
         "quantity": 3,
         "baseItem": "hand-crossbow",
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 3
@@ -3657,10 +3255,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -3685,7 +3279,7 @@
           "value": "held-in-one-hand"
         },
         "category": "simple",
-        "group": "bow",
+        "group": "crossbow",
         "bonus": {
           "value": 0
         },
@@ -3696,36 +3290,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": 60,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": "1"
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
         },
         "property1": {
           "value": "",
@@ -3748,10 +3331,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.XyA6PKV46aNlLXOd",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.tCMqNVlFArXHbfS4"
     },
@@ -3761,9 +3347,7 @@
       "type": "weapon",
       "sort": 2700000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.giO4LwIKGzJZoaxa"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/heavy-crossbow.webp",
       "effects": [],
@@ -3776,12 +3360,12 @@
         "rules": [],
         "slug": "heavy-crossbow",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -3800,17 +3384,14 @@
         },
         "quantity": 3,
         "baseItem": "heavy-crossbow",
+        "bulk": {
+          "value": 2
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "2"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 4
@@ -3820,10 +3401,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -3848,7 +3425,7 @@
           "value": "held-in-two-hands"
         },
         "category": "simple",
-        "group": "bow",
+        "group": "crossbow",
         "bonus": {
           "value": 0
         },
@@ -3859,36 +3436,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": 120,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": "2"
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
         },
         "property1": {
           "value": "",
@@ -3911,10 +3477,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.giO4LwIKGzJZoaxa",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.Mdu1KrKv1o95x6NA"
     },
@@ -3924,9 +3493,7 @@
       "type": "weapon",
       "sort": 2800000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.MVAWttmT0QDa7LsV"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/longbow.webp",
       "effects": [],
@@ -3939,12 +3506,12 @@
         "rules": [],
         "slug": "longbow",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -3966,17 +3533,14 @@
         },
         "quantity": 3,
         "baseItem": "longbow",
+        "bulk": {
+          "value": 2
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "2"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 6
@@ -3986,10 +3550,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -4025,36 +3585,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": 100,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": "0"
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
         },
         "property1": {
           "value": "",
@@ -4077,10 +3626,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.MVAWttmT0QDa7LsV",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.KviydBLIhngDnqFs"
     },
@@ -4090,9 +3642,7 @@
       "type": "weapon",
       "sort": 2900000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.hIgqLgH3YcLZBeoT"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/shortbow.webp",
       "effects": [],
@@ -4105,12 +3655,12 @@
         "rules": [],
         "slug": "shortbow",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -4131,17 +3681,14 @@
         },
         "quantity": 3,
         "baseItem": "shortbow",
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 3
@@ -4151,10 +3698,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -4190,36 +3733,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": 60,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": "0"
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
         },
         "property1": {
           "value": "",
@@ -4242,10 +3774,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.hIgqLgH3YcLZBeoT",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.jecjbK4brDu9rXZY"
     },
@@ -4255,9 +3790,7 @@
       "type": "weapon",
       "sort": 3000000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.RapaDb10oJZOjujo"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/hunters-bow.webp",
       "effects": [],
@@ -4296,19 +3829,18 @@
         ],
         "slug": "hunters-bow",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
             "deadly-d10",
-            "evocation",
             "magical"
           ],
           "rarity": "common"
@@ -4324,17 +3856,14 @@
         },
         "quantity": 3,
         "baseItem": "shortbow",
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 60
@@ -4344,10 +3873,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -4383,41 +3908,35 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": 60,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": "0"
         },
-        "potencyRune": {
-          "value": 1
-        },
-        "strikingRune": {
-          "value": ""
+        "grade": null,
+        "runes": {
+          "potency": 1,
+          "striking": 0,
+          "property": []
         },
         "specific": {
-          "value": true,
-          "material": null,
+          "material": {
+            "type": null,
+            "grade": null
+          },
           "runes": {
             "potency": 1,
-            "striking": ""
+            "striking": 0,
+            "property": []
           }
         },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
+        "subitems": [],
+        "bonusDamage": {
+          "value": 0
         },
         "property1": {
           "value": "",
@@ -4440,10 +3959,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.RapaDb10oJZOjujo",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.9y9JX3dWz3UGaGyi"
     },
@@ -4453,9 +3975,7 @@
       "type": "equipment",
       "sort": 3100000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.4ObrlZ5GhCPA2E2s"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/hunterss-brooch.webp",
       "effects": [],
@@ -4468,20 +3988,19 @@
         "rules": [],
         "slug": "hunters-brooch",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
             "divine",
-            "invested",
-            "transmutation"
+            "invested"
           ],
           "rarity": "unique"
         },
@@ -4496,17 +4015,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 80
@@ -4516,10 +4032,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -4542,7 +4054,8 @@
         },
         "usage": {
           "value": "worn"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -4550,10 +4063,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.4ObrlZ5GhCPA2E2s",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.T5ewan73JtCLOhuo"
     },
@@ -4563,9 +4079,7 @@
       "type": "consumable",
       "sort": 3200000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.Yew9oddFsH0KeDLh"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/consumables/talismans/hunters-bane.webp",
       "effects": [],
@@ -4578,19 +4092,18 @@
         "rules": [],
         "slug": "hunters-bane",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
             "consumable",
-            "divination",
             "magical",
             "talisman"
           ],
@@ -4607,17 +4120,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "-"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 6
@@ -4626,10 +4136,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -4650,25 +4156,20 @@
           },
           "misidentified": {}
         },
+        "category": "talisman",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": null,
         "usage": {
           "value": "affixed-to-armor"
         },
-        "consumableType": {
-          "value": "talisman"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -4688,13 +4189,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -4706,10 +4200,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.Yew9oddFsH0KeDLh",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.6y8lND5pCpfzXlEB"
     },
@@ -4719,9 +4216,7 @@
       "type": "consumable",
       "sort": 3300000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.w2ENw2VMPcsbif8g"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
       "effects": [],
@@ -4734,12 +4229,12 @@
         "rules": [],
         "slug": "arrows",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -4758,17 +4253,14 @@
         },
         "quantity": 100,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 1
@@ -4778,10 +4270,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": "arrows",
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -4802,25 +4290,20 @@
           },
           "misidentified": {}
         },
+        "category": "ammo",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "ammo"
-        },
-        "charges": {
-          "value": 0,
-          "max": 0,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": "arrows",
         "activation": {
           "type": "",
           "cost": 0,
@@ -4840,13 +4323,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -4858,10 +4334,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.w2ENw2VMPcsbif8g",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.H90GT2XQ0HNEL9WC"
     },
@@ -4871,9 +4350,7 @@
       "type": "weapon",
       "sort": 3400000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.UCH4myuFnokGv0vF"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/sling.webp",
       "effects": [],
@@ -4886,12 +4363,12 @@
         "rules": [],
         "slug": "sling",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -4912,17 +4389,14 @@
         },
         "quantity": 3,
         "baseItem": "sling",
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {}
         },
@@ -4930,10 +4404,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -4969,36 +4439,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": 50,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": "1"
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
         },
         "property1": {
           "value": "",
@@ -5021,10 +4480,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.UCH4myuFnokGv0vF",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.4fEfBQqH6bzQtfbP"
     },
@@ -5034,9 +4496,7 @@
       "type": "consumable",
       "sort": 3500000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.MKSeXwUm56c15MZa"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/sling-bullets.webp",
       "effects": [],
@@ -5049,12 +4509,12 @@
         "rules": [],
         "slug": "sling-bullets",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5073,17 +4533,14 @@
         },
         "quantity": 100,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "cp": 1
@@ -5093,10 +4550,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": "slingBullets",
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -5117,25 +4570,20 @@
           },
           "misidentified": {}
         },
+        "category": "ammo",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "ammo"
-        },
-        "charges": {
-          "value": 0,
-          "max": 0,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": "slingBullets",
         "activation": {
           "type": "",
           "cost": 0,
@@ -5155,13 +4603,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -5173,10 +4614,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.MKSeXwUm56c15MZa",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.dYrC3iOixy49bryA"
     },
@@ -5186,9 +4630,7 @@
       "type": "equipment",
       "sort": 3600000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.fagzYdmfYyMQ6J77"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/bedroll.webp",
       "effects": [],
@@ -5201,12 +4643,12 @@
         "rules": [],
         "slug": "bedroll",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5225,17 +4667,14 @@
         },
         "quantity": 3,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "cp": 2
@@ -5245,10 +4684,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -5271,7 +4706,8 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -5279,10 +4715,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.fagzYdmfYyMQ6J77",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.c8KCEOVYS00tPW6i"
     },
@@ -5292,9 +4731,7 @@
       "type": "consumable",
       "sort": 3700000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.Ti4gWILk69LPxKuU"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/candle.webp",
       "effects": [],
@@ -5307,12 +4744,12 @@
         "rules": [],
         "slug": "candle",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5331,17 +4768,14 @@
         },
         "quantity": 10,
         "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "-"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "cp": 1
@@ -5351,10 +4785,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -5375,25 +4805,20 @@
           },
           "misidentified": {}
         },
+        "category": "other",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "other"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -5413,13 +4838,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -5431,10 +4849,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.Ti4gWILk69LPxKuU",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.35EsnQpoCup0EmlF"
     },
@@ -5444,9 +4865,7 @@
       "type": "equipment",
       "sort": 3800000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.xShIDyydOMkGvGNb"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/chalk.webp",
       "effects": [],
@@ -5461,12 +4880,12 @@
         "rules": [],
         "slug": "chalk",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5485,17 +4904,14 @@
         },
         "quantity": 20,
         "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "-"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "cp": 1
@@ -5504,10 +4920,6 @@
         "equipped": {
           "carryType": "worn",
           "invested": null
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -5531,6 +4943,7 @@
         "usage": {
           "value": "held-in-one-hand"
         },
+        "subitems": [],
         "identified": {
           "value": true
         }
@@ -5541,10 +4954,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.xShIDyydOMkGvGNb",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.cC8ejqapruKRjj68"
     },
@@ -5554,9 +4970,7 @@
       "type": "equipment",
       "sort": 3900000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.9UJbMaglf35GVzaZ"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/climbing-kit.webp",
       "effects": [],
@@ -5569,12 +4983,12 @@
         "rules": [],
         "slug": "climbing-kit",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5593,17 +5007,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 5
@@ -5613,10 +5024,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -5639,7 +5046,8 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -5647,10 +5055,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.9UJbMaglf35GVzaZ",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.PgbxlhWGeVslwGJ8"
     },
@@ -5660,9 +5071,7 @@
       "type": "equipment",
       "sort": 4000000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.TWv2EeDJaCjtmGUN"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/climbing-kit.webp",
       "effects": [],
@@ -5686,12 +5095,12 @@
         ],
         "slug": "climbing-kit-extreme",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5710,17 +5119,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 40
@@ -5730,10 +5136,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -5756,7 +5158,8 @@
         },
         "usage": {
           "value": "held-in-two-hands"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -5764,10 +5167,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.TWv2EeDJaCjtmGUN",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.0e7V6g2kCeG4lbyY"
     },
@@ -5777,9 +5183,7 @@
       "type": "equipment",
       "sort": 4100000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.G4cmHHhAChAlypFN"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/held-items/rope-of-climbing.webp",
       "effects": [],
@@ -5792,19 +5196,18 @@
         "rules": [],
         "slug": "rope-of-climbing-lesser",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
-            "magical",
-            "transmutation"
+            "magical"
           ],
           "rarity": "common"
         },
@@ -5819,17 +5222,14 @@
         },
         "quantity": 2,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 45
@@ -5839,10 +5239,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -5865,7 +5261,8 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -5873,10 +5270,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.G4cmHHhAChAlypFN",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.OPfUWBAjfxKNBqD8"
     },
@@ -5886,9 +5286,7 @@
       "type": "equipment",
       "sort": 4200000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.3tOyV4VZEZhwnAMO"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/fishing-tackle.webp",
       "effects": [],
@@ -5901,12 +5299,12 @@
         "rules": [],
         "slug": "fishing-tackle",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -5925,17 +5323,14 @@
         },
         "quantity": 4,
         "baseItem": null,
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 8
@@ -5945,10 +5340,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -5971,7 +5362,8 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -5979,10 +5371,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.3tOyV4VZEZhwnAMO",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.RNhM0QkrfzR3DJVD"
     },
@@ -5992,9 +5387,7 @@
       "type": "equipment",
       "sort": 4300000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/alchemists-tools.webp",
       "effects": [],
@@ -6007,12 +5400,12 @@
         "rules": [],
         "slug": "alchemists-tools",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -6031,17 +5424,14 @@
         },
         "quantity": 2,
         "baseItem": null,
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 3
@@ -6051,10 +5441,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": ""
         },
         "containerId": null,
         "size": "med",
@@ -6077,7 +5463,8 @@
         },
         "usage": {
           "value": "held-in-two-hands"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -6085,10 +5472,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.S7Rr8cVkjbCR0Ljj"
     },
@@ -6098,9 +5488,7 @@
       "type": "equipment",
       "sort": 4400000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.VHxXMvBeBTq2FSdf"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/material-component-pouch.webp",
       "effects": [],
@@ -6113,12 +5501,12 @@
         "rules": [],
         "slug": "material-component-pouch",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -6137,17 +5525,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 5
@@ -6157,10 +5542,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": ""
         },
         "containerId": null,
         "size": "med",
@@ -6183,7 +5564,8 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -6191,10 +5573,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.VHxXMvBeBTq2FSdf",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.8Js4G1yPO7foTwck"
     },
@@ -6204,9 +5589,7 @@
       "type": "equipment",
       "sort": 4500000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.MPv5Yx4w7scZGj2Y"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/musical-instrument-handheld.webp",
       "effects": [],
@@ -6219,12 +5602,12 @@
         "rules": [],
         "slug": "musical-instrument-handheld",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -6243,17 +5626,14 @@
         },
         "quantity": 3,
         "baseItem": null,
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 8
@@ -6263,10 +5643,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -6289,7 +5665,8 @@
         },
         "usage": {
           "value": "held-in-two-hands"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -6297,10 +5674,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.MPv5Yx4w7scZGj2Y",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.MUgxDEtVQ4e3q4no"
     },
@@ -6310,9 +5690,7 @@
       "type": "equipment",
       "sort": 4600000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.3ld14dsn2RLu9owg"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/musical-instrument-handheld-virtuoso-handheld.webp",
       "effects": [],
@@ -6336,12 +5714,12 @@
         ],
         "slug": "musical-instrument-virtuoso-handheld",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -6360,17 +5738,14 @@
         },
         "quantity": 3,
         "baseItem": null,
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 50
@@ -6380,10 +5755,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -6406,7 +5777,8 @@
         },
         "usage": {
           "value": "held-in-two-hands"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -6414,10 +5786,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.3ld14dsn2RLu9owg",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.UqIBkOWblR9NJo16"
     },
@@ -6427,9 +5802,7 @@
       "type": "consumable",
       "sort": 4700000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.Du05UxCyCM0ZWH8z"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/oil.webp",
       "effects": [],
@@ -6442,12 +5815,12 @@
         "rules": [],
         "slug": "oil-1-pint",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -6466,17 +5839,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "-"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "cp": 1
@@ -6485,10 +5855,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -6509,25 +5875,20 @@
           },
           "misidentified": {}
         },
+        "category": "oil",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "oil"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -6547,13 +5908,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -6565,10 +5919,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.Du05UxCyCM0ZWH8z",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.kfcxsyDwHx7ucD3T"
     },
@@ -6578,9 +5935,7 @@
       "type": "equipment",
       "sort": 4800000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.JlClrm1WfJ45oWcS"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/tent.webp",
       "effects": [],
@@ -6593,12 +5948,12 @@
         "rules": [],
         "slug": "tent-four-person",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -6617,17 +5972,14 @@
         },
         "quantity": 3,
         "baseItem": null,
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 5
@@ -6637,10 +5989,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -6663,7 +6011,8 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -6671,10 +6020,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.JlClrm1WfJ45oWcS",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.x6VDqEOM5k16Mx92"
     },
@@ -6684,9 +6036,7 @@
       "type": "equipment",
       "sort": 4900000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.Wc9og4mTKZDH3xmz"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/tent.webp",
       "effects": [],
@@ -6699,12 +6049,12 @@
         "rules": [],
         "slug": "tent-pup",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -6723,17 +6073,14 @@
         },
         "quantity": 6,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 8
@@ -6743,10 +6090,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -6769,7 +6112,8 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -6777,10 +6121,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.Wc9og4mTKZDH3xmz",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.czIbzSGgd3JgDb4B"
     },
@@ -6790,9 +6137,7 @@
       "type": "equipment",
       "sort": 5000000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/religious-symbol-wooden.webp",
       "effects": [],
@@ -6805,12 +6150,12 @@
         "rules": [],
         "slug": "religious-symbol-wooden",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -6829,17 +6174,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 1
@@ -6850,10 +6192,6 @@
           "invested": null,
           "handsHeld": 0,
           "inSlot": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -6876,7 +6214,8 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -6884,10 +6223,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.plplsXJsqrdqNQVI",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.LkJlxXzyfij8mV2P"
     },
@@ -6897,9 +6239,7 @@
       "type": "equipment",
       "sort": 5100000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.upzjwQ96cZG0Xlmx"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/religious-symbol-silver.webp",
       "effects": [],
@@ -6912,12 +6252,12 @@
         "rules": [],
         "slug": "religious-symbol-silver",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -6936,17 +6276,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 2
@@ -6957,10 +6294,6 @@
           "invested": null,
           "handsHeld": 0,
           "inSlot": false
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -6983,7 +6316,8 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -6991,10 +6325,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.upzjwQ96cZG0Xlmx",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.UjMF8FdcpqposST9"
     },
@@ -7004,9 +6341,7 @@
       "type": "equipment",
       "sort": 5200000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.z1okOYtNVnpBNj9F"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/religious-text.webp",
       "effects": [],
@@ -7019,12 +6354,12 @@
         "rules": [],
         "slug": "religious-text",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -7043,17 +6378,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 1
@@ -7063,10 +6395,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -7089,7 +6417,8 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -7097,10 +6426,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.z1okOYtNVnpBNj9F",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.pMNLpMaLmfVJReDV"
     },
@@ -7110,9 +6442,7 @@
       "type": "equipment",
       "sort": 5300000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.vLGDUFrg4yGzpTQX"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/repair-kit.webp",
       "effects": [],
@@ -7125,12 +6455,12 @@
         "rules": [],
         "slug": "repair-kit",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -7149,17 +6479,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 2
@@ -7169,10 +6496,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -7195,7 +6518,8 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -7203,10 +6527,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.vLGDUFrg4yGzpTQX",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.KEjn2utDlXD44RnV"
     },
@@ -7216,9 +6543,7 @@
       "type": "equipment",
       "sort": 5400000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/rope.webp",
       "effects": [],
@@ -7231,12 +6556,12 @@
         "rules": [],
         "slug": "rope",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -7255,17 +6580,14 @@
         },
         "quantity": 3,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "sp": 5
@@ -7275,10 +6597,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": ""
         },
         "containerId": null,
         "size": "med",
@@ -7301,7 +6619,8 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -7309,10 +6628,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.cE1XIZD6ZY6tYhi1"
     },
@@ -7322,9 +6644,7 @@
       "type": "backpack",
       "sort": 5500000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.DujblC14ytJEZMaz"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/sack.webp",
       "effects": [],
@@ -7337,12 +6657,12 @@
         "rules": [],
         "slug": "sack",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -7361,17 +6681,17 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1,
+          "heldOrStowed": 0.1,
+          "capacity": 8,
+          "ignored": 0
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "cp": 1
@@ -7381,10 +6701,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": "sacks",
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -7405,14 +6721,11 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "worn"
-        },
-        "bulkCapacity": {
-          "value": "8"
-        },
         "collapsed": false,
-        "stowing": false
+        "stowing": false,
+        "usage": {
+          "value": "held-in-one-hand"
+        }
       },
       "ownership": {
         "default": 0
@@ -7420,10 +6733,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.DujblC14ytJEZMaz",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.AoyPNDn5m9XbqEPg"
     },
@@ -7433,9 +6749,7 @@
       "type": "equipment",
       "sort": 5600000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.h7gsRKv6rORYgsv0"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/adventuring-gear/snare-kit.webp",
       "effects": [],
@@ -7448,12 +6762,12 @@
         "rules": [],
         "slug": "snare-kit",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -7472,17 +6786,14 @@
         },
         "quantity": 3,
         "baseItem": null,
+        "bulk": {
+          "value": 2
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "2"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 5
@@ -7492,10 +6803,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -7518,7 +6825,8 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": []
       },
       "ownership": {
         "default": 0
@@ -7526,10 +6834,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.h7gsRKv6rORYgsv0",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.uDsig2nIzTEmJEnm"
     },
@@ -7539,9 +6850,7 @@
       "type": "consumable",
       "sort": 5700000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.cTBmQgWUyf50x3dY"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/black-lotus-extract.webp",
       "effects": [],
@@ -7554,12 +6863,12 @@
         "rules": [],
         "slug": "black-smear-poison",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -7583,17 +6892,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 5
@@ -7602,10 +6908,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -7626,25 +6928,20 @@
           },
           "misidentified": {}
         },
+        "category": "poison",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "poison"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -7664,13 +6961,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -7682,10 +6972,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.cTBmQgWUyf50x3dY",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.0A20IHYmgIRpd6gn"
     },
@@ -7695,9 +6988,7 @@
       "type": "consumable",
       "sort": 5800000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.N3jcmW5XzEJZQVtJ"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/consumables/potions/silver-dragons-breath-potion.webp",
       "effects": [],
@@ -7710,12 +7001,12 @@
         "rules": [],
         "slug": "antivenom-potion",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -7723,7 +7014,6 @@
           "value": [
             "consumable",
             "magical",
-            "necromancy",
             "potion"
           ],
           "rarity": "common"
@@ -7739,17 +7029,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 6
@@ -7758,10 +7045,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -7782,25 +7065,20 @@
           },
           "misidentified": {}
         },
+        "category": "potion",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "potion"
-        },
-        "charges": {
-          "value": "1",
-          "max": "1",
-          "_deprecated": true
-        },
-        "consume": {
-          "value": null,
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -7820,13 +7098,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -7838,10 +7109,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.N3jcmW5XzEJZQVtJ",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.xKb68smBOHsrObuB"
     },
@@ -7851,9 +7125,7 @@
       "type": "consumable",
       "sort": 5900000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.txmX5ghhPS72GKXy"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/giant-centipede-venom.webp",
       "effects": [],
@@ -7866,12 +7138,12 @@
         "rules": [],
         "slug": "giant-centipede-venom",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -7895,17 +7167,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 4
@@ -7914,10 +7183,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -7938,25 +7203,20 @@
           },
           "misidentified": {}
         },
+        "category": "poison",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "poison"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -7976,13 +7236,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -7994,10 +7247,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.txmX5ghhPS72GKXy",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.ghfvOhIm52tSSidM"
     },
@@ -8007,9 +7263,7 @@
       "type": "consumable",
       "sort": 6000000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.5RGNjhDxZ0yMhTds"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/hunting-spider-venom.webp",
       "effects": [],
@@ -8022,12 +7276,12 @@
         "rules": [],
         "slug": "hunting-spider-venom",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -8051,17 +7305,14 @@
         },
         "quantity": 5,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 25
@@ -8070,10 +7321,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -8094,25 +7341,20 @@
           },
           "misidentified": {}
         },
+        "category": "poison",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "poison"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -8132,13 +7374,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -8150,10 +7385,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.5RGNjhDxZ0yMhTds",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.cFQdU8iM8wppJL3a"
     },
@@ -8163,9 +7401,7 @@
       "type": "consumable",
       "sort": 6100000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/consumables/other-consumables/spell-scroll.webp",
       "effects": [],
@@ -8178,12 +7414,12 @@
         "rules": [],
         "slug": "scroll-of-2nd-level-spell",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -8206,17 +7442,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0.1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "L"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 12
@@ -8225,10 +7458,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -8249,25 +7478,20 @@
           },
           "misidentified": {}
         },
+        "category": "scroll",
+        "uses": {
+          "value": 1,
+          "max": 1,
+          "autoDestroy": true,
+          "per": null,
+          "autoUse": true
+        },
+        "damage": null,
         "usage": {
           "value": "held-in-one-hand"
         },
-        "consumableType": {
-          "value": "scroll"
-        },
-        "charges": {
-          "value": 1,
-          "max": 1,
-          "_deprecated": true
-        },
-        "consume": {
-          "value": "",
-          "_deprecated": true
-        },
-        "autoDestroy": {
-          "value": true
-        },
         "spell": null,
+        "stackGroup": null,
         "activation": {
           "type": "",
           "cost": 0,
@@ -8287,13 +7511,6 @@
           "long": null,
           "units": ""
         },
-        "uses": {
-          "value": 0,
-          "max": 0,
-          "per": null,
-          "autoUse": true,
-          "autoDestroy": true
-        },
         "autoUse": {
           "value": true,
           "_deprecated": true
@@ -8305,10 +7522,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.Y7UD64foDbDMV9sx",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.wgwJpbDV4eVgHvpk"
     },
@@ -8318,9 +7538,7 @@
       "type": "treasure",
       "sort": 6200000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.B6B7tBWJSqOBz5zz"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/treasure/currency/gold-pieces.webp",
       "effects": [],
@@ -8333,12 +7551,12 @@
         "rules": [],
         "slug": "gold-pieces",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -8357,17 +7575,14 @@
         },
         "quantity": 6,
         "baseItem": null,
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": 0
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 1
@@ -8376,10 +7591,6 @@
         "equipped": {
           "carryType": "worn",
           "handsHeld": 0
-        },
-        "stackGroup": "coins",
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -8400,9 +7611,7 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": ""
-        }
+        "stackGroup": "coins"
       },
       "ownership": {
         "default": 0
@@ -8410,10 +7619,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.B6B7tBWJSqOBz5zz",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.5kjtFz1dXmK9plYZ"
     },
@@ -8423,9 +7635,7 @@
       "type": "weapon",
       "sort": 200000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.kdGqnqbrwPzQfTsm"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/greatclub.webp",
       "effects": [],
@@ -8438,12 +7648,12 @@
         "rules": [],
         "slug": "greatclub",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -8465,17 +7675,14 @@
         },
         "quantity": 2,
         "baseItem": "greatclub",
+        "bulk": {
+          "value": 2
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "2"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 1
@@ -8485,10 +7692,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -8524,36 +7727,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": null,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": ""
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
         },
         "property1": {
           "value": "",
@@ -8576,10 +7768,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.kdGqnqbrwPzQfTsm",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.07SqsA6pAJm1hKHr"
     },
@@ -8589,9 +7784,7 @@
       "type": "weapon",
       "sort": 100000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.c58wczIzH2gzeXQL"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/equipment/weapons/club.webp",
       "effects": [],
@@ -8604,12 +7797,12 @@
         "rules": [],
         "slug": "club",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -8630,17 +7823,14 @@
         },
         "quantity": 3,
         "baseItem": "club",
+        "bulk": {
+          "value": 1
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "1"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {}
         },
@@ -8648,10 +7838,6 @@
           "carryType": "worn",
           "invested": null,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -8687,36 +7873,25 @@
           "persistent": null,
           "value": ""
         },
-        "bonusDamage": {
-          "value": 0
-        },
         "splashDamage": {
           "value": 0
         },
         "range": null,
+        "expend": null,
+        "ammo": null,
         "reload": {
           "value": "-"
         },
-        "potencyRune": {
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "striking": 0,
+          "property": []
+        },
+        "specific": null,
+        "subitems": [],
+        "bonusDamage": {
           "value": 0
-        },
-        "strikingRune": {
-          "value": ""
-        },
-        "specific": {
-          "value": false
-        },
-        "propertyRune1": {
-          "value": ""
-        },
-        "propertyRune2": {
-          "value": ""
-        },
-        "propertyRune3": {
-          "value": ""
-        },
-        "propertyRune4": {
-          "value": ""
         },
         "property1": {
           "value": "",
@@ -8739,10 +7914,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.c58wczIzH2gzeXQL",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!FWlNcJFfuVnbttwc.SVhFt1UrA9CHVlGE"
     }
@@ -8756,16 +7934,8 @@
         "value": false
       }
     },
-    "exportSource": {
-      "world": "abominationvaults",
-      "system": "pf2e",
-      "coreVersion": "0.8.7",
-      "systemVersion": "2.4.0.6221"
-    },
-    "core": {
-      "sourceId": "Compendium.shopping-experience.otari-shops.Actor.rFiqfpEMstbwZ6Jf"
-    },
-    "cf": null
+    "core": {},
+    "cf": {}
   },
   "system": {
     "attributes": {},
@@ -8778,11 +7948,11 @@
     "lootSheetType": "Merchant",
     "hiddenWhenEmpty": false,
     "_migration": {
-      "version": 0.878,
+      "version": 0.925,
       "previous": {
-        "schema": 0.769,
-        "foundry": "11.313",
-        "system": "5.7.2"
+        "schema": 0.878,
+        "foundry": "11.315",
+        "system": "5.14.4"
       }
     },
     "traits": {
@@ -8800,11 +7970,20 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.7.2",
-    "coreVersion": "11.313",
+    "systemVersion": "5.14.4",
+    "coreVersion": "14.360",
     "createdTime": 1697493226120,
-    "modifiedTime": 1697493226120,
-    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+    "modifiedTime": 1711396394975,
+    "lastModifiedBy": "dr4PZnZ9KX7ge6hN",
+    "compendiumSource": "Compendium.shopping-experience.otari-shops.Actor.rFiqfpEMstbwZ6Jf",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "abominationvaults",
+      "uuid": null,
+      "coreVersion": "0.8.7",
+      "systemId": "pf2e",
+      "systemVersion": "2.4.0.6221"
+    }
   },
   "_key": "!actors!FWlNcJFfuVnbttwc"
 }

@@ -5,27 +5,26 @@
   "navigation": true,
   "navOrder": 0,
   "navName": "",
-  "foreground": "modules/troubles-in-otari-remade-maps/maps/stinkweed-foreground.webp",
   "thumb": "modules/esheyw-transfer/assets/scenes/local-pf2e-scenes-ImT4XJVGJUkCjjU7-thumb.png",
   "width": 2000,
   "height": 2000,
   "padding": 0.25,
-  "initial": {},
-  "backgroundColor": "#999999",
+  "initial": {
+    "x": null,
+    "y": null,
+    "scale": 0.5
+  },
   "grid": {
     "size": 100,
     "type": 1,
     "color": "#000000",
     "alpha": 0.2,
     "distance": 5,
-    "units": "ft"
+    "units": "ft",
+    "style": "solidLines",
+    "thickness": 1
   },
   "tokenVision": true,
-  "fogExploration": true,
-  "fogReset": 1647131450548,
-  "globalLight": false,
-  "globalLightThreshold": null,
-  "darkness": 0,
   "drawings": [],
   "tokens": [
     {
@@ -41,7 +40,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": true,
       "light": {
@@ -64,7 +62,10 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0,
+        "color": null
       },
       "disposition": 0,
       "displayBars": 50,
@@ -133,13 +134,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -167,10 +168,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.jeoINV7FKtxOOCu5.jeoINV7FKtxOOCu5.dwvQyKJ9gUWC4S3f"
           },
@@ -247,10 +251,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.jeoINV7FKtxOOCu5.jeoINV7FKtxOOCu5.0SzWuQBdiVOEj4WC"
           }
@@ -282,9 +289,11 @@
         "src": "pdftofoundry/troubles-in-otari/viper-urn.token.webp",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -294,11 +303,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!ImT4XJVGJUkCjjU7.jeoINV7FKtxOOCu5"
     },
     {
@@ -314,7 +351,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": true,
       "light": {
@@ -337,7 +373,10 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0,
+        "color": null
       },
       "disposition": -1,
       "displayBars": 50,
@@ -429,10 +468,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.56wLde8SVEfys89N"
           },
@@ -509,10 +551,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.Wigs6zeZoSmogj8P"
           },
@@ -558,13 +603,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -592,10 +637,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.0gQuuCA2OyaQRNwR"
           },
@@ -638,13 +686,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -672,10 +720,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.742oUZV30i6otpgL"
           },
@@ -718,13 +769,13 @@
               "actions": {
                 "value": 1
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -752,10 +803,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.H8wipabcGbcu7thF"
           },
@@ -798,13 +852,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -832,10 +886,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.zNOKH6cGU4FaspAX"
           },
@@ -898,10 +955,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.6nif0me5GDS4kwmP"
           },
@@ -964,10 +1024,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.zIeezZf0M8Fy6rBe"
           },
@@ -1030,10 +1093,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.jCunmvIGBXW6MZt8"
           },
@@ -1096,10 +1162,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR.okZvOVwNQRbBVuJR.QV5vCXBOv7O9YLUC"
           }
@@ -1151,9 +1220,11 @@
         "src": "pdftofoundry/troubles-in-otari/stinkweed-shambler.token.webp",
         "scaleX": 0.8,
         "scaleY": 0.8,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -1163,11 +1234,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!ImT4XJVGJUkCjjU7.okZvOVwNQRbBVuJR"
     },
     {
@@ -1183,7 +1282,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": true,
       "light": {
@@ -1206,7 +1304,10 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0,
+        "color": null
       },
       "disposition": -1,
       "displayBars": 50,
@@ -1298,10 +1399,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.56wLde8SVEfys89N"
           },
@@ -1378,10 +1482,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.Wigs6zeZoSmogj8P"
           },
@@ -1427,13 +1534,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -1461,10 +1568,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.0gQuuCA2OyaQRNwR"
           },
@@ -1507,13 +1617,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -1541,10 +1651,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.742oUZV30i6otpgL"
           },
@@ -1587,13 +1700,13 @@
               "actions": {
                 "value": 1
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -1621,10 +1734,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.H8wipabcGbcu7thF"
           },
@@ -1667,13 +1783,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -1701,10 +1817,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.zNOKH6cGU4FaspAX"
           },
@@ -1767,10 +1886,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.6nif0me5GDS4kwmP"
           },
@@ -1833,10 +1955,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.zIeezZf0M8Fy6rBe"
           },
@@ -1899,10 +2024,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.jCunmvIGBXW6MZt8"
           },
@@ -1965,10 +2093,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ.7dN9pmImExQVtYGJ.QV5vCXBOv7O9YLUC"
           }
@@ -2020,9 +2151,11 @@
         "src": "pdftofoundry/troubles-in-otari/stinkweed-shambler.token.webp",
         "scaleX": 0.8,
         "scaleY": 0.8,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -2032,11 +2165,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!ImT4XJVGJUkCjjU7.7dN9pmImExQVtYGJ"
     }
   ],
@@ -2051,24 +2212,29 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/book.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!ImT4XJVGJUkCjjU7.3CV39AQ8Im51Qg9x"
     }
   ],
   "sounds": [],
-  "templates": [],
   "tiles": [
     {
       "_id": "JP4XUgAzX5XL64KU",
@@ -2076,16 +2242,15 @@
       "height": 600,
       "x": 600,
       "y": 500,
-      "z": 100,
       "rotation": 0,
       "alpha": 1,
       "hidden": false,
       "locked": false,
-      "overhead": true,
       "occlusion": {
-        "mode": 1,
         "alpha": 0.3,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -2095,14 +2260,21 @@
       "flags": {},
       "texture": {
         "src": "modules/troubles-in-otari-remade-maps/maps/stinkweed-tile-tree1.webp",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
-      "roof": false,
+      "elevation": 20,
+      "sort": 100,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "levels": [],
       "_key": "!scenes.tiles!ImT4XJVGJUkCjjU7.JP4XUgAzX5XL64KU"
     },
     {
@@ -2111,16 +2283,15 @@
       "height": 800,
       "x": 500,
       "y": 1700,
-      "z": 100,
       "rotation": 0,
       "alpha": 1,
       "hidden": false,
       "locked": false,
-      "overhead": true,
       "occlusion": {
-        "mode": 1,
         "alpha": 0.3,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -2130,14 +2301,21 @@
       "flags": {},
       "texture": {
         "src": "modules/troubles-in-otari-remade-maps/maps/stinkweed-tile-tree2.webp",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
-      "roof": false,
+      "elevation": 20,
+      "sort": 100,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "levels": [],
       "_key": "!scenes.tiles!ImT4XJVGJUkCjjU7.0ctv3P3lH8Vfs6aq"
     },
     {
@@ -2146,16 +2324,15 @@
       "height": 700,
       "x": 1800,
       "y": 1800,
-      "z": 100,
       "rotation": 0,
       "alpha": 1,
       "hidden": false,
       "locked": false,
-      "overhead": true,
       "occlusion": {
-        "mode": 1,
         "alpha": 0.3,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -2165,14 +2342,21 @@
       "flags": {},
       "texture": {
         "src": "modules/troubles-in-otari-remade-maps/maps/stinkweed-tile-tree3.webp",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
-      "roof": false,
+      "elevation": 20,
+      "sort": 100,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "levels": [],
       "_key": "!scenes.tiles!ImT4XJVGJUkCjjU7.ez3CBdYhr4HQsNuQ"
     },
     {
@@ -2181,16 +2365,15 @@
       "height": 700,
       "x": 1000,
       "y": 1100,
-      "z": 100,
       "rotation": 0,
       "alpha": 1,
       "hidden": false,
       "locked": false,
-      "overhead": true,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -2200,14 +2383,21 @@
       "flags": {},
       "texture": {
         "src": "modules/troubles-in-otari-remade-maps/maps/stinkweed-tile-roof.webp",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
-      "roof": true,
+      "elevation": 20,
+      "sort": 100,
+      "restrictions": {
+        "light": true,
+        "weather": true
+      },
+      "levels": [],
       "_key": "!scenes.tiles!ImT4XJVGJUkCjjU7.lwiHDYqepEZ01ZI2"
     }
   ],
@@ -2234,6 +2424,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.XiX3JuhwIy9x44dz"
     },
     {
@@ -2258,6 +2450,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.XgDbD1xln3tpDdlK"
     },
     {
@@ -2282,6 +2476,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.iK6wGPGK9zrYYtO2"
     },
     {
@@ -2306,6 +2502,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.iVsp420WqSgMTyrU"
     },
     {
@@ -2330,6 +2528,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.TLOIu8bplXhU90Mr"
     },
     {
@@ -2354,6 +2554,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.KCStMgp2ukokLR5z"
     },
     {
@@ -2378,6 +2580,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.UHjPrdRoOd41xNt4"
     },
     {
@@ -2402,6 +2606,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.kY662yyFDkLTjeUE"
     },
     {
@@ -2426,6 +2632,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.YDgAwKCK9zdTMixW"
     },
     {
@@ -2450,6 +2658,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.GbBcF33pP9DuPd0J"
     },
     {
@@ -2474,6 +2684,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.BRBe4hqx4Oe4J5NJ"
     },
     {
@@ -2498,6 +2710,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.wvv7WV7k57Tjsukz"
     },
     {
@@ -2522,6 +2736,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.EXoOs2drhergmY4J"
     },
     {
@@ -2546,6 +2762,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.4gYL5Jf9phSnKcGI"
     },
     {
@@ -2570,6 +2788,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.l4AzWmzJMzkba4oE"
     },
     {
@@ -2594,6 +2814,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.NE3tv4CYKrHAtpx6"
     },
     {
@@ -2618,6 +2840,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.zJfHdWmzSfg9KsVs"
     },
     {
@@ -2642,6 +2866,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.0k9zLPAagtEu4a70"
     },
     {
@@ -2666,6 +2892,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.D8jW2CwgVQhxhXAf"
     },
     {
@@ -2690,6 +2918,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.ORZzq6cA8TNVswhq"
     },
     {
@@ -2714,6 +2944,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.8HVhEnxvRupum1ys"
     },
     {
@@ -2738,6 +2970,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.mau5DYvNof442oAi"
     },
     {
@@ -2762,6 +2996,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.dOVVzCF44Hi7gr5b"
     },
     {
@@ -2786,6 +3022,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.bxw382ilc9UK4xVL"
     },
     {
@@ -2810,6 +3048,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.Hy8uuhzTMckZgKfE"
     },
     {
@@ -2834,6 +3074,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.HDEwRtFteLWUC5Gq"
     },
     {
@@ -2858,6 +3100,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.2h9oubbHlbPYuloI"
     },
     {
@@ -2882,6 +3126,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.lvIiwxRDVZzN9aQ6"
     },
     {
@@ -2906,6 +3152,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.CcbbXsYVS8Cn5yw8"
     },
     {
@@ -2930,6 +3178,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.fEBeRtEwAjo8hCu5"
     },
     {
@@ -2954,6 +3204,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.4dvkFriOuz81dfzW"
     },
     {
@@ -2978,6 +3230,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.GZ6Cn10SUYEhsdJ1"
     },
     {
@@ -3002,6 +3256,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.1xOo7RIgt49IpA2G"
     },
     {
@@ -3026,6 +3282,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.hXN4dYtomFyUnrTE"
     },
     {
@@ -3050,6 +3308,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.kTN4EG89eZ6jbMRA"
     },
     {
@@ -3074,6 +3334,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.RZ8zqnvRV5I1hfl1"
     },
     {
@@ -3098,6 +3360,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.Dg328BkDPdvTv2yB"
     },
     {
@@ -3122,6 +3386,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.crm6opnZ3RzMuhXS"
     },
     {
@@ -3146,6 +3412,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!ImT4XJVGJUkCjjU7.H1XL0YISWfbpRLS8"
     }
   ],
@@ -3156,37 +3424,84 @@
   "folder": "JmcGCHKY2xJWPkXP",
   "sort": 0,
   "flags": {
-    "core": {
-      "sourceId": "Compendium.troubles-in-otari-remade-maps.troubles-in-otari-maps-remake-by-narchy.vWkmw3ybsVMuoUb3"
-    },
+    "core": {},
     "scene-packer": {
       "hash": "b6dcd69344f22e9a7cca9991d57f39415353e13b"
     },
     "token-attacher": {},
-    "cf": null
+    "cf": {}
   },
   "ownership": {
     "M22dRxbECY9l1C6E": 3,
     "default": 0,
     "ZMxdSpEKesYc7gvn": 3
   },
-  "background": {
-    "src": "modules/troubles-in-otari-remade-maps/maps/stinkweed-background.webp",
-    "offsetX": 0,
-    "offsetY": 0,
-    "scaleX": 1,
-    "scaleY": 1,
-    "rotation": 0
-  },
-  "foregroundElevation": null,
   "journalEntryPage": null,
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "5.7.2",
-    "coreVersion": "11.313",
+    "coreVersion": "14.360",
     "createdTime": 1697493028488,
     "modifiedTime": 1697493028488,
-    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn",
+    "compendiumSource": "Compendium.troubles-in-otari-remade-maps.troubles-in-otari-maps-remake-by-narchy.vWkmw3ybsVMuoUb3",
+    "duplicateSource": null,
+    "exportSource": null
   },
-  "_key": "!scenes!ImT4XJVGJUkCjjU7"
+  "regions": [],
+  "environment": {
+    "globalLight": {
+      "luminosity": 0,
+      "enabled": false,
+      "darkness": {
+        "max": 1,
+        "min": 0
+      },
+      "alpha": 0.5,
+      "bright": false,
+      "color": null,
+      "coloration": 1,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0
+    },
+    "darknessLevel": 0,
+    "darknessLock": false,
+    "cycle": true,
+    "base": {
+      "hue": 0,
+      "intensity": 0,
+      "luminosity": 0,
+      "saturation": 0,
+      "shadows": 0
+    },
+    "dark": {
+      "hue": 0.7138888888888889,
+      "intensity": 0,
+      "luminosity": -0.25,
+      "saturation": 0,
+      "shadows": 0
+    }
+  },
+  "fog": {
+    "reset": 1647131450548,
+    "colors": {
+      "explored": null,
+      "unexplored": null
+    },
+    "mode": 1
+  },
+  "levels": [
+    "defaultLevel0000"
+  ],
+  "shiftX": 0,
+  "shiftY": 0,
+  "initialLevel": "defaultLevel0000",
+  "transition": {
+    "type": null,
+    "duration": 1500,
+    "activeOnly": false
+  },
+  "_key": "!scenes!ImT4XJVGJUkCjjU7",
+  "templates": []
 }

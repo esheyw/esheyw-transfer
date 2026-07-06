@@ -5,27 +5,26 @@
   "navigation": true,
   "navOrder": 0,
   "navName": "",
-  "foreground": "modules/troubles-in-otari-remade-maps/maps/bridge-foreground.webp",
   "thumb": "modules/esheyw-transfer/assets/scenes/local-pf2e-scenes-mUgWFnXE5bAzqfkc-thumb.png",
   "width": 3000,
   "height": 3000,
   "padding": 0.25,
-  "initial": {},
-  "backgroundColor": "#999999",
+  "initial": {
+    "x": null,
+    "y": null,
+    "scale": 0.5
+  },
   "grid": {
     "size": 100,
     "type": 1,
     "color": "#000000",
     "alpha": 0.15,
     "distance": 5,
-    "units": "ft"
+    "units": "ft",
+    "style": "solidLines",
+    "thickness": 1
   },
   "tokenVision": true,
-  "fogExploration": true,
-  "fogReset": 1647131450536,
-  "globalLight": false,
-  "globalLightThreshold": null,
-  "darkness": 0,
   "drawings": [],
   "tokens": [
     {
@@ -41,7 +40,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": true,
       "light": {
@@ -64,7 +62,10 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0,
+        "color": null
       },
       "disposition": -1,
       "displayBars": 50,
@@ -158,10 +159,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.pCDFyjzhnFXEUVvr.pCDFyjzhnFXEUVvr.lOUQcokkfOtGgPNG"
           },
@@ -240,10 +244,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.pCDFyjzhnFXEUVvr.pCDFyjzhnFXEUVvr.YZxhBg9R5m8ydWm1"
           },
@@ -251,9 +258,7 @@
             "_id": "lRaDhQKMgeR6IjAB",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.fFu2sZz4KB01fVRc"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Low-Light Vision",
@@ -290,13 +295,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -324,10 +329,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.fFu2sZz4KB01fVRc",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.pCDFyjzhnFXEUVvr.pCDFyjzhnFXEUVvr.lRaDhQKMgeR6IjAB"
           },
@@ -335,9 +343,7 @@
             "_id": "rHVSJCwiDlcfs7Ms",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.rqfnQ5VHT5hxm25r"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Scent (Imprecise) 30 feet",
@@ -374,13 +380,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -408,10 +414,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.rqfnQ5VHT5hxm25r",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.pCDFyjzhnFXEUVvr.pCDFyjzhnFXEUVvr.rHVSJCwiDlcfs7Ms"
           },
@@ -454,13 +463,13 @@
               "actions": {
                 "value": 1
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -488,10 +497,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.pCDFyjzhnFXEUVvr.pCDFyjzhnFXEUVvr.uEjliLhQWBsVYCsE"
           },
@@ -534,13 +546,13 @@
               "actions": {
                 "value": 1
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -568,10 +580,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.pCDFyjzhnFXEUVvr.pCDFyjzhnFXEUVvr.iuFRjKw2PLJl3E3F"
           },
@@ -579,9 +594,7 @@
             "_id": "8Hc25NUrYBwSHQuO",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.AWvNPE4U0kEJSL1T"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Sneak Attack",
@@ -636,13 +649,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -670,10 +683,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.AWvNPE4U0kEJSL1T",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.pCDFyjzhnFXEUVvr.pCDFyjzhnFXEUVvr.8Hc25NUrYBwSHQuO"
           },
@@ -681,9 +697,7 @@
             "_id": "5o4Qh26axxAvJeUp",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Grab",
@@ -720,13 +734,13 @@
               "actions": {
                 "value": 1
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -754,10 +768,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.pCDFyjzhnFXEUVvr.pCDFyjzhnFXEUVvr.5o4Qh26axxAvJeUp"
           },
@@ -820,10 +837,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.pCDFyjzhnFXEUVvr.pCDFyjzhnFXEUVvr.fA1aciXKGc5vvKn1"
           },
@@ -886,10 +906,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.pCDFyjzhnFXEUVvr.pCDFyjzhnFXEUVvr.298KQ3rpABEbmVO7"
           },
@@ -970,10 +993,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.pCDFyjzhnFXEUVvr.pCDFyjzhnFXEUVvr.GRUZiIR1Uu91DaoY"
           }
@@ -1016,9 +1042,11 @@
         "src": "pdftofoundry/menace-under-otari/leopard.token.webp",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -1028,11 +1056,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!mUgWFnXE5bAzqfkc.pCDFyjzhnFXEUVvr"
     },
     {
@@ -1048,7 +1104,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": true,
       "light": {
@@ -1071,7 +1126,10 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0,
+        "color": null
       },
       "disposition": -1,
       "displayBars": 50,
@@ -1161,10 +1219,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.gOdzeOV624FoJPAZ.gOdzeOV624FoJPAZ.qhS5ZEJcqNFytqWd"
           },
@@ -1242,10 +1303,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.gOdzeOV624FoJPAZ.gOdzeOV624FoJPAZ.cprgu1LyMWRqzI0w"
           },
@@ -1253,9 +1317,7 @@
             "_id": "1V9uaQOnCMGgMxl2",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Darkvision",
@@ -1292,13 +1354,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -1326,10 +1388,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.gOdzeOV624FoJPAZ.gOdzeOV624FoJPAZ.1V9uaQOnCMGgMxl2"
           },
@@ -1374,13 +1439,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -1408,10 +1473,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.gOdzeOV624FoJPAZ.gOdzeOV624FoJPAZ.DsvyLX53TeuZHMQ3"
           },
@@ -1456,13 +1524,13 @@
               "actions": {
                 "value": 1
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -1490,10 +1558,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.gOdzeOV624FoJPAZ.gOdzeOV624FoJPAZ.9bomxaBEHSLvRrkq"
           },
@@ -1556,10 +1627,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.gOdzeOV624FoJPAZ.gOdzeOV624FoJPAZ.a214g3errazlAkKb"
           },
@@ -1622,10 +1696,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.gOdzeOV624FoJPAZ.gOdzeOV624FoJPAZ.Ura0eOQUMHdW4GGC"
           },
@@ -1688,10 +1765,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.gOdzeOV624FoJPAZ.gOdzeOV624FoJPAZ.fiMdWAcWbeu1N0Jm"
           }
@@ -1743,9 +1823,11 @@
         "src": "pdftofoundry/menace-under-otari/gargoyle.token.webp",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -1755,11 +1837,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!mUgWFnXE5bAzqfkc.gOdzeOV624FoJPAZ"
     },
     {
@@ -1775,7 +1885,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": true,
       "light": {
@@ -1798,7 +1907,10 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0,
+        "color": null
       },
       "disposition": -1,
       "displayBars": 50,
@@ -1892,10 +2004,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.bQUsYBjAQ6szbfAf.bQUsYBjAQ6szbfAf.YXsM6AcguDWAwVIt"
           },
@@ -1938,13 +2053,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -1972,10 +2087,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.bQUsYBjAQ6szbfAf.bQUsYBjAQ6szbfAf.VwrlDdZczBGO5Ps4"
           },
@@ -2018,13 +2136,13 @@
               "actions": {
                 "value": 1
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -2052,10 +2170,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.bQUsYBjAQ6szbfAf.bQUsYBjAQ6szbfAf.mdqK7RuSjtezVyS8"
           },
@@ -2136,10 +2257,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.bQUsYBjAQ6szbfAf.bQUsYBjAQ6szbfAf.iUzYuqnjkPvxjVq6"
           }
@@ -2172,9 +2296,11 @@
         "src": "pdftofoundry/troubles-in-otari/sewer-ooze.token.webp",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -2184,11 +2310,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!mUgWFnXE5bAzqfkc.bQUsYBjAQ6szbfAf"
     },
     {
@@ -2204,7 +2358,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": true,
       "light": {
@@ -2227,7 +2380,10 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0,
+        "color": null
       },
       "disposition": -1,
       "displayBars": 50,
@@ -2249,9 +2405,7 @@
             "_id": "yGYlGvJtkibLcLPn",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.equipment-srd.grmaV4GdoGD7sKbn"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/equipment/weapons/shortbow.webp",
             "name": "Shortbow",
@@ -2289,18 +2443,15 @@
               },
               "quantity": 1,
               "baseItem": "scimitar",
+              "bulk": {
+                "value": 0.1
+              },
               "hp": {
                 "value": 0,
                 "max": 0,
                 "brokenThreshold": 0
               },
               "hardness": 0,
-              "weight": {
-                "value": "1"
-              },
-              "equippedBulk": {
-                "value": ""
-              },
               "price": {
                 "value": {
                   "gp": 1
@@ -2310,10 +2461,6 @@
                 "carryType": "held",
                 "invested": null,
                 "handsHeld": 1
-              },
-              "stackGroup": null,
-              "negateBulk": {
-                "value": "0"
               },
               "containerId": null,
               "size": "med",
@@ -2349,36 +2496,27 @@
                 "persistent": null,
                 "value": ""
               },
-              "bonusDamage": {
-                "value": 0
-              },
               "splashDamage": {
                 "value": 0
               },
               "range": null,
+              "expend": null,
+              "ammo": null,
               "reload": {
                 "value": ""
               },
-              "potencyRune": {
-                "value": 0
-              },
-              "strikingRune": {
-                "value": ""
+              "grade": null,
+              "runes": {
+                "potency": 0,
+                "striking": 0,
+                "property": []
               },
               "specific": {
                 "value": false
               },
-              "propertyRune1": {
-                "value": null
-              },
-              "propertyRune2": {
-                "value": null
-              },
-              "propertyRune3": {
-                "value": null
-              },
-              "propertyRune4": {
-                "value": null
+              "subitems": [],
+              "bonusDamage": {
+                "value": 0
               },
               "property1": {
                 "value": "",
@@ -2393,6 +2531,34 @@
                 "criticalConditionValue": null,
                 "strikeConditionType": "",
                 "strikeConditionValue": null
+              },
+              "weight": {
+                "value": "1"
+              },
+              "equippedBulk": {
+                "value": ""
+              },
+              "stackGroup": null,
+              "negateBulk": {
+                "value": "0"
+              },
+              "potencyRune": {
+                "value": 0
+              },
+              "strikingRune": {
+                "value": ""
+              },
+              "propertyRune1": {
+                "value": null
+              },
+              "propertyRune2": {
+                "value": null
+              },
+              "propertyRune3": {
+                "value": null
+              },
+              "propertyRune4": {
+                "value": null
               },
               "source": {
                 "value": "Pathfinder Core Rulebook"
@@ -2424,10 +2590,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.equipment-srd.grmaV4GdoGD7sKbn",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.KXns5dm1q3HkP1O2.KXns5dm1q3HkP1O2.yGYlGvJtkibLcLPn"
           },
@@ -2435,9 +2604,7 @@
             "_id": "troDKzvmmCDQSTHC",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.equipment-srd.hIgqLgH3YcLZBeoT"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/equipment/weapons/scimitar.webp",
             "name": "Scimitar",
@@ -2474,18 +2641,15 @@
               },
               "quantity": 1,
               "baseItem": "shortbow",
+              "bulk": {
+                "value": 0.1
+              },
               "hp": {
                 "value": 0,
                 "max": 0,
                 "brokenThreshold": 0
               },
               "hardness": 0,
-              "weight": {
-                "value": "1"
-              },
-              "equippedBulk": {
-                "value": ""
-              },
               "price": {
                 "value": {
                   "gp": 3
@@ -2495,10 +2659,6 @@
                 "carryType": "held",
                 "invested": null,
                 "handsHeld": 1
-              },
-              "stackGroup": null,
-              "negateBulk": {
-                "value": "0"
               },
               "containerId": null,
               "size": "med",
@@ -2534,36 +2694,27 @@
                 "persistent": null,
                 "value": ""
               },
-              "bonusDamage": {
-                "value": 0
-              },
               "splashDamage": {
                 "value": 0
               },
               "range": 60,
+              "expend": null,
+              "ammo": null,
               "reload": {
                 "value": "0"
               },
-              "potencyRune": {
-                "value": 0
-              },
-              "strikingRune": {
-                "value": ""
+              "grade": null,
+              "runes": {
+                "potency": 0,
+                "striking": 0,
+                "property": []
               },
               "specific": {
                 "value": false
               },
-              "propertyRune1": {
-                "value": null
-              },
-              "propertyRune2": {
-                "value": null
-              },
-              "propertyRune3": {
-                "value": null
-              },
-              "propertyRune4": {
-                "value": null
+              "subitems": [],
+              "bonusDamage": {
+                "value": 0
               },
               "property1": {
                 "value": "",
@@ -2578,6 +2729,34 @@
                 "criticalConditionValue": null,
                 "strikeConditionType": "",
                 "strikeConditionValue": null
+              },
+              "weight": {
+                "value": "1"
+              },
+              "equippedBulk": {
+                "value": ""
+              },
+              "stackGroup": null,
+              "negateBulk": {
+                "value": "0"
+              },
+              "potencyRune": {
+                "value": 0
+              },
+              "strikingRune": {
+                "value": ""
+              },
+              "propertyRune1": {
+                "value": null
+              },
+              "propertyRune2": {
+                "value": null
+              },
+              "propertyRune3": {
+                "value": null
+              },
+              "propertyRune4": {
+                "value": null
               },
               "source": {
                 "value": "Pathfinder Core Rulebook"
@@ -2609,10 +2788,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.equipment-srd.hIgqLgH3YcLZBeoT",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.KXns5dm1q3HkP1O2.KXns5dm1q3HkP1O2.troDKzvmmCDQSTHC"
           },
@@ -2620,9 +2802,7 @@
             "_id": "C1Qh67YEkuH7r5lt",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.equipment-srd.w2ENw2VMPcsbif8g"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
             "name": "Arrows",
@@ -2657,18 +2837,15 @@
               },
               "quantity": 20,
               "baseItem": null,
+              "bulk": {
+                "value": 0.1
+              },
               "hp": {
                 "value": 0,
                 "max": 0,
                 "brokenThreshold": 0
               },
               "hardness": 0,
-              "weight": {
-                "value": "L"
-              },
-              "equippedBulk": {
-                "value": ""
-              },
               "price": {
                 "value": {
                   "sp": 1
@@ -2678,10 +2855,6 @@
               "equipped": {
                 "carryType": "held",
                 "handsHeld": 1
-              },
-              "stackGroup": "arrows",
-              "negateBulk": {
-                "value": "0"
               },
               "containerId": null,
               "size": "med",
@@ -2702,8 +2875,31 @@
                 },
                 "misidentified": {}
               },
+              "category": "other",
+              "uses": {
+                "value": 0,
+                "max": 0,
+                "autoDestroy": true,
+                "per": null,
+                "autoUse": true
+              },
+              "damage": null,
               "usage": {
                 "value": "held-in-one-hand"
+              },
+              "spell": {
+                "data": null,
+                "heightenedLevel": null
+              },
+              "stackGroup": "arrows",
+              "weight": {
+                "value": "L"
+              },
+              "equippedBulk": {
+                "value": ""
+              },
+              "negateBulk": {
+                "value": "0"
               },
               "consumableType": {
                 "value": "ammo"
@@ -2720,10 +2916,6 @@
               "autoDestroy": {
                 "value": true,
                 "_deprecated": true
-              },
-              "spell": {
-                "data": null,
-                "heightenedLevel": null
               },
               "source": {
                 "value": "Pathfinder Core Rulebook"
@@ -2764,13 +2956,6 @@
                 "long": null,
                 "units": ""
               },
-              "uses": {
-                "value": 0,
-                "max": 0,
-                "per": null,
-                "autoUse": true,
-                "autoDestroy": true
-              },
               "autoUse": {
                 "value": true,
                 "_deprecated": true
@@ -2782,10 +2967,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.equipment-srd.w2ENw2VMPcsbif8g",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.KXns5dm1q3HkP1O2.KXns5dm1q3HkP1O2.C1Qh67YEkuH7r5lt"
           },
@@ -2863,10 +3051,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.KXns5dm1q3HkP1O2.KXns5dm1q3HkP1O2.jL9PDQ27Dz6UAMOH"
           },
@@ -2944,10 +3135,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.KXns5dm1q3HkP1O2.KXns5dm1q3HkP1O2.EzSKWtWM2tSTtZwA"
           },
@@ -3026,10 +3220,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.KXns5dm1q3HkP1O2.KXns5dm1q3HkP1O2.7ODNVUAaNraSivsT"
           },
@@ -3037,9 +3234,7 @@
             "_id": "83QmDBGigZxaHbbd",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Darkvision",
@@ -3076,13 +3271,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -3110,10 +3305,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.KXns5dm1q3HkP1O2.KXns5dm1q3HkP1O2.83QmDBGigZxaHbbd"
           },
@@ -3121,9 +3319,7 @@
             "_id": "m25t326n1Ovt0t5U",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.TTCw5NusiSSkJU1x"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Negative Healing",
@@ -3167,13 +3363,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -3201,10 +3397,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.TTCw5NusiSSkJU1x",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.KXns5dm1q3HkP1O2.KXns5dm1q3HkP1O2.m25t326n1Ovt0t5U"
           },
@@ -3267,10 +3466,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.KXns5dm1q3HkP1O2.KXns5dm1q3HkP1O2.XqRiijAJt8vRBQPZ"
           },
@@ -3333,10 +3535,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.KXns5dm1q3HkP1O2.KXns5dm1q3HkP1O2.Ag8nL0UqymTYzkeA"
           }
@@ -3403,9 +3608,11 @@
         "src": "pdftofoundry/menace-under-otari/skeleton-guard.token.webp",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -3415,11 +3622,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!mUgWFnXE5bAzqfkc.KXns5dm1q3HkP1O2"
     },
     {
@@ -3435,7 +3670,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": true,
       "light": {
@@ -3458,7 +3692,10 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0,
+        "color": null
       },
       "disposition": -1,
       "displayBars": 50,
@@ -3480,9 +3717,7 @@
             "_id": "yGYlGvJtkibLcLPn",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.equipment-srd.grmaV4GdoGD7sKbn"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/equipment/weapons/shortbow.webp",
             "name": "Shortbow",
@@ -3520,18 +3755,15 @@
               },
               "quantity": 1,
               "baseItem": "scimitar",
+              "bulk": {
+                "value": 0.1
+              },
               "hp": {
                 "value": 0,
                 "max": 0,
                 "brokenThreshold": 0
               },
               "hardness": 0,
-              "weight": {
-                "value": "1"
-              },
-              "equippedBulk": {
-                "value": ""
-              },
               "price": {
                 "value": {
                   "gp": 1
@@ -3541,10 +3773,6 @@
                 "carryType": "held",
                 "invested": null,
                 "handsHeld": 1
-              },
-              "stackGroup": null,
-              "negateBulk": {
-                "value": "0"
               },
               "containerId": null,
               "size": "med",
@@ -3580,36 +3808,27 @@
                 "persistent": null,
                 "value": ""
               },
-              "bonusDamage": {
-                "value": 0
-              },
               "splashDamage": {
                 "value": 0
               },
               "range": null,
+              "expend": null,
+              "ammo": null,
               "reload": {
                 "value": ""
               },
-              "potencyRune": {
-                "value": 0
-              },
-              "strikingRune": {
-                "value": ""
+              "grade": null,
+              "runes": {
+                "potency": 0,
+                "striking": 0,
+                "property": []
               },
               "specific": {
                 "value": false
               },
-              "propertyRune1": {
-                "value": null
-              },
-              "propertyRune2": {
-                "value": null
-              },
-              "propertyRune3": {
-                "value": null
-              },
-              "propertyRune4": {
-                "value": null
+              "subitems": [],
+              "bonusDamage": {
+                "value": 0
               },
               "property1": {
                 "value": "",
@@ -3624,6 +3843,34 @@
                 "criticalConditionValue": null,
                 "strikeConditionType": "",
                 "strikeConditionValue": null
+              },
+              "weight": {
+                "value": "1"
+              },
+              "equippedBulk": {
+                "value": ""
+              },
+              "stackGroup": null,
+              "negateBulk": {
+                "value": "0"
+              },
+              "potencyRune": {
+                "value": 0
+              },
+              "strikingRune": {
+                "value": ""
+              },
+              "propertyRune1": {
+                "value": null
+              },
+              "propertyRune2": {
+                "value": null
+              },
+              "propertyRune3": {
+                "value": null
+              },
+              "propertyRune4": {
+                "value": null
               },
               "source": {
                 "value": "Pathfinder Core Rulebook"
@@ -3655,10 +3902,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.equipment-srd.grmaV4GdoGD7sKbn",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.fC9CJ4Ln0VD0Fp97.fC9CJ4Ln0VD0Fp97.yGYlGvJtkibLcLPn"
           },
@@ -3666,9 +3916,7 @@
             "_id": "troDKzvmmCDQSTHC",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.equipment-srd.hIgqLgH3YcLZBeoT"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/equipment/weapons/scimitar.webp",
             "name": "Scimitar",
@@ -3705,18 +3953,15 @@
               },
               "quantity": 1,
               "baseItem": "shortbow",
+              "bulk": {
+                "value": 0.1
+              },
               "hp": {
                 "value": 0,
                 "max": 0,
                 "brokenThreshold": 0
               },
               "hardness": 0,
-              "weight": {
-                "value": "1"
-              },
-              "equippedBulk": {
-                "value": ""
-              },
               "price": {
                 "value": {
                   "gp": 3
@@ -3726,10 +3971,6 @@
                 "carryType": "held",
                 "invested": null,
                 "handsHeld": 1
-              },
-              "stackGroup": null,
-              "negateBulk": {
-                "value": "0"
               },
               "containerId": null,
               "size": "med",
@@ -3765,36 +4006,27 @@
                 "persistent": null,
                 "value": ""
               },
-              "bonusDamage": {
-                "value": 0
-              },
               "splashDamage": {
                 "value": 0
               },
               "range": 60,
+              "expend": null,
+              "ammo": null,
               "reload": {
                 "value": "0"
               },
-              "potencyRune": {
-                "value": 0
-              },
-              "strikingRune": {
-                "value": ""
+              "grade": null,
+              "runes": {
+                "potency": 0,
+                "striking": 0,
+                "property": []
               },
               "specific": {
                 "value": false
               },
-              "propertyRune1": {
-                "value": null
-              },
-              "propertyRune2": {
-                "value": null
-              },
-              "propertyRune3": {
-                "value": null
-              },
-              "propertyRune4": {
-                "value": null
+              "subitems": [],
+              "bonusDamage": {
+                "value": 0
               },
               "property1": {
                 "value": "",
@@ -3809,6 +4041,34 @@
                 "criticalConditionValue": null,
                 "strikeConditionType": "",
                 "strikeConditionValue": null
+              },
+              "weight": {
+                "value": "1"
+              },
+              "equippedBulk": {
+                "value": ""
+              },
+              "stackGroup": null,
+              "negateBulk": {
+                "value": "0"
+              },
+              "potencyRune": {
+                "value": 0
+              },
+              "strikingRune": {
+                "value": ""
+              },
+              "propertyRune1": {
+                "value": null
+              },
+              "propertyRune2": {
+                "value": null
+              },
+              "propertyRune3": {
+                "value": null
+              },
+              "propertyRune4": {
+                "value": null
               },
               "source": {
                 "value": "Pathfinder Core Rulebook"
@@ -3840,10 +4100,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.equipment-srd.hIgqLgH3YcLZBeoT",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.fC9CJ4Ln0VD0Fp97.fC9CJ4Ln0VD0Fp97.troDKzvmmCDQSTHC"
           },
@@ -3851,9 +4114,7 @@
             "_id": "C1Qh67YEkuH7r5lt",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.equipment-srd.w2ENw2VMPcsbif8g"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/equipment/weapons/arrows.webp",
             "name": "Arrows",
@@ -3888,18 +4149,15 @@
               },
               "quantity": 20,
               "baseItem": null,
+              "bulk": {
+                "value": 0.1
+              },
               "hp": {
                 "value": 0,
                 "max": 0,
                 "brokenThreshold": 0
               },
               "hardness": 0,
-              "weight": {
-                "value": "L"
-              },
-              "equippedBulk": {
-                "value": ""
-              },
               "price": {
                 "value": {
                   "sp": 1
@@ -3909,10 +4167,6 @@
               "equipped": {
                 "carryType": "held",
                 "handsHeld": 1
-              },
-              "stackGroup": "arrows",
-              "negateBulk": {
-                "value": "0"
               },
               "containerId": null,
               "size": "med",
@@ -3933,8 +4187,31 @@
                 },
                 "misidentified": {}
               },
+              "category": "other",
+              "uses": {
+                "value": 0,
+                "max": 0,
+                "autoDestroy": true,
+                "per": null,
+                "autoUse": true
+              },
+              "damage": null,
               "usage": {
                 "value": "held-in-one-hand"
+              },
+              "spell": {
+                "data": null,
+                "heightenedLevel": null
+              },
+              "stackGroup": "arrows",
+              "weight": {
+                "value": "L"
+              },
+              "equippedBulk": {
+                "value": ""
+              },
+              "negateBulk": {
+                "value": "0"
               },
               "consumableType": {
                 "value": "ammo"
@@ -3951,10 +4228,6 @@
               "autoDestroy": {
                 "value": true,
                 "_deprecated": true
-              },
-              "spell": {
-                "data": null,
-                "heightenedLevel": null
               },
               "source": {
                 "value": "Pathfinder Core Rulebook"
@@ -3995,13 +4268,6 @@
                 "long": null,
                 "units": ""
               },
-              "uses": {
-                "value": 0,
-                "max": 0,
-                "per": null,
-                "autoUse": true,
-                "autoDestroy": true
-              },
               "autoUse": {
                 "value": true,
                 "_deprecated": true
@@ -4013,10 +4279,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.equipment-srd.w2ENw2VMPcsbif8g",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.fC9CJ4Ln0VD0Fp97.fC9CJ4Ln0VD0Fp97.C1Qh67YEkuH7r5lt"
           },
@@ -4094,10 +4363,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.fC9CJ4Ln0VD0Fp97.fC9CJ4Ln0VD0Fp97.jL9PDQ27Dz6UAMOH"
           },
@@ -4175,10 +4447,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.fC9CJ4Ln0VD0Fp97.fC9CJ4Ln0VD0Fp97.EzSKWtWM2tSTtZwA"
           },
@@ -4257,10 +4532,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.fC9CJ4Ln0VD0Fp97.fC9CJ4Ln0VD0Fp97.7ODNVUAaNraSivsT"
           },
@@ -4268,9 +4546,7 @@
             "_id": "83QmDBGigZxaHbbd",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Darkvision",
@@ -4307,13 +4583,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -4341,10 +4617,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.fC9CJ4Ln0VD0Fp97.fC9CJ4Ln0VD0Fp97.83QmDBGigZxaHbbd"
           },
@@ -4352,9 +4631,7 @@
             "_id": "m25t326n1Ovt0t5U",
             "effects": [],
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.TTCw5NusiSSkJU1x"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Negative Healing",
@@ -4398,13 +4675,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -4432,10 +4709,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.TTCw5NusiSSkJU1x",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.fC9CJ4Ln0VD0Fp97.fC9CJ4Ln0VD0Fp97.m25t326n1Ovt0t5U"
           },
@@ -4498,10 +4778,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.fC9CJ4Ln0VD0Fp97.fC9CJ4Ln0VD0Fp97.XqRiijAJt8vRBQPZ"
           },
@@ -4564,10 +4847,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.fC9CJ4Ln0VD0Fp97.fC9CJ4Ln0VD0Fp97.Ag8nL0UqymTYzkeA"
           }
@@ -4634,9 +4920,11 @@
         "src": "pdftofoundry/menace-under-otari/skeleton-guard.token.webp",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -4646,11 +4934,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!mUgWFnXE5bAzqfkc.fC9CJ4Ln0VD0Fp97"
     },
     {
@@ -4666,7 +4982,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": true,
       "light": {
@@ -4689,7 +5004,10 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0,
+        "color": null
       },
       "disposition": -1,
       "displayBars": 40,
@@ -4736,9 +5054,11 @@
         "src": "pdftofoundry/troubles-in-otari/kotgar-leadbuster.token.webp",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -4748,11 +5068,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!mUgWFnXE5bAzqfkc.kUDzIoN7aR0jYcNw"
     },
     {
@@ -4768,7 +5116,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": true,
       "light": {
@@ -4791,7 +5138,10 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0,
+        "color": null
       },
       "disposition": -1,
       "displayBars": 40,
@@ -4859,16 +5209,12 @@
                 "value": "prepared",
                 "flexible": false
               },
-              "showUnpreparedSpells": {
-                "value": false
-              },
               "showSlotlessLevels": {
                 "value": true
               },
               "proficiency": {
                 "value": 0
               },
-              "displayLevels": {},
               "slots": {
                 "slot0": {
                   "prepared": {
@@ -4976,6 +5322,10 @@
               "autoHeightenLevel": {
                 "value": null
               },
+              "showUnpreparedSpells": {
+                "value": false
+              },
+              "displayLevels": {},
               "source": {
                 "value": ""
               },
@@ -4997,10 +5347,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.OOCu4hNQg4NvyXLU"
           },
@@ -5051,16 +5404,12 @@
                 "value": "focus",
                 "flexible": false
               },
-              "showUnpreparedSpells": {
-                "value": false
-              },
               "showSlotlessLevels": {
                 "value": true
               },
               "proficiency": {
                 "value": 1
               },
-              "displayLevels": {},
               "slots": {
                 "slot0": {
                   "prepared": [],
@@ -5126,6 +5475,10 @@
               "autoHeightenLevel": {
                 "value": null
               },
+              "showUnpreparedSpells": {
+                "value": false
+              },
+              "displayLevels": {},
               "source": {
                 "value": ""
               },
@@ -5147,19 +5500,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.zhR9Ys8AyYNjAz29"
           },
           {
             "_id": "oNWam7Aw7UjbskXG",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.spells-srd.f8hRqLJaxBVhF1u0"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/spells/acid-arrow.webp",
             "name": "Acid Arrow",
@@ -5185,6 +5539,7 @@
                   "attack"
                 ],
                 "rarity": "common",
+                "traditions": [],
                 "custom": ""
               },
               "publication": {
@@ -5196,6 +5551,45 @@
               "level": {
                 "value": 2
               },
+              "requirements": "",
+              "target": {
+                "value": "1 creature"
+              },
+              "range": {
+                "value": "120 feet"
+              },
+              "area": {
+                "value": "",
+                "areaType": ""
+              },
+              "time": {
+                "value": "2"
+              },
+              "duration": {
+                "value": "",
+                "sustained": false
+              },
+              "damage": {
+                "value": {
+                  "0": {
+                    "applyMod": false,
+                    "type": {
+                      "categories": [],
+                      "subtype": "",
+                      "value": "acid"
+                    },
+                    "value": "3d8"
+                  }
+                }
+              },
+              "defense": null,
+              "cost": {
+                "value": ""
+              },
+              "location": {
+                "value": "OOCu4hNQg4NvyXLU"
+              },
+              "counteraction": false,
               "spellType": {
                 "value": "attack"
               },
@@ -5217,47 +5611,12 @@
               "materials": {
                 "value": ""
               },
-              "target": {
-                "value": "1 creature"
-              },
-              "range": {
-                "value": "120 feet"
-              },
-              "area": {
-                "value": "",
-                "areaType": ""
-              },
-              "time": {
-                "value": "2"
-              },
-              "duration": {
-                "value": ""
-              },
-              "damage": {
-                "value": {
-                  "0": {
-                    "applyMod": false,
-                    "type": {
-                      "categories": [],
-                      "subtype": "",
-                      "value": "acid"
-                    },
-                    "value": "3d8"
-                  }
-                }
-              },
               "save": {
                 "value": "",
                 "basic": ""
               },
               "sustained": {
                 "value": false
-              },
-              "cost": {
-                "value": ""
-              },
-              "location": {
-                "value": "OOCu4hNQg4NvyXLU"
               },
               "hasCounteractCheck": {
                 "value": false
@@ -5311,19 +5670,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.spells-srd.f8hRqLJaxBVhF1u0",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.oNWam7Aw7UjbskXG"
           },
           {
             "_id": "rdn13vwGUehKyhha",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.spells-srd.9XHmC2JgTUIQ1CCm"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/spells/obscuring-mist.webp",
             "name": "Obscuring Mist",
@@ -5348,6 +5708,7 @@
                   "water"
                 ],
                 "rarity": "common",
+                "traditions": [],
                 "custom": ""
               },
               "publication": {
@@ -5359,6 +5720,35 @@
               "level": {
                 "value": 2
               },
+              "requirements": "",
+              "target": {
+                "value": ""
+              },
+              "range": {
+                "value": "120 feet"
+              },
+              "area": {
+                "value": 20,
+                "areaType": "burst"
+              },
+              "time": {
+                "value": "3"
+              },
+              "duration": {
+                "value": "1 minute",
+                "sustained": false
+              },
+              "damage": {
+                "value": {}
+              },
+              "defense": null,
+              "cost": {
+                "value": ""
+              },
+              "location": {
+                "value": "OOCu4hNQg4NvyXLU"
+              },
+              "counteraction": false,
               "spellType": {
                 "value": "utility"
               },
@@ -5380,37 +5770,12 @@
               "materials": {
                 "value": ""
               },
-              "target": {
-                "value": ""
-              },
-              "range": {
-                "value": "120 feet"
-              },
-              "area": {
-                "value": 20,
-                "areaType": "burst"
-              },
-              "time": {
-                "value": "3"
-              },
-              "duration": {
-                "value": "1 minute"
-              },
-              "damage": {
-                "value": {}
-              },
               "save": {
                 "value": "",
                 "basic": ""
               },
               "sustained": {
                 "value": false
-              },
-              "cost": {
-                "value": ""
-              },
-              "location": {
-                "value": "OOCu4hNQg4NvyXLU"
               },
               "hasCounteractCheck": {
                 "value": false
@@ -5457,19 +5822,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.spells-srd.9XHmC2JgTUIQ1CCm",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.rdn13vwGUehKyhha"
           },
           {
             "_id": "TLWlBerjUtbtCHzr",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.spells-srd.Fr58LDSrbndgld9n"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/spells/resist-energy.webp",
             "name": "Resist Energy",
@@ -5492,6 +5858,7 @@
                 "otherTags": [],
                 "value": [],
                 "rarity": "common",
+                "traditions": [],
                 "custom": ""
               },
               "publication": {
@@ -5503,6 +5870,35 @@
               "level": {
                 "value": 2
               },
+              "requirements": "",
+              "target": {
+                "value": "1 creature"
+              },
+              "range": {
+                "value": "touch"
+              },
+              "area": {
+                "value": "",
+                "areaType": ""
+              },
+              "time": {
+                "value": "2"
+              },
+              "duration": {
+                "value": "10 minutes",
+                "sustained": false
+              },
+              "damage": {
+                "value": {}
+              },
+              "defense": null,
+              "cost": {
+                "value": ""
+              },
+              "location": {
+                "value": "OOCu4hNQg4NvyXLU"
+              },
+              "counteraction": false,
               "spellType": {
                 "value": "utility"
               },
@@ -5526,37 +5922,12 @@
               "materials": {
                 "value": ""
               },
-              "target": {
-                "value": "1 creature"
-              },
-              "range": {
-                "value": "touch"
-              },
-              "area": {
-                "value": "",
-                "areaType": ""
-              },
-              "time": {
-                "value": "2"
-              },
-              "duration": {
-                "value": "10 minutes"
-              },
-              "damage": {
-                "value": {}
-              },
               "save": {
                 "value": "",
                 "basic": ""
               },
               "sustained": {
                 "value": false
-              },
-              "cost": {
-                "value": ""
-              },
-              "location": {
-                "value": "OOCu4hNQg4NvyXLU"
               },
               "hasCounteractCheck": {
                 "value": false
@@ -5618,19 +5989,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.spells-srd.Fr58LDSrbndgld9n",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.TLWlBerjUtbtCHzr"
           },
           {
             "_id": "P2eKpIYTpVqeAKfp",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.spells-srd.aIHY2DArKFweIrpf"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/spells/command.webp",
             "name": "Command",
@@ -5657,6 +6029,7 @@
                   "mental"
                 ],
                 "rarity": "common",
+                "traditions": [],
                 "custom": ""
               },
               "publication": {
@@ -5668,6 +6041,35 @@
               "level": {
                 "value": 1
               },
+              "requirements": "",
+              "target": {
+                "value": "1 creature"
+              },
+              "range": {
+                "value": "30 feet"
+              },
+              "area": {
+                "value": "",
+                "areaType": ""
+              },
+              "time": {
+                "value": "2"
+              },
+              "duration": {
+                "value": "until the end of the target's next turn",
+                "sustained": false
+              },
+              "damage": {
+                "value": {}
+              },
+              "defense": null,
+              "cost": {
+                "value": ""
+              },
+              "location": {
+                "value": "OOCu4hNQg4NvyXLU"
+              },
+              "counteraction": false,
               "spellType": {
                 "value": "save"
               },
@@ -5690,37 +6092,12 @@
               "materials": {
                 "value": ""
               },
-              "target": {
-                "value": "1 creature"
-              },
-              "range": {
-                "value": "30 feet"
-              },
-              "area": {
-                "value": "",
-                "areaType": ""
-              },
-              "time": {
-                "value": "2"
-              },
-              "duration": {
-                "value": "until the end of the target's next turn"
-              },
-              "damage": {
-                "value": {}
-              },
               "save": {
                 "value": "will",
                 "basic": ""
               },
               "sustained": {
                 "value": false
-              },
-              "cost": {
-                "value": ""
-              },
-              "location": {
-                "value": "OOCu4hNQg4NvyXLU"
               },
               "hasCounteractCheck": {
                 "value": false
@@ -5777,19 +6154,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.spells-srd.aIHY2DArKFweIrpf",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.P2eKpIYTpVqeAKfp"
           },
           {
             "_id": "5dRHW6KPiYke6J31",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.spells-srd.4gBIw4IDrSfFHik4"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/spells/daze.webp",
             "name": "Daze",
@@ -5816,6 +6194,7 @@
                   "nonlethal"
                 ],
                 "rarity": "common",
+                "traditions": [],
                 "custom": ""
               },
               "publication": {
@@ -5827,6 +6206,44 @@
               "level": {
                 "value": 1
               },
+              "requirements": "",
+              "target": {
+                "value": "1 creature"
+              },
+              "range": {
+                "value": "60 feet"
+              },
+              "area": {
+                "value": null,
+                "areaType": ""
+              },
+              "time": {
+                "value": "2"
+              },
+              "duration": {
+                "value": "1 round",
+                "sustained": false
+              },
+              "damage": {
+                "value": {
+                  "0": {
+                    "applyMod": true,
+                    "type": {
+                      "categories": [],
+                      "value": "mental"
+                    },
+                    "value": "0"
+                  }
+                }
+              },
+              "defense": null,
+              "cost": {
+                "value": ""
+              },
+              "location": {
+                "value": "OOCu4hNQg4NvyXLU"
+              },
+              "counteraction": false,
               "spellType": {
                 "value": "save"
               },
@@ -5849,46 +6266,12 @@
               "materials": {
                 "value": ""
               },
-              "target": {
-                "value": "1 creature"
-              },
-              "range": {
-                "value": "60 feet"
-              },
-              "area": {
-                "value": null,
-                "areaType": ""
-              },
-              "time": {
-                "value": "2"
-              },
-              "duration": {
-                "value": "1 round"
-              },
-              "damage": {
-                "value": {
-                  "0": {
-                    "applyMod": true,
-                    "type": {
-                      "categories": [],
-                      "value": "mental"
-                    },
-                    "value": "0"
-                  }
-                }
-              },
               "save": {
                 "value": "will",
                 "basic": "basic"
               },
               "sustained": {
                 "value": false
-              },
-              "cost": {
-                "value": ""
-              },
-              "location": {
-                "value": "OOCu4hNQg4NvyXLU"
               },
               "hasCounteractCheck": {
                 "value": false
@@ -5942,19 +6325,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.spells-srd.4gBIw4IDrSfFHik4",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.5dRHW6KPiYke6J31"
           },
           {
             "_id": "aaTtT05ZcVtWvbZK",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.spells-srd.gpzpAAAJ1Lza2JVl"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/spells/detect-magic.webp",
             "name": "Detect Magic",
@@ -5980,6 +6364,7 @@
                   "cantrip"
                 ],
                 "rarity": "common",
+                "traditions": [],
                 "custom": ""
               },
               "publication": {
@@ -5991,6 +6376,35 @@
               "level": {
                 "value": 1
               },
+              "requirements": "",
+              "target": {
+                "value": ""
+              },
+              "range": {
+                "value": ""
+              },
+              "area": {
+                "value": "30",
+                "areaType": "emanation"
+              },
+              "time": {
+                "value": "2"
+              },
+              "duration": {
+                "value": "",
+                "sustained": false
+              },
+              "damage": {
+                "value": {}
+              },
+              "defense": null,
+              "cost": {
+                "value": ""
+              },
+              "location": {
+                "value": "OOCu4hNQg4NvyXLU"
+              },
+              "counteraction": false,
               "spellType": {
                 "value": "utility"
               },
@@ -6015,37 +6429,12 @@
               "materials": {
                 "value": ""
               },
-              "target": {
-                "value": ""
-              },
-              "range": {
-                "value": ""
-              },
-              "area": {
-                "value": "30",
-                "areaType": "emanation"
-              },
-              "time": {
-                "value": "2"
-              },
-              "duration": {
-                "value": ""
-              },
-              "damage": {
-                "value": {}
-              },
               "save": {
                 "value": "",
                 "basic": ""
               },
               "sustained": {
                 "value": false
-              },
-              "cost": {
-                "value": ""
-              },
-              "location": {
-                "value": "OOCu4hNQg4NvyXLU"
               },
               "hasCounteractCheck": {
                 "value": false
@@ -6092,19 +6481,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.spells-srd.gpzpAAAJ1Lza2JVl",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.aaTtT05ZcVtWvbZK"
           },
           {
             "_id": "rfaUjMXBlYA3f1bD",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.spells-srd.4koZzrnMXhhosn0D"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/spells/fear.webp",
             "name": "Fear",
@@ -6131,6 +6521,7 @@
                   "mental"
                 ],
                 "rarity": "common",
+                "traditions": [],
                 "custom": ""
               },
               "publication": {
@@ -6142,6 +6533,35 @@
               "level": {
                 "value": 1
               },
+              "requirements": "",
+              "target": {
+                "value": "1 creature"
+              },
+              "range": {
+                "value": "30 feet"
+              },
+              "area": {
+                "value": "",
+                "areaType": ""
+              },
+              "time": {
+                "value": "2"
+              },
+              "duration": {
+                "value": "varies",
+                "sustained": false
+              },
+              "damage": {
+                "value": {}
+              },
+              "defense": null,
+              "cost": {
+                "value": ""
+              },
+              "location": {
+                "value": "zhR9Ys8AyYNjAz29"
+              },
+              "counteraction": false,
               "spellType": {
                 "value": "save"
               },
@@ -6165,37 +6585,12 @@
               "materials": {
                 "value": ""
               },
-              "target": {
-                "value": "1 creature"
-              },
-              "range": {
-                "value": "30 feet"
-              },
-              "area": {
-                "value": "",
-                "areaType": ""
-              },
-              "time": {
-                "value": "2"
-              },
-              "duration": {
-                "value": "varies"
-              },
-              "damage": {
-                "value": {}
-              },
               "save": {
                 "value": "will",
                 "basic": ""
               },
               "sustained": {
                 "value": false
-              },
-              "cost": {
-                "value": ""
-              },
-              "location": {
-                "value": "zhR9Ys8AyYNjAz29"
               },
               "hasCounteractCheck": {
                 "value": false
@@ -6252,19 +6647,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.spells-srd.4koZzrnMXhhosn0D",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.rfaUjMXBlYA3f1bD"
           },
           {
             "_id": "5IhT0N12gNd3ojxs",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.spells-srd.atlgGNI1E1Ox3O3a"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/spells/ghost-sound.webp",
             "name": "Ghost Sound",
@@ -6290,6 +6686,7 @@
                   "cantrip"
                 ],
                 "rarity": "common",
+                "traditions": [],
                 "custom": ""
               },
               "publication": {
@@ -6301,6 +6698,35 @@
               "level": {
                 "value": 1
               },
+              "requirements": "",
+              "target": {
+                "value": ""
+              },
+              "range": {
+                "value": "30 feet"
+              },
+              "area": {
+                "value": "",
+                "areaType": ""
+              },
+              "time": {
+                "value": "2"
+              },
+              "duration": {
+                "value": "sustained",
+                "sustained": false
+              },
+              "damage": {
+                "value": {}
+              },
+              "defense": null,
+              "cost": {
+                "value": ""
+              },
+              "location": {
+                "value": "OOCu4hNQg4NvyXLU"
+              },
+              "counteraction": false,
               "spellType": {
                 "value": "utility"
               },
@@ -6322,37 +6748,12 @@
               "materials": {
                 "value": ""
               },
-              "target": {
-                "value": ""
-              },
-              "range": {
-                "value": "30 feet"
-              },
-              "area": {
-                "value": "",
-                "areaType": ""
-              },
-              "time": {
-                "value": "2"
-              },
-              "duration": {
-                "value": "sustained"
-              },
-              "damage": {
-                "value": {}
-              },
               "save": {
                 "value": "",
                 "basic": ""
               },
               "sustained": {
                 "value": false
-              },
-              "cost": {
-                "value": ""
-              },
-              "location": {
-                "value": "OOCu4hNQg4NvyXLU"
               },
               "hasCounteractCheck": {
                 "value": false
@@ -6414,19 +6815,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.spells-srd.atlgGNI1E1Ox3O3a",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.5IhT0N12gNd3ojxs"
           },
           {
             "_id": "2rOQ7HjEutsKVPmn",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.spells-srd.g8QqHpv2CWDwmIm1"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/spells/gust-of-wind.webp",
             "name": "Gust of Wind",
@@ -6451,6 +6853,7 @@
                   "air"
                 ],
                 "rarity": "common",
+                "traditions": [],
                 "custom": ""
               },
               "publication": {
@@ -6462,6 +6865,35 @@
               "level": {
                 "value": 1
               },
+              "requirements": "",
+              "target": {
+                "value": ""
+              },
+              "range": {
+                "value": ""
+              },
+              "area": {
+                "value": 60,
+                "areaType": "line"
+              },
+              "time": {
+                "value": "2"
+              },
+              "duration": {
+                "value": "until the start of your next turn",
+                "sustained": false
+              },
+              "damage": {
+                "value": {}
+              },
+              "defense": null,
+              "cost": {
+                "value": ""
+              },
+              "location": {
+                "value": "OOCu4hNQg4NvyXLU"
+              },
+              "counteraction": false,
               "spellType": {
                 "value": "save"
               },
@@ -6483,37 +6915,12 @@
               "materials": {
                 "value": ""
               },
-              "target": {
-                "value": ""
-              },
-              "range": {
-                "value": ""
-              },
-              "area": {
-                "value": 60,
-                "areaType": "line"
-              },
-              "time": {
-                "value": "2"
-              },
-              "duration": {
-                "value": "until the start of your next turn"
-              },
-              "damage": {
-                "value": {}
-              },
               "save": {
                 "value": "fortitude",
                 "basic": ""
               },
               "sustained": {
                 "value": false
-              },
-              "cost": {
-                "value": ""
-              },
-              "location": {
-                "value": "OOCu4hNQg4NvyXLU"
               },
               "hasCounteractCheck": {
                 "value": false
@@ -6560,19 +6967,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.spells-srd.g8QqHpv2CWDwmIm1",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.2rOQ7HjEutsKVPmn"
           },
           {
             "_id": "rRhnUYuOOEYUCJIm",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.spells-srd.pwzdSlJgYqN7bs2w"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/spells/mage-hand.webp",
             "name": "Mage Hand",
@@ -6597,6 +7005,7 @@
                   "cantrip"
                 ],
                 "rarity": "common",
+                "traditions": [],
                 "custom": ""
               },
               "publication": {
@@ -6608,6 +7017,35 @@
               "level": {
                 "value": 1
               },
+              "requirements": "",
+              "target": {
+                "value": "1 unattended object of light Bulk or less"
+              },
+              "range": {
+                "value": "30 feet"
+              },
+              "area": {
+                "value": "",
+                "areaType": ""
+              },
+              "time": {
+                "value": "2"
+              },
+              "duration": {
+                "value": "sustained",
+                "sustained": false
+              },
+              "damage": {
+                "value": {}
+              },
+              "defense": null,
+              "cost": {
+                "value": ""
+              },
+              "location": {
+                "value": "OOCu4hNQg4NvyXLU"
+              },
+              "counteraction": false,
               "spellType": {
                 "value": "utility"
               },
@@ -6629,37 +7067,12 @@
               "materials": {
                 "value": ""
               },
-              "target": {
-                "value": "1 unattended object of light Bulk or less"
-              },
-              "range": {
-                "value": "30 feet"
-              },
-              "area": {
-                "value": "",
-                "areaType": ""
-              },
-              "time": {
-                "value": "2"
-              },
-              "duration": {
-                "value": "sustained"
-              },
-              "damage": {
-                "value": {}
-              },
               "save": {
                 "value": "",
                 "basic": ""
               },
               "sustained": {
                 "value": false
-              },
-              "cost": {
-                "value": ""
-              },
-              "location": {
-                "value": "OOCu4hNQg4NvyXLU"
               },
               "hasCounteractCheck": {
                 "value": false
@@ -6726,19 +7139,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.spells-srd.pwzdSlJgYqN7bs2w",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.rRhnUYuOOEYUCJIm"
           },
           {
             "_id": "LmiiYNAOwkxPs3WZ",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/spells/magic-missile.webp",
             "name": "Magic Missile",
@@ -6763,6 +7177,7 @@
                   "force"
                 ],
                 "rarity": "common",
+                "traditions": [],
                 "custom": ""
               },
               "publication": {
@@ -6774,6 +7189,43 @@
               "level": {
                 "value": 1
               },
+              "requirements": "",
+              "target": {
+                "value": "1 creature"
+              },
+              "range": {
+                "value": "120 feet"
+              },
+              "area": {
+                "value": null,
+                "areaType": ""
+              },
+              "time": {
+                "value": "1 to 3"
+              },
+              "duration": {
+                "value": "",
+                "sustained": false
+              },
+              "damage": {
+                "value": {
+                  "0": {
+                    "type": {
+                      "categories": [],
+                      "value": "force"
+                    },
+                    "value": "1d4+1"
+                  }
+                }
+              },
+              "defense": null,
+              "cost": {
+                "value": ""
+              },
+              "location": {
+                "value": "OOCu4hNQg4NvyXLU"
+              },
+              "counteraction": false,
               "spellType": {
                 "value": "utility"
               },
@@ -6795,45 +7247,12 @@
               "materials": {
                 "value": ""
               },
-              "target": {
-                "value": "1 creature"
-              },
-              "range": {
-                "value": "120 feet"
-              },
-              "area": {
-                "value": null,
-                "areaType": ""
-              },
-              "time": {
-                "value": "1 to 3"
-              },
-              "duration": {
-                "value": ""
-              },
-              "damage": {
-                "value": {
-                  "0": {
-                    "type": {
-                      "categories": [],
-                      "value": "force"
-                    },
-                    "value": "1d4+1"
-                  }
-                }
-              },
               "save": {
                 "value": "",
                 "basic": ""
               },
               "sustained": {
                 "value": false
-              },
-              "cost": {
-                "value": ""
-              },
-              "location": {
-                "value": "OOCu4hNQg4NvyXLU"
               },
               "hasCounteractCheck": {
                 "value": false
@@ -6880,19 +7299,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.LmiiYNAOwkxPs3WZ"
           },
           {
             "_id": "rlqs0WH4XFzsUkU4",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.spells-srd.vLzFcIaSXs7YTIqJ"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/spells/message.webp",
             "name": "Message",
@@ -6920,6 +7340,7 @@
                   "mental"
                 ],
                 "rarity": "common",
+                "traditions": [],
                 "custom": ""
               },
               "publication": {
@@ -6931,6 +7352,35 @@
               "level": {
                 "value": 1
               },
+              "requirements": "",
+              "target": {
+                "value": "1 creature"
+              },
+              "range": {
+                "value": "120 feet"
+              },
+              "area": {
+                "value": "",
+                "areaType": ""
+              },
+              "time": {
+                "value": "1"
+              },
+              "duration": {
+                "value": "see below",
+                "sustained": false
+              },
+              "damage": {
+                "value": {}
+              },
+              "defense": null,
+              "cost": {
+                "value": ""
+              },
+              "location": {
+                "value": "OOCu4hNQg4NvyXLU"
+              },
+              "counteraction": false,
               "spellType": {
                 "value": "utility"
               },
@@ -6953,37 +7403,12 @@
               "materials": {
                 "value": ""
               },
-              "target": {
-                "value": "1 creature"
-              },
-              "range": {
-                "value": "120 feet"
-              },
-              "area": {
-                "value": "",
-                "areaType": ""
-              },
-              "time": {
-                "value": "1"
-              },
-              "duration": {
-                "value": "see below"
-              },
-              "damage": {
-                "value": {}
-              },
               "save": {
                 "value": "",
                 "basic": ""
               },
               "sustained": {
                 "value": false
-              },
-              "cost": {
-                "value": ""
-              },
-              "location": {
-                "value": "OOCu4hNQg4NvyXLU"
               },
               "hasCounteractCheck": {
                 "value": false
@@ -7040,19 +7465,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.spells-srd.vLzFcIaSXs7YTIqJ",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.rlqs0WH4XFzsUkU4"
           },
           {
             "_id": "pUmcxyyawXK5m6OE",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.spells-srd.gYjPm7YwGtEa1oxh"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/spells/ray-of-frost.webp",
             "name": "Ray of Frost",
@@ -7079,6 +7505,7 @@
                   "cantrip"
                 ],
                 "rarity": "common",
+                "traditions": [],
                 "custom": ""
               },
               "publication": {
@@ -7090,6 +7517,44 @@
               "level": {
                 "value": 1
               },
+              "requirements": "",
+              "target": {
+                "value": "1 creature"
+              },
+              "range": {
+                "value": "120 feet"
+              },
+              "area": {
+                "value": null,
+                "areaType": ""
+              },
+              "time": {
+                "value": "2"
+              },
+              "duration": {
+                "value": "",
+                "sustained": false
+              },
+              "damage": {
+                "value": {
+                  "0": {
+                    "applyMod": true,
+                    "type": {
+                      "categories": [],
+                      "value": "cold"
+                    },
+                    "value": "1d4"
+                  }
+                }
+              },
+              "defense": null,
+              "cost": {
+                "value": ""
+              },
+              "location": {
+                "value": "OOCu4hNQg4NvyXLU"
+              },
+              "counteraction": false,
               "spellType": {
                 "value": "attack"
               },
@@ -7112,46 +7577,12 @@
               "materials": {
                 "value": ""
               },
-              "target": {
-                "value": "1 creature"
-              },
-              "range": {
-                "value": "120 feet"
-              },
-              "area": {
-                "value": null,
-                "areaType": ""
-              },
-              "time": {
-                "value": "2"
-              },
-              "duration": {
-                "value": ""
-              },
-              "damage": {
-                "value": {
-                  "0": {
-                    "applyMod": true,
-                    "type": {
-                      "categories": [],
-                      "value": "cold"
-                    },
-                    "value": "1d4"
-                  }
-                }
-              },
               "save": {
                 "value": "",
                 "basic": ""
               },
               "sustained": {
                 "value": false
-              },
-              "cost": {
-                "value": ""
-              },
-              "location": {
-                "value": "OOCu4hNQg4NvyXLU"
               },
               "hasCounteractCheck": {
                 "value": false
@@ -7205,19 +7636,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.spells-srd.gYjPm7YwGtEa1oxh",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.pUmcxyyawXK5m6OE"
           },
           {
             "_id": "7t4eW0BN7c7AKEdx",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.spells-srd.TVKNbcgTee19PXZR"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/spells/shield.webp",
             "name": "Shield",
@@ -7243,6 +7675,7 @@
                   "force"
                 ],
                 "rarity": "common",
+                "traditions": [],
                 "custom": ""
               },
               "publication": {
@@ -7254,6 +7687,35 @@
               "level": {
                 "value": 1
               },
+              "requirements": "",
+              "target": {
+                "value": ""
+              },
+              "range": {
+                "value": ""
+              },
+              "area": {
+                "value": null,
+                "areaType": ""
+              },
+              "time": {
+                "value": "1"
+              },
+              "duration": {
+                "value": "until the start of your next turn",
+                "sustained": false
+              },
+              "damage": {
+                "value": {}
+              },
+              "defense": null,
+              "cost": {
+                "value": ""
+              },
+              "location": {
+                "value": "OOCu4hNQg4NvyXLU"
+              },
+              "counteraction": false,
               "spellType": {
                 "value": "utility"
               },
@@ -7276,37 +7738,12 @@
               "materials": {
                 "value": ""
               },
-              "target": {
-                "value": ""
-              },
-              "range": {
-                "value": ""
-              },
-              "area": {
-                "value": null,
-                "areaType": ""
-              },
-              "time": {
-                "value": "1"
-              },
-              "duration": {
-                "value": "until the start of your next turn"
-              },
-              "damage": {
-                "value": {}
-              },
               "save": {
                 "value": "",
                 "basic": ""
               },
               "sustained": {
                 "value": false
-              },
-              "cost": {
-                "value": ""
-              },
-              "location": {
-                "value": "OOCu4hNQg4NvyXLU"
               },
               "hasCounteractCheck": {
                 "value": false
@@ -7353,19 +7790,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.spells-srd.TVKNbcgTee19PXZR",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.7t4eW0BN7c7AKEdx"
           },
           {
             "_id": "E9IuWpulcCWHu1c5",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.equipment-srd.FVjTuBCIefAgloUU"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/equipment/weapons/staff.webp",
             "name": "Staff",
@@ -7403,18 +7841,15 @@
               },
               "quantity": 1,
               "baseItem": "staff",
+              "bulk": {
+                "value": 0.1
+              },
               "hp": {
                 "value": 0,
                 "max": 0,
                 "brokenThreshold": 0
               },
               "hardness": 0,
-              "weight": {
-                "value": "1"
-              },
-              "equippedBulk": {
-                "value": ""
-              },
               "price": {
                 "value": {}
               },
@@ -7422,10 +7857,6 @@
                 "carryType": "worn",
                 "invested": null,
                 "handsHeld": 0
-              },
-              "stackGroup": null,
-              "negateBulk": {
-                "value": "0"
               },
               "containerId": null,
               "size": "med",
@@ -7461,36 +7892,27 @@
                 "persistent": null,
                 "value": ""
               },
-              "bonusDamage": {
-                "value": 0
-              },
               "splashDamage": {
                 "value": 0
               },
               "range": null,
+              "expend": null,
+              "ammo": null,
               "reload": {
                 "value": ""
               },
-              "potencyRune": {
-                "value": null
-              },
-              "strikingRune": {
-                "value": ""
+              "grade": null,
+              "runes": {
+                "potency": 0,
+                "striking": 0,
+                "property": []
               },
               "specific": {
                 "value": false
               },
-              "propertyRune1": {
-                "value": ""
-              },
-              "propertyRune2": {
-                "value": ""
-              },
-              "propertyRune3": {
-                "value": ""
-              },
-              "propertyRune4": {
-                "value": ""
+              "subitems": [],
+              "bonusDamage": {
+                "value": 0
               },
               "property1": {
                 "value": "",
@@ -7505,6 +7927,34 @@
                 "criticalConditionValue": null,
                 "strikeConditionType": "",
                 "strikeConditionValue": null
+              },
+              "weight": {
+                "value": "1"
+              },
+              "equippedBulk": {
+                "value": ""
+              },
+              "stackGroup": null,
+              "negateBulk": {
+                "value": "0"
+              },
+              "potencyRune": {
+                "value": null
+              },
+              "strikingRune": {
+                "value": ""
+              },
+              "propertyRune1": {
+                "value": ""
+              },
+              "propertyRune2": {
+                "value": ""
+              },
+              "propertyRune3": {
+                "value": ""
+              },
+              "propertyRune4": {
+                "value": ""
               },
               "source": {
                 "value": "Pathfinder Core Rulebook"
@@ -7536,19 +7986,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.equipment-srd.FVjTuBCIefAgloUU",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.E9IuWpulcCWHu1c5"
           },
           {
             "_id": "5519SZd2Gx7R0pso",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.equipment-srd.FOWF5f0tCaApv9RE"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/equipment/adventuring-gear/spellbook.webp",
             "name": "Spellbook (Advanced Arcanomnemonics)",
@@ -7584,18 +8035,15 @@
               },
               "quantity": 1,
               "baseItem": null,
+              "bulk": {
+                "value": 0.1
+              },
               "hp": {
                 "value": 0,
                 "max": 0,
                 "brokenThreshold": 0
               },
               "hardness": 0,
-              "weight": {
-                "value": "L"
-              },
-              "equippedBulk": {
-                "value": ""
-              },
               "price": {
                 "value": {
                   "gp": 1
@@ -7605,10 +8053,6 @@
                 "carryType": "worn",
                 "invested": null,
                 "handsHeld": 0
-              },
-              "stackGroup": "",
-              "negateBulk": {
-                "value": "0"
               },
               "containerId": null,
               "size": "med",
@@ -7631,6 +8075,17 @@
               },
               "usage": {
                 "value": "held-in-one-hand"
+              },
+              "subitems": [],
+              "weight": {
+                "value": "L"
+              },
+              "equippedBulk": {
+                "value": ""
+              },
+              "stackGroup": "",
+              "negateBulk": {
+                "value": "0"
               },
               "source": {
                 "value": "Pathfinder Core Rulebook"
@@ -7659,19 +8114,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.equipment-srd.FOWF5f0tCaApv9RE",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.5519SZd2Gx7R0pso"
           },
           {
             "_id": "gTjE5Ad9b6jVEcWf",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.equipment-srd.VHxXMvBeBTq2FSdf"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/equipment/adventuring-gear/material-component-pouch.webp",
             "name": "Material Component Pouch",
@@ -7707,18 +8163,15 @@
               },
               "quantity": 1,
               "baseItem": null,
+              "bulk": {
+                "value": 0.1
+              },
               "hp": {
                 "value": 0,
                 "max": 0,
                 "brokenThreshold": 0
               },
               "hardness": 0,
-              "weight": {
-                "value": "L"
-              },
-              "equippedBulk": {
-                "value": ""
-              },
               "price": {
                 "value": {
                   "sp": 5
@@ -7727,10 +8180,6 @@
               "equipped": {
                 "carryType": "worn",
                 "invested": null
-              },
-              "stackGroup": null,
-              "negateBulk": {
-                "value": ""
               },
               "containerId": null,
               "size": "med",
@@ -7753,6 +8202,17 @@
               },
               "usage": {
                 "value": "held-in-one-hand"
+              },
+              "subitems": [],
+              "weight": {
+                "value": "L"
+              },
+              "equippedBulk": {
+                "value": ""
+              },
+              "stackGroup": null,
+              "negateBulk": {
+                "value": ""
               },
               "source": {
                 "value": "Pathfinder Core Rulebook"
@@ -7781,19 +8241,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.equipment-srd.VHxXMvBeBTq2FSdf",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.gTjE5Ad9b6jVEcWf"
           },
           {
             "_id": "xQTqtFFkEcJJWCDW",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.equipment-srd.UJWiN0K3jqVjxvKk"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/equipment/wands/magic-wands/magic-wand.webp",
             "name": "Wand of Fear (Level 1)",
@@ -7836,18 +8297,15 @@
               },
               "quantity": 1,
               "baseItem": null,
+              "bulk": {
+                "value": 0.1
+              },
               "hp": {
                 "value": 0,
                 "max": 0,
                 "brokenThreshold": 0
               },
               "hardness": 0,
-              "weight": {
-                "value": "L"
-              },
-              "equippedBulk": {
-                "value": ""
-              },
               "price": {
                 "value": {
                   "gp": 60
@@ -7856,10 +8314,6 @@
               "equipped": {
                 "carryType": "worn",
                 "handsHeld": 0
-              },
-              "stackGroup": "",
-              "negateBulk": {
-                "value": "0"
               },
               "containerId": null,
               "size": "med",
@@ -7880,24 +8334,17 @@
                 },
                 "misidentified": {}
               },
+              "category": "other",
+              "uses": {
+                "value": 0,
+                "max": 0,
+                "autoDestroy": false,
+                "per": null,
+                "autoUse": true
+              },
+              "damage": null,
               "usage": {
                 "value": "held-in-one-hand"
-              },
-              "consumableType": {
-                "value": "wand"
-              },
-              "charges": {
-                "value": 1,
-                "max": 1,
-                "_deprecated": true
-              },
-              "consume": {
-                "value": "",
-                "_deprecated": true
-              },
-              "autoDestroy": {
-                "value": false,
-                "_deprecated": true
               },
               "spell": {
                 "data": {
@@ -8025,6 +8472,32 @@
                 },
                 "heightenedLevel": 1
               },
+              "stackGroup": "",
+              "weight": {
+                "value": "L"
+              },
+              "equippedBulk": {
+                "value": ""
+              },
+              "negateBulk": {
+                "value": "0"
+              },
+              "consumableType": {
+                "value": "wand"
+              },
+              "charges": {
+                "value": 1,
+                "max": 1,
+                "_deprecated": true
+              },
+              "consume": {
+                "value": "",
+                "_deprecated": true
+              },
+              "autoDestroy": {
+                "value": false,
+                "_deprecated": true
+              },
               "source": {
                 "value": "Pathfinder Core Rulebook"
               },
@@ -8064,13 +8537,6 @@
                 "long": null,
                 "units": ""
               },
-              "uses": {
-                "value": 0,
-                "max": 0,
-                "per": null,
-                "autoUse": true,
-                "autoDestroy": false
-              },
               "autoUse": {
                 "value": true,
                 "_deprecated": true
@@ -8082,10 +8548,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.equipment-srd.UJWiN0K3jqVjxvKk",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.xQTqtFFkEcJJWCDW"
           },
@@ -8181,19 +8650,20 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.QZb6NNceGC3aMTMO"
           },
           {
             "_id": "Iq79xetoAoYDXkjs",
             "flags": {
-              "core": {
-                "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6"
-              }
+              "core": {}
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Darkvision",
@@ -8231,13 +8701,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -8265,10 +8735,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6",
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.Iq79xetoAoYDXkjs"
           },
@@ -8315,13 +8788,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -8349,10 +8822,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.W6XkoyVR7QH9Z8lg"
           },
@@ -8397,13 +8873,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -8431,10 +8907,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.7TD5aX6vNauxTw5T"
           },
@@ -8477,13 +8956,13 @@
               "actions": {
                 "value": null
               },
+              "deathNote": false,
               "requirements": {
                 "value": ""
               },
               "trigger": {
                 "value": ""
               },
-              "deathNote": false,
               "source": {
                 "value": ""
               },
@@ -8511,10 +8990,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.vlVKxFijTHI7cMPh"
           },
@@ -8577,10 +9059,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.XCxDIW0en56yWC0x"
           },
@@ -8643,10 +9128,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.wacf38StccBUrXut"
           },
@@ -8709,10 +9197,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.ahXVih7AtAIrRV01"
           },
@@ -8793,10 +9284,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.OoNcWTdHVJ69lAop"
           },
@@ -8859,10 +9353,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.MEkqTzqkZzZ0oT0C"
           },
@@ -8925,10 +9422,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.g78glLqsa0Rx27bG"
           },
@@ -8991,10 +9491,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.UTUFN0OAbBpG5wqN"
           },
@@ -9057,10 +9560,13 @@
             "_stats": {
               "systemId": null,
               "systemVersion": null,
-              "coreVersion": null,
+              "coreVersion": "14.360",
               "createdTime": null,
               "modifiedTime": null,
-              "lastModifiedBy": null
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
             },
             "_key": "!scenes.tokens.delta.items!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC.dI0XVDaPkwHwDYnC.NFxItbgenBoN3CbU"
           }
@@ -9092,9 +9598,11 @@
         "src": "pdftofoundry/troubles-in-otari/morgrym-leadbuster.token.webp",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "tint": "#ffffff",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -9104,11 +9612,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!mUgWFnXE5bAzqfkc.dI0XVDaPkwHwDYnC"
     }
   ],
@@ -9123,19 +9659,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/book.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!mUgWFnXE5bAzqfkc.3Iq73U9wlY6442Kf"
     },
     {
@@ -9147,19 +9689,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/book.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!mUgWFnXE5bAzqfkc.dlAs8Mz8CQa5KnoC"
     },
     {
@@ -9171,19 +9719,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/book.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!mUgWFnXE5bAzqfkc.HH8UCvjS4Pm3YBnT"
     },
     {
@@ -9195,24 +9749,29 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/book.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!mUgWFnXE5bAzqfkc.eFSNuzvs8UXMgUoy"
     }
   ],
   "sounds": [],
-  "templates": [],
   "tiles": [
     {
       "_id": "NcaCECkUq1f2eCgK",
@@ -9220,16 +9779,15 @@
       "height": 300,
       "x": 1500,
       "y": 800,
-      "z": 100,
       "rotation": 0,
       "alpha": 1,
       "hidden": false,
       "locked": false,
-      "overhead": true,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -9239,14 +9797,21 @@
       "flags": {},
       "texture": {
         "src": "modules/troubles-in-otari-remade-maps/maps/bridge-tile-tree2.webp",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
-      "roof": false,
+      "elevation": 20,
+      "sort": 100,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "levels": [],
       "_key": "!scenes.tiles!mUgWFnXE5bAzqfkc.NcaCECkUq1f2eCgK"
     },
     {
@@ -9255,16 +9820,15 @@
       "height": 800,
       "x": 1500,
       "y": 1000,
-      "z": 100,
       "rotation": 0,
       "alpha": 1,
       "hidden": false,
       "locked": false,
-      "overhead": true,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -9274,14 +9838,21 @@
       "flags": {},
       "texture": {
         "src": "modules/troubles-in-otari-remade-maps/maps/bridge-tile-tree3.webp",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
-      "roof": false,
+      "elevation": 20,
+      "sort": 100,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "levels": [],
       "_key": "!scenes.tiles!mUgWFnXE5bAzqfkc.wEuVV2YUSe56Tkiz"
     },
     {
@@ -9290,16 +9861,15 @@
       "height": 600,
       "x": 800,
       "y": 1400,
-      "z": 100,
       "rotation": 0,
       "alpha": 1,
       "hidden": false,
       "locked": false,
-      "overhead": true,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -9309,14 +9879,21 @@
       "flags": {},
       "texture": {
         "src": "modules/troubles-in-otari-remade-maps/maps/bridge-tile-tree1.webp",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
-      "roof": false,
+      "elevation": 20,
+      "sort": 100,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "levels": [],
       "_key": "!scenes.tiles!mUgWFnXE5bAzqfkc.RgjerWEAbTFXf0BM"
     },
     {
@@ -9325,16 +9902,15 @@
       "height": 700,
       "x": 2100,
       "y": 2600,
-      "z": 100,
       "rotation": 0,
       "alpha": 1,
       "hidden": false,
       "locked": false,
-      "overhead": true,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -9344,14 +9920,21 @@
       "flags": {},
       "texture": {
         "src": "modules/troubles-in-otari-remade-maps/maps/bridge-tile-tree4.webp",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
-      "roof": false,
+      "elevation": 20,
+      "sort": 100,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "levels": [],
       "_key": "!scenes.tiles!mUgWFnXE5bAzqfkc.iTVEQqVbX59PQliv"
     },
     {
@@ -9360,16 +9943,15 @@
       "height": 800,
       "x": 3200,
       "y": 2500,
-      "z": 100,
       "rotation": 0,
       "alpha": 1,
       "hidden": false,
       "locked": false,
-      "overhead": true,
       "occlusion": {
-        "mode": 1,
         "alpha": 0,
-        "radius": null
+        "modes": [
+          1
+        ]
       },
       "video": {
         "loop": true,
@@ -9379,14 +9961,21 @@
       "flags": {},
       "texture": {
         "src": "modules/troubles-in-otari-remade-maps/maps/bridge-tile-tree5.webp",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0.75
       },
-      "roof": false,
+      "elevation": 20,
+      "sort": 100,
+      "restrictions": {
+        "light": false,
+        "weather": false
+      },
+      "levels": [],
       "_key": "!scenes.tiles!mUgWFnXE5bAzqfkc.dU5wXu62PjAXYoFb"
     }
   ],
@@ -9413,6 +10002,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.fPugCO4TwULeEl2Q"
     },
     {
@@ -9437,6 +10028,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.qBiAKJoMlRW8kwir"
     },
     {
@@ -9461,6 +10054,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.MRTrcjfSkClJ3HyH"
     },
     {
@@ -9485,6 +10080,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.gpZZC66f1SAYsT4o"
     },
     {
@@ -9509,6 +10106,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.iLH9VnHBl79MqVS1"
     },
     {
@@ -9533,6 +10132,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.sZeeZmKlEXRr39LW"
     },
     {
@@ -9557,6 +10158,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.OdCVdet32eBbmd2y"
     },
     {
@@ -9581,6 +10184,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.4BPdbSWvlJGzIGur"
     },
     {
@@ -9605,6 +10210,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.fNA6ZJovavQ7nvsb"
     },
     {
@@ -9629,6 +10236,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.qhzoTUox5VsBchrL"
     },
     {
@@ -9653,6 +10262,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.KAsoFYu1OjkOjRwU"
     },
     {
@@ -9677,6 +10288,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.kw7LADNqba53uyWv"
     },
     {
@@ -9701,6 +10314,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.urznng0qzxBrOOyd"
     },
     {
@@ -9725,6 +10340,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.VnhXDAqDfGcVWWxU"
     },
     {
@@ -9749,6 +10366,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.0BIfGDa4WzbT9odU"
     },
     {
@@ -9773,6 +10392,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.PUHLp4PNT0g3OP0t"
     },
     {
@@ -9797,6 +10418,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.1ibH2WBMAXaVJNUr"
     },
     {
@@ -9821,6 +10444,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.TqlTgq9doJ4ywMjL"
     },
     {
@@ -9845,6 +10470,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.HwUVBYRk8HDKf61a"
     },
     {
@@ -9869,6 +10496,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.HG8iFezFtosz3Kqh"
     },
     {
@@ -9893,6 +10522,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.8LmyW9sdAbMbJYah"
     },
     {
@@ -9917,6 +10548,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.tSS9kEmAz72RHHvv"
     },
     {
@@ -9941,6 +10574,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.sPiTlarICiEHtxdg"
     },
     {
@@ -9965,6 +10600,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.a3QuLpvHQLoXZwQo"
     },
     {
@@ -9989,6 +10626,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.tPalvhxGnWTiiLmq"
     },
     {
@@ -10013,6 +10652,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.HAoKpAgPkbDuh8FU"
     },
     {
@@ -10037,6 +10678,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.uk1mbyYcorC0GRxV"
     },
     {
@@ -10061,6 +10704,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.orS3hpiEclMy8mHw"
     },
     {
@@ -10085,6 +10730,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.6nd81ymjLvwkx0l6"
     },
     {
@@ -10109,6 +10756,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.yTQsEvkOwANBbqeI"
     },
     {
@@ -10133,6 +10782,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.mOV7s0Ue8DGEVZAy"
     },
     {
@@ -10157,6 +10808,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.hcIaRgcGizQTlcjX"
     },
     {
@@ -10181,6 +10834,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.a4T0Me1PjEvc9JQ7"
     },
     {
@@ -10205,6 +10860,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.Xi5P8WPOBfNOv4m2"
     },
     {
@@ -10229,6 +10886,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.0kguKCwH7Z2Ym6Sk"
     },
     {
@@ -10253,6 +10912,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.7WAJGHOaAeoBoB2c"
     },
     {
@@ -10277,6 +10938,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.gUUsRy9UqNLZzSqh"
     },
     {
@@ -10301,6 +10964,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.SatINvLzXEbutGBh"
     },
     {
@@ -10325,6 +10990,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.ZtKmRAoyjWp6xBR8"
     },
     {
@@ -10349,6 +11016,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.kvTB6BUFUWKz6Tm3"
     },
     {
@@ -10373,6 +11042,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.1S0UksvsNlDJlcN8"
     },
     {
@@ -10397,6 +11068,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.ioNsUMTZkcqa5awv"
     },
     {
@@ -10421,6 +11094,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.PwsYR6E48pyUouI9"
     },
     {
@@ -10445,6 +11120,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.ARPR8lAGIRvaZEKD"
     },
     {
@@ -10469,6 +11146,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.1CCMHyHg75zD1zye"
     },
     {
@@ -10493,6 +11172,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.xAIfqhS9YeFad4qh"
     },
     {
@@ -10517,6 +11198,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.TAd1JkYUuWJJowcv"
     },
     {
@@ -10541,6 +11224,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.L0vp0OPnjKZ2Lp9h"
     },
     {
@@ -10565,6 +11250,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.bAEcWBYetAUKYdoe"
     },
     {
@@ -10589,6 +11276,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.WUnPQLV18HJOM33M"
     },
     {
@@ -10613,6 +11302,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.oCybQyq3V1mzjnsJ"
     },
     {
@@ -10637,6 +11328,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.yVYvN7D2GsYghXdf"
     },
     {
@@ -10661,6 +11354,8 @@
         "sound": null,
         "attenuation": false
       },
+      "animation": null,
+      "levels": [],
       "_key": "!scenes.walls!mUgWFnXE5bAzqfkc.iz5l557CNO9cVc5A"
     }
   ],
@@ -10671,37 +11366,84 @@
   "folder": "JmcGCHKY2xJWPkXP",
   "sort": 0,
   "flags": {
-    "core": {
-      "sourceId": "Compendium.troubles-in-otari-remade-maps.troubles-in-otari-maps-remake-by-narchy.Gf3O4mY3oUOcv8Oj"
-    },
+    "core": {},
     "scene-packer": {
       "hash": "4392ad8d6033d76bf8b8f5b1d65d0b8a4eeeb895"
     },
     "token-attacher": {},
-    "cf": null
+    "cf": {}
   },
   "ownership": {
     "M22dRxbECY9l1C6E": 3,
     "default": 0,
     "ZMxdSpEKesYc7gvn": 3
   },
-  "background": {
-    "src": "modules/troubles-in-otari-remade-maps/maps/bridge-background.webp",
-    "offsetX": 0,
-    "offsetY": 0,
-    "scaleX": 1,
-    "scaleY": 1,
-    "rotation": 0
-  },
-  "foregroundElevation": null,
   "journalEntryPage": null,
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "5.7.2",
-    "coreVersion": "11.313",
+    "coreVersion": "14.360",
     "createdTime": 1697493028488,
     "modifiedTime": 1697493028488,
-    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn",
+    "compendiumSource": "Compendium.troubles-in-otari-remade-maps.troubles-in-otari-maps-remake-by-narchy.Gf3O4mY3oUOcv8Oj",
+    "duplicateSource": null,
+    "exportSource": null
   },
-  "_key": "!scenes!mUgWFnXE5bAzqfkc"
+  "regions": [],
+  "environment": {
+    "globalLight": {
+      "luminosity": 0,
+      "enabled": false,
+      "darkness": {
+        "max": 1,
+        "min": 0
+      },
+      "alpha": 0.5,
+      "bright": false,
+      "color": null,
+      "coloration": 1,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0
+    },
+    "darknessLevel": 0,
+    "darknessLock": false,
+    "cycle": true,
+    "base": {
+      "hue": 0,
+      "intensity": 0,
+      "luminosity": 0,
+      "saturation": 0,
+      "shadows": 0
+    },
+    "dark": {
+      "hue": 0.7138888888888889,
+      "intensity": 0,
+      "luminosity": -0.25,
+      "saturation": 0,
+      "shadows": 0
+    }
+  },
+  "fog": {
+    "reset": 1647131450536,
+    "colors": {
+      "explored": null,
+      "unexplored": null
+    },
+    "mode": 1
+  },
+  "levels": [
+    "defaultLevel0000"
+  ],
+  "shiftX": 0,
+  "shiftY": 0,
+  "initialLevel": "defaultLevel0000",
+  "transition": {
+    "type": null,
+    "duration": 1500,
+    "activeOnly": false
+  },
+  "_key": "!scenes!mUgWFnXE5bAzqfkc",
+  "templates": []
 }

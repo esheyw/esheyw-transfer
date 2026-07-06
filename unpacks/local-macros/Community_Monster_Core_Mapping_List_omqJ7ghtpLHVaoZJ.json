@@ -1,0 +1,30 @@
+{
+  "name": "Community Monster Core Mapping List",
+  "type": "script",
+  "scope": "global",
+  "author": "dr4PZnZ9KX7ge6hN",
+  "img": "icons/svg/dice-target.svg",
+  "command": "const packID = 'pathfinder-monster-core';\nconst fu = foundry.utils;\nconst cmapping = await (await fetch('modules/pf2e-community-monster-core-token-pack-mapping/mapping.json')).json();\nconst tmapping = await (await fetch('modules/pf2e-tokens-bestiaries/map-pf2e.json')).json();\nconst cMCmap = cmapping[packID];\nconst tMCmap = tmapping[packID];\nconst flatPack = Object.entries(fu.flattenObject(tmapping));\nconst diff = fu.diffObject(tMCmap, cMCmap)\nconst equals = fu.objectsEqual(cMCmap, diff)\nif (!equals) {\n  console.warn('Community mapping does not equal its diff with the token pack, aborting.', {cMCmap, diff})\n  return;\n}\nconsole.warn('Mapping equals diff, continuing...');\n\nconst pack = game.packs.get(`pf2e.${packID}`);\nconst mapKeys = Object.keys(cMCmap)\nconst docs = await pack.getDocuments({ _id__in: mapKeys });\nconst finalOut = Object.entries(cMCmap).reduce((acc,[id,data]) => {\n  const tokenImg = typeof data?.token === 'object' ? data.token.img : data?.token ?? \"\";\n  const actorImg = data?.actor ?? \"\";\n  const mcDoc = docs.find(d=>d.id === id)\n  if (!mcDoc) {\n    console.warn('mapping for ID not in monster core: ', id)\n    return acc;\n  }\n  const originalData = flatPack.filter(([key,value]) => [actorImg, tokenImg].includes(value))\n  const originalNamesList = flatPack.reduce((acc, [key, value])=>{\n    if (![actorImg, tokenImg].includes(value)) return acc;\n    const split = key.split('.');\n    if (split[0] === \"pf2e.pathfinder-monster-core\") return acc;\n    const pack = game.packs.get(`pf2e.${split[0]}`)\n    const indexEntry = pack.index.get(split[1])\n    if (acc.find(n=>n.includes(indexEntry.name))) return acc;\n    acc.push(`  - ${indexEntry.name} (${pack.metadata.label})`);\n    return acc;\n  }, []);\n  acc.push(`- ${mcDoc.name}, sharing art with \\n${originalNamesList.join(\"\\n\")}`);\n  return acc;\n}, [])\nconsole.warn(finalOut.sort().join(\"\\n\"))",
+  "folder": "oXEhZcx3A0PGOq0N",
+  "ownership": {
+    "default": 0,
+    "dr4PZnZ9KX7ge6hN": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.15.1",
+    "coreVersion": "13.342",
+    "createdTime": 1713832640977,
+    "modifiedTime": 1714016548186,
+    "lastModifiedBy": "dr4PZnZ9KX7ge6hN",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "omqJ7ghtpLHVaoZJ",
+  "sort": 0,
+  "_key": "!macros!omqJ7ghtpLHVaoZJ"
+}

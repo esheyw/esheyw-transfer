@@ -20,10 +20,13 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "5.10.5",
-    "coreVersion": "11.315",
+    "coreVersion": "13.342",
     "createdTime": 1682657186598,
     "modifiedTime": 1702343866185,
-    "lastModifiedBy": "v0RvORcwGexWLCjc"
+    "lastModifiedBy": "v0RvORcwGexWLCjc",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
   "folder": "S2KSaNQJxdlRFkyr",
   "sort": 800000,

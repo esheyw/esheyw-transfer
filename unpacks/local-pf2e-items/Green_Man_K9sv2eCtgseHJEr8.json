@@ -9,12 +9,12 @@
     "rules": [],
     "slug": "green-man",
     "_migration": {
-      "version": 0.878,
+      "version": 0.925,
       "lastMigration": null,
       "previous": {
-        "schema": 0.857,
-        "foundry": "11.313",
-        "system": "5.7.2"
+        "schema": 0.878,
+        "foundry": "11.315",
+        "system": "5.14.4"
       }
     },
     "traits": {
@@ -27,12 +27,11 @@
       "remaster": false
     },
     "category": "deity",
-    "alignment": {
-      "own": "N",
-      "follower": [
-        "NG",
-        "N",
-        "NE"
+    "sanctification": {
+      "modal": "can",
+      "what": [
+        "holy",
+        "unholy"
       ]
     },
     "domains": {
@@ -47,8 +46,10 @@
     "font": [
       "heal"
     ],
-    "ability": [],
-    "skill": "nat",
+    "attribute": [],
+    "skill": [
+      "nature"
+    ],
     "weapons": [
       "sickle",
       "shears"
@@ -72,11 +73,14 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.7.2",
-    "coreVersion": "11.313",
+    "systemVersion": "5.14.4",
+    "coreVersion": "13.342",
     "createdTime": 1674098991683,
-    "modifiedTime": 1697494171437,
-    "lastModifiedBy": "717Xeq3czH96acPF"
+    "modifiedTime": 1711396466703,
+    "lastModifiedBy": "dr4PZnZ9KX7ge6hN",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_id": "K9sv2eCtgseHJEr8",
   "sort": 0,

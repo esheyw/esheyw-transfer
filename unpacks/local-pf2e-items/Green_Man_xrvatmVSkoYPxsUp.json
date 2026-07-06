@@ -9,12 +9,12 @@
     "rules": [],
     "slug": "green-man",
     "_migration": {
-      "version": 0.878,
+      "version": 0.925,
       "lastMigration": null,
       "previous": {
-        "schema": 0.837,
-        "foundry": "11.313",
-        "system": "5.7.3"
+        "schema": 0.878,
+        "foundry": "11.315",
+        "system": "5.14.4"
       }
     },
     "traits": {
@@ -27,12 +27,11 @@
       "remaster": false
     },
     "category": "deity",
-    "alignment": {
-      "own": "N",
-      "follower": [
-        "NG",
-        "N",
-        "NE"
+    "sanctification": {
+      "modal": "can",
+      "what": [
+        "holy",
+        "unholy"
       ]
     },
     "domains": {
@@ -47,8 +46,10 @@
     "font": [
       "heal"
     ],
-    "ability": [],
-    "skill": "nat",
+    "attribute": [],
+    "skill": [
+      "nature"
+    ],
     "weapons": [
       "sickle",
       "shears"
@@ -61,9 +62,7 @@
   },
   "type": "deity",
   "flags": {
-    "core": {
-      "sourceId": "Compendium.pf2e.deities.Item.McUqN13BGLTpYWCg"
-    }
+    "core": {}
   },
   "effects": [],
   "folder": "5lHRvLVah1MGoOZg",
@@ -74,11 +73,14 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.7.3",
-    "coreVersion": "11.313",
+    "systemVersion": "5.14.4",
+    "coreVersion": "13.342",
     "createdTime": 1674098991683,
-    "modifiedTime": 1698035474223,
-    "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+    "modifiedTime": 1711396466703,
+    "lastModifiedBy": "dr4PZnZ9KX7ge6hN",
+    "compendiumSource": "Compendium.pf2e.deities.Item.McUqN13BGLTpYWCg",
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_id": "xrvatmVSkoYPxsUp",
   "_key": "!items!xrvatmVSkoYPxsUp"

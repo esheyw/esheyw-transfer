@@ -5,7 +5,6 @@
   "navigation": true,
   "navOrder": -100000,
   "navName": "",
-  "foreground": "modules/pf2e-abomination-vaults/assets/maps-remade/00-otari/foreground.webp",
   "thumb": "modules/esheyw-transfer/assets/scenes/local-pf2e-scenes-PVB5dn2ypHNbHUSK-thumb.png",
   "width": 4300,
   "height": 5700,
@@ -15,21 +14,17 @@
     "y": 5279,
     "scale": 0.4
   },
-  "backgroundColor": "#000000",
   "grid": {
     "size": 100,
     "type": 1,
     "color": "#ffffff",
     "alpha": 0,
     "distance": 50,
-    "units": "ft"
+    "units": "ft",
+    "style": "solidLines",
+    "thickness": 1
   },
   "tokenVision": false,
-  "fogExploration": false,
-  "fogReset": 1645061364306,
-  "globalLight": false,
-  "globalLightThreshold": null,
-  "darkness": 0,
   "drawings": [],
   "tokens": [
     {
@@ -45,7 +40,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": false,
       "light": {
@@ -69,7 +63,9 @@
           "max": 1
         },
         "color": null,
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "disposition": 0,
       "displayBars": 20,
@@ -126,12 +122,13 @@
       },
       "texture": {
         "src": "systems/pf2e/icons/default-icons/martial.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -141,11 +138,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!PVB5dn2ypHNbHUSK.cVeuei8ryBWTgrFw"
     },
     {
@@ -161,7 +186,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": false,
       "light": {
@@ -185,7 +209,9 @@
           "max": 1
         },
         "color": null,
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "disposition": 0,
       "displayBars": 20,
@@ -242,12 +268,13 @@
       },
       "texture": {
         "src": "systems/pf2e/icons/default-icons/lore.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -257,11 +284,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!PVB5dn2ypHNbHUSK.2KSWflJ5N6mmdvb1"
     },
     {
@@ -277,7 +332,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": false,
       "light": {
@@ -301,7 +355,9 @@
           "max": 1
         },
         "color": null,
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "disposition": 0,
       "displayBars": 20,
@@ -345,12 +401,13 @@
       },
       "texture": {
         "src": "systems/pf2e/icons/default-icons/ancestry.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -360,11 +417,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!PVB5dn2ypHNbHUSK.cNc3av7qMwlhgCjO"
     },
     {
@@ -380,7 +465,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": false,
       "light": {
@@ -404,7 +488,9 @@
           "max": 1
         },
         "color": null,
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "disposition": 0,
       "displayBars": 20,
@@ -448,12 +534,13 @@
       },
       "texture": {
         "src": "systems/pf2e/icons/default-icons/book.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -463,11 +550,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!PVB5dn2ypHNbHUSK.Irnm8zetFUTFQfoA"
     },
     {
@@ -483,7 +598,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": false,
       "light": {
@@ -507,7 +621,9 @@
           "max": 1
         },
         "color": null,
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "disposition": 0,
       "displayBars": 20,
@@ -566,12 +682,13 @@
       },
       "texture": {
         "src": "systems/pf2e/icons/default-icons/armor.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -581,11 +698,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!PVB5dn2ypHNbHUSK.KNQBWDw3rjLehxyc"
     },
     {
@@ -601,7 +746,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": false,
       "light": {
@@ -625,7 +769,9 @@
           "max": 1
         },
         "color": null,
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "disposition": 0,
       "displayBars": 20,
@@ -669,12 +815,13 @@
       },
       "texture": {
         "src": "systems/pf2e/icons/default-icons/backpack.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -684,11 +831,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!PVB5dn2ypHNbHUSK.jA6tx66qDguxKp9u"
     },
     {
@@ -704,7 +879,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": false,
       "light": {
@@ -728,7 +902,9 @@
           "max": 1
         },
         "color": null,
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "disposition": 0,
       "displayBars": 20,
@@ -772,12 +948,13 @@
       },
       "texture": {
         "src": "systems/pf2e/icons/default-icons/deity.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -787,11 +964,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!PVB5dn2ypHNbHUSK.pY4XXCXcanyCtWrT"
     },
     {
@@ -807,7 +1012,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": false,
       "light": {
@@ -831,7 +1035,9 @@
           "max": 1
         },
         "color": null,
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "disposition": 0,
       "displayBars": 20,
@@ -875,12 +1081,13 @@
       },
       "texture": {
         "src": "systems/pf2e/icons/default-icons/spellcastingEntry.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -890,11 +1097,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!PVB5dn2ypHNbHUSK.PGcMtRroNR67IehI"
     },
     {
@@ -910,7 +1145,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": false,
       "light": {
@@ -934,7 +1168,9 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "disposition": 1,
       "displayBars": 30,
@@ -1038,12 +1274,13 @@
       },
       "texture": {
         "src": "tokenizer/pc-images/daphipine_paledrop.Token.webp?1650218836842",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -1053,11 +1290,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!PVB5dn2ypHNbHUSK.NiAJ3sNAaiMUmLtB"
     },
     {
@@ -1073,7 +1338,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": false,
       "light": {
@@ -1097,7 +1361,9 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "disposition": 1,
       "displayBars": 30,
@@ -1201,12 +1467,13 @@
       },
       "texture": {
         "src": "tokenizer/pc-images/forrest_barton.Token9LWoQfASi8dBw7z9.webp?1647800093715",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -1216,11 +1483,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!PVB5dn2ypHNbHUSK.aOjWwiqeB0kItUA6"
     },
     {
@@ -1236,7 +1531,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": false,
       "light": {
@@ -1260,7 +1554,9 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "disposition": 1,
       "displayBars": 30,
@@ -1364,12 +1660,13 @@
       },
       "texture": {
         "src": "tokenizer/pc-images/kalthos.Token.webp?1647812236764",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -1379,11 +1676,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!PVB5dn2ypHNbHUSK.TpO3zeK3naXU5YkL"
     },
     {
@@ -1399,7 +1724,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": false,
       "light": {
@@ -1423,7 +1747,9 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "disposition": 1,
       "displayBars": 30,
@@ -1527,12 +1853,13 @@
       },
       "texture": {
         "src": "tokenizer/pc-images/mila.Token.webp?1649009405717",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -1542,11 +1869,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!PVB5dn2ypHNbHUSK.9ZSc8ZrMuObJnQkC"
     },
     {
@@ -1562,7 +1917,6 @@
       "elevation": 0,
       "lockRotation": false,
       "rotation": 0,
-      "effects": [],
       "alpha": 1,
       "hidden": false,
       "light": {
@@ -1586,7 +1940,9 @@
           "min": 0,
           "max": 1
         },
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "disposition": 1,
       "displayBars": 30,
@@ -1684,12 +2040,13 @@
       },
       "texture": {
         "src": "tokenizer/pc-images/pippin.TokenwVUjfl0r2KKqWR8r.webp?1647800862087",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0.75
       },
       "sight": {
         "angle": 360,
@@ -1699,11 +2056,39 @@
         "visionMode": "basic",
         "attenuation": 0.1,
         "saturation": 0,
-        "contrast": 0
+        "contrast": 0,
+        "color": null
       },
-      "appendNumber": false,
-      "prependAdjective": false,
-      "detectionModes": [],
+      "detectionModes": {},
+      "sort": 0,
+      "locked": false,
+      "occludable": {
+        "radius": 0
+      },
+      "ring": {
+        "enabled": false,
+        "colors": {
+          "ring": null,
+          "background": null
+        },
+        "effects": 1,
+        "subject": {
+          "scale": 1,
+          "texture": null
+        }
+      },
+      "_regions": [],
+      "shape": 4,
+      "turnMarker": {
+        "mode": 1,
+        "animation": null,
+        "src": null,
+        "disposition": false
+      },
+      "movementAction": null,
+      "_movementHistory": [],
+      "depth": 1,
+      "level": "defaultLevel0000",
       "_key": "!scenes.tokens!PVB5dn2ypHNbHUSK.B9VTa05rAq8FIiJB"
     }
   ],
@@ -1736,10 +2121,15 @@
           "max": 1
         },
         "color": "#00ffe1",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": true,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.3GO1CvMROPZBzeKH"
     },
     {
@@ -1770,10 +2160,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.Fzm2M5OVdHEA3iyp"
     },
     {
@@ -1804,10 +2199,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.sjoQG9R5K2TMl5Vh"
     },
     {
@@ -1838,10 +2238,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.r5J2ofWOr6kjdfCQ"
     },
     {
@@ -1872,10 +2277,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.6Bv0vyBkJLMgtvpN"
     },
     {
@@ -1906,10 +2316,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.86QMJYr7lCTJKZIe"
     },
     {
@@ -1940,10 +2355,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.8xcKsRxwGbvwiTTp"
     },
     {
@@ -1974,10 +2394,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.6PUocMpoAAOoi8Wv"
     },
     {
@@ -2008,10 +2433,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.1HqhtXccBLKBsOIO"
     },
     {
@@ -2042,10 +2472,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.JfERPSrXwV2oDPui"
     },
     {
@@ -2076,10 +2511,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.3s6LrygK8Ugvn76u"
     },
     {
@@ -2110,10 +2550,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.iEtO9JPmUYZpEM3v"
     },
     {
@@ -2144,10 +2589,15 @@
           "max": 1
         },
         "color": "#0050b8",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.4kScbqKjzLzwKgAn"
     },
     {
@@ -2178,10 +2628,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.Wnxdov3ozgrjqVNO"
     },
     {
@@ -2212,10 +2667,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.K7B2pHfCHT3ZlY9m"
     },
     {
@@ -2246,10 +2706,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.vfeKRpJ1FGhgV2Xv"
     },
     {
@@ -2280,10 +2745,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.jhmlZsJyMjWqpzGt"
     },
     {
@@ -2314,10 +2784,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.zwsKHLSIDD2YOdh2"
     },
     {
@@ -2348,10 +2823,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.cbjexAjWkk888iH2"
     },
     {
@@ -2382,10 +2862,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.RtiSRb1vscLmuNmU"
     },
     {
@@ -2416,10 +2901,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.2kZr97LIAuNgu7kq"
     },
     {
@@ -2450,10 +2940,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.wFsjLqVcYGVLgZPE"
     },
     {
@@ -2484,10 +2979,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.qL2KjEPnQO1hWFEs"
     },
     {
@@ -2518,10 +3018,15 @@
           "max": 1
         },
         "color": "#00b5c2",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.FkaBrPHtW7vsMsPf"
     },
     {
@@ -2552,10 +3057,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.JzD76odRJfOExOnk"
     },
     {
@@ -2586,10 +3096,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.fWerpAXbmCPIhQHf"
     },
     {
@@ -2620,10 +3135,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.o3S4hsvRjdRiBTwB"
     },
     {
@@ -2654,10 +3174,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.cyknyRNgyozxznjQ"
     },
     {
@@ -2688,10 +3213,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.oOrBrQJorwqvclS4"
     },
     {
@@ -2722,10 +3252,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.t6Iqdb56km3MMizn"
     },
     {
@@ -2756,10 +3291,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.azCH94TJmqXqqd6h"
     },
     {
@@ -2790,10 +3330,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.2oknp0qjAimEG77n"
     },
     {
@@ -2824,10 +3369,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.Yq0aKMQfMY9lIsnl"
     },
     {
@@ -2858,10 +3408,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.RbdZP5JmNEOinHjO"
     },
     {
@@ -2892,10 +3447,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.JvmeLtEsUwRpcLPy"
     },
     {
@@ -2926,10 +3486,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.R8b2IfofGmIg65Bl"
     },
     {
@@ -2960,10 +3525,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.eefGl5TGYKfRhGfX"
     },
     {
@@ -2994,10 +3564,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.SSH4WHoltCKA6qcm"
     },
     {
@@ -3028,10 +3603,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.txwyeFgk1rnXgQJ4"
     },
     {
@@ -3062,10 +3642,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.rKcbh3CMPK91QAnu"
     },
     {
@@ -3096,10 +3681,15 @@
           "max": 1
         },
         "color": "#b87400",
-        "attenuation": 0.5
+        "attenuation": 0.5,
+        "negative": false,
+        "priority": 0
       },
       "hidden": false,
       "flags": {},
+      "elevation": 0,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.lights!PVB5dn2ypHNbHUSK.WmhFf6MT9VKdkFj8"
     }
   ],
@@ -3113,19 +3703,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/waterfall.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.hLb7mXYinqD7gz1F"
     },
     {
@@ -3137,19 +3733,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/house.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.uvivRf88WHb1Nqfp"
     },
     {
@@ -3161,19 +3763,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/item-bag.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.mzS8wdTifo5uLeDB"
     },
     {
@@ -3185,19 +3793,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 2,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/hanging-sign.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.IqBzlkSMbLYh86lU"
     },
     {
@@ -3209,19 +3823,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/sword.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.3PZameEySL65GiQZ"
     },
     {
@@ -3233,19 +3853,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/book.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.4L1UPDp6VCsaaugx"
     },
     {
@@ -3257,19 +3883,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/combat.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.hVedvIOZ6f0CX72R"
     },
     {
@@ -3281,19 +3913,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/house.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.55KPaow1yiNRv8mT"
     },
     {
@@ -3305,19 +3943,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/hanging-sign.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.MH0z4icOydflHiyT"
     },
     {
@@ -3329,19 +3973,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/tankard.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.0UdqqRclD4P3lPUD"
     },
     {
@@ -3353,19 +4003,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/coins.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.KW7iSsJcYJcGRpzv"
     },
     {
@@ -3377,19 +4033,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/hanging-sign.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.998gqub5o6SUlKbG"
     },
     {
@@ -3401,19 +4063,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/ruins.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.GFqGtLmJOTvuB5fa"
     },
     {
@@ -3425,19 +4093,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/house.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.VZ6PJNup8dIJsz5p"
     },
     {
@@ -3449,19 +4123,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/house.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.52vpUse0FfTJDxO9"
     },
     {
@@ -3473,19 +4153,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/tankard.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.LjD7d1m4X9m1H1Rn"
     },
     {
@@ -3497,19 +4183,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/temple.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.REY5X7bQPQHw1FE5"
     },
     {
@@ -3521,19 +4213,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/obelisk.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.HHPSFpagc5cifKRD"
     },
     {
@@ -3545,19 +4243,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/oak.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.oXqxAQucfU8U2iY5"
     },
     {
@@ -3569,19 +4273,25 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/oak.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.fePw9Q9TAf0btNaO"
     },
     {
@@ -3593,24 +4303,29 @@
       "fontFamily": "Signika",
       "fontSize": 48,
       "textAnchor": 1,
-      "textColor": "#FFFFFF",
+      "textColor": "#ffffff",
       "flags": {},
       "texture": {
         "src": "icons/svg/tower.svg",
-        "tint": null,
+        "tint": "#ffffff",
         "scaleX": 1,
         "scaleY": 1,
-        "offsetX": 0,
-        "offsetY": 0,
-        "rotation": 0
+        "anchorX": 0.5,
+        "anchorY": 0.5,
+        "fit": "contain",
+        "alphaThreshold": 0
       },
       "pageId": null,
       "global": false,
+      "elevation": 0,
+      "sort": 0,
+      "author": null,
+      "levels": [],
+      "locked": false,
       "_key": "!scenes.notes!PVB5dn2ypHNbHUSK.GnhU0LEC0f0OBlA4"
     }
   ],
   "sounds": [],
-  "templates": [],
   "tiles": [],
   "walls": [],
   "playlist": "4Fn06CzSICmDmJaP",
@@ -3620,12 +4335,6 @@
   "folder": "pY67ky15GSTDCSui",
   "sort": 0,
   "flags": {
-    "exportSource": {
-      "world": "pf2e-abomination-vaults",
-      "system": "pf2e",
-      "coreVersion": "9.269",
-      "systemVersion": "3.10.3.11650"
-    },
     "pf2e-abomination-vaults": {
       "isAV": true
     },
@@ -3648,10 +4357,8 @@
       "depth": null,
       "environment": ""
     },
-    "core": {
-      "sourceId": "Scene.lQkXSdxvO9CRxohD"
-    },
-    "cf": null
+    "core": {},
+    "cf": {}
   },
   "ownership": {
     "default": 2,
@@ -3659,23 +4366,78 @@
     "okT72bE4MFKp3tgn": 3,
     "ZMxdSpEKesYc7gvn": 3
   },
-  "background": {
-    "src": "modules/pf2e-abomination-vaults/assets/maps-remade/00-otari/background.webp",
-    "offsetX": 0,
-    "offsetY": 0,
-    "scaleX": 1,
-    "scaleY": 1,
-    "rotation": 0
-  },
-  "foregroundElevation": null,
   "journalEntryPage": null,
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "5.7.2",
-    "coreVersion": "11.313",
+    "coreVersion": "14.360",
     "createdTime": 1697493017857,
     "modifiedTime": 1697493017857,
-    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+    "lastModifiedBy": "ZMxdSpEKesYc7gvn",
+    "compendiumSource": "Scene.lQkXSdxvO9CRxohD",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "pf2e-abomination-vaults",
+      "uuid": null,
+      "coreVersion": "9.269",
+      "systemId": "pf2e",
+      "systemVersion": "3.10.3.11650"
+    }
   },
-  "_key": "!scenes!PVB5dn2ypHNbHUSK"
+  "regions": [],
+  "environment": {
+    "globalLight": {
+      "luminosity": 0,
+      "enabled": false,
+      "darkness": {
+        "max": 1,
+        "min": 0
+      },
+      "alpha": 0.5,
+      "bright": false,
+      "color": null,
+      "coloration": 1,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0
+    },
+    "darknessLevel": 0,
+    "darknessLock": false,
+    "cycle": true,
+    "base": {
+      "hue": 0,
+      "intensity": 0,
+      "luminosity": 0,
+      "saturation": 0,
+      "shadows": 0
+    },
+    "dark": {
+      "hue": 0.7138888888888889,
+      "intensity": 0,
+      "luminosity": -0.25,
+      "saturation": 0,
+      "shadows": 0
+    }
+  },
+  "fog": {
+    "reset": 1645061364306,
+    "colors": {
+      "explored": null,
+      "unexplored": null
+    },
+    "mode": 0
+  },
+  "levels": [
+    "defaultLevel0000"
+  ],
+  "shiftX": 0,
+  "shiftY": 0,
+  "initialLevel": "defaultLevel0000",
+  "transition": {
+    "type": null,
+    "duration": 1500,
+    "activeOnly": false
+  },
+  "_key": "!scenes!PVB5dn2ypHNbHUSK",
+  "templates": []
 }

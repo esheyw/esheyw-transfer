@@ -13,7 +13,7 @@
       "saturation": 0,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "flags": {
       "perfect-vision": {
         "sight": {
@@ -57,10 +57,11 @@
       "src": "tokenizer/pc-images/pippin.TokenOIpcpZx9HC3HXkSe.webp?1675824551332",
       "scaleX": 1,
       "scaleY": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "rotation": 0,
-      "tint": null
+      "tint": "#ffffff",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
     },
     "lockRotation": false,
     "rotation": 0,
@@ -93,11 +94,36 @@
       "darkness": {
         "min": 0,
         "max": 1
-      }
+      },
+      "negative": false,
+      "priority": 0
     },
     "randomImg": false,
     "appendNumber": false,
-    "prependAdjective": false
+    "prependAdjective": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "depth": 1
   },
   "name": "Testing Pippin",
   "type": "character",
@@ -108,17 +134,18 @@
         "value": 32,
         "temp": 0
       },
-      "initiative": {
-        "statistic": "perception"
-      },
       "speed": {
         "value": 25,
         "otherSpeeds": []
       }
     },
+    "initiative": {
+      "statistic": "perception"
+    },
     "details": {
-      "alignment": {
-        "value": "N"
+      "languages": {
+        "value": [],
+        "details": ""
       },
       "level": {
         "value": 3
@@ -129,6 +156,8 @@
         "birthPlace": "",
         "attitude": "",
         "beliefs": "",
+        "anathema": [],
+        "edicts": [],
         "likes": "",
         "dislikes": "",
         "catchphrases": "",
@@ -171,17 +200,6 @@
         "value": ""
       }
     },
-    "traits": {
-      "value": [],
-      "senses": [],
-      "languages": {
-        "value": [
-          "hb_burrowing"
-        ],
-        "custom": "",
-        "selected": []
-      }
-    },
     "resources": {
       "heroPoints": {
         "value": 1,
@@ -189,14 +207,14 @@
       }
     },
     "_migration": {
-      "version": 0.878,
+      "version": 0.925,
       "previous": {
-        "schema": 0.84,
-        "foundry": "11.313",
-        "system": "5.7.2"
+        "schema": 0.878,
+        "foundry": "11.315",
+        "system": "5.14.4"
       }
     },
-    "exploration": [],
+    "abilities": null,
     "skills": {
       "acr": {
         "rank": 0
@@ -262,16 +280,13 @@
         "VW": null
       }
     },
+    "exploration": [],
     "saves": {},
     "crafting": {
       "formulas": []
     },
     "proficiencies": {
-      "defenses": {
-        "light": {
-          "rank": 1
-        }
-      }
+      "defenses": {}
     }
   },
   "items": [
@@ -283,15 +298,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e-animal-companions.AC-Ancestries-and-Class.Item.lOMF4UyhjZcL7HM9"
-        },
-        "exportSource": {
-          "world": "ac",
-          "system": "pf2e",
-          "coreVersion": "0.8.8",
-          "systemVersion": "2.6.0.6437"
-        },
+        "core": {},
         "pf2e": {
           "itemGrants": {
             "animalCompanion": {
@@ -414,12 +421,12 @@
         ],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.839,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -437,6 +444,7 @@
         },
         "hp": 8,
         "size": "sm",
+        "hands": 2,
         "reach": 5,
         "speed": 25,
         "boosts": {
@@ -472,7 +480,7 @@
           "custom": ""
         },
         "items": {},
-        "vision": "lowLightVision",
+        "vision": "low-light-vision",
         "rarity": {
           "value": "common"
         }
@@ -485,10 +493,19 @@
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "4.7.2",
-        "coreVersion": "10.291",
+        "coreVersion": "14.360",
         "createdTime": 1663468948992,
         "modifiedTime": 1675824590729,
-        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE",
+        "compendiumSource": "Compendium.pf2e-animal-companions.AC-Ancestries-and-Class.Item.lOMF4UyhjZcL7HM9",
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "ac",
+          "uuid": null,
+          "coreVersion": "0.8.8",
+          "systemId": "pf2e",
+          "systemVersion": "2.6.0.6437"
+        }
       },
       "_id": "g9AdIne9BLJ1CtSo",
       "_key": "!actors.items!xunR5aPW7SfhNfPg.g9AdIne9BLJ1CtSo"
@@ -499,15 +516,7 @@
       "img": "systems/pf2e/icons/default-icons/class.svg",
       "effects": [],
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e-animal-companions.AC-Features.Item.KKOgokqHa7RjVDN6"
-        },
-        "exportSource": {
-          "world": "ac",
-          "system": "pf2e",
-          "coreVersion": "0.8.8",
-          "systemVersion": "2.6.0.6437"
-        },
+        "core": {},
         "pf2e": {
           "grantedBy": {
             "id": "g9AdIne9BLJ1CtSo",
@@ -525,7 +534,7 @@
             "key": "ActiveEffectLike",
             "value": 1,
             "mode": "upgrade",
-            "path": "system.attributes.perception.rank"
+            "path": "system.perception.rank"
           },
           {
             "key": "ActiveEffectLike",
@@ -575,12 +584,12 @@
         ],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.839,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -628,7 +637,7 @@
           "medium": 0,
           "heavy": 0
         },
-        "classDC": 0,
+        "spellcasting": 0,
         "ancestryFeatLevels": {
           "value": []
         },
@@ -651,10 +660,19 @@
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "4.7.2",
-        "coreVersion": "10.291",
+        "coreVersion": "14.360",
         "createdTime": 1663536946649,
         "modifiedTime": 1675824590730,
-        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE",
+        "compendiumSource": "Compendium.pf2e-animal-companions.AC-Features.Item.KKOgokqHa7RjVDN6",
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "ac",
+          "uuid": null,
+          "coreVersion": "0.8.8",
+          "systemId": "pf2e",
+          "systemVersion": "2.6.0.6437"
+        }
       },
       "folder": null,
       "sort": 0,
@@ -674,9 +692,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e-animal-companions.AC-Support.Item.nQwTbiyTHahsvmBi"
-        },
+        "core": {},
         "pf2e": {
           "grantedBy": {
             "id": "g9AdIne9BLJ1CtSo",
@@ -692,12 +708,12 @@
         "rules": [],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.839,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -718,13 +734,13 @@
         "actions": {
           "value": 1
         },
+        "deathNote": false,
         "requirements": {
           "value": ""
         },
         "trigger": {
           "value": ""
         },
-        "deathNote": false,
         "weapon": {
           "value": ""
         }
@@ -737,10 +753,13 @@
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "4.7.2",
-        "coreVersion": "10.291",
+        "coreVersion": "14.360",
         "createdTime": 1663468977434,
         "modifiedTime": 1675824590731,
-        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE",
+        "compendiumSource": "Compendium.pf2e-animal-companions.AC-Support.Item.nQwTbiyTHahsvmBi",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_id": "FBslgXVbnvWvsmBD",
       "_key": "!actors.items!xunR5aPW7SfhNfPg.FBslgXVbnvWvsmBD"
@@ -757,12 +776,12 @@
         "rules": [],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.84,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -783,17 +802,14 @@
         },
         "quantity": 1,
         "baseItem": null,
+        "bulk": {
+          "value": 0
+        },
         "hp": {
           "value": 0,
           "max": 0
         },
         "hardness": 0,
-        "weight": {
-          "value": "2"
-        },
-        "equippedBulk": {
-          "value": ""
-        },
         "price": {
           "value": {
             "gp": 10
@@ -804,10 +820,6 @@
           "invested": null,
           "inSlot": true,
           "handsHeld": 0
-        },
-        "stackGroup": null,
-        "negateBulk": {
-          "value": "0"
         },
         "containerId": null,
         "size": "med",
@@ -828,9 +840,6 @@
           },
           "misidentified": {}
         },
-        "usage": {
-          "value": "wornarmor"
-        },
         "category": "light",
         "group": null,
         "acBonus": 1,
@@ -838,38 +847,28 @@
         "dexCap": 5,
         "checkPenalty": -1,
         "speedPenalty": -5,
-        "potencyRune": {
-          "value": null
+        "grade": null,
+        "runes": {
+          "potency": 0,
+          "resilient": 0,
+          "property": []
         },
-        "resiliencyRune": {
-          "value": null
-        },
-        "propertyRune1": {
-          "value": null
-        },
-        "propertyRune2": {
-          "value": null
-        },
-        "propertyRune3": {
-          "value": null
-        },
-        "propertyRune4": {
-          "value": null
-        }
+        "subitems": []
       },
       "effects": [],
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e-animal-companions.ac-equipment.Item.suEEtFqaGpPG2OHt"
-        }
+        "core": {}
       },
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "4.8.3",
-        "coreVersion": "10.291",
+        "coreVersion": "14.360",
         "createdTime": 1677979601454,
         "modifiedTime": 1678044225927,
-        "lastModifiedBy": "cLOJ9tnvQyYDrKAj"
+        "lastModifiedBy": "cLOJ9tnvQyYDrKAj",
+        "compendiumSource": "Compendium.pf2e-animal-companions.ac-equipment.Item.suEEtFqaGpPG2OHt",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "folder": null,
       "sort": 0,
@@ -889,15 +888,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e-animal-companions.AC-Ancestries-and-Class.Item.lOMF4UyhjZcL7HM9"
-        },
-        "exportSource": {
-          "world": "ac",
-          "system": "pf2e",
-          "coreVersion": "0.8.8",
-          "systemVersion": "2.6.0.6437"
-        },
+        "core": {},
         "pf2e": {
           "itemGrants": {
             "animalCompanion": {
@@ -1020,12 +1011,12 @@
         ],
         "slug": "badger",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.84,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1043,6 +1034,7 @@
         },
         "hp": 8,
         "size": "sm",
+        "hands": 2,
         "reach": 5,
         "speed": 25,
         "boosts": {
@@ -1078,7 +1070,7 @@
           "custom": ""
         },
         "items": {},
-        "vision": "lowLightVision",
+        "vision": "low-light-vision",
         "rarity": {
           "value": "common"
         }
@@ -1091,10 +1083,19 @@
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "4.12.6",
-        "coreVersion": "10.291",
+        "coreVersion": "14.360",
         "createdTime": 1663468948992,
         "modifiedTime": 1685406182293,
-        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE",
+        "compendiumSource": "Compendium.pf2e-animal-companions.AC-Ancestries-and-Class.Item.lOMF4UyhjZcL7HM9",
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "ac",
+          "uuid": null,
+          "coreVersion": "0.8.8",
+          "systemId": "pf2e",
+          "systemVersion": "2.6.0.6437"
+        }
       },
       "_id": "zck6pQmzBaseglYT",
       "_key": "!actors.items!xunR5aPW7SfhNfPg.zck6pQmzBaseglYT"
@@ -1105,15 +1106,7 @@
       "img": "systems/pf2e/icons/default-icons/class.svg",
       "effects": [],
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e-animal-companions.AC-Features.Item.KKOgokqHa7RjVDN6"
-        },
-        "exportSource": {
-          "world": "ac",
-          "system": "pf2e",
-          "coreVersion": "0.8.8",
-          "systemVersion": "2.6.0.6437"
-        },
+        "core": {},
         "pf2e": {
           "grantedBy": {
             "id": "zck6pQmzBaseglYT",
@@ -1131,7 +1124,7 @@
             "key": "ActiveEffectLike",
             "value": 1,
             "mode": "upgrade",
-            "path": "system.attributes.perception.rank"
+            "path": "system.perception.rank"
           },
           {
             "key": "ActiveEffectLike",
@@ -1188,12 +1181,12 @@
         ],
         "slug": "animal-companion",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.84,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1241,7 +1234,7 @@
           "medium": 0,
           "heavy": 0
         },
-        "classDC": 0,
+        "spellcasting": 0,
         "ancestryFeatLevels": {
           "value": []
         },
@@ -1264,10 +1257,19 @@
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "4.12.6",
-        "coreVersion": "10.291",
+        "coreVersion": "14.360",
         "createdTime": 1663536946649,
         "modifiedTime": 1685406182293,
-        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE",
+        "compendiumSource": "Compendium.pf2e-animal-companions.AC-Features.Item.KKOgokqHa7RjVDN6",
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "ac",
+          "uuid": null,
+          "coreVersion": "0.8.8",
+          "systemId": "pf2e",
+          "systemVersion": "2.6.0.6437"
+        }
       },
       "folder": null,
       "sort": 0,
@@ -1287,9 +1289,7 @@
       "folder": null,
       "sort": 0,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e-animal-companions.AC-Support.Item.nQwTbiyTHahsvmBi"
-        },
+        "core": {},
         "pf2e": {
           "grantedBy": {
             "id": "zck6pQmzBaseglYT",
@@ -1305,12 +1305,12 @@
         "rules": [],
         "slug": "badger-support-benefit",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.84,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1331,13 +1331,13 @@
         "actions": {
           "value": 1
         },
+        "deathNote": false,
         "requirements": {
           "value": ""
         },
         "trigger": {
           "value": ""
         },
-        "deathNote": false,
         "weapon": {
           "value": ""
         }
@@ -1350,13 +1350,92 @@
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "4.12.6",
-        "coreVersion": "10.291",
+        "coreVersion": "14.360",
         "createdTime": 1663468977434,
         "modifiedTime": 1685406182294,
-        "lastModifiedBy": "ANMn0vc4t8tYEOWE"
+        "lastModifiedBy": "ANMn0vc4t8tYEOWE",
+        "compendiumSource": "Compendium.pf2e-animal-companions.AC-Support.Item.nQwTbiyTHahsvmBi",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_id": "vyeMsYglLJllmLLE",
       "_key": "!actors.items!xunR5aPW7SfhNfPg.vyeMsYglLJllmLLE"
+    },
+    {
+      "_id": "Xz4YYBMNYT2wfPqm",
+      "effects": [],
+      "flags": {},
+      "folder": null,
+      "img": "icons/sundries/books/book-red-exclamation.webp",
+      "name": "Custom Changes",
+      "sort": 0,
+      "type": "feat",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": "custom-changes",
+        "_migration": {
+          "version": 0.925,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "11.315",
+            "system": "5.14.4"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "unique"
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "level": {
+          "value": 1
+        },
+        "category": "bonus",
+        "onlyLevel1": false,
+        "maxTakable": null,
+        "actionType": {
+          "value": "passive"
+        },
+        "actions": {
+          "value": null
+        },
+        "prerequisites": {
+          "value": []
+        },
+        "location": null,
+        "subfeatures": {
+          "proficiencies": {
+            "light": {
+              "rank": 1
+            }
+          }
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": "14.360",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!xunR5aPW7SfhNfPg.Xz4YYBMNYT2wfPqm"
     }
   ],
   "effects": [],
@@ -1369,21 +1448,22 @@
         "spellcasting": false
       }
     },
-    "core": {
-      "sourceId": "Actor.FAyGsWHEvv7EG2Z8"
-    },
-    "cf": null,
+    "core": {},
+    "cf": {},
     "pf2e-dailies": {
       "rested": true
     }
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.7.2",
-    "coreVersion": "11.313",
+    "systemVersion": "5.14.4",
+    "coreVersion": "14.360",
     "createdTime": 1673927480374,
-    "modifiedTime": 1697493242096,
-    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+    "modifiedTime": 1711396394975,
+    "lastModifiedBy": "dr4PZnZ9KX7ge6hN",
+    "compendiumSource": "Actor.FAyGsWHEvv7EG2Z8",
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_id": "xunR5aPW7SfhNfPg",
   "ownership": {

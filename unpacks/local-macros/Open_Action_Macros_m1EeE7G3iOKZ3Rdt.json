@@ -12,15 +12,18 @@
       "runForSpecificUser": ""
     },
     "core": {},
-    "cf": null
+    "cf": {}
   },
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "5.10.5",
-    "coreVersion": "11.315",
+    "coreVersion": "13.342",
     "createdTime": 1675989208607,
     "modifiedTime": 1702343866185,
-    "lastModifiedBy": "v0RvORcwGexWLCjc"
+    "lastModifiedBy": "v0RvORcwGexWLCjc",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_id": "m1EeE7G3iOKZ3Rdt",
   "folder": "LXfU0ElDPq9L8dLU",

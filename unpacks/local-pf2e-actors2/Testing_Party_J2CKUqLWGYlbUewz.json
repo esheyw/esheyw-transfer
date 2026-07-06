@@ -19,7 +19,8 @@
       "attenuation": 0.1,
       "brightness": 0,
       "saturation": 0,
-      "contrast": 0
+      "contrast": 0,
+      "color": null
     },
     "name": "The Party",
     "appendNumber": false,
@@ -28,9 +29,11 @@
       "src": "systems/pf2e/icons/pathfinder-society/verdant-wheel.webp",
       "scaleX": 1,
       "scaleY": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "rotation": 0
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
     },
     "lockRotation": false,
     "rotation": 0,
@@ -62,10 +65,36 @@
       "darkness": {
         "min": 0,
         "max": 1
+      },
+      "negative": false,
+      "priority": 0,
+      "color": null
+    },
+    "detectionModes": {},
+    "randomImg": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
       }
     },
-    "detectionModes": [],
-    "randomImg": false
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "depth": 1
   },
   "_id": "J2CKUqLWGYlbUewz",
   "type": "party",
@@ -237,7 +266,6 @@
           "carryType": "worn",
           "invested": null
         },
-        "stackGroup": null,
         "containerId": null,
         "size": "med",
         "material": {
@@ -259,13 +287,13 @@
         },
         "usage": {
           "value": "held-in-one-hand"
-        }
+        },
+        "subitems": [],
+        "stackGroup": null
       },
       "type": "equipment",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.equipment-srd.Item.8Jdw4yAzWYylGePS"
-        }
+        "core": {}
       },
       "effects": [],
       "folder": null,
@@ -277,10 +305,13 @@
       "_stats": {
         "systemId": "pf2e",
         "systemVersion": "5.7.3",
-        "coreVersion": "11.313",
+        "coreVersion": "14.360",
         "createdTime": 1698033187278,
         "modifiedTime": 1698033187278,
-        "lastModifiedBy": "v0RvORcwGexWLCjc"
+        "lastModifiedBy": "v0RvORcwGexWLCjc",
+        "compendiumSource": "Compendium.pf2e.equipment-srd.Item.8Jdw4yAzWYylGePS",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_id": "GX2qfRo0s5qzwlh0",
       "_key": "!actors.items!J2CKUqLWGYlbUewz.GX2qfRo0s5qzwlh0"
@@ -296,10 +327,13 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "5.10.5",
-    "coreVersion": "11.315",
+    "coreVersion": "14.360",
     "createdTime": 1697779128942,
     "modifiedTime": 1701979653758,
-    "lastModifiedBy": "v0RvORcwGexWLCjc"
+    "lastModifiedBy": "v0RvORcwGexWLCjc",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!actors!J2CKUqLWGYlbUewz"
 }

@@ -1,0 +1,23 @@
+{
+  "type": "JournalEntry",
+  "folder": null,
+  "name": "f1j",
+  "color": null,
+  "sorting": "a",
+  "_id": "9lNaLkvpKzCMxNHA",
+  "description": "",
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.348",
+    "systemId": "pf2e",
+    "systemVersion": "7.7.1",
+    "createdTime": 1763327873197,
+    "modifiedTime": 1763327873197,
+    "lastModifiedBy": "reSyyNKHdj4q9hqB"
+  },
+  "_key": "!folders!9lNaLkvpKzCMxNHA"
+}

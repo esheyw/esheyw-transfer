@@ -13,7 +13,7 @@
       "saturation": 0,
       "contrast": 0
     },
-    "detectionModes": [],
+    "detectionModes": {},
     "disposition": -1,
     "height": 0.5,
     "name": "Olli",
@@ -43,7 +43,9 @@
         "max": 1
       },
       "color": null,
-      "attenuation": 0.5
+      "attenuation": 0.5,
+      "negative": false,
+      "priority": 0
     },
     "bar1": {
       "attribute": "attributes.hp"
@@ -82,15 +84,39 @@
     "randomImg": false,
     "texture": {
       "src": "pdftofoundry/troubles-in-otari/scalliwing.token.webp",
-      "tint": null,
+      "tint": "#ffffff",
       "scaleX": 1,
       "scaleY": 1,
-      "offsetX": 0,
-      "offsetY": 0,
-      "rotation": 0
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
     },
     "appendNumber": false,
-    "prependAdjective": false
+    "prependAdjective": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "depth": 0.5
   },
   "name": "Olli",
   "type": "npc",
@@ -113,12 +139,12 @@
         "rules": [],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -145,16 +171,12 @@
           "value": "innate",
           "flexible": false
         },
-        "showUnpreparedSpells": {
-          "value": false
-        },
         "showSlotlessLevels": {
           "value": true
         },
         "proficiency": {
           "value": 0
         },
-        "displayLevels": {},
         "slots": {
           "slot0": {
             "prepared": [],
@@ -219,7 +241,11 @@
         },
         "autoHeightenLevel": {
           "value": null
-        }
+        },
+        "showUnpreparedSpells": {
+          "value": false
+        },
+        "displayLevels": {}
       },
       "ownership": {
         "default": 0
@@ -227,19 +253,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.1uUxlDMn7nj3yjAy"
     },
     {
       "_id": "wlSTHbfmM751AGNy",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/invisibility.webp",
       "name": "Invisibility (Self Only)",
@@ -255,20 +282,25 @@
         "rules": [],
         "slug": "invisibility",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
-            "illusion"
+            "illusion",
+            "manipulate"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "occult"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -279,27 +311,7 @@
         "level": {
           "value": 2
         },
-        "spellType": {
-          "value": "utility"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "arcane",
-            "occult"
-          ]
-        },
-        "components": {
-          "focus": false,
-          "material": true,
-          "somatic": true,
-          "verbal": false
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "self"
         },
@@ -311,18 +323,11 @@
           "value": "2"
         },
         "duration": {
-          "value": "10 minutes"
+          "value": "10 minutes",
+          "sustained": false
         },
-        "damage": {
-          "value": {}
-        },
-        "save": {
-          "value": "",
-          "basic": ""
-        },
-        "sustained": {
-          "value": false
-        },
+        "damage": {},
+        "defense": null,
         "cost": {
           "value": ""
         },
@@ -330,24 +335,7 @@
           "value": "1uUxlDMn7nj3yjAy",
           "heightenedLevel": 2
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        }
+        "counteraction": false
       },
       "ownership": {
         "default": 0
@@ -355,19 +343,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.wlSTHbfmM751AGNy"
     },
     {
       "_id": "epbpdcnjl4IJPWYk",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/command.webp",
       "name": "Command",
@@ -383,23 +372,29 @@
         "rules": [],
         "slug": "command",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
             "auditory",
+            "concentrate",
             "linguistic",
-            "mental",
-            "enchantment"
+            "manipulate",
+            "mental"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -410,28 +405,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "save"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "arcane",
-            "divine",
-            "occult"
-          ]
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": true,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 creature"
         },
@@ -443,17 +417,16 @@
           "value": "2"
         },
         "duration": {
-          "value": "until the end of the target's next turn"
+          "value": "until the end of the target's next turn",
+          "sustained": false
         },
-        "damage": {
-          "value": {}
-        },
-        "save": {
-          "value": "will",
-          "basic": ""
-        },
-        "sustained": {
-          "value": false
+        "damage": {},
+        "defense": {
+          "passive": null,
+          "save": {
+            "statistic": "will",
+            "basic": false
+          }
         },
         "cost": {
           "value": ""
@@ -462,12 +435,7 @@
           "value": "1uUxlDMn7nj3yjAy",
           "heightenedLevel": 1
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
+        "counteraction": false,
         "heightening": {
           "levels": {
             "5": {
@@ -477,18 +445,6 @@
             }
           },
           "type": "fixed"
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
         }
       },
       "ownership": {
@@ -497,19 +453,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.epbpdcnjl4IJPWYk"
     },
     {
       "_id": "PZ6GlEhu4sZErOQs",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/daze.webp",
       "name": "Daze",
@@ -525,23 +482,29 @@
         "rules": [],
         "slug": "daze",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
             "cantrip",
+            "concentrate",
+            "manipulate",
             "mental",
-            "nonlethal",
-            "enchantment"
+            "nonlethal"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -552,28 +515,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "save"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "arcane",
-            "divine",
-            "occult"
-          ]
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": true,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 creature"
         },
@@ -585,26 +527,27 @@
           "value": "2"
         },
         "duration": {
-          "value": "1 round"
+          "value": "1 round",
+          "sustained": false
         },
         "damage": {
-          "value": {
-            "0": {
-              "applyMod": true,
-              "type": {
-                "categories": [],
-                "value": "mental"
-              },
-              "value": "0"
-            }
+          "0": {
+            "applyMod": true,
+            "formula": "0",
+            "type": "mental",
+            "category": null,
+            "materials": [],
+            "kinds": [
+              "damage"
+            ]
           }
         },
-        "save": {
-          "value": "will",
-          "basic": "basic"
-        },
-        "sustained": {
-          "value": false
+        "defense": {
+          "passive": null,
+          "save": {
+            "statistic": "will",
+            "basic": true
+          }
         },
         "cost": {
           "value": ""
@@ -612,30 +555,13 @@
         "location": {
           "value": "1uUxlDMn7nj3yjAy"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
+        "counteraction": false,
         "heightening": {
           "damage": {
             "0": "1d6"
           },
           "interval": 2,
           "type": "interval"
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
         }
       },
       "ownership": {
@@ -644,19 +570,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.4gBIw4IDrSfFHik4",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.PZ6GlEhu4sZErOQs"
     },
     {
       "_id": "PiX2UFrW470f6gy1",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.izcxFQFwf3woCnFs"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/guidance.webp",
       "name": "Guidance",
@@ -672,21 +599,26 @@
         "rules": [],
         "slug": "guidance",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
             "cantrip",
-            "divination"
+            "concentrate"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "divine",
+            "occult",
+            "primal"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -697,29 +629,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "utility"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "divine",
-            "occult",
-            "primal"
-          ],
-          "custom": ""
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": false,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 creature"
         },
@@ -731,42 +641,18 @@
           "value": "1"
         },
         "duration": {
-          "value": "until the start of your next turn"
+          "value": "until the start of your next turn",
+          "sustained": false
         },
-        "damage": {
-          "value": {}
-        },
-        "save": {
-          "value": "",
-          "basic": ""
-        },
-        "sustained": {
-          "value": false
-        },
+        "damage": {},
+        "defense": null,
         "cost": {
           "value": ""
         },
         "location": {
           "value": "1uUxlDMn7nj3yjAy"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        }
+        "counteraction": false
       },
       "ownership": {
         "default": 0
@@ -774,19 +660,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.izcxFQFwf3woCnFs",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.PiX2UFrW470f6gy1"
     },
     {
       "_id": "vqr8eeUL8wpRxnut",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/heal.webp",
       "name": "Heal",
@@ -802,21 +689,26 @@
         "rules": [],
         "slug": "heal",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
             "healing",
-            "necromancy"
+            "manipulate",
+            "vitality"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "divine",
+            "primal"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -827,28 +719,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "heal"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "divine",
-            "primal"
-          ],
-          "custom": ""
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": false,
-          "verbal": false
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 willing living creature or 1 undead"
         },
@@ -864,27 +735,28 @@
           "value": "1 to 3"
         },
         "duration": {
-          "value": ""
+          "value": "",
+          "sustained": false
         },
         "damage": {
-          "value": {
-            "0": {
-              "applyMod": false,
-              "type": {
-                "categories": [],
-                "subtype": "",
-                "value": "vitality"
-              },
-              "value": "1d8"
-            }
+          "0": {
+            "applyMod": false,
+            "formula": "1d8",
+            "type": "vitality",
+            "category": null,
+            "materials": [],
+            "kinds": [
+              "damage",
+              "healing"
+            ]
           }
         },
-        "save": {
-          "value": "fortitude",
-          "basic": "basic"
-        },
-        "sustained": {
-          "value": false
+        "defense": {
+          "passive": null,
+          "save": {
+            "statistic": "fortitude",
+            "basic": true
+          }
         },
         "cost": {
           "value": ""
@@ -897,30 +769,13 @@
             "value": 2
           }
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
+        "counteraction": false,
         "heightening": {
           "damage": {
             "0": "1d8"
           },
           "interval": 1,
           "type": "interval"
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
         }
       },
       "ownership": {
@@ -929,19 +784,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.vqr8eeUL8wpRxnut"
     },
     {
       "_id": "RCEaWshja45Dxwyq",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/mage-hand.webp",
       "name": "Mage Hand",
@@ -957,21 +813,26 @@
         "rules": [],
         "slug": "mage-hand",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
             "cantrip",
-            "evocation"
+            "concentrate",
+            "manipulate"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "occult"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -982,27 +843,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "utility"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "arcane",
-            "occult"
-          ]
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": true,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 unattended object of light Bulk or less"
         },
@@ -1014,30 +855,18 @@
           "value": "2"
         },
         "duration": {
-          "value": "sustained"
-        },
-        "damage": {
-          "value": {}
-        },
-        "save": {
           "value": "",
-          "basic": ""
+          "sustained": true
         },
-        "sustained": {
-          "value": false
-        },
+        "damage": {},
+        "defense": null,
         "cost": {
           "value": ""
         },
         "location": {
           "value": "1uUxlDMn7nj3yjAy"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
+        "counteraction": false,
         "heightening": {
           "levels": {
             "3": {
@@ -1057,18 +886,6 @@
             }
           },
           "type": "fixed"
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
         }
       },
       "ownership": {
@@ -1077,19 +894,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.pwzdSlJgYqN7bs2w",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.RCEaWshja45Dxwyq"
     },
     {
       "_id": "7PZq7mxgPE4k6PFU",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.vLzFcIaSXs7YTIqJ"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/message.webp",
       "name": "Message",
@@ -1105,12 +923,12 @@
         "rules": [],
         "slug": "message",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1118,11 +936,17 @@
           "value": [
             "auditory",
             "cantrip",
+            "concentrate",
+            "illusion",
             "linguistic",
-            "mental",
-            "illusion"
+            "mental"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -1133,28 +957,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "utility"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "arcane",
-            "divine",
-            "occult"
-          ]
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": false,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 creature"
         },
@@ -1166,30 +969,18 @@
           "value": "1"
         },
         "duration": {
-          "value": "see below"
+          "value": "see below",
+          "sustained": false
         },
-        "damage": {
-          "value": {}
-        },
-        "save": {
-          "value": "",
-          "basic": ""
-        },
-        "sustained": {
-          "value": false
-        },
+        "damage": {},
+        "defense": null,
         "cost": {
           "value": ""
         },
         "location": {
           "value": "1uUxlDMn7nj3yjAy"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
+        "counteraction": false,
         "heightening": {
           "levels": {
             "3": {
@@ -1199,18 +990,6 @@
             }
           },
           "type": "fixed"
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
         }
       },
       "ownership": {
@@ -1219,19 +998,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.vLzFcIaSXs7YTIqJ",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.7PZq7mxgPE4k6PFU"
     },
     {
       "_id": "GiO5zrfTgD4ok69x",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.8xRzLhwGL7Dgy3EZ"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/sanctuary.webp",
       "name": "Sanctuary",
@@ -1247,20 +1027,25 @@
         "rules": [],
         "slug": "sanctuary",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
-            "abjuration"
+            "concentrate",
+            "manipulate"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "divine",
+            "occult"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -1271,27 +1056,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "utility"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "divine",
-            "occult"
-          ]
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": true,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": "1 creature"
         },
@@ -1303,18 +1068,11 @@
           "value": "2"
         },
         "duration": {
-          "value": "1 minute"
+          "value": "1 minute",
+          "sustained": false
         },
-        "damage": {
-          "value": {}
-        },
-        "save": {
-          "value": "",
-          "basic": ""
-        },
-        "sustained": {
-          "value": false
-        },
+        "damage": {},
+        "defense": null,
         "cost": {
           "value": ""
         },
@@ -1322,24 +1080,7 @@
           "value": "1uUxlDMn7nj3yjAy",
           "heightenedLevel": 1
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        }
+        "counteraction": false
       },
       "ownership": {
         "default": 0
@@ -1347,19 +1088,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.8xRzLhwGL7Dgy3EZ",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.GiO5zrfTgD4ok69x"
     },
     {
       "_id": "fkYcgtBHhywbwM1V",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/spells/shield.webp",
       "name": "Shield",
@@ -1375,22 +1117,27 @@
         "rules": [],
         "slug": "shield",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
           "otherTags": [],
           "value": [
             "cantrip",
-            "force",
-            "abjuration"
+            "concentrate",
+            "force"
           ],
-          "rarity": "common"
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+          ]
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -1401,28 +1148,7 @@
         "level": {
           "value": 1
         },
-        "spellType": {
-          "value": "utility"
-        },
-        "category": {
-          "value": "spell"
-        },
-        "traditions": {
-          "value": [
-            "arcane",
-            "divine",
-            "occult"
-          ]
-        },
-        "components": {
-          "focus": false,
-          "material": false,
-          "somatic": false,
-          "verbal": true
-        },
-        "materials": {
-          "value": ""
-        },
+        "requirements": "",
         "target": {
           "value": ""
         },
@@ -1434,42 +1160,18 @@
           "value": "1"
         },
         "duration": {
-          "value": "until the start of your next turn"
+          "value": "until the start of your next turn",
+          "sustained": false
         },
-        "damage": {
-          "value": {}
-        },
-        "save": {
-          "value": "",
-          "basic": ""
-        },
-        "sustained": {
-          "value": false
-        },
+        "damage": {},
+        "defense": null,
         "cost": {
           "value": ""
         },
         "location": {
           "value": "1uUxlDMn7nj3yjAy"
         },
-        "hasCounteractCheck": {
-          "value": false
-        },
-        "ability": {
-          "value": ""
-        },
-        "prepared": {
-          "value": ""
-        },
-        "primarycheck": {
-          "value": ""
-        },
-        "secondarycasters": {
-          "value": ""
-        },
-        "secondarycheck": {
-          "value": ""
-        }
+        "counteraction": false
       },
       "ownership": {
         "default": 0
@@ -1477,10 +1179,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.fkYcgtBHhywbwM1V"
     },
@@ -1520,12 +1225,12 @@
         ],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1567,19 +1272,20 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.Ihvi8o6Gm4pwbhph"
     },
     {
       "_id": "k5kr2ILvlJNg5oKb",
       "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6"
-        }
+        "core": {}
       },
       "img": "systems/pf2e/icons/actions/Passive.webp",
       "name": "Darkvision",
@@ -1595,12 +1301,12 @@
         "rules": [],
         "slug": "darkvision",
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1621,13 +1327,13 @@
         "actions": {
           "value": null
         },
+        "deathNote": false,
         "requirements": {
           "value": ""
         },
         "trigger": {
           "value": ""
         },
-        "deathNote": false,
         "weapon": {
           "value": ""
         }
@@ -1638,10 +1344,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6",
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.k5kr2ILvlJNg5oKb"
     },
@@ -1662,12 +1371,12 @@
         "rules": [],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1691,13 +1400,13 @@
         "actions": {
           "value": 2
         },
+        "deathNote": false,
         "requirements": {
           "value": ""
         },
         "trigger": {
           "value": ""
         },
-        "deathNote": false,
         "weapon": {
           "value": ""
         }
@@ -1708,10 +1417,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.qunm5Cfit6Q1T4dI"
     },
@@ -1732,12 +1444,12 @@
         "rules": [],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1764,10 +1476,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.mcjX7aOWkL4cPq1D"
     },
@@ -1788,12 +1503,12 @@
         "rules": [],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1820,10 +1535,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.HDkrnwNeXWfziz0g"
     },
@@ -1844,12 +1562,12 @@
         "rules": [],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1876,10 +1594,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.iyMC80OfNvVeIdyA"
     },
@@ -1900,12 +1621,12 @@
         "rules": [],
         "slug": null,
         "_migration": {
-          "version": 0.878,
+          "version": 0.925,
           "lastMigration": null,
           "previous": {
-            "schema": 0.769,
-            "foundry": "11.313",
-            "system": "5.7.2"
+            "schema": 0.878,
+            "foundry": "11.315",
+            "system": "5.14.4"
           }
         },
         "traits": {
@@ -1932,10 +1653,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "14.360",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!GCLLJmjq00iKvSXs.WgAGmFlUKbCVK1Hy"
     }
@@ -1944,9 +1668,7 @@
   "folder": "QsDsBujWeb0jNS3e",
   "sort": 0,
   "flags": {
-    "core": {
-      "sourceId": "Compendium.pf2e.troubles-in-otari-bestiary.Actor.l7wng1EXY7np8Hcu"
-    },
+    "core": {},
     "pdftofoundry": {
       "module": "troubles-in-otari",
       "id": "npc15"
@@ -1955,7 +1677,7 @@
       "hash": "c1cea117f92ae4405d724685aae3abb4bdc4b82d",
       "sourceId": "Actor.8CX0oBOjOM0g6uBh"
     },
-    "cf": null
+    "cf": {}
   },
   "_id": "GCLLJmjq00iKvSXs",
   "system": {
@@ -1966,8 +1688,12 @@
         "max": 45,
         "details": ""
       },
-      "initiative": {
-        "statistic": "perception"
+      "ac": {
+        "value": 19,
+        "details": ""
+      },
+      "allSaves": {
+        "value": ""
       },
       "speed": {
         "value": 10,
@@ -1978,26 +1704,21 @@
           }
         ],
         "details": ""
-      },
-      "ac": {
-        "value": 19,
-        "details": ""
-      },
-      "perception": {
-        "value": 12
-      },
-      "allSaves": {
-        "value": ""
       }
     },
+    "initiative": {
+      "statistic": "perception"
+    },
     "details": {
-      "alignment": {
-        "value": "CG"
+      "languages": {
+        "value": [
+          "common"
+        ],
+        "details": ""
       },
       "level": {
         "value": 3
       },
-      "creatureType": "",
       "blurb": "",
       "publicNotes": "<p>Couatls are large, brightly colored serpents with feathered wings. Good-natured, these creatures aid mortals and oppose evildoers, but sighting one presents a momentous occasion-these magnificent, albeit reclusive creatures rarely appear.</p>\n<p>The smallest members of the couatl family, Scalliwings resemble their larger kin but are roughly the size of a house cat, and a irascible mischievous streak tempers their kindly nature. While most couatls seek to right the world's wrongs or guide mortal civilization toward societal advancement, scalliwings work on a more individual level. They claim their role is to teach goodhearted spellcasters the ways of magic, and indeed they sometimes serve-or \"assist,\" as they're swift to correct-such spellcasters as familiars.</p>\n<p>With iridescent scales and bright feathers, scalliwings are remarkably pretty creatures. They seem well aware of this fact and use their appearance to ingratiate themselves with others. This beauty makes some of them slightly self-aggrandizing, but other scalliwings find that their small size and relatively weak defenses put them at the mercy of cruel, larger creatures who seek to imprison them as beautiful pets and trophies. While scalliwings might cheerfully reside in a single residence indefinitely of their own volition, captive scalliwings have orchestrated devious escapes, coordinating their efforts with other creatures to cause spectacular property damage in the process.</p>\n<p>Scalliwings measure about 2 feet long from nose to tail with wingspans of about the same length. They have life spans nearly as long as a human's. While a scalliwing appears slightly more common than their larger, reclusive kin, many mortals live entire lifetimes without ever encountering a scalliwing.</p>",
       "privateNotes": "",
@@ -2006,27 +1727,8 @@
         "authors": "",
         "license": "OGL",
         "remaster": false
-      }
-    },
-    "traits": {
-      "value": [
-        "beast",
-        "couatl"
-      ],
-      "senses": {
-        "value": "darkvision"
       },
-      "languages": {
-        "value": [
-          "common"
-        ],
-        "custom": "",
-        "selected": []
-      },
-      "rarity": "uncommon",
-      "size": {
-        "value": "tiny"
-      }
+      "creatureType": ""
     },
     "resources": {
       "focus": {
@@ -2035,11 +1737,11 @@
       }
     },
     "_migration": {
-      "version": 0.878,
+      "version": 0.925,
       "previous": {
-        "schema": 0.769,
-        "foundry": "11.313",
-        "system": "5.7.2"
+        "schema": 0.878,
+        "foundry": "11.315",
+        "system": "5.14.4"
       }
     },
     "abilities": {
@@ -2062,6 +1764,16 @@
         "mod": 3
       }
     },
+    "perception": {
+      "details": "",
+      "mod": 12,
+      "senses": [
+        {
+          "type": "darkvision"
+        }
+      ],
+      "vision": true
+    },
     "saves": {
       "fortitude": {
         "value": 8,
@@ -2075,6 +1787,19 @@
         "value": 11,
         "saveDetail": ""
       }
+    },
+    "skills": {},
+    "traits": {
+      "value": [
+        "beast",
+        "chaotic",
+        "couatl",
+        "good"
+      ],
+      "rarity": "uncommon",
+      "size": {
+        "value": "tiny"
+      }
     }
   },
   "ownership": {
@@ -2084,11 +1809,14 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.7.2",
-    "coreVersion": "11.313",
+    "systemVersion": "5.14.4",
+    "coreVersion": "14.360",
     "createdTime": 1697493202549,
-    "modifiedTime": 1697493202549,
-    "lastModifiedBy": "ZMxdSpEKesYc7gvn"
+    "modifiedTime": 1711396394975,
+    "lastModifiedBy": "dr4PZnZ9KX7ge6hN",
+    "compendiumSource": "Compendium.pf2e.troubles-in-otari-bestiary.Actor.l7wng1EXY7np8Hcu",
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!actors!GCLLJmjq00iKvSXs"
 }
